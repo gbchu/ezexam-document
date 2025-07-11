@@ -1,5 +1,6 @@
 # `secret方法`
 #### **参数及其默认值**
+`body`
 
 `type: str | content`
 
