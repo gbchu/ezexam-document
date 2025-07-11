@@ -9,11 +9,8 @@ hero:
     src: /show.png
   actions:
     - theme: brand
-      text: 指南
+      text: 使用指南
       link: /简介
-    - theme: alt
-      text: 快速开始
-      link: https://typst.app/?template=ezexam&version=0.1.1
 
 features:
   - icon : 🤖
