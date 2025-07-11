@@ -375,12 +375,18 @@ export default defineConfig({
       copyright: "Copyright © 2025-present gbchu",
     },
 
-    lastUpdated: true,
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      },
 
-    editLink: {
-      pattern: 'https://github.com/gbchu/ezexam-document'
-    }
-  },
+      editLink: {
+        pattern: 'https://github.com/gbchu/ezexam-document',
+        text: 'Edit this page on GitHub'
+      }
+    },
 
-  cleanUrls: true,
-});
+    cleanUrls: true,
+  });
