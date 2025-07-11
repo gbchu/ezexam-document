@@ -369,11 +369,17 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+
     footer: {
       message: "Released under the MIT License.",
       copyright: "Copyright © 2025-present gbchu",
     },
+
     lastUpdated: true,
+
+    editLink: {
+      pattern: 'https://github.com/gbchu/ezexam-document'
+    }
   },
 
   cleanUrls: true,
