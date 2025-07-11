@@ -377,10 +377,6 @@ export default defineConfig({
 
     lastUpdated: {
       text: '最后更新于',
-      formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium'
-      }
     },
 
     editLink: {
