@@ -376,17 +376,18 @@ export default defineConfig({
     },
 
     lastUpdated: {
-      text: '最后更新于',
+      text: 'Updated at',
       formatOptions: {
         dateStyle: 'full',
         timeStyle: 'medium'
-      },
-
-      editLink: {
-        pattern: 'https://github.com/gbchu/ezexam-document',
-        text: 'Edit this page on GitHub'
       }
     },
 
-    cleanUrls: true,
-  });
+    editLink: {
+      pattern: 'https://github.com/gbchu/ezexam-document',
+      text: '在 GitHub 上编辑此页面'
+    }
+  },
+
+  cleanUrls: true,
+});
