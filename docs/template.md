@@ -25,7 +25,7 @@
   #choices([$-1$], [$0$], [$1$], [$6$])
 ]
 #question[
-  集合 $U = {x | x "为小于9的正整数" }$, $A = {1,3,5}$, 则 $C_U A$ 中的元素个数为 #paren[]
+  集合 $U = {x | x "为小于9的正整数" }$, $A = {1,3,5}$, 则 $complement_U A$ 中的元素个数为 #paren[]
   #choices([$0$], [$3$], [$5$], [$8$])
 ]
 #question[
@@ -37,7 +37,7 @@
   #choices([$30°$], [$60°$], [$90°$], [$135°$])
 ]
 #question[
-  设 $f(x)$ 是定义在 $bb(R)$ 上且周期为 2 的偶函数，当 $2 <= x <= 3$ 时，$f(x) = 5 - 2x$，则 $f(-3 / 4 ) =$ #paren[]
+  设 $f(x)$ 是定义在 $bb(R)$ 上且周期为 2 的偶函数，当 $2 lt.eq.slant x lt.eq.slant 3$ 时，$f(x) = 5 - 2x$，则 $f(-3 / 4 ) =$ #paren[]
   #choices([$-1 / 2$], [$-1 / 4$], [$1 / 4$], [$1 / 2$])
 ]
 #question[
@@ -69,7 +69,7 @@
 ]
 #question[
   设抛物线 $C: y^2 = 6x$ 的焦点为 $F$，过 $F$ 的直线交 $C$ 于$A、B$，过 $F$ 且垂直于 $A B$的直线交准线 $l$: $y = -3 / 2x$ 于 $E$，过点$A$作准线的垂线，垂足为$D$，则 #paren[]
-  #choices([$|A D| = |A F|$], [$|A E| = |A B|$], [$|A B| >= 6$], [$|A E| dot |B E| >= 18$])
+  #choices([$|A D| = |A F|$], [$|A E| = |A B|$], [$|A B| gt.eq.slant 6$], [$|A E| dot |B E| gt.eq.slant 18$])
 ]
 #question[
   已知 $triangle A B C$ 的面积为 $1 / 4$，若 $cos 2A + cos 2B + cos 2C = 2,cos A cos B sin C = 1 / 4$，则 #paren[]
@@ -102,7 +102,7 @@
 
   #text-figure(text: [ 附：$chi^2 = n(a d - b c)^2 / ((a + b)(c + d)(a + c)(b + d))$.], figure-x: 1in, table(
     columns: 4,
-    [$P(chi^2 >= k)$], [0.005], [0.010], [0.001],
+    [$P(chi^2 gt.eq.slant k)$], [0.005], [0.010], [0.001],
     [$k$], [3.841], [6.635], [10.828],
   ))
 ]
@@ -130,8 +130,8 @@
 #question(points: 17)[
   设函数 $f(x) = 5cos x - cos 5x$.
   + 求 $f(x)$ 在 $[0, pi / 4]$ 的最大值；
-  + 给定 $theta in (0, pi)，a$ 为给定实数，证明：存在 $y in [a - theta, a + theta]$，使得 $cos y <= cos theta$；
-  + 若存在 $phi$，使得对任意 $x$，都有 $5cos x - cos(5x + phi) <= b$，求 $b$ 的最小值.
+  + 给定 $theta in (0, pi)，a$ 为给定实数，证明：存在 $y in [a - theta, a + theta]$，使得 $cos y lt.eq.slant cos theta$；
+  + 若存在 $phi$，使得对任意 $x$，都有 $5cos x - cos(5x + phi) lt.eq.slant b$，求 $b$ 的最小值.
 ]
 
 ```
