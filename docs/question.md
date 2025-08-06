@@ -58,7 +58,7 @@
 `default: none`
 >该参数用于设置题目的分值
 
-#### `points-separate-par`
+#### `points-separate`
 
 `type: boolean`
 
@@ -95,9 +95,9 @@
 
 #### `with-heading-label`
 
-`type: none | boolean`
+`type: boolean`
 
-`default: none`
+`default: false`
 >该参数用于设置题目是否带有标题的标签
 
 #### `body`

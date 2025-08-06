@@ -68,6 +68,8 @@
 >该参数用于设置模板的页码对齐方式
 ::: tip
 若要修改对齐方式可参考官方文档 [alignment](https://typst.app/docs/reference/layout/alignment/) 的参数设置
+
+若想实现奇数页在右侧显示，偶数页在左侧显示的效果，可忽略该参数，修改 [`footer-is-separate`](#footer-is-separate) 参数为 `false` 即可
 :::
 #### `footer-is-separate`
 
@@ -116,7 +118,7 @@
 
 `type: str | array`
 
-`default:("New Computer Modern Math", "Source Han Serif")`
+`default: ("New Computer Modern Math", "Source Han Serif")`
 
 >该参数用于设置页面的字体
 ::: tip
@@ -126,7 +128,7 @@
 
 `type: str | array`
 
-`default:("New Computer Modern Math", "Source Han Serif")`
+`default: ("New Computer Modern Math", "Source Han Serif")`
 
 >该参数用于设置数学公式下的字体
 
@@ -134,7 +136,7 @@
 
 `type: length`
 
-`default:2em`
+`default: 2em`
 
 >该参数用于设置行高
 
@@ -142,7 +144,7 @@
 
 `type: length`
 
-`default:2em`
+`default: 2em`
 
 >该参数用于设置段落间距
 
@@ -150,7 +152,7 @@
 
 `type: length`
 
-`default:2em`
+`default: 0em`
 
 >该参数用于设置首行缩进
 
@@ -158,7 +160,7 @@
 
 `type: str | array`
 
-`default:("New Computer Modern Math", "SimHei")`
+`default: ("New Computer Modern Math", "SimHei")`
 
 >该参数用于设置节标题的字体
 
@@ -166,7 +168,7 @@
 
 `type: length`
 
-`default:10.5pt`
+`default: auto`
 
 >该参数用于设置节标题的字体大小
 
@@ -193,6 +195,14 @@
 `default: 15pt`
 
 >该参数用于设置节标题的下间距
+
+#### `enum-numbering`
+
+`type: str | function`
+
+`default: "（1.i.a）"`
+
+>该参数用于设置有序列表的编号方式
 
 #### `show-answer`
 

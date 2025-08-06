@@ -6,7 +6,7 @@
 
 `type: str`
 
-`default: "解 析"`
+`default: none`
 
 >该参数用于设置解析的标题
 
@@ -142,7 +142,7 @@
 
 `type: length`
 
-`default: 40pt`
+`default: 30pt`
 
 >该参数用于设置解析盒子距离上方的间距
 
@@ -153,6 +153,14 @@
 `default: 20pt`
 
 >该参数用于设置解析盒子距离下方的间距
+
+#### `show-number`
+
+`type: boolean`
+
+`default: true`
+
+>该参数用于设置是否显示解析对应的题号
 
 #### `body`
 
