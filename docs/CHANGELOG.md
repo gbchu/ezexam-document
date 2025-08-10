@@ -19,3 +19,15 @@
 + 将 `question` 方法的参数 `with-heading-label` 的默认值修改为 `false`
 
 + `explain` 方法添加参数 `show-number` 、修改参数 `title` 的默认值为 `none`，默认不显示
+
++ `setup` 方法新增参数 `enum-numbering`
+
+## 0 . 1 . 3
+
++ 优化 `choices` 方法
+
++ 将 `question` 方法的参数名 `points-separate-par` 修改为 `points-separate`
+
++ 增加英文完型填空、7选5题型的支持，让 `paren` 和 `fillin` 方法可以使用题号作为占位符。使用详情查看 [`paren`](https://ezexam.pages.dev/paren) 和 [`fillin`](https://ezexam.pages.dev/fillin) 方法
+
++ `setup` 方法新增参数 `heading-numbering`，`heading-hanging-indent`，`enum-spacing`，`enum-indent` 提供更多自定义设置

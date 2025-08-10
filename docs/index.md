@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "ezexam"
-  text: "一个用于试卷、讲义排版的Typst包"
+  text: "一个用于试卷、讲义排版的Typst模板"
   tagline: "EZ  YOUR  LIFE"
   image:
     src: /show.png

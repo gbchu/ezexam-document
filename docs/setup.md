@@ -154,7 +154,21 @@
 
 `default: 0em`
 
->该参数用于设置首行缩进
+#### `heading-numbering`
+
+`type: str | function`
+
+`default: auto`
+
+>该参数用于设置节标题前的编号方式
+
+#### `heading-hang-indent`
+
+`type: length`
+
+`default: auto`
+
+>该参数用于设置节标题的缩进
 
 #### `heading-font`
 
@@ -203,6 +217,22 @@
 `default: "（1.i.a）"`
 
 >该参数用于设置有序列表的编号方式
+
+#### `enum-spacing`
+
+`type: length`
+
+`default: 2em`
+
+>该参数用于设置有序列表的之间的间距
+
+#### `enum-indent`
+
+`type: length`
+
+`default: 0pt`
+
+>该参数用于设置有序列表的缩进
 
 #### `show-answer`
 

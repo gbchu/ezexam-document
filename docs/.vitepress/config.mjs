@@ -74,6 +74,14 @@ export default defineConfig({
                     link: "/setup.md#first-line-indent",
                   },
                   {
+                    text: "heading-numbering",
+                    link: "/setup.md#heading-numbering",
+                  },
+                  {
+                    text: "heading-hanging-indent",
+                    link: "/setup.md#heading-hanging-indent",
+                  },
+                  {
                     text: "heading-font",
                     link: "/setup.md#heading-font",
                   },
@@ -92,6 +100,18 @@ export default defineConfig({
                   {
                     text: "heading-bottom",
                     link: "/setup.md#heading-bottom",
+                  },
+                  {
+                    text: "enum-numbering",
+                    link: "/setup.md#enum-numbering",
+                  },
+                  {
+                    text: "enum-spacing",
+                    link: "/setup.md#enum-spacing",
+                  },
+                  {
+                    text: "enum-indent",
+                    link: "/setup.md#enum-indent",
                   },
                   {
                     text: "show-answer",
@@ -250,8 +270,8 @@ export default defineConfig({
                   { text: "label-weight", link: "/question.md#label-weight" },
                   { text: "points", link: "/question.md#points" },
                   {
-                    text: "points-separate-par",
-                    link: "/question.md#points-separate-par",
+                    text: "points-separate",
+                    link: "/question.md#points-separate",
                   },
                   { text: "points-prefix", link: "/question.md#points-prefix" },
                   { text: "points-suffix", link: "/question.md#points-suffix" },
@@ -271,6 +291,8 @@ export default defineConfig({
                 items: [
                   { text: "justify", link: "/paren.md#justify" },
                   { text: "placeholder", link: "/paren.md#placeholder" },
+                  { text: "with-number", link: "/paren.md#with-number" },
+                  { text: "update", link: "/paren.md#update" },
                   { text: "answer", link: "/paren.md#answer" },
                 ],
               },
@@ -281,6 +303,8 @@ export default defineConfig({
                 items: [
                   { text: "length", link: "/fillin.md#length" },
                   { text: "placeholder", link: "/fillin.md#placeholder" },
+                  { text: "with-number", link: "/fillin.md#with-number" },
+                  { text: "update", link: "/fillin.md#update" },
                   { text: "answer", link: "/fillin.md#answer" },
                 ],
               },
