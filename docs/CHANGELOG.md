@@ -1,4 +1,4 @@
-# CHANGELOG
+# Changelog
 
 ## 0 . 1 . 0
 
@@ -31,3 +31,13 @@
 + 增加英文完型填空、7选5题型的支持，让 `paren` 和 `fillin` 方法可以使用题号作为占位符。使用详情查看 [`paren`](https://ezexam.pages.dev/paren) 和 [`fillin`](https://ezexam.pages.dev/fillin) 方法
 
 + `setup` 方法新增参数 `heading-numbering`，`heading-hanging-indent`，`enum-spacing`，`enum-indent` 提供更多自定义设置
+
+## 0 . 1 . 4
+
++ 将 `LECTURE` 修改为 `HANDOUTS` 以更加符合语义
+
++ 将 `explain` 方法名修改为 `solution` 以更加符合语义
+
++ `setup` 方法新增参数 `show-watermark` 添加水印功能
+
+
