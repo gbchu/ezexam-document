@@ -23,7 +23,6 @@ export default defineConfig({
           { text: "使用说明", link: "/usage.md" },
           {
             text: "方法及参数说明",
-            link: "/fun-and-param.md#方法及参数说明",
             collapsed: true,
             items: [
               {
