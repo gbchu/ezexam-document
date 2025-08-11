@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   lang: "zh-CN",
   title: "ezexam",
-  description: "A typst template inspired by latex package exam-zh",
+  description: "A typst exam and lecture template inspired by latex package exam-zh",
   head: [
     [
       "link",
