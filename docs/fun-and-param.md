@@ -102,7 +102,7 @@
 
 >*该参数用于设置页面字体大小*
 
-`font`
+`font` 
 
 `type: str | array`
 `default:("New Computer Modern Math", "Source Han Serif")`

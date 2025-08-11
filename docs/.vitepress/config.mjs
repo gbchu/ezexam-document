@@ -19,10 +19,11 @@ export default defineConfig({
       {
         text: "指南",
         items: [
-          { text: "简介", link: "/简介.md" },
-          { text: "使用说明", link: "/使用说明.md" },
+          { text: "简介", link: "/about.md" },
+          { text: "使用说明", link: "/usage.md" },
           {
             text: "方法及参数说明",
+            link: "/fun-and-param.md#方法及参数说明",
             collapsed: true,
             items: [
               {
@@ -378,7 +379,7 @@ export default defineConfig({
               },
             ],
           },
-          { text: "注意事项", link: "/注意事项.md" },
+          { text: "使用技巧", link: "/tips.md" },
           { text: "完整模板示例", link: "/template.md" },
           { text: "bug反馈", link: "/bug.md" },
           { text: "更新日志", link: "/CHANGELOG.md" },
@@ -400,13 +401,13 @@ export default defineConfig({
     },
 
     lastUpdated: {
-      text: '最后更新于',
+      text: "最后更新于",
     },
 
     editLink: {
-      pattern: 'https://github.com/gbchu/ezexam-document',
-      text: '在 GitHub 上编辑此页面'
-    }
+      pattern: "https://github.com/gbchu/ezexam-document",
+      text: "在 GitHub 上编辑此页面",
+    },
   },
 
   cleanUrls: true,
