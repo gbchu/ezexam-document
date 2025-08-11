@@ -123,7 +123,7 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
 
 ```
 ::: tip
- 对于七选五这类题型，每次使用占位符都设置参数很麻烦，本模板提供了一个方法 `parenn` ，只需要将上述 `paren(with-number: true, update: true)[]` 直接改为 `parenn[]` 即可，本质就是上述方法的语法糖
+ 对于七选五这类题型，每次使用占位符都设置参数很麻烦，本模板提供了一个方法 `fillinn` ，只需要将上述 `fillin(with-number: true, update: true)[]` 直接改为 `fillinn[]` 即可，本质就是上述方法的语法糖
 :::
 
 #### `answer`
