@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: 使用指南
-      link: /简介
+      link: /about
 
 features:
   - icon : 🤖
