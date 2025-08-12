@@ -157,7 +157,7 @@
 ]
 
 
-#show: setup.with(show-seal-line: false, page-numbering: zh-arabic(suffix: "答案"), show-answer: true)
+#show: setup.with(mode:EXAM , show-seal-line: false, page-numbering: zh-arabic(suffix: "答案"), show-answer: true)
 #title[参考答案]
 
 #solution[
