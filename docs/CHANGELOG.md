@@ -32,6 +32,8 @@
 
 + `setup` 方法新增参数 `heading-numbering`，`heading-hanging-indent`，`enum-spacing`，`enum-indent` 提供更多自定义设置
 
++ 修复 `question` 个数超过9个时,内容对不齐的问题
+
 ## 0 . 1 . 4
 
 + 将 `LECTURE` 修改为 `HANDOUTS`，更加符合语义
