@@ -142,7 +142,7 @@
 
 `type: length`
 
-`default: 30pt`
+`default: 20pt`
 
 >该参数用于设置解析盒子距离上方的间距
 
