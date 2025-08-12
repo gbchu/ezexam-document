@@ -2,7 +2,8 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   lang: "zh-CN",
   title: "ezexam",
-  description: "A typst exam and lecture template inspired by latex package exam-zh",
+  description:
+    "A typst exam and lecture template inspired by latex package exam-zh",
   head: [
     [
       "link",
@@ -112,6 +113,30 @@ export default defineConfig({
                   {
                     text: "enum-indent",
                     link: "/setup.md#enum-indent",
+                  },
+                  {
+                    text: "show-watermark",
+                    link: "/setup.md#show-watermark",
+                  },
+                  {
+                    text: "watermark",
+                    link: "/setup.md#watermark",
+                  },
+                  {
+                    text: "watermark-color",
+                    link: "/setup.md#watermark-color",
+                  },
+                  {
+                    text: "watermark-font",
+                    link: "/setup.md#watermark-font",
+                  },
+                  {
+                    text: "watermark-opacity",
+                    link: "/setup.md#watermark-opacity",
+                  },
+                  {
+                    text: "watermark-rotate-degree",
+                    link: "/setup.md#watermark-rotate-degree",
                   },
                   {
                     text: "show-answer",

@@ -8,11 +8,11 @@
 
 `type: str`
 
-`default: LECTURE`
+`default: HANDOUTS`
 
 `optional value: EXAM`
 
->该参数用于设置模板的显示模式 `LECTURE` : 讲义模式； `EXAM` : 试卷模式 `LECTURE` 模式和 `EXAM` 模式二者仅在题号的显示方式、目录显示方式、页码显示上有所不同。若你只想组卷则只用 `EXAM` 模式即可！
+>该参数用于设置模板的显示模式 `HANDOUTS` : 讲义模式； `EXAM` : 试卷模式 `HANDOUTS` 模式和 `EXAM` 模式二者仅在题号的显示方式、目录显示方式、页码显示上有所不同。若你只想组卷则只用 `EXAM` 模式即可！
 
 #### `paper`
 
@@ -233,6 +233,62 @@
 `default: 0pt`
 
 >该参数用于设置有序列表的缩进
+
+#### `show-watermark`
+
+`type: boolean`
+
+`default: false`
+
+>该参数用于设置是否显示水印
+
+#### `watermark`
+
+`type: str | content`
+
+`default: "ezexam"`
+
+>该参数用于设置水印的内容
+
+#### `watermark-color`
+
+`type: str | content`
+
+`default: "ezexam"`
+
+>该参数用于设置水印的颜色
+
+#### `watermark-font`
+
+`type: str | array`
+
+`default: source-han`
+
+>该参数用于设置水印的字体
+
+#### `watermark-size`
+
+`type: length`
+
+`default: 88pt`
+
+>该参数用于设置水印的字体大小
+
+#### `watermark-opacity`
+
+`type: relative`
+
+`default: -66%`
+
+>该参数用于设置水印的透明度
+
+#### `watermark-rotate-degree`
+
+`type: angle`
+
+`default: -45deg`
+
+>该参数用于设置水印的旋转角度
 
 #### `show-answer`
 

@@ -16,7 +16,7 @@
 
 `type: str | symbol`
 
-`default: sym.triangle.filled.small`
+`default: "▲"`
 >该参数用于设置当不显示答案时，括号的占位符
 
 ::: tip
