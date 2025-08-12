@@ -40,6 +40,6 @@
 
 + 修复当修改弥封线类型时,试卷最后一页没有更改的 `bug`
 
-+ 添加水印功能，`setup` 方法新增参数 `show-watermark`，`watermark`，`watermark-size`，`watermark-color`，`watermark-font`，`watermark-rotate-degree`，`watermark-opacity`
++ 添加水印功能，`setup` 方法新增参数 `watermark`，`watermark-size`，`watermark-color`，`watermark-font`，`watermark-rotate`
 
 
