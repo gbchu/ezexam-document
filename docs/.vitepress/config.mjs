@@ -115,10 +115,6 @@ export default defineConfig({
                     link: "/setup.md#enum-indent",
                   },
                   {
-                    text: "show-watermark",
-                    link: "/setup.md#show-watermark",
-                  },
-                  {
                     text: "watermark",
                     link: "/setup.md#watermark",
                   },
@@ -131,12 +127,8 @@ export default defineConfig({
                     link: "/setup.md#watermark-font",
                   },
                   {
-                    text: "watermark-opacity",
-                    link: "/setup.md#watermark-opacity",
-                  },
-                  {
-                    text: "watermark-rotate-degree",
-                    link: "/setup.md#watermark-rotate-degree",
+                    text: "watermark-rotate",
+                    link: "/setup.md#watermark-rotate",
                   },
                   {
                     text: "show-answer",

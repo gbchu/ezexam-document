@@ -234,29 +234,24 @@
 
 >该参数用于设置有序列表的缩进
 
-#### `show-watermark`
-
-`type: boolean`
-
-`default: false`
-
->该参数用于设置是否显示水印
-
 #### `watermark`
 
-`type: str | content`
+`type: none | content | image`
 
-`default: "ezexam"`
+`default: none`
 
 >该参数用于设置水印的内容
 
 #### `watermark-color`
 
-`type: str | content`
+`type: color`
 
-`default: "ezexam"`
+`default: rgb("FFCBC4")`
 
 >该参数用于设置水印的颜色
+::: warning
+该参数对图片水印无效
+:::
 
 #### `watermark-font`
 
@@ -265,6 +260,9 @@
 `default: source-han`
 
 >该参数用于设置水印的字体
+::: warning
+该参数对图片水印无效
+:::
 
 #### `watermark-size`
 
@@ -273,16 +271,11 @@
 `default: 88pt`
 
 >该参数用于设置水印的字体大小
+::: warning
+该参数对图片水印无效，但可以通过传入图片时设置宽高调整图片大小
+:::
 
-#### `watermark-opacity`
-
-`type: relative`
-
-`default: -66%`
-
->该参数用于设置水印的透明度
-
-#### `watermark-rotate-degree`
+#### `watermark-rotate`
 
 `type: angle`
 
