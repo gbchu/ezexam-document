@@ -246,11 +246,11 @@
 
 `type: color`
 
-`default: rgb("FFCBC4")`
+`default: rgb("f666")`
 
 >该参数用于设置水印的颜色
 ::: warning
-该参数对图片水印无效
+该参数对图片水印无效。在修改该参数时，一定要修改颜色的透明度，否则水印将覆盖在文字之上。（这是由于水印的实现是基于前景色）详情设置参考 [color](https://typst.app/docs/reference/visualize/color/)。
 :::
 
 #### `watermark-font`
