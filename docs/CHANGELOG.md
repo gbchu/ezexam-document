@@ -44,4 +44,8 @@
 
 + 添加水印功能，`setup` 方法新增参数 `watermark`，`watermark-size`，`watermark-color`，`watermark-font`，`watermark-rotate`
 
+## 0 . 1 . 5
+
++ 修复水印被图片遮挡的 `bug`
+
 
