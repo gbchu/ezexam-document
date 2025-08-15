@@ -58,7 +58,7 @@
 `default: none`
 >该参数用于设置题目的分值
 
-#### `points-separate`
+#### `points-separate` <Badge type="warning" text="^0.1.3" /> `points-separate-par` <Badge type="warning" text="0.1.0~0.1.2" />
 
 `type: boolean`
 

@@ -1,6 +1,6 @@
 # `setup方法`
 
->该方法用于全局参数的设置,需配合 `#show 和 with 方法使用`
+>该方法用于模板的全局设置,需配合 `#show` 和 `with` 方法使用
 
 ### 参数及其默认值
 
@@ -8,7 +8,7 @@
 
 `type: str`
 
-`default: HANDOUTS`
+`default: HANDOUTS` <Badge type="warning" text="^0.1.4" /> `LECTURE` <Badge type="warning" text="0.1.0~0.1.3" />
 
 `optional value: EXAM`
 
@@ -55,7 +55,7 @@
 >
 >`EXAM` 模式下默认显示为: `XX试题  第X页（共X页）`
 >
->`LECTURE` 模式下默认显示为: `X / X`
+>`HANDOUTS` 模式下默认显示为: `X / X`
 ::: tip
 若要修改显示格式可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置
 :::
