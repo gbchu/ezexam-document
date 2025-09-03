@@ -396,6 +396,15 @@ export default defineConfig({
             ],
           },
           { text: "使用技巧", link: "/tips.md" },
+          {
+            text: "化学相关",
+            link: "/chem.md",
+            collapsed: true,
+            items: [
+              { text: "e-bridge", link: "/e-bridge.md" },
+              { text: "ai-struct", link: "/ai-struct.md" },
+            ],
+          },
           { text: "完整模板示例", link: "/template.md" },
           { text: "bug反馈", link: "/bug.md" },
           { text: "更新日志", link: "/CHANGELOG.md" },
