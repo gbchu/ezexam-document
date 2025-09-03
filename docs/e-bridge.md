@@ -63,7 +63,7 @@
   lose: (from: <B>, to: <C>, e: 5),
 )
 ```
-![效果图](1.png)
+![效果图](/1.png)
 
 
 ```typst
@@ -73,7 +73,7 @@
   get: (from: <A1>, to: <A2>, e: 2, tsign: none),
 )
 ```
-![效果图](2.png)
+![效果图](/2.png)
 
 ```typst
 // 单线桥
@@ -82,7 +82,7 @@
   get: (from: <B1>, to: <B1>, e: 1, tsign: none),
 )
 ```
-![效果图](3.png)
+![效果图](/3.png)
 
 :::warning
 1. 在给化学方程式标注 `label` 时，要确保该 `label` 唯一，否则会出现错误

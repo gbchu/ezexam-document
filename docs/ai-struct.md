@@ -25,9 +25,9 @@
 ```typst
 #ai-struct(proton: 16, electrons: (2, 8, 6))
 ```
-![效果图](4.png)
+![效果图](/4.png)
 
 ```typst
 #ai-struct(proton: "z", electrons: (2, 8, 8, "X"))
 ```
-![效果图](5.png)
+![效果图](/5.png)
