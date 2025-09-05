@@ -178,13 +178,13 @@
 
 >该参数用于设置节标题的字体
 
-#### `heading-size`
+#### `h1-size`
 
 `type: length`
 
 `default: auto`
 
->该参数用于设置节标题的字体大小
+>该参数用于设置一级标题的字体大小
 
 #### `heading-color`
 

@@ -31,6 +31,14 @@
 
 >该参数用于设置标题字体的粗细
 
+#### `color`
+
+`type: color`
+
+`default: black`
+
+>该参数用于设置标题的颜色
+
 #### `position`
 
 `type: alignment`

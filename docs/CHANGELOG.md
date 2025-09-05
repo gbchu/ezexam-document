@@ -54,5 +54,13 @@
 
 + 新增化学方程式的单线桥、双线桥的支持；原子、离子结构示意图的支持。使用详情查看 [`化学相关`](https://ezexam.pages.dev/chem)
 
+## 0 . 1 . 7
+
++ 调整逻辑，确保 `heading-size` 只修改一级标题；并将其更名为 `h1-size`
+
++ `exchem` 包新增电子式的书写。使用详情查看 [`化学相关`](https://ezexam.pages.dev/chem)
+
++ 为 `title` 方法添加参数 `color`
+
 
 
