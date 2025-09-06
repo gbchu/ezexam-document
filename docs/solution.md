@@ -54,7 +54,7 @@
 
 `type: alignment`
 
-`default: center`
+`default: top+center`
 
 >该参数用于设置标题的对齐方式
 
