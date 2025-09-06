@@ -70,7 +70,7 @@
 
 `type: length`
 
-`default: -20pt`
+`default: 0pt`
 
 >该参数用于设置标题的垂直方向上的位置
 
