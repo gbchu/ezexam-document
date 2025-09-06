@@ -87,8 +87,8 @@ export default defineConfig({
                     link: "/setup.md#heading-font",
                   },
                   {
-                    text: "heading-size",
-                    link: "/setup.md#heading-size",
+                    text: "h1-size",
+                    link: "/setup.md#h1-size",
                   },
                   {
                     text: "heading-color",
