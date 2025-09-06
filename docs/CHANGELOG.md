@@ -58,11 +58,10 @@
 
 + 优化代码，确保 `heading-size` 只修改一级标题；并将其更名为 `h1-size`
 
-+ `exchem` 包新增电子式的书写。使用详情查看 [`化学相关`](https://ezexam.pages.dev/chem)
-
 + 为 `title` 方法添加参数 `color`
 
 + 将 `solution` 方法的参数 `above` 修改为 `top`；参数 `below` 修改为 `bottom`；统一参数名
 
++ `exchem` 包新增电子式的书写。使用详情查看 [`化学相关`](https://ezexam.pages.dev/chem)
 
 
