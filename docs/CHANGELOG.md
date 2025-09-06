@@ -58,7 +58,7 @@
 
 + 为 `title` 方法添加参数 `color`
 
-+ 将 `solution` 方法的参数 `above` 更名为 `top`；参数 `below` 更名为 `bottom`；统一参数名
++ 优化`solution` 方法；并将其参数 `above` 更名为 `top`；参数 `below` 更名为 `bottom`；统一参数名
 
 + `exchem` 包新增电子式的书写。使用详情查看 [`化学相关`](https://ezexam.pages.dev/chem)
 
