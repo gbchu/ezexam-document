@@ -116,9 +116,9 @@
 
 #### `inset`
 
-`type: length | dictionary`
+`type: dictionary`
 
-`default: 10pt`
+`default: (rest: 10pt, top: 20pt, bottom: 20pt)`
 
 >该参数用于设置解析盒子的内边距
 
