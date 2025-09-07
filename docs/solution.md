@@ -118,7 +118,7 @@
 
 `type: dictionary`
 
-`default: (rest: 10pt, top: 20pt, bottom: 20pt)`
+`default: (left: 10pt, right: 10pt,top: 20pt, bottom: 20pt)`
 
 >该参数用于设置解析盒子的内边距
 
