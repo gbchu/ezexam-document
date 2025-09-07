@@ -128,7 +128,18 @@
 
 `default: 0pt`
 
->该参数用于设置解析盒子内容的上边距
+>该参数用于设置解析内容的上边距
+
+#### `line-height`
+
+`type: length`
+
+`default: auto`
+
+>该参数用于设置解析内容的行高，当解析中的公式比较高时，题号和解析内容会错位，这时可以通过该参数来微调。
+:::tip
+该参数虽然可以对齐，但会导致内容的每一行与行之间的间隔变大。如果你只想调节公式高的那些行，请使用 [height-content](https://ezexam.pages.dev/height-content) 方法
+:::
 
 #### `bg-color`
 
