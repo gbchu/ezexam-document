@@ -122,6 +122,14 @@
 
 >该参数用于设置解析盒子的内边距
 
+#### `margin-top`
+
+`type: length`
+
+`default: 0pt`
+
+>该参数用于设置解析盒子内容的上边距
+
 #### `bg-color`
 
 `type: color`
