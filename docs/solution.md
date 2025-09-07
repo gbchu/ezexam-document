@@ -118,7 +118,7 @@
 
 `type: length | dictionary`
 
-`default: 15pt`
+`default: 10pt`
 
 >该参数用于设置解析盒子的内边距
 
