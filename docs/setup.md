@@ -178,13 +178,17 @@
 
 >该参数用于设置节标题的字体
 
-#### `h1-size`
+#### `h1-size` <Badge type="warning" text="^0.1.7" /> `heading-size` <Badge type="warning" text="0.1.0~0.1.6" />
 
 `type: length`
 
 `default: auto`
 
 >该参数用于设置一级标题的字体大小
+
+::: warning
+该参数在 `0.1.7` 版本之前，会改变所有级别的节标题；
+:::
 
 #### `heading-color`
 

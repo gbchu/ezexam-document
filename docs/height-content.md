@@ -1,5 +1,6 @@
 # `height-content方法`
 >该方法是为了解决当 [question](https://ezexam.pages.dev/question) 方法或者 [solution](https://ezexam.pages.dev/solution) 方法的内容中有比较高的公式的时候，题号和内容之间对不齐的问题；使用该方法可以做到完美控制
+
 ![效果图](/hc3.png)
 ### 参数及其默认值
 
@@ -9,7 +10,7 @@
 
 `default: 0pt`
 
->该参数用于设置内容的的上间距，一般为负值；因为内容和题目或解析对不齐，是因为公式太高，会导致内容下移（原因是基线对齐问题）
+>该参数用于设置内容的的上间距，一般为负值；因为内容和题目或解析对不齐，是因为公式太高，会导致内容下移
 
 #### `line-height`
 
@@ -75,13 +76,11 @@
 ![效果图](/hc1.png)
 
 ::: tip
-以上的例子中，`#height-content` 方法的参数 `line-height` 的值无论怎么变，后续内容的行高都不会变；完美解决不使用该方法而直接调节 `question` 方法或者 `solution` 方法的参数 `line-height` 值，虽然也可以解决题号和内容对不齐的问题！但 `line-height` 的值会改变后续内容的行高，这可能不是你想要的！效果如下
+以上的例子中，`#height-content` 方法的参数 `line-height` 的值无论怎么变，后续内容的行高都不会变；不使用该方法而直接改变 `question` 方法或者 `solution` 方法的参数 `line-height` 值，虽然也可以解决题号和内容对不齐的问题。但会改变后续内容的行高，这可能不是你想要的！
 :::
-
 
 ```typst
 // 直接调节line-height 的值
-
 #question(line-height: 100pt, top: 50pt)[
   方程$cases(x=sin theta, y=-1+cos theta, z=2sin display(theta/2))$表示的曲面的一般方程？$cases(x=sin theta, y=-1+cos theta, z=2sin display(theta/2), x, y, x)$
   #lorem(50)

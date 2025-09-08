@@ -157,7 +157,7 @@
 
 >该参数用于设置解析盒子是否可断行
 
-#### `top`
+#### `top` <Badge type="warning" text="^0.1.7" /> `above` <Badge type="warning" text="0.1.0~0.1.6" />
 
 `type: length`
 
@@ -165,7 +165,7 @@
 
 >该参数用于设置解析盒子距离上方的间距
 
-#### `bottom`
+#### `bottom` <Badge type="warning" text="^0.1.7" /> `explain` <Badge type="warning" text="0.1.0~0.1.6" />
 
 `type: length`
 
