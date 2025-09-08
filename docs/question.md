@@ -61,12 +61,16 @@
 `default: none`
 >该参数用于设置题目的分值
 
-#### `points-separate` <Badge type="warning" text="^0.1.3" /> `points-separate-par` <Badge type="warning" text="0.1.0~0.1.2" />
+#### `points-separate`
 
 `type: boolean`
 
 `default: true`
 >该参数用于设置题目的分值是否独占一行
+
+::: tip
+该参数在 <Badge type="warning" text="0.1.3" /> 版本之前，名为 `points-separate-par`；
+:::
 
 #### `points-prefix`
 
