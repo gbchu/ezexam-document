@@ -27,8 +27,8 @@
 
 `default: auto`
 >该参数用于设置题目内容的行高，当题目中的公式比较高时，题号和题目内容会错位，这时可以通过该参数来微调。
-:::tip
-该参数虽然可以对齐，但会导致内容的每一行与行之间的间隔变大。如果你只想调节公式高的那些行，请使用 [height-content](https://ezexam.pages.dev/height-content) 方法
+:::warning
+该参数虽然可以对齐，但会导致内容的每一行与行之间的间隔变大。从 <Badge type="warning" text="0.1.7" /> 开始已弃用，推荐 [使用技巧](https://ezexam.pages.dev/tips) 代替
 :::
 
 #### `label`

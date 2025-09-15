@@ -281,7 +281,6 @@ export default defineConfig({
                 items: [
                   { text: "body-indent", link: "/question.md#body-indent" },
                   { text: "indent", link: "/question.md#indent" },
-                  { text: "line-height", link: "/question.md#line-height" },
                   { text: "label", link: "/question.md#label" },
                   { text: "label-color", link: "/question.md#label-color" },
                   { text: "label-weight", link: "/question.md#label-weight" },
@@ -299,16 +298,6 @@ export default defineConfig({
                     link: "/question.md#with-heading-label",
                   },
                   { text: "body", link: "/question.md#body" },
-                ],
-              },
-              {
-                text: "height-content",
-                link: "/height-content.md",
-                collapsed: true,
-                items: [
-                  { text: "top", link: "/height-content#top" },
-                  { text: "line-height", link: "/height-content#line-height" },
-                  { text: "body", link: "/height-content#body" },
                 ],
               },
               {
@@ -374,8 +363,6 @@ export default defineConfig({
                   { text: "breakable", link: "/solution.md#breakable" },
                   { text: "top", link: "/solution.md#top" },
                   { text: "bottom", link: "/solution.md#bottom" },
-                  { text: "margin-top", link: "/solution.md#margin-top" },
-                  { text: "line-height", link: "/solution.md#line-height" },
                   { text: "body", link: "/solution.md#body" },
                 ],
               },
