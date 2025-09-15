@@ -21,9 +21,30 @@
 
   当题目中的公式比较高时，题号和题目内容会错位，这时可以将题目的内容放在一个 `box` 中，并设置 `box` 的参数 `inset`  的 `top` 值微调即可。此时题号和题目对齐；但该公式可能会将上下的内容遮挡！此时还需要调整 `question` 方法的 `top` 值。如果是在 `solution` 方法中，则需要修改  `solution` 方法的 `inset`  的 `top` 值
 
-修改之前的代码及效果：
+
+
+`question` 案例
 ```typst
-// 案例
+// 修改之前的代码
+#question[
+  已知行列式$mat(1, 2, a; 0, 1, -1; 3, 4, 5)$的代数余子式$C_21$ 值为2，求$a$的值
+]
+```
+![效果图](/tips3.png)
+
+
+```typst
+// 修改之后的代码
+#question(top: 20pt)[
+  #box(inset: (top: -6.5pt))[已知行列式$mat(1, 2, a; 0, 1, -1; 3, 4, 5)$的代数余子式$C_21$ 值为2，求$a$的值]
+]
+```
+![效果图](/tips4.png)
+
+`solution` 案例
+```typst
+
+// 修改之前的代码
   求积分$∫cos^2x d x$
   #solution[
     $"解：原式" &=∫(1+cos 2x)/2 d x = 1/2 ∫(1+cos 2x)d x =
@@ -33,9 +54,9 @@
 ```
 ![效果图](/tips1.png)
 
-修改之后的代码及效果：
 ```typst
-// 案例
+
+// 修改之后的代码
   求积分$∫cos^2x d x$
   #solution(inset: (top: 30pt))[
     #box(inset: (top: 7pt))[$"解：原式" &=∫(1+cos 2x)/2 d x = 1/2 ∫(1+cos 2x)d x =
