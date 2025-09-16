@@ -11,6 +11,9 @@ hero:
     - theme: brand
       text: 使用指南
       link: /about
+    - theme: alt
+      text: 参考
+      link: /setup
 
 features:
   - icon : 🤖
