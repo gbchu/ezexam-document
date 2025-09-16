@@ -17,7 +17,6 @@ export default defineConfig({
   themeConfig: {
     logo: "/logo.svg",
     nav: [
-      { text: "参考", link: "/setup" },
       {
         text: "0.1.7",
         items: [
