@@ -4,4 +4,4 @@
 
 如果对你有帮助，请作者喝杯奶茶。谢谢！
 
-<img src="./wechatpay.png" width = "300" alt = "微信收款码"/>
+<img src="/wechatpay.png" width = "300" alt = "微信收款码"/>
