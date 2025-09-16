@@ -16,14 +16,34 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: "/logo.svg",
+    nav: [
+      { text: "参考", link: "/setup" },
+      {
+        text: "0.1.7",
+        items: [
+          {
+            text: "更新日志",
+            link: "https://github.com/gbchu/ezexam/releases",
+          },
+          { text: "bug反馈", link: "https://github.com/gbchu/ezexam/issues/new" },
+        ],
+      },
+    ],
+
     sidebar: [
       {
         text: "指南",
         items: [
           { text: "简介", link: "/about.md" },
-          { text: "使用说明", link: "/usage.md" },
+          { text: "快速开始", link: "/usage.md" },
+          { text: "完整模板示例", link: "/template.md" },
+        ],
+      },
+      {
+        text: "参考",
+        items: [
           {
-            text: "方法及参数说明",
+            text: "方法及参数",
             collapsed: true,
             items: [
               {
@@ -417,9 +437,6 @@ export default defineConfig({
               { text: "ai-struct", link: "/ai-struct.md" },
             ],
           },
-          { text: "完整模板示例", link: "/template.md" },
-          { text: "bug反馈", link: "/bug.md" },
-          { text: "更新日志", link: "/CHANGELOG.md" },
         ],
       },
     ],

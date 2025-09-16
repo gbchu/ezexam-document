@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "ezexam"
   text: "一个用于试卷、讲义排版的Typst模板"
-  tagline: "EZ  YOUR  LIFE"
+  tagline: "专注内容，格式零配置"
   image:
     src: /show.png
   actions:

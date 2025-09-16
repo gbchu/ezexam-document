@@ -1,3 +1,4 @@
+# 快速开始
  1. **在线使用**
 
      + 打开 [TypstApp](https://typst.app/universe/package/ezexam) 在线网站并新建项目
