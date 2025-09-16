@@ -294,7 +294,10 @@ export default defineConfig({
                   { text: "top", link: "/question.md#top" },
                   { text: "bottom", link: "/question.md#bottom" },
                   { text: "padding-top", link: "/question.md#padding-top" },
-                  { text: "padding-bottom", link: "/question.md#padding-bottom" },
+                  {
+                    text: "padding-bottom",
+                    link: "/question.md#padding-bottom",
+                  },
                   {
                     text: "with-heading-label",
                     link: "/question.md#with-heading-label",
@@ -366,7 +369,10 @@ export default defineConfig({
                   { text: "top", link: "/solution.md#top" },
                   { text: "bottom", link: "/solution.md#bottom" },
                   { text: "padding-top", link: "/solution.md#padding-top" },
-                  { text: "padding-bottom", link: "/solution.md#padding-bottom" },
+                  {
+                    text: "padding-bottom",
+                    link: "/solution.md#padding-bottom",
+                  },
                   { text: "body", link: "/solution.md#body" },
                 ],
               },
@@ -398,7 +404,10 @@ export default defineConfig({
               },
             ],
           },
-          { text: "使用技巧", link: "/tips.md" },
+          {
+            text: "使用技巧",
+            link: "/tips.md",
+          },
           {
             text: "化学相关",
             link: "/chem.md",
