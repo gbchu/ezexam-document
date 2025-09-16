@@ -120,7 +120,7 @@
 
 `default: (left: 10pt, right: 10pt,top: 20pt, bottom: 20pt)`
 
->该参数用于设置解析盒子的内边距
+>该参数用于设置最外层盒子的内边距
 
 #### `bg-color`
 
@@ -161,13 +161,32 @@
 ::: tip
 该参数在 <Badge type="warning" text="0.1.7" /> 版本之前，名为 `bottom` ；
 :::
+
+#### `padding-top`
+
+`type: length`
+
+`default: 0pt`
+>该参数用于设置解析内容的上方内边距
+
+#### `padding-bottom`
+
+`type: length`
+
+`default: 0pt`
+>该参数用于设置解析内容的下方内边距
+
+::: tip
+`padding-top` 和 `padding-bottom` 参数是用来解决题号和解析对不齐的问题；如遇到该问题可调节该参数。详情参考 [使用技巧](https://ezexam.pages.dev/tips)
+:::
+
 #### `show-number`
 
 `type: boolean`
 
 `default: true`
 
->该参数用于设置是否显示解析对应的题号
+>该参数用于设置是否显示解析内容对应的题号
 
 #### `body`
 

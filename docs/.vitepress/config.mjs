@@ -293,6 +293,8 @@ export default defineConfig({
                   { text: "points-suffix", link: "/question.md#points-suffix" },
                   { text: "top", link: "/question.md#top" },
                   { text: "bottom", link: "/question.md#bottom" },
+                  { text: "padding-top", link: "/question.md#padding-top" },
+                  { text: "padding-bottom", link: "/question.md#padding-bottom" },
                   {
                     text: "with-heading-label",
                     link: "/question.md#with-heading-label",
@@ -363,6 +365,8 @@ export default defineConfig({
                   { text: "breakable", link: "/solution.md#breakable" },
                   { text: "top", link: "/solution.md#top" },
                   { text: "bottom", link: "/solution.md#bottom" },
+                  { text: "padding-top", link: "/solution.md#padding-top" },
+                  { text: "padding-bottom", link: "/solution.md#padding-bottom" },
                   { text: "body", link: "/solution.md#body" },
                 ],
               },

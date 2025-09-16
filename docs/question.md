@@ -91,14 +91,32 @@
 `type: length`
 
 `default: 0pt`
->该参数用于设置题目距离上方的距离
+>该参数用于设置题目距离上方的外边距
 
 #### `bottom`
 
 `type: length`
 
 `default: 0pt`
->该参数用于设置题目距离下方的距离
+>该参数用于设置题目距离下方的外边距
+
+#### `padding-top`
+
+`type: length`
+
+`default: 0pt`
+>该参数用于设置题目上方内边距
+
+#### `padding-bottom`
+
+`type: length`
+
+`default: 0pt`
+>该参数用于设置题目的下方内边距
+
+::: tip
+`padding-top` 和 `padding-bottom` 参数是用来解决题号和题目对不齐的问题；如遇到该问题可调节该参数。详情参考 [使用技巧](https://ezexam.pages.dev/tips)
+:::
 
 #### `with-heading-label`
 
