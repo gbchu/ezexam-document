@@ -10,9 +10,12 @@
 
 `default: HANDOUTS` <Badge type="warning" text="^0.1.4" /> `LECTURE` <Badge type="warning" text="0.1.0~0.1.3" />
 
-`optional value: EXAM`
+`optional value: EXAM 、 SOLUTION`
 
->该参数用于设置模板的显示模式 `HANDOUTS` : 讲义模式； `EXAM` : 试卷模式 `HANDOUTS` 模式和 `EXAM` 模式二者仅在题号的显示方式、目录显示方式、页码显示上有所不同。若你只想组卷则只用 `EXAM` 模式即可！
+>该参数用于设置模板的显示模式 `EXAM` : 试卷模式；`SOLUTION` : 解析模式；`HANDOUTS` : 讲义模式；
+::: tip
+`HANDOUTS` 模式和 `EXAM` 模式二者仅在题号的显示方式、目录显示方式、页码显示上有所不同。若你只想组卷则只用 `EXAM` 模式即可！`SOLUTION` 模式仅当答案独立于内容时，使用该模式。该模式为预定义好的格式，如果不满意可不用该模式自行调整！
+:::
 
 #### `paper`
 
@@ -41,7 +44,7 @@
       flipped: false,
     )
 ```
-> `a3` 和 `a4` 是内部自定义的两个变量，若需要自定义页面类型，则需要使用字典覆盖默认值，格式如上所示。例如：在调用 `setup` 方法时 `paper` 参数使用 `( paper: "b5", margin: .5in, columns: 2, flipped: true,)` 而非定义好的 `a3` 或 `a4`
+> `a3` 和 `a4` 是内部预定义的两个变量，若需要自定义页面类型，则需要使用字典覆盖默认值，格式如上所示。例如：在调用 `setup` 方法时 `paper` 参数使用 `( paper: "b5", margin: .5in, columns: 2, flipped: true)`
 ::: warning
 修改该参数可能会导致页面布局混乱，仅在a3 和 a4 尺寸下测试过
 :::

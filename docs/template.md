@@ -1,7 +1,7 @@
 # 完整模板示例
 
 ```typst
-#import "@preview/ezexam:0.1.7": *
+#import "@preview/ezexam:0.1.8": *
 #show: setup.with(
   // paper: a3,
   mode: EXAM,
@@ -157,7 +157,8 @@
 ]
 
 
-#show: setup.with(page-numbering: zh-arabic(suffix: "答案"), show-answer: true)
+#show: setup.with(mode: SOLUTION)
+
 #title[参考答案]
 
 #solution(title: "解析")[
