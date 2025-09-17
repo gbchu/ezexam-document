@@ -1,4 +1,4 @@
-# `inline-square方法`
+# `inline-square` 方法
 ::: warning
 该方法在 0.1.8 版本及以后已废弃，使用官方的 [`table`](https://typst.app/docs/reference/model/table/) 方法代替
 :::

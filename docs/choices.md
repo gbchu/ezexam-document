@@ -1,4 +1,4 @@
-# `choices方法`
+# `choices` 方法
 >该方法为选择题的选项排列
 ```typst
 <!-- 使用方法 -->
@@ -12,12 +12,16 @@ A. -1     B.  0    C.  1     D.  6
 :::
 ### 参数及其默认值
 
-#### `column`
+#### `columns`
 
 `type: int | auto`
 
 `default: auto`
 >该参数用于设置选项排列的列数,如未指定列数，则默认根据内容自动排列
+
+::: tip
+<Badge type="warning" text="0.1.0~0.1.7" />  `column`  <Badge type="warning" text="^0.1.8" /> 更名为 `columns`，做到和官方的 `columns` 参数一致
+:::
 
 #### `c-gap`
 

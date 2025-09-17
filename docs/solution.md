@@ -1,4 +1,4 @@
-# `solution方法` <Badge type="warning" text="^0.1.4" /> `explain` <Badge type="warning" text="0.1.0~0.1.3" />
+# `solution` 方法 <Badge type="warning" text="^0.1.4" /> `explain` <Badge type="warning" text="0.1.0~0.1.3" />
 >该方法为题目的解析
 ### 参数及其默认值
 

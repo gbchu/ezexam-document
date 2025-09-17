@@ -1,4 +1,4 @@
-# `subject方法`
+# `subject` 方法
 
 ### 参数及其默认值
 #### `body`
