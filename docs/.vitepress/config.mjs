@@ -410,19 +410,6 @@ export default defineConfig({
                 ],
               },
               {
-                text: "m-grid",
-                link: "/m-grid.md",
-                collapsed: true,
-                items: [
-                  { text: "column", link: "/m-grid.md#column" },
-                  { text: "row", link: "/m-grid.md#row" },
-                  { text: "gap", link: "/m-grid.md#gap" },
-                  { text: "inset", link: "/m-grid.md#inset" },
-                  { text: "body", link: "/m-grid.md#body" },
-                ],
-              },
-
-              {
                 text: "color-box",
                 link: "/color-box.md",
                 collapsed: true,
