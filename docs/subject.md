@@ -1,7 +1,7 @@
 # `subject方法`
 
 ### 参数及其默认值
-#### `name`
+#### `body`
 `type: str | content`
 
 `default: ""`

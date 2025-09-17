@@ -1,7 +1,7 @@
 # `title方法`
 >该方法设置文档的标题
 ### 参数及其默认值
-#### `name`
+#### `body`
 `type: str | content`
 
 `default: ""`
