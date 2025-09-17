@@ -190,7 +190,7 @@
 >该参数用于设置一级标题的字体大小
 
 ::: warning
-在 `0.1.7` 版本之前，该参数名为 `heading-size` ，会改变所有级别的节标题；
+在 `0.1.7` 版本之前，该参数名为 `heading-size` 且会改变所有级别的节标题；
 :::
 
 #### `heading-color`
@@ -321,9 +321,9 @@
 `default:
  (
     姓名: underline[~~~~~~~~~~~~~],
-    准考证号: inline-square(14),
-    考场号: inline-square(2),
-    座位号: inline-square(2),
+    准考证号: table(columns: 14, inset: .8em,[]),
+    考场号: table(columns: 2, inset: .8em,[]),
+    座位号: table(columns: 2, inset: .8em,[]),
   )`
 
 >该参数用于设置考生信息
