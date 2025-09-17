@@ -24,7 +24,10 @@ export default defineConfig({
             text: "更新日志",
             link: "https://github.com/gbchu/ezexam/releases",
           },
-          { text: "bug反馈", link: "https://github.com/gbchu/ezexam/issues/new" },
+          {
+            text: "bug反馈",
+            link: "https://github.com/gbchu/ezexam/issues/new",
+          },
         ],
       },
     ],
@@ -247,37 +250,6 @@ export default defineConfig({
               },
               { text: "notice", link: "/notice.md" },
               {
-                text: "zh-arabic",
-                link: "/zh-arabic.md",
-                collapsed: true,
-                items: [
-                  { text: "prefix", link: "/zh-arabic.md#prefix" },
-                  { text: "suffix", link: "/zh-arabic.md#suffix" },
-                ],
-              },
-              {
-                text: "inline-square",
-                link: "/inline-square.md",
-                collapsed: true,
-                items: [
-                  { text: "num", link: "/inline-square.md#num" },
-                  { text: "width", link: "/inline-square.md#width" },
-                  { text: "gap", link: "/inline-square.md#gap" },
-                  { text: "body", link: "/inline-square.md#body" },
-                ],
-              },
-              {
-                text: "draft",
-                link: "/draft.md",
-                collapsed: true,
-                items: [
-                  { text: "name", link: "/draft.md#name" },
-                  { text: "student-info", link: "/draft.md#student-info" },
-                  { text: "dash", link: "/draft.md#dash" },
-                  { text: "supplement", link: "/draft.md#supplement" },
-                ],
-              },
-              {
                 text: "choices",
                 link: "/choices.md",
                 collapsed: true,
@@ -406,6 +378,49 @@ export default defineConfig({
                   { text: "points", link: "/score.md#points" },
                 ],
               },
+              {
+                text: "draft",
+                link: "/draft.md",
+                collapsed: true,
+                items: [
+                  { text: "name", link: "/draft.md#name" },
+                  { text: "student-info", link: "/draft.md#student-info" },
+                  { text: "dash", link: "/draft.md#dash" },
+                  { text: "supplement", link: "/draft.md#supplement" },
+                ],
+              },
+              {
+                text: "zh-arabic",
+                link: "/zh-arabic.md",
+                collapsed: true,
+                items: [
+                  { text: "prefix", link: "/zh-arabic.md#prefix" },
+                  { text: "suffix", link: "/zh-arabic.md#suffix" },
+                ],
+              },
+              {
+                text: "inline-square",
+                link: "/inline-square.md",
+                collapsed: true,
+                items: [
+                  { text: "num", link: "/inline-square.md#num" },
+                  { text: "width", link: "/inline-square.md#width" },
+                  { text: "gap", link: "/inline-square.md#gap" },
+                  { text: "body", link: "/inline-square.md#body" },
+                ],
+              },
+              {
+                text: "m-grid",
+                link: "/m-grid.md",
+                collapsed: true,
+                items: [
+                  { text: "column", link: "/m-grid.md#column" },
+                  { text: "row", link: "/m-grid.md#row" },
+                  { text: "inset", link: "/m-grid.md#inset" },
+                  { text: "body", link: "/m-grid.md#body" },
+                ],
+              },
+
               {
                 text: "color-box",
                 link: "/color-box.md",

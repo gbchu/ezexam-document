@@ -1,4 +1,7 @@
 # `inline-square方法`
+::: warning
+该方法在 0.1.8 版本及以后已废弃，使用 [`m-grid`](https://ezexam.pages.dev/m-grid) 方法代替
+:::
 >该方法生成行内排列的小方格，用于弥封线内准考证号，座位号，考号的占位
 ```typst
 <!-- 使用方法 -->
