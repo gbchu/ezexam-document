@@ -157,7 +157,7 @@
 ]
 
 
-#show: setup.with(mode: SOLUTION)
+#show: setup.with(mode: SOLUTION, show-answer: true)
 
 #title[参考答案]
 
