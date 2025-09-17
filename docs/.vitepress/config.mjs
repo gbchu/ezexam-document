@@ -416,6 +416,7 @@ export default defineConfig({
                 items: [
                   { text: "column", link: "/m-grid.md#column" },
                   { text: "row", link: "/m-grid.md#row" },
+                  { text: "gap", link: "/m-grid.md#gap" },
                   { text: "inset", link: "/m-grid.md#inset" },
                   { text: "body", link: "/m-grid.md#body" },
                 ],
