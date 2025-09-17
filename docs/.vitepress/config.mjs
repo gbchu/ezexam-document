@@ -184,7 +184,7 @@ export default defineConfig({
                 link: "/title.md",
                 collapsed: true,
                 items: [
-                  { text: "name", link: "/title.md#name" },
+                  { text: "body", link: "/title.md#body" },
                   { text: "font", link: "/title.md#font" },
                   { text: "size", link: "/title.md#size" },
                   { text: "weight", link: "/title.md#weight" },
@@ -198,7 +198,7 @@ export default defineConfig({
                 link: "/subject.md",
                 collapsed: true,
                 items: [
-                  { text: "name", link: "/subject.md#name" },
+                  { text: "body", link: "/subject.md#body" },
                   { text: "font", link: "/subject.md#font" },
                   { text: "size", link: "/subject.md#size" },
                   { text: "spacing", link: "/subject.md#spacing" },
@@ -248,7 +248,17 @@ export default defineConfig({
                   { text: "y", link: "/score-box.md#y" },
                 ],
               },
-              { text: "notice", link: "/notice.md" },
+              {
+                text: "notice",
+                link: "/notice.md",
+                collapsed: true,
+                items: [
+                  { text: "format", link: "/notice.md#format" },
+                  { text: "indent", link: "/notice.md#indent" },
+                  { text: "hanging-indent", link: "/notice.md#hanging-indent" },
+                  { text: "children", link: "/notice.md#children" },
+                ],
+              },
               {
                 text: "choices",
                 link: "/choices.md",

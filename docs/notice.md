@@ -1,5 +1,34 @@
 # `notice` 方法
->该方法生成注意事项，接收可变参数
+>该方法生成注意事项
+
+### 参数及其默认值
+
+#### `format`
+
+`type: str | func`
+
+>该参数用于设置注意事项前的编号格式
+
+::: tip
+若要修改显示格式可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置
+:::
+
+#### `indent`
+
+`type: length`
+
+>该参数用于设置首行缩进
+
+#### `hanging-indent`
+
+`type: length`
+
+>该参数用于设置非首行缩进
+
+#### `children`
+
+>可变参数，用于设置注意事项内容
+
 
 使用方法如下：
 ```typst
