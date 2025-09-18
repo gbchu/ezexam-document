@@ -273,7 +273,7 @@ export default defineConfig({
                 link: "/choices.md",
                 collapsed: true,
                 items: [
-                  { text: "column", link: "/choices.md#column" },
+                  { text: "columns", link: "/choices.md#columns" },
                   { text: "c-gap", link: "/choices.md#c-gap" },
                   { text: "r-gap", link: "/choices.md#r-gap" },
                   { text: "indent", link: "/choices.md#indent" },
