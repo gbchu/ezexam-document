@@ -15,7 +15,7 @@
 
 ### 参数及其默认值
 
-#### `body`
+#### `type`
 `body: str | content`
 
 `default: ""`
