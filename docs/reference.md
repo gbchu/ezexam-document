@@ -1,0 +1,24 @@
+# 所有方法及参数
+
+  - [`setup`](https://ezexam.pages.dev/setup) 全局设置
+  - [`chapter`](https://ezexam.pages.dev/chapter) 章节
+  - [`title`](https://ezexam.pages.dev/setup) 标题
+  - [`subject`](https://ezexam.pages.dev/title) 科目
+  - [`secret`](https://ezexam.pages.dev/secret) 保密级别
+  - [`exam-type`](https://ezexam.pages.dev/exam-type) 试卷类型
+  - [`exam-info`](https://ezexam.pages.dev/exam-info) 试卷信息
+  - [`scoring-box`](https://ezexam.pages.dev/scoring-box) 评分框
+  - [`notice`](https://ezexam.pages.dev/notice) 注意事项
+  - [`choices`](https://ezexam.pages.dev/choices) 选择题
+  - [`question`](https://ezexam.pages.dev/question) 题目
+  - [`paren`](https://ezexam.pages.dev/paren) 选择题的括号
+  - [`fillin`](https://ezexam.pages.dev/fillin) 填空的下划线
+  - [`text-figure`](https://ezexam.pages.dev/text-figure) 图文混排
+  - [`solution`](https://ezexam.pages.dev/solution) 解析
+  - [`score`](https://ezexam.pages.dev/score) 解析内的评分
+  - [`answer`](https://ezexam.pages.dev/answer) 答案
+  - [`zh-arabic`](https://ezexam.pages.dev/zh-arabic) 一种页码格式
+  - [`inline-square`](https://ezexam.pages.dev/inline-square) 方格
+  - [`color-box`](https://ezexam.pages.dev/color-box) 彩色盒子
+  - [`multi`](https://ezexam.pages.dev/multi) 多选标记
+  - [`ezchem` ](https://ezexam.pages.dev/chem) 化学相关

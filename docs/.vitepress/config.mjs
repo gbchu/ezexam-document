@@ -43,6 +43,7 @@ export default defineConfig({
       },
       {
         text: "参考",
+        link: "/reference.md",
         items: [
           {
             text: "全局设置",
@@ -389,6 +390,15 @@ export default defineConfig({
               { text: "score-suffix", link: "/score.md#score-suffix" },
               { text: "color", link: "/score.md#color" },
               { text: "points", link: "/score.md#points" },
+            ],
+          },
+          {
+            text: "答案",
+            link: "/answer.md",
+            collapsed: true,
+            items: [
+              { text: "color", link: "/answer.md#color" },
+              { text: "body", link: "/answer.md#body" },
             ],
           },
           {
