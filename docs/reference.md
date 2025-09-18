@@ -1,4 +1,4 @@
-# 所有方法及参数
+# 参考内容
 
   - [`setup`](https://ezexam.pages.dev/setup) 全局设置
   - [`chapter`](https://ezexam.pages.dev/chapter) 章节
