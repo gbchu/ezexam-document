@@ -18,7 +18,7 @@
   - [`score`](https://ezexam.pages.dev/score) 解析内的评分
   - [`answer`](https://ezexam.pages.dev/answer) 答案
   - [`zh-arabic`](https://ezexam.pages.dev/zh-arabic) 一种页码格式
-  - [`inline-square`](https://ezexam.pages.dev/inline-square) 方格
+  - ~~[`inline-square`](https://ezexam.pages.dev/inline-square) 方格~~
   - [`color-box`](https://ezexam.pages.dev/color-box) 彩色盒子
   - [`multi`](https://ezexam.pages.dev/multi) 多选标记
   - [`ezchem` ](https://ezexam.pages.dev/chem) 化学相关
