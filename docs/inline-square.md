@@ -3,7 +3,7 @@
 该方法生成一系列的小方格，用于弥封线内准考证号，座位号，考号的占位
 
 ::: warning
-该方法在 0.1.8 版本及以后已废弃，使用官方的 [`table`](https://typst.app/docs/reference/model/table/) 方法代替
+该方法在 `0.1.8` 版本及以后已废弃，使用官方的 [`table`](https://typst.app/docs/reference/model/table/) 方法代替
 :::
 ```typst
 // 使用方法
@@ -18,24 +18,24 @@
 #table(columns:2,[])
 ```
 
-### 参数及其默认值
+### 参数
 
 #### `num`
 
-`type: int`
+`类型: int`
 
 >该参数为位置参数，用于设置生成小方格的数量
 
 #### `width`
 
-`type: length`
+`类型: length`
 
 `default: 1.5em`
 >该参数用于设置小方格的宽度
 
 #### `gap`
 
-`type: length`
+`类型: length`
 
 `default: 0pt`
 
@@ -43,7 +43,7 @@
 
 #### `body`
 
-`type: str | content`
+`类型: str | content`
 
 `default: ""`
 

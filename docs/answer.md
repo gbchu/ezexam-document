@@ -12,7 +12,7 @@
 ]
 ```
 效果： <font color="maroon">答案：D</font>
-### 参数及其默认值
+### 参数
 
 #### `color`
 `类型: color`

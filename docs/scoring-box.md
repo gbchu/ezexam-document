@@ -13,7 +13,7 @@
 | 阅卷人 |   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;   |
 
 
-### 参数及其默认值
+### 参数
 
 #### `x`
 

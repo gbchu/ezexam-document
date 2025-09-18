@@ -13,20 +13,20 @@
 ```
 ![效果图](/draft2.png)
 
-### 参数及其默认值
+### 参数
 
 #### `name`
 
-`type: str`
+`类型: str`
 
-`default: 草稿纸`
+`默认值: 草稿纸`
 >该参数用于设置小草稿纸的标题
 
 #### `student-info`
 
-`type: dictionary`
+`类型: dictionary`
 
-`default: (
+`默认值: (
     姓名: underline[~~~~~~~~~~~~~],
     准考证号: underline[~~~~~~~~~~~~~~~~~~~~~~~~~~],
     考场号: underline[~~~~~~~],
@@ -37,9 +37,9 @@
 
 #### `dash`
 
-`type: str | none | auo | array | dictionary`
+`类型: str | none | auo | array | dictionary`
 
-`default: dashed`
+`默认值: dashed`
 > 该参数用于设置草稿纸下的横线样式
 
 ::: tip
@@ -47,8 +47,8 @@
 :::
 #### `supplement`
 
-`type: str | none | auo | array | dictionary`
+`类型: str | none | auo | array | dictionary`
 
-`default: ""`
+`默认值: ""`
 
 >该参数用于设置草稿纸的补充内容

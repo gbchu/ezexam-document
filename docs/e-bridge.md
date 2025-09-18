@@ -34,53 +34,53 @@
 ```
 ![效果图](/3.png)
 
-### 参数及其默认值
+### 参数
 
 #### `equation`
 
-`type: str | content`
+`类型: str | content`
 
-`default: ""`
+`默认值: ""`
 
 >该参数用于设置化学方程式
 
 #### `get`
 
-`type: dictionary`
+`类型: dictionary`
 
-`default: (from: "", to:."", e: 0, tsign: "×")`
+`默认值: (from: "", to:."", e: 0, tsign: "×")`
 
 >该参数用于设置得电子的信息. `from` : 从哪一个原子开始，填写对应的 `label` ; `to` : 到哪一个原子结束，填写对应的 `label` ; `e` : 转移电子数; `tsign` : 电子连接符号
 
 #### `lose`
 
-`type: dictionary`
+`类型: dictionary`
 
-`default: (from: "", to:."", e: 0, tsign: "×")`
+`默认值: (from: "", to:."", e: 0, tsign: "×")`
 
 >该参数用于设置失电子的信息. `from` : 从哪一个原子开始，填写对应的 `label` ;  `to` : 到哪一个原子结束，填写对应的 `label` ; `e` : 转移电子数; `tsign` : 电子连接符号
 
 #### `color`
 
-`type: color`
+`类型: color`
 
-`default: black`
+`默认值: black`
 
 >该参数用于设置指向箭头的颜色
 
 #### `thickness`
 
-`type: length`
+`类型: length`
 
-`default: 0.5pt`
+`默认值: 0.5pt`
 
 >该参数用于设置指向箭头的粗细
 
 #### `spacing`
 
-`type: length`
+`类型: length`
 
-`default: 2pt`
+`默认值: 2pt`
 
 >该参数用于设置指向箭头、方程式、转移电子数之间的间距
 

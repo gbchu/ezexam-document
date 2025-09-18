@@ -18,61 +18,61 @@
 
 ```
 
-### 参数及其默认值
+### 参数
 
 #### `info`
 
-`type: dictionary`
+`类型: dictionary`
 
-`default: (
+`默认值: (
     时间: "120分钟",
     满分: "150分",
   )`
 
 #### `font`
 
-`type: str | dictionary`
+`类型: str | dictionary`
 
-`default: ("New Computer Modern Math", "simhei")`
+`默认值: ("New Computer Modern Math", "simhei")`
 
 >该参数用于设置字体；
 
 #### `size`
 
-`type: length`
+`类型: length`
 
-`default: 11pt`
+`默认值: 11pt`
 
 >该参数用于设置字体的大小
 
 #### `weight`
 
-`type: int | str`
+`类型: int | str`
 
-`default: bold`
+`默认值: bold`
 
 >该参数用于设置字体的粗细
 
 #### `gap`
 
-`type: length`
+`类型: length`
 
-`default: 2em`
+`默认值: 2em`
 
 >该参数用于设置信息之间的间距
 
 #### `top`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 
 >该参数用于设置上间距
 
 #### `bottom`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 
 >该参数用于设置下间距

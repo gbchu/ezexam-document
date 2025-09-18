@@ -11,21 +11,21 @@
 ```
 
 
-### 参数及其默认值
+### 参数
 
 #### `length`
 
-`type: length`
+`类型: length`
 
-`default: 1em`
+`默认值: 1em`
 
 >该参数用于设置填空题下划线的长度
 
 #### `placeholder`
 
-`type: str | symbol`
+`类型: str | symbol`
 
-`default: "▲"`
+`默认值: "▲"`
 >该参数用于设置当不显示答案时，括号的占位符
 
 ::: tip
@@ -34,9 +34,9 @@
 
 #### `with-number`
 
-`type: boolean`
+`类型: boolean`
 
-`default: false`
+`默认值: false`
 >该参数用于设置占位符是否使用当前题号替代
 
 ::: tip
@@ -98,9 +98,9 @@ quibusdame.
 
 #### `update`
 
-`type: boolean`
+`类型: boolean`
 
-`default: false`
+`默认值: false`
 >该参数用于更新题号
 
 ::: warning
@@ -137,6 +137,6 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
 
 #### `answer`
 
-`type: content`
+`类型: content`
 
 >该参数为位置参数，显示答案

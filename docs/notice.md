@@ -38,11 +38,13 @@
 ![效果图](/notice3.png)
 
 
-### 参数及其默认值
+### 参数
 
 #### `format`
 
-`type: str | func`
+`类型: str | func`
+
+`默认值: "1."`
 
 >该参数用于设置注意事项前的编号格式
 
@@ -52,16 +54,24 @@
 
 #### `indent`
 
-`type: length`
+`类型: length`
+
+`默认值: 2em`
 
 >该参数用于设置首行缩进
 
 #### `hanging-indent`
 
-`type: length`
+`类型: length`
+
+`默认值: auto`
 
 >该参数用于设置非首行缩进
 
 #### `children`
+
+`类型: str | content`
+
+`默认值: ""`
 
 >可变参数，用于设置注意事项内容

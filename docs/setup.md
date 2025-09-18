@@ -7,8 +7,7 @@
 #show: setup.with(mode: EXAM, paper: a3, ..)
 ```
 
-### 参数及其默认值
-
+### 参数
 #### `mode`
 
 `type: str`

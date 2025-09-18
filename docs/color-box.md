@@ -7,19 +7,19 @@
 #color-box[2025新高考I卷]#lorem(20)
 ```
 ![效果图](/color-box.png)
-### 参数及其默认值
+### 参数
 
 #### `color`
 
-`type: color`
+`类型: color`
 
-`default: blue`
+`默认值: blue`
 
 >该参数用于设置盒子的边框颜色
 
 #### `dash`
 
-`type: str | none | auo | array | dictionary`
+`类型: str | none | auo | array | dictionary`
 
 `default: "dotted"`
 
@@ -29,7 +29,7 @@
 :::
 #### `radius`
 
-`type: length`
+`类型: length`
 
 `default: 3pt`
 
@@ -37,6 +37,6 @@
 
 #### `body`
 
-`type: str | content`
+`类型: str | content`
 
 >该参数为位置参数，设置盒子内容

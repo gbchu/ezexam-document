@@ -12,12 +12,12 @@
 #chapter("第一章") or #chapter[第一章]
 ```
 
-### 参数及其默认值
+### 参数
 
 #### `body`
-`type: str | content`
+`类型: str | content`
 
-`default: ""`
+`默认值: ""`
 
 >该参数为位置参数，用于设置章节名
 
