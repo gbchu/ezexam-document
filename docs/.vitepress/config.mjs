@@ -178,6 +178,15 @@ export default defineConfig({
                   },
                 ],
               },
+              {
+                text: "zh-arabic",
+                link: "/zh-arabic.md",
+                collapsed: true,
+                items: [
+                  { text: "prefix", link: "/zh-arabic.md#prefix" },
+                  { text: "suffix", link: "/zh-arabic.md#suffix" },
+                ],
+              },
               { text: "chapter", link: "/chapter.md" },
               {
                 text: "title",
@@ -399,15 +408,7 @@ export default defineConfig({
                   { text: "supplement", link: "/draft.md#supplement" },
                 ],
               },
-              {
-                text: "zh-arabic",
-                link: "/zh-arabic.md",
-                collapsed: true,
-                items: [
-                  { text: "prefix", link: "/zh-arabic.md#prefix" },
-                  { text: "suffix", link: "/zh-arabic.md#suffix" },
-                ],
-              },
+
               {
                 text: "inline-square",
                 link: "/inline-square.md",

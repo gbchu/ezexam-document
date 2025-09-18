@@ -1,6 +1,17 @@
 # `draft` 方法
 >该方法生成草稿纸
 
+#### 示例
+```typst
+#draft()
+```
+![效果图](/draft.png)
+
+```typst
+#draft(supplement: "中国高级中学")
+```
+![效果图](/draft2.png)
+
 ### 参数及其默认值
 
 #### `name`

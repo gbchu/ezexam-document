@@ -1,5 +1,21 @@
-# `solution` 方法 <Badge type="warning" text="^0.1.4" /> `explain` <Badge type="warning" text="0.1.0~0.1.3" />
+# `solution` 方法
 >该方法为题目的解析
+::: tip
+该方法在 <Badge type="warning" text="0.1.4" /> 之前名为 `explain`
+:::
+
+#### 示例
+```typst
+  #solution(inset: (top: 30pt), padding-top: 7pt, title: "解析")[
+   $"解：原式" &=∫(1+cos 2x)/2 d x = 1/2 ∫(1+cos 2x)d x =
+    1/2(∫1d x+ ∫cos 2x d x)\ &=1/2(x+∫cos 2x d x)=1/2(x+1/2 ∫cos 2x d 2x)\ &=1/2 (x+1/2
+      sin 2x)=1/2 x+1/4 sin 2x+c$
+  ]
+```
+
+![效果图](/tips2.png)
+
+
 ### 参数及其默认值
 
 #### `title`

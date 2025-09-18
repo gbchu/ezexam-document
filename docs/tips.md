@@ -47,7 +47,7 @@
 ```typst
 
 // 修改之前的代码
-  #solution[
+  #solution(title: "解析")[
     $"解：原式" &=∫(1+cos 2x)/2 d x = 1/2 ∫(1+cos 2x)d x =
     1/2(∫1d x+ ∫cos 2x d x)\ &=1/2(x+∫cos 2x d x)=1/2(x+1/2 ∫cos 2x d 2x)\ &=1/2 (x+1/2
       sin 2x)=1/2 x+1/4 sin 2x+c$
@@ -59,7 +59,7 @@
 ```typst
 
 // 修改之后的代码
-  #solution(inset: (top: 30pt),padding-top: 7pt)[
+  #solution(inset: (top: 30pt),padding-top: 7pt, title: "解析")[
    $"解：原式" &=∫(1+cos 2x)/2 d x = 1/2 ∫(1+cos 2x)d x =
     1/2(∫1d x+ ∫cos 2x d x)\ &=1/2(x+∫cos 2x d x)=1/2(x+1/2 ∫cos 2x d 2x)\ &=1/2 (x+1/2
       sin 2x)=1/2 x+1/4 sin 2x+c$

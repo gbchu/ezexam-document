@@ -1,6 +1,11 @@
 # `setup` 方法
 
->该方法用于模板的全局设置,需配合 `#show` 和 `with` 方法使用
+>该方法用于模板的全局设置
+
+#### 示例
+```typst
+#show: setup.with(mode: EXAM, paper: a3, ..)
+```
 
 ### 参数及其默认值
 

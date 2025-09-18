@@ -1,6 +1,20 @@
 # `text-figure` 方法
-
 >该方法用于图文混排，默认为左文字，右图
+
+#### 示例
+```typst
+#text-figure(
+    text: choices(
+      column: 1,
+      [轻风 (1.6$tilde$3.3 m/s)],
+      [微风 (3.4$tilde$5.4 m/s)],
+      [和风 (5.5$tilde$7.8 m/s)],
+      [劲风 (8.0$tilde$10.7 m/s)],
+    ),
+    image("6.png", width: 50%)
+  )
+```
+![效果图](/tf.png)
 
 ### 参数及其默认值
 

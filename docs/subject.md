@@ -1,5 +1,10 @@
 # `subject` 方法
 
+#### 示例
+```typst
+#subject("哲♂学") or #subject[哲♂学]
+```
+
 ### 参数及其默认值
 #### `body`
 `type: str | content`

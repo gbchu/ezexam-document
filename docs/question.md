@@ -1,12 +1,16 @@
 # `question` 方法
-### 参数及其默认值
+
 ```typst
-<!-- 使用方法 -->
-#question(label-color: green)[
+#question[
   $(1 + 5i)i$ 的虚部为 #paren[]
   #choices([$-1$], [$0$], [$1$], [$6$])
 ]
+
+// 输出
+1. (1 + 5i)i 的虚部为(  )
+ A. -1     B. 0     C. 1     D. 6
 ```
+### 参数及其默认值
 #### `body-indent`
 
 `type: length`

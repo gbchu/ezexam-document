@@ -1,5 +1,11 @@
 # `title` 方法
 >该方法设置文档的标题
+
+#### 示例
+```typst
+#title("母猪的产后护理") or #title[母猪的产后护理]
+```
+
 ### 参数及其默认值
 #### `body`
 `type: str | content`

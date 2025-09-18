@@ -1,6 +1,10 @@
 # `color-box` 方法
-
 >该方法生成一个彩色盒子
+
+#### 示例
+```typst
+#color-box(color: red)
+```
 
 ### 参数及其默认值
 

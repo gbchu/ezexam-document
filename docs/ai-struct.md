@@ -1,5 +1,16 @@
 # `ai-struct` 方法
 
+#### 示例
+```typst
+#ai-struct(proton: 16, electrons: (2, 8, 6))
+```
+![效果图](/4.png)
+
+```typst
+#ai-struct(proton: "z", electrons: (2, 8, 8, "X"))
+```
+![效果图](/5.png)
+
 #### 参数及其默认值
 
 #### `proton`
@@ -21,13 +32,3 @@
 
 >该参数用于设置核外电子
 
-#### 示例
-```typst
-#ai-struct(proton: 16, electrons: (2, 8, 6))
-```
-![效果图](/4.png)
-
-```typst
-#ai-struct(proton: "z", electrons: (2, 8, 8, "X"))
-```
-![效果图](/5.png)
