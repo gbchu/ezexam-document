@@ -1,21 +1,25 @@
 # `secret` 方法
 
+该方法用于生成保密级
+
 #### 示例
 ```typst
 #secret()
 // 输出
 绝密★启用前
-
-#secret(body: "★绝密★")
-// 输出
-★绝密★
 ```
 
 #### 参数及其默认值
 `body`
 
-`type: str | content`
+`类型: str | content`
 
-`default: 绝密★启用前`
+`默认值: 绝密★启用前`
 
 >该参数用于设置保密级，位置在左上角
+
+```typst
+#secret(body: "★绝密★")
+// 输出
+★绝密★
+```

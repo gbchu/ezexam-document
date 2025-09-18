@@ -1,5 +1,6 @@
 # `exam-type` 方法
-> 该方法用于设置试卷类型
+
+该方法用于设置试卷类型
 #### 示例
 ```typst
 #exam-type("A") or #exam-type[A]

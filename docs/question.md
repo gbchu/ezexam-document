@@ -1,5 +1,8 @@
 # `question` 方法
 
+该方法用于生成题目
+
+### 示例
 ```typst
 #question[
   $(1 + 5i)i$ 的虚部为 #paren[]

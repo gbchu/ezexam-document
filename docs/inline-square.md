@@ -1,8 +1,10 @@
 # `inline-square` 方法
+
+该方法生成一系列的小方格，用于弥封线内准考证号，座位号，考号的占位
+
 ::: warning
 该方法在 0.1.8 版本及以后已废弃，使用官方的 [`table`](https://typst.app/docs/reference/model/table/) 方法代替
 :::
->该方法生成一系列的小方格，用于弥封线内准考证号，座位号，考号的占位
 ```typst
 // 使用方法
 #inline-square(2)

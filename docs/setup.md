@@ -1,6 +1,6 @@
 # `setup` 方法
 
->该方法用于模板的全局设置
+该方法用于模板的全局设置
 
 #### 示例
 ```typst
@@ -161,6 +161,8 @@
 `type: length`
 
 `default: 0em`
+
+>该参数用于设置首行缩进
 
 #### `heading-numbering`
 

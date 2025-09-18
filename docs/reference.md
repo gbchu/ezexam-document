@@ -2,13 +2,13 @@
 
   - [`setup`](https://ezexam.pages.dev/setup) 全局设置
   - [`chapter`](https://ezexam.pages.dev/chapter) 章节
-  - [`title`](https://ezexam.pages.dev/setup) 标题
-  - [`subject`](https://ezexam.pages.dev/title) 科目
-  - [`secret`](https://ezexam.pages.dev/secret) 保密级别
+  - [`title`](https://ezexam.pages.dev/title) 标题
+  - [`subject`](https://ezexam.pages.dev/subject) 科目
+  - [`secret`](https://ezexam.pages.dev/secret) 位于左上角的绝密之类的
   - [`exam-type`](https://ezexam.pages.dev/exam-type) 试卷类型
   - [`exam-info`](https://ezexam.pages.dev/exam-info) 试卷信息
-  - [`scoring-box`](https://ezexam.pages.dev/scoring-box) 评分框
-  - [`notice`](https://ezexam.pages.dev/notice) 注意事项
+  - [`score_-box`](https://ezexam.pages.dev/scoring-box) 评分框
+  - [`notice`](https://ezexam.pages.dev/notice) 试卷的注意事项
   - [`choices`](https://ezexam.pages.dev/choices) 选择题
   - [`question`](https://ezexam.pages.dev/question) 题目
   - [`paren`](https://ezexam.pages.dev/paren) 选择题的括号

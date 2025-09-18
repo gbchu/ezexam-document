@@ -1,4 +1,5 @@
 # `ai-struct` 方法
+该方法用于生成原子、离子结构式
 
 #### 示例
 ```typst
@@ -15,9 +16,9 @@
 
 #### `proton`
 
-`type: int | str | content`
+`类型: int | str | content`
 
-`default: 0`
+`默认值: 0`
 
 >该参数用于设置质子数或要显示的文字内容
 ::: tip
@@ -26,9 +27,9 @@
 
 #### `electrons`
 
-`type: dictionary`
+`类型: dictionary`
 
-`default: ()`
+`默认值: ()`
 
 >该参数用于设置核外电子
 

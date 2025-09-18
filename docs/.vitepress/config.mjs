@@ -229,6 +229,7 @@ export default defineConfig({
           },
           {
             text: "评分框",
+            link: "/score_-box.md",
             collapsed: true,
             items: [
               {
@@ -253,7 +254,7 @@ export default defineConfig({
           },
 
           {
-            text: "注意事项",
+            text: "试卷的注意事项",
             link: "/notice.md",
             collapsed: true,
             items: [
@@ -452,8 +453,8 @@ export default defineConfig({
             link: "/chem.md",
             collapsed: true,
             items: [
-              { text: "e-bridge", link: "/e-bridge.md" },
-              { text: "ai-struct", link: "/ai-struct.md" },
+              { text: "单、双线桥", link: "/e-bridge.md" },
+              { text: "离子、原子结构式", link: "/ai-struct.md" },
             ],
           },
         ],

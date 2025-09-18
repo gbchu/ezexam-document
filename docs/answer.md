@@ -1,19 +1,25 @@
-# `chapter` 方法
->章节名称，该参数为位置参数.该方法用于设置章节标题，此标题不会显示在文章中，只会出现在目录中，若不需要显示目录可忽略此方法!
+# `answer` 方法
+
+问题的答案；通常配合 `solution` 方法使用
 
 #### 示例
 ```typst
 #answer("D") or #answer[D]
+
+// solution方法中
+#solution[
+  #answer[D]
+]
 ```
 效果： <font color="maroon">答案：D</font>
 ### 参数及其默认值
 
 #### `color`
-`type: color`
+`类型: color`
 
-`default: maroon`
+`默认值: maroon`
 
 #### `body`
-`type: str | content`
+`类型: str | content`
 
-`default: ""`
+`默认值: ""`

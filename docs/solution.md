@@ -1,5 +1,7 @@
 # `solution` 方法
->该方法为题目的解析
+
+该方法为题目的解析
+
 ::: tip
 该方法在 <Badge type="warning" text="0.1.4" /> 之前名为 `explain`
 :::
