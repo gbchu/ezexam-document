@@ -5,7 +5,7 @@
 ```typst
 #answer("D") or #answer[D]
 ```
-
+效果： <font color="maroon">答案：D</font>
 ### 参数及其默认值
 
 #### `color`
