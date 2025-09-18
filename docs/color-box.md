@@ -1,11 +1,11 @@
 # `color-box` 方法
->该方法生成一个彩色盒子
+>该方法生成一个行内的彩色盒子
 
 #### 示例
 ```typst
-#color-box(color: red)
+#color-box[2025新高考I卷]#lorem(20)
 ```
-
+![效果图](/color-box.png)
 ### 参数及其默认值
 
 #### `color`
