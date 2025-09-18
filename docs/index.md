@@ -13,7 +13,7 @@ hero:
       link: /about
     - theme: alt
       text: 参考
-      link: /setup
+      link: /reference
 
 features:
   - icon : 📦
