@@ -18,55 +18,10 @@
 ```
 
 
-### 题号错位问题
-
-  当题目中的公式比较高时，题号和内容会错位，若是在 `question` 中遇到，则需要调整其参数 `padding-top`、 `top` 的值。如果是在 `solution` 方法中，则需要调整其参数 `padding-top`、 `inset`  的 `top` 值
 
 
 
-`question` 案例
-```typst
-// 修改之前的代码
-#question[
-  已知行列式$mat(1, 2, a; 0, 1, -1; 3, 4, 5)$的代数余子式$C_21$ 值为2，求$a$的值
-]
-```
 
-![效果图](/tips3.png)
-
-
-```typst
-// 修改之后的代码
-#question(top: 14pt,padding-top: -6.5pt)[
-  已知行列式$mat(1, 2, a; 0, 1, -1; 3, 4, 5)$的代数余子式$C_21$ 值为2，求$a$的值
-]
-```
-![效果图](/tips4.png)
-
-`solution` 案例
-```typst
-
-// 修改之前的代码
-  #solution(title: "解析")[
-    $"解：原式" &=∫(1+cos 2x)/2 d x = 1/2 ∫(1+cos 2x)d x =
-    1/2(∫1d x+ ∫cos 2x d x)\ &=1/2(x+∫cos 2x d x)=1/2(x+1/2 ∫cos 2x d 2x)\ &=1/2 (x+1/2
-      sin 2x)=1/2 x+1/4 sin 2x+c$
-  ]
-```
-
-![效果图](/tips1.png)
-
-```typst
-
-// 修改之后的代码
-  #solution(inset: (top: 30pt),padding-top: 7pt, title: "解析")[
-   $"解：原式" &=∫(1+cos 2x)/2 d x = 1/2 ∫(1+cos 2x)d x =
-    1/2(∫1d x+ ∫cos 2x d x)\ &=1/2(x+∫cos 2x d x)=1/2(x+1/2 ∫cos 2x d 2x)\ &=1/2 (x+1/2
-      sin 2x)=1/2 x+1/4 sin 2x+c$
-  ]
-```
-
-![效果图](/tips2.png)
 
 
 

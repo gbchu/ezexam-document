@@ -6,18 +6,13 @@
 #exam-type("A") or #exam-type[A]
 // 输出
 试卷类型: A
-
-#exam-type("A", prefix: "类型：") or #exam-type(prefix: "类型：")[A]
-// 输出
-类型: A
-
 ```
 
 
 ### 参数
 
-#### `类型`
-`body: str | content`
+#### `type`
+`类型: str | content`
 
 `默认值: ""`
 >该参数为位置参数，用于设置试卷类型
@@ -29,3 +24,9 @@
 `默认值: 试卷类型:`
 
 >该参数用于设置试卷类型的前缀，位置默认在右上角
+
+```typst
+#exam-type("A", prefix: "类型：") or #exam-type(prefix: "类型：")[A]
+// 输出
+类型: A
+```

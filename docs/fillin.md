@@ -44,7 +44,7 @@
 :::
 
 ```typst
-<!-- 使用方法 -->
+// 使用方法
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor#fillin(with-number: true)[] incididunt ut
 labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamusr#fillin(with-number: true)[] animo, cum
 corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impenderer#fillin(
@@ -95,6 +95,7 @@ quibusdame.
   )
 ]
 ```
+![效果图](/fillin.png)
 
 #### `update`
 
@@ -108,8 +109,7 @@ quibusdame.
 :::
 
 ```typst
-<!-- 使用方法 -->
-
+// 使用方法
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor#fillin(with-number: true, update: true)[]
 incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamusr#fillin(
   with-number: true,

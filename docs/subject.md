@@ -10,47 +10,47 @@
 ### 参数
 
 #### `body`
-`type: str | content`
+`类型: str | content`
 
-`default: ""`
+`默认值: ""`
 >该参数为位置参数，用于设置科目名
 
 #### `font`
 
-`type: str | dictionary`
+`类型: str | dictionary`
 
-`default: ("New Computer Modern Math", "simhei")`
+`默认值: ("New Computer Modern Math", "simhei")`
 
 >该参数用于设置科目的字体
 
 #### `size`
 
-`type: length`
+`类型: length`
 
-`default: 21.5pt`
+`默认值: 21.5pt`
 
 >该参数用于设置科目字体的大小
 
 #### `spacing`
 
-`type: length`
+`类型: length`
 
-`default: 1em`
+`默认值: 1em`
 
 >该参数用于设置科目每个字之间的间距
 
 #### `top`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 
 >该参数用于设置科目的上间距
 
 #### `bottom`
 
-`type: length`
+`类型: length`
 
-`default: 18pt`
+`默认值: 18pt`
 
 >该参数用于设置科目的下间距

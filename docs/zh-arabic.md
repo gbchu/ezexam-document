@@ -14,36 +14,28 @@
 
 #### `prefix`
 
-`type: str`
+`类型: str`
 
-`default: ""`
+`默认值: ""`
 
 >该参数用于设置页码的前缀
 
 ```typst
-
 #zh-arabic(prefix: "🧡")
-
 // 输出
 🧡 第xx页（共xx页）
 ```
 
 #### `suffix`
 
-`type: str`
+`类型: str`
 
-`default: ""`
+`默认值: ""`
 
 >该参数用于设置页码的后缀
 
 ```typst
-#zh-arabic()
-
-// 输出
-第xx页（共xx页）
-
 #zh-arabic( suffix: "🌼")
-
 // 输出
 第xx页（共xx页）🌼
 ```

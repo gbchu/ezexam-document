@@ -10,63 +10,63 @@
 ### 参数
 
 #### `body`
-`type: str | content`
+`类型: str | content`
 
-`default: ""`
+`默认值: ""`
 >标题名称，该参数为位置参数
 
 #### `font`
 
-`type: str | dictionary`
+`类型: str | dictionary`
 
-`default: ("New Computer Modern Math", "Source Han Serif")`
+`默认值: ("New Computer Modern Math", "Source Han Serif")`
 
 >该参数用于设置标题的字体
 
 #### `size`
 
-`type: length`
+`类型: length`
 
-`default: 15pt`
+`默认值: 15pt`
 
 >该参数用于设置标题字体的大小
 
 #### `weight`
 
-`type: int | str`
+`类型: int | str`
 
-`default: bold`
+`默认值: bold`
 
 >该参数用于设置标题字体的粗细
 
 #### `color`
 
-`type: color`
+`类型: color`
 
-`default: black`
+`默认值: black`
 
 >该参数用于设置标题的颜色
 
 #### `position`
 
-`type: alignment`
+`类型: alignment`
 
-`default: center`
+`默认值: center`
 
 >该参数用于设置标题的对齐方式
 
 #### `top`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 
 >该参数用于设置标题的上间距
 
 #### `bottom`
 
-`type: length`
+`类型: length`
 
-`default: 18pt`
+`默认值: 18pt`
 
 >该参数用于设置标题的下间距

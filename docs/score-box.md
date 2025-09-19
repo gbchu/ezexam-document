@@ -15,16 +15,16 @@
 
 #### `x`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 >该参数用于设置水平方向上的偏移
 
 #### `y`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 
 >该参数用于设置竖直方向上的偏移
 

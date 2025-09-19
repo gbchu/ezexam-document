@@ -460,12 +460,11 @@ export default defineConfig({
         ],
       },
       {
-        text: "使用技巧",
+        text: "小贴士",
         link: "/tips.md",
         collapsed: true,
         items: [
-          { text: "方法的全局配置", link: "/tips.md#方法的全局配置" },
-          { text: "题号错位问题", link: "/tips.md#题号错位问题" },
+          { text: "方法的全局配置", link: "/tips.md#方法的全局配置" }
         ],
       },
     ],

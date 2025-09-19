@@ -21,15 +21,15 @@
 
 #### `text`
 
-`type: any`
+`类型: any`
 
-`default: ""`
+`默认值: ""`
 
 >该参数用于设置左侧显示的文字
 
 #### `figure`
 
-`type: any`
+`类型: any`
 
 >该参数为位置参数，一般用于设置右侧的图片或表格
 
@@ -39,32 +39,32 @@
 
 #### `figure-x`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 
 >该参数用于设置图片或表格水平之间的距离
 
 #### `figure-y`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 
 >该参数用于设置图片或表格垂直方向上的距离
 
 #### `top`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 
 >该参数用于设置图文距离上方的距离
 
 #### `bottom`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 
 >该参数用于设置图文距离下方的距离

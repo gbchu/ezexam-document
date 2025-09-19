@@ -5,15 +5,26 @@
 #### 示例
 ```typst
 下列说法正确的是 #paren[]
-
 // 输出
 下列说法正确的是（    ）
 
 下列说法正确的是 #paren[A]
-
 // 输出（只有在显示答案为真时才会显示）
 下列说法正确的是（  A  ）
+```
 
+### 参数
+
+#### `justify`
+
+`类型: boolean`
+
+`默认值: false`
+
+>该参数用于设置括号是否两端对齐
+
+示例
+```typst
 下列说法正确的是 #paren(justify: true)[A]
 // 输出
 下列说法正确的是           （  A  ）
@@ -23,36 +34,33 @@
 下列说法正确的是BALABALABAL（  A  ）
 ```
 
-### 参数
-
-#### `justify`
-
-`type: boolean`
-
-`default: false`
-
->该参数用于设置括号是否两端对齐
-
 #### `placeholder`
 
-`type: str | symbol`
+`类型: str | symbol`
 
-`default: "▲"`
+`默认值: "▲"`
 
 >该参数用于设置当不显示答案时，括号的占位符
 ::: tip
 占位符的样式修改参考官方文档：[符号](https://typst.app/docs/reference/symbols/)
 :::
 
+示例
+```typst
+下列说法正确的是 #paren[A]
+// 输出（不显示答案时的占位符）
+下列说法正确的是           （  ▲  ）
+```
+
 #### `with-number`
 
-`type: boolean`
+`类型: boolean`
 
-`default: false`
+`默认值: false`
 >该参数用于设置占位符是否使用当前题号替代
 
 ```typst
-<!-- 使用方法 -->
+// 使用方法
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor#paren(with-number: true)[] incididunt ut
 labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamusr#paren(with-number: true)[] animo, cum
 corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impenderer#paren(
@@ -103,6 +111,7 @@ quibusdame.
   )
 ]
 ```
+![效果图](/paren.png)
 
 ::: tip
 该选项一般用在类似英语中的完型填空等题型中
@@ -110,9 +119,9 @@ quibusdame.
 
 #### `update`
 
-`type: boolean`
+`类型: boolean`
 
-`default: false`
+`默认值: false`
 >该参数用于更新题号
 
 
@@ -121,7 +130,7 @@ quibusdame.
 :::
 
 ```typst
-<!-- 使用方法 -->
+// 使用方法
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor#paren(with-number: true, update: true)[]
 incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamusr#paren(
   with-number: true,
@@ -149,6 +158,6 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
 
 #### `answer`
 
-`type: content`
+`类型: content`
 
 >该参数为位置参数，显示答案

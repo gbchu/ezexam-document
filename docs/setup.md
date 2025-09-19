@@ -10,11 +10,11 @@
 ### 参数
 #### `mode`
 
-`type: str`
+`类型: str`
 
-`default: HANDOUTS` <Badge type="warning" text="^0.1.4" /> `LECTURE` <Badge type="warning" text="0.1.0~0.1.3" />
+`默认值: HANDOUTS` <Badge type="warning" text="^0.1.4" /> `LECTURE` <Badge type="warning" text="0.1.0~0.1.3" />
 
-`optional value: EXAM 、 SOLUTION`
+`可选值: EXAM 、 SOLUTION`
 
 >该参数用于设置模板的显示模式 `EXAM` : 试卷模式；`SOLUTION` : 解析模式；`HANDOUTS` : 讲义模式；
 ::: tip
@@ -23,11 +23,11 @@
 
 #### `paper`
 
-`type: dictionary`
+`类型: dictionary`
 
-`default: a4`
+`默认值: a4`
 
-`optional value: a3`
+`可选值: a3`
 
 >该参数用于设置模板的页面类型、边距、是否翻转、是否分页
 
@@ -54,9 +54,9 @@
 :::
 #### `page-numbering`
 
-`type: str | function`
+`类型: str | function`
 
-`default: auto`
+`默认值: auto`
 
 >该参数用于设置模板的页码显示方式
 >
@@ -68,9 +68,9 @@
 :::
 #### `page-align`
 
-`type: alignment`
+`类型: alignment`
 
-`default: center`
+`默认值: center`
 
 >该参数用于设置模板的页码对齐方式
 ::: tip
@@ -80,17 +80,17 @@
 :::
 #### `footer-is-separate`
 
-`type: boolean`
+`类型: boolean`
 
-`default: true`
+`默认值: true`
 
 >该参数用于设置在页面多列显示时，页脚的页码是否在每一列中都显示
 
 #### `outline-page-numbering`
 
-`type: str | function`
+`类型: str | function`
 
-`default: ⚜ I ⚜`
+`默认值: ⚜ I ⚜`
 
 >该参数用于设置目录的页码显示
 
@@ -99,33 +99,33 @@
 :::
 #### `gap`
 
-`type: length`
+`类型: length`
 
-`default: 1in`
+`默认值: 1in`
 
 >该参数用于设置多列显示时，列之间的间距
 
 #### `show-gap-line`
 
-`type: boolean`
+`类型: boolean`
 
-`default: false`
+`默认值: false`
 
 >该参数用于设置多列显示时，列之间是否显示分隔线
 
 #### `font-size`
 
-`type: length`
+`类型: length`
 
-`default: 11pt`
+`默认值: 11pt`
 
 >该参数用于设置页面字体大小
 
 #### `font`
 
-`type: str | array`
+`类型: str | array`
 
-`default: ("New Computer Modern Math", "Source Han Serif")`
+`默认值: ("New Computer Modern Math", "Source Han Serif")`
 
 >该参数用于设置页面的字体
 ::: tip
@@ -133,133 +133,133 @@
 :::
 #### `font-math`
 
-`type: str | array`
+`类型: str | array`
 
-`default: ("New Computer Modern Math", "Source Han Serif")`
+`默认值: ("New Computer Modern Math", "Source Han Serif")`
 
 >该参数用于设置数学公式下的字体
 
 #### `line-height`
 
-`type: length`
+`类型: length`
 
-`default: 2em`
+`默认值: 2em`
 
 >该参数用于设置行高
 
 #### `par-spacing`
 
-`type: length`
+`类型: length`
 
-`default: 2em`
+`默认值: 2em`
 
 >该参数用于设置段落间距
 
 #### `first-line-indent`
 
-`type: length`
+`类型: length`
 
-`default: 0em`
+`默认值: 0em`
 
 >该参数用于设置首行缩进
 
 #### `heading-numbering`
 
-`type: str | function`
+`类型: str | function`
 
-`default: auto`
+`默认值: auto`
 
 >该参数用于设置节标题前的编号方式
 
 #### `heading-hang-indent`
 
-`type: length`
+`类型: length`
 
-`default: auto`
+`默认值: auto`
 
 >该参数用于设置节标题的缩进
 
 #### `heading-font`
 
-`type: str | array`
+`类型: str | array`
 
-`default: ("New Computer Modern Math", "SimHei")`
+`默认值: ("New Computer Modern Math", "SimHei")`
 
 >该参数用于设置节标题的字体
 
 #### `h1-size`
 
-`type: length`
+`类型: length`
 
-`default: auto`
+`默认值: auto`
 
 >该参数用于设置一级标题的字体大小
 
 ::: warning
-在 `0.1.7` 版本之前，该参数名为 `heading-size` 且会改变所有级别的节标题；
+在 <Badge type="warning" text="0.1.7" /> 版本之前，该参数名为 `heading-size` 且会改变所有级别的节标题；
 :::
 
 #### `heading-color`
 
-`type: color`
+`类型: color`
 
-`default: black`
+`默认值: black`
 
 >该参数用于设置节标题的字体颜色
 
 #### `heading-top`
 
-`type: length`
+`类型: length`
 
-`default: 10pt`
+`默认值: 10pt`
 
 >该参数用于设置节标题的上间距
 
 #### `heading-bottom`
 
-`type: length`
+`类型: length`
 
-`default: 15pt`
+`默认值: 15pt`
 
 >该参数用于设置节标题的下间距
 
 #### `enum-numbering`
 
-`type: str | function`
+`类型: str | function`
 
-`default: "（1.i.a）"`
+`默认值: "（1.i.a）"`
 
 >该参数用于设置有序列表的编号方式
 
 #### `enum-spacing`
 
-`type: length`
+`类型: length`
 
-`default: 2em`
+`默认值: 2em`
 
 >该参数用于设置有序列表的之间的间距
 
 #### `enum-indent`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 
 >该参数用于设置有序列表的缩进
 
 #### `watermark`
 
-`type: none | content | image`
+`类型: none | content | image`
 
-`default: none`
+`默认值: none`
 
 >该参数用于设置水印的内容
 
 #### `watermark-color`
 
-`type: color`
+`类型: color`
 
-`default: rgb("f666")`
+`默认值: rgb("f666")`
 
 >该参数用于设置水印的颜色
 ::: warning
@@ -268,9 +268,9 @@
 
 #### `watermark-font`
 
-`type: str | array`
+`类型: str | array`
 
-`default: source-han`
+`默认值: source-han`
 
 >该参数用于设置水印的字体
 ::: warning
@@ -279,9 +279,9 @@
 
 #### `watermark-size`
 
-`type: length`
+`类型: length`
 
-`default: 88pt`
+`默认值: 88pt`
 
 >该参数用于设置水印的字体大小
 ::: warning
@@ -290,55 +290,57 @@
 
 #### `watermark-rotate`
 
-`type: angle`
+`类型: angle`
 
-`default: -45deg`
+`默认值: -45deg`
 
 >该参数用于设置水印的旋转角度
 
 #### `show-answer`
 
-`type: boolean`
+`类型: boolean`
 
-`default: false`
+`默认值: false`
 
 >该参数用于设置是否显示答案
 
 #### `answer-color`
 
-`type: color`
+`类型: color`
 
-`default: blue`
+`默认值: blue`
 
 >该参数用于设置答案的颜色
 
 #### `show-seal-line`
 
-`type: boolean`
+`类型: boolean`
 
-`default: true`
+`默认值: true`
 
 >该参数用于设置是否显示弥封线
 
 #### `seal-line-student-info`
 
-`type: dictionary`
+`类型: dictionary`
 
-`default:
+`默认值: `
+```typst
  (
     姓名: underline[~~~~~~~~~~~~~],
     准考证号: table(columns: 14, inset: .8em,[]),
     考场号: table(columns: 2, inset: .8em,[]),
-    座位号: table(columns: 2, inset: .8em,[]),
-  )`
+    座位号: table(columns: 2, inset: .8em,[])
+ )
+```
 
 >该参数用于设置考生信息
 
-#### `seal-line-type`
+#### `seal-line-类型`
 
-`type: str | none | auo | array | dictionary`
+`类型: str | none | auo | array | dictionary`
 
-`default: dashed`
+`默认值: dashed`
 
 >该参数用于设置弥封线的样式
 ::: tip
@@ -346,8 +348,8 @@
 :::
 #### `seal-line-supplement`
 
-`type: str`
+`类型: str`
 
-`default: 弥封线内不得答题`
+`默认值: 弥封线内不得答题`
 
 >该参数用于设置弥封线的补充信息

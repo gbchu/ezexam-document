@@ -76,6 +76,20 @@ A. -1     B.  0    C.  1     D.  6
 ::: tip
 若要修改标签类型，可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置
 :::
+
+示例
+```typst
+#choices(
+  label:"①",
+  [选项1],
+  [选项2],
+  [选项3],
+  [选项4],
+)
+// 输出结果
+① 选项1       ② 选项2         ③ 选项3         ④ 选项4
+```
+
 #### `options`
 
 >该参数为可变参数，即传递的选项

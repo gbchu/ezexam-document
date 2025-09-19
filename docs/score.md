@@ -14,20 +14,42 @@
 
 #### `score-prefix`
 
-`type: str`
-`default: ""`
+`类型: str`
+
+`默认值: ""`
+
 >该参数用于设置分数的前缀
+
+示例
+```typst
+安得广厦千万间，大庇天下寒士俱欢颜 #score(score-prefix:"🧡",2)
+
+```
+效果：
+
+  安得广厦千万间，大庇天下寒士俱欢颜 <font color="maroon">........................🧡2分</font>
 
 #### `score-suffix`
 
-`type: str`
-`default: "分"`
+`类型: str`
+
+`默认值: "分"`
+
 >该参数用于设置分数的后缀
+
+示例
+```typst
+安得广厦千万间，大庇天下寒士俱欢颜 #score(score-suffix:"🧡",2)
+
+```
+效果：
+
+  安得广厦千万间，大庇天下寒士俱欢颜 <font color="maroon">........................2🧡</font>
 
 #### `color`
 
-`type: color`
-`default: maroon`
+`类型: color`
+`默认值: maroon`
 >该参数用于设置分数的颜色
 
 #### `points`

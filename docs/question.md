@@ -16,63 +16,63 @@
 ### 参数
 #### `body-indent`
 
-`type: length`
+`类型: length`
 
-`default: 0.6em`
+`默认值: 0.6em`
 >该参数用于设置题目和题号间的间隔
 
 #### `indent`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 >该参数用于设置题目的缩进
 
 #### `line-height`
 
-`type: length`
+`类型: length`
 
-`default: auto`
+`默认值: auto`
 >该参数用于设置题目内容的行高，当题目中的公式比较高时，题号和题目内容会错位，这时可以通过该参数来微调。
 :::warning
-该参数虽然可以对齐，但会导致内容的每一行与行之间的间隔变大。从 <Badge type="warning" text="0.1.7" /> 开始已弃用，推荐 [使用技巧](https://ezexam.pages.dev/tips) 代替
+该参数虽然可以对齐，但会导致内容的每一行与行之间的间隔变大。从 <Badge type="warning" text="0.1.7" /> 开始已弃用，推荐 [修复题号对不齐](#padding-bottom) 代替
 :::
 
 #### `label`
 
-`type: str | function`
+`类型: str | function`
 
-`default: auto`
+`默认值: auto`
 >该参数用于设置题号的类型
 ::: tip
 若要修改题号类型，可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置
 :::
 #### `label-color`
 
-`type: color`
+`类型: color`
 
-`default: black`
+`默认值: black`
 >该参数用于设置题号的颜色
 
 #### `label-weight`
 
-`type: str | int`
+`类型: str | int`
 
-`default: regular`
+`默认值: regular`
 >该参数用于设置题号字体的粗细
 
 #### `points`
 
-`type: none | int`
+`类型: none | int`
 
-`default: none`
+`默认值: none`
 >该参数用于设置题目的分值
 
 #### `points-separate`
 
-`type: boolean`
+`类型: boolean`
 
-`default: true`
+`默认值: true`
 >该参数用于设置题目的分值是否独占一行
 
 ::: tip
@@ -81,58 +81,78 @@
 
 #### `points-prefix`
 
-`type: str`
+`类型: str`
 
-`default: " ("`
+`默认值: " ("`
 >该参数用于设置题目分值前缀
 
 #### `points-suffix`
 
-`type: str`
+`类型: str`
 
-`default: "分）"`
+`默认值: "分）"`
 >该参数用于设置题目的分值后缀
 
 #### `top`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 >该参数用于设置题目距离上方的外边距
 
 #### `bottom`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 >该参数用于设置题目距离下方的外边距
 
 #### `padding-top`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 >该参数用于设置题目上方内边距
 
 #### `padding-bottom`
 
-`type: length`
+`类型: length`
 
-`default: 0pt`
+`默认值: 0pt`
 >该参数用于设置题目的下方内边距
 
 ::: tip
-`padding-top` 和 `padding-bottom` 参数是用来解决题号和题目对不齐的问题；如遇到该问题可调节该参数。详情参考 [使用技巧](https://ezexam.pages.dev/tips)
+`padding-top` 和 `padding-bottom` 参数是用来解决题号和题目对不齐的问题；如遇到该问题可调节该参数
 :::
+
+示例
+
+```typst
+// 修改之前的代码
+#question[
+  已知行列式$mat(1, 2, a; 0, 1, -1; 3, 4, 5)$的代数余子式$C_21$ 值为2，求$a$的值
+]
+```
+
+![效果图](/tips3.png)
+
+
+```typst
+// 修改之后的代码
+#question(top: 14pt,padding-top: -6.5pt)[
+  已知行列式$mat(1, 2, a; 0, 1, -1; 3, 4, 5)$的代数余子式$C_21$ 值为2，求$a$的值
+]
+```
+![效果图](/tips4.png)
 
 #### `with-heading-label`
 
-`type: boolean`
+`类型: boolean`
 
-`default: false`
+`默认值: false`
 >该参数用于设置题目是否带有标题的标签
 
 #### `body`
 
-`type: content`
+`类型: content`
 >该参数为位置参数，题目的内容
