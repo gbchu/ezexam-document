@@ -17,6 +17,7 @@
   - [`solution`](https://ezexam.pages.dev/solution) 解析
   - [`score`](https://ezexam.pages.dev/score) 解析内的评分
   - [`answer`](https://ezexam.pages.dev/answer) 答案
+  - [`draft`](https://ezexam.pages.dev/draft) 草稿纸
   - [`zh-arabic`](https://ezexam.pages.dev/zh-arabic) 一种页码格式
   - ~~[`inline-square`](https://ezexam.pages.dev/inline-square) 方格~~
   - [`color-box`](https://ezexam.pages.dev/color-box) 彩色盒子
