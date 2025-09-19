@@ -57,6 +57,7 @@
 `类型: boolean`
 
 `默认值: false`
+
 >该参数用于设置占位符是否使用当前题号替代
 
 ```typst
@@ -122,6 +123,7 @@ quibusdame.
 `类型: boolean`
 
 `默认值: false`
+
 >该参数用于更新题号
 
 

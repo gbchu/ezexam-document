@@ -1,6 +1,6 @@
 # `answer` 方法
 
-问题的答案；通常配合 `solution` 方法使用
+问题的答案；通常配合 [`solution`](https://ezexam.pages.dev/solution) 方法使用
 
 #### 示例
 ```typst
@@ -15,11 +15,13 @@
 ### 参数
 
 #### `color`
+
 `类型: color`
 
 `默认值: maroon`
 
 #### `body`
+
 `类型: str | content`
 
 `默认值: ""`

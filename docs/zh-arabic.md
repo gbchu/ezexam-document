@@ -35,7 +35,7 @@
 >该参数用于设置页码的后缀
 
 ```typst
-#zh-arabic( suffix: "🌼")
+#zh-arabic( suffix: "🧡")
 // 输出
-第xx页（共xx页）🌼
+第xx页（共xx页）🧡
 ```

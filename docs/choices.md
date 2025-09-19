@@ -72,7 +72,9 @@ A. -1     B.  0    C.  1     D.  6
 `类型: str`
 
 `默认值: A.`
+
 >该参数用于设置选项的标签
+
 ::: tip
 若要修改标签类型，可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置
 :::

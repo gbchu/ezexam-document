@@ -196,7 +196,7 @@
 >该参数用于设置一级标题的字体大小
 
 ::: warning
-在 <Badge type="warning" text="0.1.7" /> 版本之前，该参数名为 `heading-size` 且会改变所有级别的节标题；
+在 <Badge type="tip" text="0.1.7" /> 版本之前，该参数名为 `heading-size` 且会改变所有级别的节标题；
 :::
 
 #### `heading-color`
@@ -336,7 +336,7 @@
 
 >该参数用于设置考生信息
 
-#### `seal-line-类型`
+#### `seal-line-type`
 
 `类型: str | none | auo | array | dictionary`
 
