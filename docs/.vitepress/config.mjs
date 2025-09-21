@@ -22,7 +22,7 @@ export default defineConfig({
         items: [
           {
             text: "更新日志",
-            link: "https://github.com/gbchu/ezexam/releases",
+            link: "https://github.com/gbchu/ezexam/blob/main/README.md#changelog",
           },
           {
             text: "bug反馈",
