@@ -52,7 +52,16 @@
 
 `可选值: "ft"`
 
->该参数用于设置排版方式
+>该参数用于设置排版方式；默认为左文右图
+
+#### 示例
+```typst
+#text-figure(
+    figure: image("wechatpay.png"),
+    style: "ft"
+  )[#lorem(50)]
+```
+![效果图](/tf2.png)
 
 #### `top`
 
