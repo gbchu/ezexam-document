@@ -22,7 +22,7 @@
 
 >该参数用于设置质子数或要显示的文字内容
 ::: tip
-`ai` 是 `atomic` 和 `ion` 的缩写
+`ai` 是 `atomic` 和 `ion` 的缩写。
 :::
 
 #### `electrons`

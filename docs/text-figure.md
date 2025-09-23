@@ -21,7 +21,7 @@
 >该参数为位置参数，用于设置要排列的文本
 
 ::: tip
-该参数在 <Badge type="warning" text="0.1.9" /> 版本之前为命名参数
+该参数在 <Badge type="warning" text="0.1.9" /> 版本之前为命名参数。
 :::
 
 ```typst

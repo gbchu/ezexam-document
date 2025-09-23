@@ -29,7 +29,7 @@
 >该参数用于设置当不显示答案时，括号的占位符
 
 ::: tip
-占位符的样式修改参考官方文档：[符号](https://typst.app/docs/reference/symbols/)
+占位符的样式修改参考官方文档：[符号](https://typst.app/docs/reference/symbols/)。
 :::
 
 #### `with-number`
@@ -40,7 +40,7 @@
 >该参数用于设置占位符是否使用当前题号替代
 
 ::: tip
-该选项一般用在类似英语中的完型填空等题型中
+该选项一般用在类似英语中的完型填空等题型中。
 :::
 
 ```typst
@@ -105,7 +105,7 @@ quibusdame.
 >该参数用于更新题号
 
 ::: warning
-只有 `with-number` 设置为 `true` 且当前题目在编写类似英语中七选五的题型时，才必须将该参数设置为 `true` ，否则题号将不会对应更新！！！如果没有该需求，忽略该参数
+只有 `with-number` 设置为 `true` 且当前题目在编写类似英语中七选五的题型时，才必须将该参数设置为 `true` ，否则题号将不会对应更新！！！如果没有该需求，忽略该参数。
 :::
 
 ```typst
@@ -132,7 +132,7 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
 
 ```
 ::: tip
- 对于七选五这类题型，每次使用占位符都设置参数很麻烦，本模板提供了一个方法 `fillinn` ，只需要将上述 `fillin(with-number: true, update: true)[]` 直接改为 `fillinn[]` 即可，本质就是上述方法的语法糖
+ 对于七选五这类题型，每次使用占位符都设置参数很麻烦，本模板提供了一个方法 `fillinn` ，只需要将上述 `fillin(with-number: true, update: true)[]` 直接改为 `fillinn[]` 即可，本质就是上述方法的语法糖。
 :::
 
 #### `answer`

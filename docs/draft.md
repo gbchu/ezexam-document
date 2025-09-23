@@ -43,7 +43,7 @@
 > 该参数用于设置草稿纸下的横线样式
 
 ::: tip
-此设置的可选值参考官方文档 [线的类型](https://typst.app/docs/reference/visualize/stroke/#constructor-dash)
+此设置的可选值参考官方文档 [线的类型](https://typst.app/docs/reference/visualize/stroke/#constructor-dash) 。
 :::
 #### `supplement`
 

@@ -32,9 +32,9 @@
 `类型: length`
 
 `默认值: auto`
->该参数用于设置题目内容的行高，当题目中的公式比较高时，题号和题目内容会错位，这时可以通过该参数来微调。
+>该参数用于设置题目内容的行高，当题目中的公式比较高时，题号和题目内容会错位，这时可以通过该参数来微调
 :::warning
-该参数虽然可以对齐，但会导致内容的每一行与行之间的间隔变大。从 <Badge type="tip" text="0.1.7" /> 开始已弃用，推荐 [修复题号对不齐](#padding-bottom) 代替
+该参数虽然可以对齐，但会导致内容的每一行与行之间的间隔变大。从 <Badge type="tip" text="0.1.7" /> 开始已弃用，推荐 [修复题号对不齐](#padding-bottom) 代替。
 :::
 
 #### `label`
@@ -44,7 +44,7 @@
 `默认值: auto`
 >该参数用于设置题号的类型
 ::: tip
-若要修改题号类型，可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置
+若要修改题号类型，可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置。
 :::
 
 示例
@@ -112,7 +112,7 @@
 ```
 
 ::: tip
-该参数在 <Badge type="warning" text="0.1.3" /> 版本之前，名为 `points-separate-par`；
+该参数在 <Badge type="warning" text="0.1.3" /> 版本之前，名为 `points-separate-par` 。
 :::
 
 #### `points-prefix`
@@ -182,7 +182,7 @@
 >该参数用于设置题目的下方内边距
 
 ::: tip
-`padding-top` 和 `padding-bottom` 参数是用来解决题号和题目对不齐的问题；如遇到该问题可调节该参数
+`padding-top` 和 `padding-bottom` 参数是用来解决题号和题目对不齐的问题；如遇到该问题可调节该参数。
 :::
 
 示例
