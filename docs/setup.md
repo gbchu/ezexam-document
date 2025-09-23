@@ -16,7 +16,9 @@
 
 `可选值: EXAM` 、 `SOLUTION` <Badge type="warning" text="^0.1.8" />
 
->该参数用于设置模板的显示模式 `EXAM` : 试卷模式；`SOLUTION` : 解析模式；`HANDOUTS` : 讲义模式；
+>该参数用于设置模板的显示模式
+>
+>`EXAM` : 试卷模式；`SOLUTION` : 解析模式；`HANDOUTS` : 讲义模式
 ::: tip
 `HANDOUTS` 模式和 `EXAM` 模式二者仅在题号的显示方式、目录显示方式、页码显示上有所不同。若你只想组卷则只用 `EXAM` 模式即可！`SOLUTION` 模式仅当答案独立于内容时，使用该模式。该模式为预定义好的格式，如果不满意可不用该模式自行调整！
 :::
@@ -29,11 +31,10 @@
 
 `可选值: a3`
 
->该参数用于设置模板的页面类型、边距、是否翻转、是否分页
+>该参数用于设置模板的页面类型、边距、是否翻转、分页
 
 ```typst
-    a3 和 a4 的默认值
-
+   // a3 和 a4 的默认值
     #let a3 = (
       paper: "a3",
       margin: 1in,
@@ -50,7 +51,7 @@
 ```
 > `a3` 和 `a4` 是内部预定义的两个变量，若需要自定义页面类型，则需要使用字典覆盖默认值，格式如上所示
 ::: warning
-修改该参数可能会导致页面布局混乱，仅在 a3 和 a4 尺寸下测试过
+本模板仅在 `a3` 和 `a4` 尺寸下测试过；修改该参数可能会导致页面布局混乱。
 :::
 #### `page-numbering`
 
@@ -62,9 +63,11 @@
 >
 >`EXAM` 模式下默认显示为: `XX试题  第X页（共X页）`
 >
+>`SOLUTION` 模式下默认显示为: `XX试题答案  第X页（共X页）`
+>
 >`HANDOUTS` 模式下默认显示为: `X / X`
 ::: tip
-若要修改显示格式可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置
+若要修改显示格式可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置。
 :::
 #### `page-align`
 
@@ -74,9 +77,9 @@
 
 >该参数用于设置模板的页码对齐方式
 ::: tip
-若要修改对齐方式可参考官方文档 [alignment](https://typst.app/docs/reference/layout/alignment/) 的参数设置
+1. 若要修改对齐方式可参考官方文档 [alignment](https://typst.app/docs/reference/layout/alignment/) 的参数设置。
 
-若想实现奇数页在右侧显示，偶数页在左侧显示的效果，可忽略该参数，修改 [`footer-is-separate`](#footer-is-separate) 参数为 `false` 即可
+2. 若想实现奇数页在右侧显示，偶数页在左侧显示的效果，可忽略该参数，修改 [`footer-is-separate`](#footer-is-separate) 参数为 `false` 即可。
 :::
 #### `footer-is-separate`
 
@@ -95,7 +98,7 @@
 >该参数用于设置目录的页码显示
 
 ::: tip
-若要修改显示格式可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置
+若要修改显示格式可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置。
 :::
 #### `gap`
 
@@ -129,7 +132,7 @@
 
 >该参数用于设置页面的字体
 ::: tip
-由于宋体不支持加粗，故本包在设置字体时使用的是思源宋体；在使用本包时，请自行下载 [思源宋体](https://github.com/adobe-fonts/source-han-serif/releases) 并安装。或者使用第三方 [粗体包](https://typst.app/universe/package/cuti)
+由于宋体不支持加粗，故本包在设置字体时使用的是思源宋体；在使用本包时，请自行下载 [思源宋体](https://github.com/adobe-fonts/source-han-serif/releases) 并安装。或者使用第三方 [粗体包](https://typst.app/universe/package/cuti)。
 :::
 #### `font-math`
 
@@ -196,7 +199,7 @@
 >该参数用于设置一级标题的字体大小
 
 ::: warning
-在 <Badge type="tip" text="0.1.7" /> 版本之前，该参数名为 `heading-size` 且会改变所有级别的节标题；
+在 <Badge type="tip" text="0.1.7" /> 版本之前，该参数名为 `heading-size` 且会改变所有级别的节标题。
 :::
 
 #### `heading-color`
@@ -274,7 +277,7 @@
 
 >该参数用于设置水印的字体
 ::: warning
-该参数对图片水印无效
+该参数对图片水印无效。
 :::
 
 #### `watermark-size` <Badge type="warning" text="^0.1.4" />
@@ -285,7 +288,7 @@
 
 >该参数用于设置水印的字体大小
 ::: warning
-该参数对图片水印无效，但可以通过传入图片时设置宽高调整图片大小
+该参数对图片水印无效，但可以通过传入图片时设置宽高调整图片大小。
 :::
 
 #### `watermark-rotate` <Badge type="warning" text="^0.1.4" />
@@ -352,4 +355,4 @@
 
 `默认值: 弥封线内不得答题`
 
->该参数用于设置弥封线的补充信息
+>该参数用于设置弥封线内的补充信息

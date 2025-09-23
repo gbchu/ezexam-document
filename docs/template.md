@@ -116,11 +116,13 @@
   + 记超声波检查结果不正常者患有该疾病的概率为$p$，求$p$的估计值；
   + 根据小概率值$alpha=0.001$的独立性检验，分析超声波检查结果是否与患该疾病有关.
 
-  #text-figure(text: [ 附：$chi^2 = n(a d - b c)^2 / ((a + b)(c + d)(a + c)(b + d))$.], figure-x: 1in, table(
+  #text-figure(
+    figure-x: 1in,
+    figure: table(
     columns: 4,
     [$P(chi^2 gt.eq.slant k)$], [0.005], [0.010], [0.001],
     [$k$], [3.841], [6.635], [10.828],
-  ))
+  ))[附：$chi^2 = n(a d - b c)^2 / ((a + b)(c + d)(a + c)(b + d))$.]
 ]
 
 #question(points: 15, bottom: 1in)[
