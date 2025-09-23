@@ -14,7 +14,7 @@
 
 `默认值: HANDOUTS` <Badge type="warning" text="^0.1.4" /> `LECTURE` <Badge type="warning" text="0.1.0~0.1.3" />
 
-`可选值: EXAM 、 SOLUTION`
+`可选值: EXAM` 、 `SOLUTION` <Badge type="warning" text="^0.1.8" />
 
 >该参数用于设置模板的显示模式 `EXAM` : 试卷模式；`SOLUTION` : 解析模式；`HANDOUTS` : 讲义模式；
 ::: tip
@@ -163,7 +163,7 @@
 
 >该参数用于设置首行缩进
 
-#### `heading-numbering`
+#### `heading-numbering` <Badge type="warning" text="^0.1.3" />
 
 `类型: str | function`
 
@@ -171,7 +171,7 @@
 
 >该参数用于设置节标题前的编号方式
 
-#### `heading-hang-indent`
+#### `heading-hang-indent` <Badge type="warning" text="^0.1.3" />
 
 `类型: length`
 
@@ -187,7 +187,7 @@
 
 >该参数用于设置节标题的字体
 
-#### `h1-size`
+#### `h1-size` <Badge type="warning" text="^0.1.7" />
 
 `类型: length`
 
@@ -223,15 +223,15 @@
 
 >该参数用于设置节标题的下间距
 
-#### `enum-numbering`
+#### `enum-numbering` <Badge type="warning" text="^0.1.2" />
 
 `类型: str | function`
 
-`默认值: "（1.i.a）"`
+`默认值: "（1.i.a）"` <Badge type="warning" text="^0.1.8" /> `（1.1.i.a）` <Badge type="warning" text="0.1.0~0.1.7" />
 
 >该参数用于设置有序列表的编号方式
 
-#### `enum-spacing`
+#### `enum-spacing` <Badge type="warning" text="^0.1.3" />
 
 `类型: length`
 
@@ -239,7 +239,7 @@
 
 >该参数用于设置有序列表的之间的间距
 
-#### `enum-indent`
+#### `enum-indent` <Badge type="warning" text="^0.1.3" />
 
 `类型: length`
 
@@ -247,7 +247,7 @@
 
 >该参数用于设置有序列表的缩进
 
-#### `watermark`
+#### `watermark` <Badge type="warning" text="^0.1.4" />
 
 `类型: none | content | image`
 
@@ -255,7 +255,7 @@
 
 >该参数用于设置水印的内容
 
-#### `watermark-color`
+#### `watermark-color` <Badge type="warning" text="^0.1.4" />
 
 `类型: color`
 
@@ -266,7 +266,7 @@
 该参数对图片水印无效。在修改该参数时，一定要修改颜色的透明度，否则水印将覆盖在文字之上。（这是由于水印的实现是基于前景色）详情设置参考 [color](https://typst.app/docs/reference/visualize/color/)。
 :::
 
-#### `watermark-font`
+#### `watermark-font` <Badge type="warning" text="^0.1.4" />
 
 `类型: str | array`
 
@@ -277,7 +277,7 @@
 该参数对图片水印无效
 :::
 
-#### `watermark-size`
+#### `watermark-size` <Badge type="warning" text="^0.1.4" />
 
 `类型: length`
 
@@ -288,7 +288,7 @@
 该参数对图片水印无效，但可以通过传入图片时设置宽高调整图片大小
 :::
 
-#### `watermark-rotate`
+#### `watermark-rotate` <Badge type="warning" text="^0.1.4" />
 
 `类型: angle`
 

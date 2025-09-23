@@ -20,13 +20,25 @@
 
 >该参数为位置参数，用于设置要排列的文本
 
-#### `figure`
+::: tip
+该参数在 <Badge type="warning" text="0.1.9" /> 版本之前为命名参数
+:::
+
+```typst
+// 使用方法
+#text-figure(
+    text: lorem(50)
+  )[#image("wechatpay.png")]
+```
+
+#### `figure` <Badge type="warning" text="^0.1.9" />
 
 `类型: image | table`
 
 `默认值: none`
 
->该参数用于要排版的图表
+>该参数用于设置要排列的图表；
+
 
 #### `figure-x`
 
@@ -44,7 +56,7 @@
 
 >该参数用于设置图表垂直方向上的距离
 
-#### `style`
+#### `style` <Badge type="warning" text="^0.1.9" />
 
 `类型: str`
 

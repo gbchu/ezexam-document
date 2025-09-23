@@ -92,11 +92,12 @@
   安得广厦千万间，大庇天下寒士俱欢颜
 ```
 
-#### `points-separate`
+#### `points-separate` <Badge type="warning" text="^0.1.3" />
 
 `类型: boolean`
 
 `默认值: true`
+
 >该参数用于设置题目的分值是否独占一行
 
 示例
@@ -166,14 +167,14 @@
 `默认值: 0pt`
 >该参数用于设置题目距离下方的外边距
 
-#### `padding-top`
+#### `padding-top` <Badge type="warning" text="^0.1.7" />
 
 `类型: length`
 
 `默认值: 0pt`
 >该参数用于设置题目上方内边距
 
-#### `padding-bottom`
+#### `padding-bottom` <Badge type="warning" text="^0.1.7" />
 
 `类型: length`
 

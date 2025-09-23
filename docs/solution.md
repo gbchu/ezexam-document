@@ -1,4 +1,4 @@
-# `solution` 方法
+# `solution` 方法 <Badge type="warning" text="^0.1.4" />
 
 该方法为题目的解析
 
@@ -24,7 +24,7 @@
 
 `类型: str`
 
-`默认值: none`
+`默认值: none` <Badge type="warning" text="^0.1.2" /> `解析：` <Badge type="warning" text="0.1.0~0.1.1" />
 
 >该参数用于设置解析的标题
 
@@ -156,7 +156,7 @@
 
 >该参数用于设置解析盒子是否可断行
 
-#### `top`
+#### `top` <Badge type="warning" text="^0.1.7" />
 
 `类型: length`
 
@@ -169,7 +169,7 @@
 :::
 
 
-#### `bottom`
+#### `bottom` <Badge type="warning" text="^0.1.7" />
 
 `类型: length`
 
@@ -180,14 +180,14 @@
 该参数在 <Badge type="warning" text="0.1.7" /> 版本之前，名为 `bottom` ；
 :::
 
-#### `padding-top`
+#### `padding-top` <Badge type="warning" text="^0.1.7" />
 
 `类型: length`
 
 `默认值: 0pt`
 >该参数用于设置解析内容的上方内边距
 
-#### `padding-bottom`
+#### `padding-bottom` <Badge type="warning" text="^0.1.7" />
 
 `类型: length`
 
@@ -222,7 +222,7 @@
 
 ![效果图](/tips2.png)
 
-#### `show-number`
+#### `show-number` <Badge type="warning" text="^0.1.2" />
 
 `类型: boolean`
 
