@@ -345,6 +345,7 @@ export default defineConfig({
               { text: "figure-x", link: "/text-figure.md#figure-x" },
               { text: "figure-y", link: "/text-figure.md#figure-y" },
               { text: "style", link: "/text-figure.md#style" },
+              { text: "gap", link: "/text-figure.md#gap" },
               { text: "top", link: "/text-figure.md#top" },
               { text: "bottom", link: "/text-figure.md#bottom" },
             ],
