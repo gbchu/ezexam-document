@@ -195,7 +195,7 @@
 >该参数用于设置解析内容的下方内边距
 
 ::: tip
-`padding-top` 和 `padding-bottom` 参数是用来解决题号和解析对不齐的问题；如遇到该问题可调节该参数。详情参考 [使用技巧](https://ezexam.pages.dev/tips) 。
+`padding-top` 和 `padding-bottom` 参数是用来解决题号和解析对不齐的问题；如遇到该问题可调节该参数。详情参考 [使用技巧](https://ezexam.pages.dev/tips)。
 :::
 
 示例
