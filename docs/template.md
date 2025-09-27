@@ -186,4 +186,4 @@
 
 ## 效果
 
-![图](template.png)
+![图](/template.png)
