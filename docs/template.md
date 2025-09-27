@@ -1,7 +1,8 @@
 # 完整模板示例
 
 ```typst
-#import "@preview/ezexam:0.1.9": *
+// #import "@preview/ezexam:0.1.9": *
+
 #show: setup.with(
   // paper: a3,
   mode: EXAM,
@@ -12,6 +13,10 @@
 #title[2025新高考I卷]
 #subject[数学]
 #secret()
+#exam-type[A]
+#scoring-box(y: .5in)
+#exam-info(info: (命题人: "张三  李四  王五", 审题: "老六教研组"))
+#exam-info()
 
 #notice(
   [答题前，请务必将自已的姓名、准考证号用0.5毫米黑色墨水的签字笔填写在试卷及答题卡的规定位置.],
@@ -62,7 +67,8 @@
 ]
 
 #question[
-  若圆 $x^2 + (y + 2)^2 = r^2 (r > 0)$ 上到直线 $y = sqrt(3)x + 2$ 的距离为 1 的点有且仅有 2 个，则 $r$ 的取值范围是 #paren[]
+  若圆 $x^2 + (y + 2)^2 = r^2 (r > 0)$ 上到直线 $y = sqrt(3)x + 2$ 的距离为 1 的点有且仅有 2 个，则 $r$ 的取值范围是
+  #paren[]
   #choices([(0, 1)], [(1, 3)], [(3, +∞)], [(0, +∞)])
 ]
 
@@ -90,7 +96,7 @@
 
 = 填空题：本题共 3 小题，每小题 5 分，共 15 分.
 #question[
-  若直线 $y = 2x + 5$ 是曲线 $y = e^x + x + a$ 的切线，则 $a =$ #fillin[].
+  若直线 $y = 2x + 5$ 是曲线 $y = e^x + x + a$ 的切线，则 $a =$#fillin[].
 ]
 
 #question[
@@ -98,7 +104,7 @@
 ]
 
 #question[
-  一个箱子里有 5 个球，分别以 1$~$5 标号，若有放回取三次，记至少取出一次的球的个数 $X$，则 $E(X) =$ #fillin[].
+  一个箱子里有 5 个球，分别以 1$~$5 标号，若有放回取三次，记至少取出一次的球的个数 $X$，则 $E(X) =$#fillin[].
 ]
 
 = 解答题：本题共 5 小题，共 77 分.解答应写出文字说明、证明过程或演算步骤.
@@ -133,12 +139,16 @@
 
 #question(points: 15, bottom: 2in)[
   如图所示的四棱锥 $P - A B C D$ 中，$P A perp "平面" A B C D, B C parallel A D, A B perp A D$.
-  #image("17.png", width: 30%) // 替换自己的图片
   + 证明：平面 $P A B perp "平面" P A D$
   + 若 $P A = A B = sqrt(2), A D = sqrt(3) + 1, B C = 2$，$P, B, C, D$ 在同一个球面上，设该球面的球心为 $O$.
-    + 证明：$O$ 在平面 $A B C D$上；
-    + 求直线 $A C$ 与直线 $P O$ 所成角的余弦值.
-
+    #text-figure(
+      figure: image("17.png", width: 2in),
+      figure-x: 20pt,
+      figure-y: 10pt,
+    )[
+      + 证明：$O$ 在平面 $A B C D$上；
+      + 求直线 $A C$ 与直线 $P O$ 所成角的余弦值.
+    ]
 ]
 
 #question(points: 17, bottom: 2in)[
@@ -171,5 +181,6 @@
   #answer[B]
   解:
 ]
+
 
 ```
