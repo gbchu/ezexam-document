@@ -175,6 +175,17 @@ export default defineConfig({
               },
             ],
           },
+          {
+            text: "封面",
+            link: "/reference/cover.md",
+            collapsed: true,
+            items: [
+              { text: "title", link: "/reference/title.md#title" },
+              { text: "subtitle", link: "/reference/title.md#subtitle" },
+              { text: "author", link: "/reference/title.md#author" },
+              { text: "date", link: "/reference/title.md#date" },
+            ],
+          },
           { text: "章节", link: "/reference/chapter.md" },
           {
             text: "标题",
@@ -260,7 +271,10 @@ export default defineConfig({
             items: [
               { text: "format", link: "/reference/notice.md#format" },
               { text: "indent", link: "/reference/notice.md#indent" },
-              { text: "hanging-indent", link: "/reference/notice.md#hanging-indent" },
+              {
+                text: "hanging-indent",
+                link: "/reference/notice.md#hanging-indent",
+              },
               { text: "children", link: "/reference/notice.md#children" },
             ],
           },
@@ -273,7 +287,10 @@ export default defineConfig({
               { text: "c-gap", link: "/reference/choices.md#c-gap" },
               { text: "r-gap", link: "/reference/choices.md#r-gap" },
               { text: "indent", link: "/reference/choices.md#indent" },
-              { text: "body-indent", link: "/reference/choices.md#body-indent" },
+              {
+                text: "body-indent",
+                link: "/reference/choices.md#body-indent",
+              },
               { text: "top", link: "/reference/choices.md#top" },
               { text: "bottom", link: "/reference/choices.md#bottom" },
               { text: "label", link: "/reference/choices.md#label" },
@@ -285,21 +302,39 @@ export default defineConfig({
             link: "/reference/question.md",
             collapsed: true,
             items: [
-              { text: "body-indent", link: "/reference/question.md#body-indent" },
+              {
+                text: "body-indent",
+                link: "/reference/question.md#body-indent",
+              },
               { text: "indent", link: "/reference/question.md#indent" },
               { text: "label", link: "/reference/question.md#label" },
-              { text: "label-color", link: "/reference/question.md#label-color" },
-              { text: "label-weight", link: "/reference/question.md#label-weight" },
+              {
+                text: "label-color",
+                link: "/reference/question.md#label-color",
+              },
+              {
+                text: "label-weight",
+                link: "/reference/question.md#label-weight",
+              },
               { text: "points", link: "/reference/question.md#points" },
               {
                 text: "points-separate",
                 link: "/reference/question.md#points-separate",
               },
-              { text: "points-prefix", link: "/reference/question.md#points-prefix" },
-              { text: "points-suffix", link: "/reference/question.md#points-suffix" },
+              {
+                text: "points-prefix",
+                link: "/reference/question.md#points-prefix",
+              },
+              {
+                text: "points-suffix",
+                link: "/reference/question.md#points-suffix",
+              },
               { text: "top", link: "/reference/question.md#top" },
               { text: "bottom", link: "/reference/question.md#bottom" },
-              { text: "padding-top", link: "/reference/question.md#padding-top" },
+              {
+                text: "padding-top",
+                link: "/reference/question.md#padding-top",
+              },
               {
                 text: "padding-bottom",
                 link: "/reference/question.md#padding-bottom",
@@ -357,26 +392,50 @@ export default defineConfig({
             items: [
               { text: "title", link: "/reference/solution.md#title" },
               { text: "title-size", link: "/reference/solution.md#title-size" },
-              { text: "title-weight", link: "/reference/solution.md#title-weight" },
-              { text: "title-color", link: "/reference/solution.md#title-color" },
+              {
+                text: "title-weight",
+                link: "/reference/solution.md#title-weight",
+              },
+              {
+                text: "title-color",
+                link: "/reference/solution.md#title-color",
+              },
               {
                 text: "title-bg-color",
                 link: "/reference/solution.md#title-bg-color",
               },
-              { text: "title-radius", link: "/reference/solution.md#title-radius" },
-              { text: "title-align", link: "/reference/solution.md#title-align" },
+              {
+                text: "title-radius",
+                link: "/reference/solution.md#title-radius",
+              },
+              {
+                text: "title-align",
+                link: "/reference/solution.md#title-align",
+              },
               { text: "title-x", link: "/reference/solution.md#title-x" },
               { text: "title-y", link: "/reference/solution.md#title-y" },
-              { text: "border-style", link: "/reference/solution.md#border-style" },
-              { text: "border-width", link: "/reference/solution.md#border-width" },
-              { text: "border-color", link: "/reference/solution.md#border-color" },
+              {
+                text: "border-style",
+                link: "/reference/solution.md#border-style",
+              },
+              {
+                text: "border-width",
+                link: "/reference/solution.md#border-width",
+              },
+              {
+                text: "border-color",
+                link: "/reference/solution.md#border-color",
+              },
               { text: "color", link: "/reference/solution.md#color" },
               { text: "radius", link: "/reference/solution.md#radius" },
               { text: "inset", link: "/reference/solution.md#inset" },
               { text: "breakable", link: "/reference/solution.md#breakable" },
               { text: "top", link: "/reference/solution.md#top" },
               { text: "bottom", link: "/reference/solution.md#bottom" },
-              { text: "padding-top", link: "/reference/solution.md#padding-top" },
+              {
+                text: "padding-top",
+                link: "/reference/solution.md#padding-top",
+              },
               {
                 text: "padding-bottom",
                 link: "/reference/solution.md#padding-bottom",
@@ -389,8 +448,14 @@ export default defineConfig({
             link: "/reference/score.md",
             collapsed: true,
             items: [
-              { text: "score-prefix", link: "/reference/score.md#score-prefix" },
-              { text: "score-suffix", link: "/reference/score.md#score-suffix" },
+              {
+                text: "score-prefix",
+                link: "/reference/score.md#score-prefix",
+              },
+              {
+                text: "score-suffix",
+                link: "/reference/score.md#score-suffix",
+              },
               { text: "color", link: "/reference/score.md#color" },
               { text: "points", link: "/reference/score.md#points" },
             ],
@@ -410,7 +475,10 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "name", link: "/reference/draft.md#name" },
-              { text: "student-info", link: "/reference/draft.md#student-info" },
+              {
+                text: "student-info",
+                link: "/reference/draft.md#student-info",
+              },
               { text: "dash", link: "/reference/draft.md#dash" },
               { text: "supplement", link: "/reference/draft.md#supplement" },
             ],
@@ -465,9 +533,7 @@ export default defineConfig({
         text: "小贴士",
         link: "/tips.md",
         collapsed: true,
-        items: [
-          { text: "方法的全局配置", link: "/tips.md#方法的全局配置" }
-        ],
+        items: [{ text: "方法的全局配置", link: "/tips.md#方法的全局配置" }],
       },
     ],
 
