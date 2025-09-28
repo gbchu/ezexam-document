@@ -1,6 +1,7 @@
 # 参考内容
 
   - [`setup`](/reference/setup) 全局设置
+  - [`cover`](/reference/cover) 封面
   - [`chapter`](/reference/chapter) 章节
   - [`title`](/reference/title) 标题
   - [`subject`](/reference/subject) 科目
