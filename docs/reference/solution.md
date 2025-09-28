@@ -72,7 +72,7 @@
 
 `类型: alignment`
 
-`默认值: top+center`
+`默认值: top + center`
 
 >该参数用于设置标题的对齐方式
 
@@ -136,7 +136,7 @@
 
 `类型: dictionary`
 
-`默认值: (left: 10pt, right: 10pt,top: 20pt, bottom: 20pt)`
+`默认值: (left: 10pt, right: 10pt, top: 20pt, bottom: 20pt)`
 
 >该参数用于设置最外层盒子的内边距
 
@@ -192,6 +192,7 @@
 `类型: length`
 
 `默认值: 0pt`
+
 >该参数用于设置解析内容的下方内边距
 
 ::: tip

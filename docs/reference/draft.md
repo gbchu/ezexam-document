@@ -37,9 +37,9 @@
 
 #### `dash`
 
-`类型: str | none | auo | array | dictionary`
+`类型: str | none | auto | array | dictionary`
 
-`默认值: dashed`
+`默认值: "dashed"`
 
 > 该参数用于设置草稿纸下的横线样式
 
@@ -48,7 +48,7 @@
 :::
 #### `supplement`
 
-`类型: str | none | auo | array | dictionary`
+`类型: str | content`
 
 `默认值: ""`
 

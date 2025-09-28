@@ -49,15 +49,15 @@
       flipped: false,
     )
 ```
-> `a3` 和 `a4` 是内部预定义的两个变量，若需要自定义页面类型，则需要使用字典覆盖默认值，格式如上所示
+> `a3` 和 `a4` 是内部预定义的两个变量，若需要自定义页面类型，则需要使用字典覆盖默认值
+
 ::: warning
 本模板仅在 `a3` 和 `a4` 尺寸下测试过；修改该参数可能会导致页面布局混乱。
 :::
+
 #### `page-numbering`
 
 `类型: str | function`
-
-`默认值: auto`
 
 >该参数用于设置模板的页码显示方式
 >
@@ -66,9 +66,11 @@
 >`SOLUTION` 模式下默认显示为: `XX试题答案  第X页（共X页）`
 >
 >`HANDOUTS` 模式下默认显示为: `X / X`
+
 ::: tip
 若要修改显示格式可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置。
 :::
+
 #### `page-align`
 
 `类型: alignment`
@@ -76,11 +78,13 @@
 `默认值: center`
 
 >该参数用于设置模板的页码对齐方式
+
 ::: tip
 1. 若要修改对齐方式可参考官方文档 [alignment](https://typst.app/docs/reference/layout/alignment/) 的参数设置。
 
 2. 若想实现奇数页在右侧显示，偶数页在左侧显示的效果，可忽略该参数，修改 [`footer-is-separate`](#footer-is-separate) 参数为 `false` 即可。
 :::
+
 #### `footer-is-separate`
 
 `类型: boolean`
@@ -93,13 +97,14 @@
 
 `类型: str | function`
 
-`默认值: ⚜ I ⚜`
+`默认值: "⚜ I ⚜"`
 
 >该参数用于设置目录的页码显示
 
 ::: tip
 若要修改显示格式可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置。
 :::
+
 #### `gap`
 
 `类型: length`
@@ -131,9 +136,11 @@
 `默认值: ("New Computer Modern Math", "Source Han Serif")`
 
 >该参数用于设置页面的字体
+
 ::: tip
 由于宋体不支持加粗，故本包在设置字体时使用的是思源宋体；在使用本包时，请自行下载 [思源宋体](https://github.com/adobe-fonts/source-han-serif/releases) 并安装。或者使用第三方 [粗体包](https://typst.app/universe/package/cuti)。
 :::
+
 #### `font-math`
 
 `类型: str | array`
@@ -273,7 +280,7 @@
 
 `类型: str | array`
 
-`默认值: source-han`
+`默认值: ("New Computer Modern Math", "Source Han Serif")`
 
 >该参数用于设置水印的字体
 ::: warning
@@ -341,18 +348,20 @@
 
 #### `seal-line-type`
 
-`类型: str | none | auo | array | dictionary`
+`类型: str | none | auto | array | dictionary`
 
-`默认值: dashed`
+`默认值: "dashed"`
 
 >该参数用于设置弥封线的样式
+
 ::: tip
 此设置的可选值参考官方文档 [线的类型](https://typst.app/docs/reference/visualize/stroke/#constructor-dash)。
 :::
+
 #### `seal-line-supplement`
 
 `类型: str`
 
-`默认值: 弥封线内不得答题`
+`默认值: "弥封线内不得答题"`
 
 >该参数用于设置弥封线内的补充信息

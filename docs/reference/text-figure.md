@@ -18,7 +18,7 @@
 
 #### `text`
 
-`类型: content`
+`类型: str | content`
 
 `默认值: 无`
 

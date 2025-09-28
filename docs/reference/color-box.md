@@ -19,7 +19,7 @@
 
 #### `dash`
 
-`类型: str | none | auo | array | dictionary`
+`类型: str | none | auto | array | dictionary`
 
 `default: "dotted"`
 

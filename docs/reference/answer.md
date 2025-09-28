@@ -5,7 +5,6 @@
 #### 示例
 ```typst
 #answer("D") or #answer[D]
-
 // solution方法中
 #solution[
   #answer[D]

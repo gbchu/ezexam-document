@@ -1,7 +1,7 @@
 # 使用技巧
 
 ### 方法的全局配置
-全局配置全部暴露在 `setup` 方法中，像 `choices` 或 `question` 等方法中的一些配置并没有暴露在 `setup` 方法中。此时若想全局配置某些参数，可以按照以下的方法配置。比如选项的 `label` 使用带圈数字，不使用默认的 `A.B.C.D.`
+全局配置全部暴露在 `setup` 方法中，像 `choices` 或 `question` 等方法中的一些配置并没有暴露在 `setup` 方法中。若要全局配置方法中的某些参数，可以按照以下的方法配置。比如选项的 `label` 使用带圈数字，不使用默认的 `A. B. C. D.`
 ```typst
 // 全局设置选项的label
 #let choices = choices.with(label:"①")
