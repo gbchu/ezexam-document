@@ -1,7 +1,7 @@
 # 完整模板示例
 
 ```typst
-#import "@preview/ezexam:0.1.9": *
+#import "@preview/ezexam:0.2.0": *
 
 #show: setup.with(
   // paper: a3,
