@@ -18,7 +18,7 @@ export default defineConfig({
     logo: "/logo.svg",
     nav: [
       {
-        text: "0.1.9",
+        text: "0.2.0",
         items: [
           {
             text: "更新日志",
@@ -368,6 +368,14 @@ export default defineConfig({
               { text: "with-number", link: "/reference/fillin.md#with-number" },
               { text: "update", link: "/reference/fillin.md#update" },
               { text: "answer", link: "/reference/fillin.md#answer" },
+            ],
+          },
+          {
+            text: "着重号",
+            link: "/reference/underdot.md",
+            collapsed: true,
+            items: [
+              { text: "body", link: "/reference/underdot.md#body" },
             ],
           },
           {

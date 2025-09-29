@@ -14,6 +14,7 @@
   - [`question`](/reference/question) 题目
   - [`paren`](/reference/paren) 选择题的括号
   - [`fillin`](/reference/fillin) 填空的下划线
+  - [`underdot`](/reference/underdot) 着重号
   - [`text-figure`](/reference/text-figure) 图文混排
   - [`solution`](/reference/solution) 解析
   - [`score`](/reference/score) 解析内的评分
