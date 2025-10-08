@@ -133,21 +133,25 @@
 
 `类型: str | array`
 
-`默认值: ("New Computer Modern Math", "Source Han Serif")`
+`默认值: ("New Computer Modern Math", "Source Han Serif", "SimSun")`
 
 >该参数用于设置页面的字体
 
 ::: tip
-由于宋体不支持加粗，故本包在设置字体时使用的是思源宋体；在使用本包时，请自行下载 [思源宋体](https://github.com/adobe-fonts/source-han-serif/releases) 并安装。或者使用第三方 [粗体包](https://typst.app/universe/package/cuti)。
+由于宋体不支持加粗，故本包在设置字体时，中文默认使用的是思源宋体；当前如果没有该字体则默认使用宋体。在使用本包时，自行下载 [思源宋体](https://cloud.189.cn/web/share?code=3Ajyie73e2ii) （访问码：8dtm）并安装在对应的操作系统中即可。
 :::
 
 #### `font-math`
 
 `类型: str | array`
 
-`默认值: ("New Computer Modern Math", "Source Han Serif")`
+`默认值: ("New Computer Modern Math", "Source Han Serif", "SimSun")`
 
 >该参数用于设置数学公式下的字体
+
+::: tip
+若想使用 `Times New Roman` 风格的西文字体；自行下载 [STIX 2 字体](https://wwoq.lanzouo.com/iFWe537x8zeb) 并安装在对应的操作系统中；然后修改该参数值即可。
+:::
 
 #### `line-height`
 
