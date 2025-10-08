@@ -154,12 +154,12 @@
 >该参数用于设置数学公式下的字体
 
 ::: tip
-若想使用 `Times New Roman` 风格的西文字体；自行下载 [STIX 2 字体](https://wwoq.lanzouo.com/iGWQY37xdrsh
+若想使用 `Times New Roman` 风格的字体；自行下载 [STIX 2 字体](https://wwoq.lanzouo.com/iGWQY37xdrsh
 )（密码：aa91） 并安装在对应的操作系统中（安装后需要重启系统）即可。
 :::
 
 ::: warning
-如果使用的是 <Badge type="warning" text="0.2.1" /> 以下的版本，安装字体后需要自行修改该参数才生效！
+如果使用的是 <Badge type="warning" text="0.2.1" /> 以下的版本，安装 STIX 2 字体后需要自行修改该参数才生效！
 :::
 
 #### `line-height`
