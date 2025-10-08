@@ -159,7 +159,7 @@
 :::
 
 ::: warning
-如果使用的是 <Badge type="warning" text="0.2.1" /> 及以下的版本，安装字体后需要自行修改该参数才生效！
+如果使用的是 <Badge type="warning" text="0.2.1" /> 以下的版本，安装字体后需要自行修改该参数才生效！
 :::
 
 #### `line-height`
