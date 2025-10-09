@@ -162,7 +162,7 @@
 :::
 
 ::: warning
-如果使用的是 <Badge type="warning" text="0.2.1" /> 以下的版本，安装 STIX 2 字体后需要修改 `font` 和 `font-math` 参数才能全部生效！
+如果使用的是 <Badge type="warning" text="0.2.1" /> 以下的版本，安装 STIX 2 字体后需要修改 `font` 和 `font-math` 参数才能生效！
 
 为了方便使用 `Times New Roman` 风格的字体，在 <Badge type="warning" text="0.2.2" /> 版本，新增如下两个变量：
 
