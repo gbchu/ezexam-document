@@ -153,26 +153,25 @@
 
 `默认值: ("STIX Two Math", "New Computer Modern Math", "Source Han Serif", "SimSun")` <Badge type="warning" text="0.2.1" />
 
-`默认值: ("New Computer Modern Math", "Noto Serif SC", "Noto Serif CJK SC", "SimSun")` <Badge type="warning" text="^0.2.2" />
-
 >该参数用于设置数学公式下的字体
 
-::: tip
-若想使用 `Times New Roman` 风格的字体；自行下载 [STIX 2 字体](https://wwoq.lanzouo.com/iTwjl37zovsj) 并安装在对应的操作系统中（安装后需要重启系统）。通过 `TypstApp` 在线使用时，无需进行安装。
-:::
-
 ::: warning
-如果使用的是 <Badge type="warning" text="0.2.1" /> 以下的版本，安装 STIX 2 字体后需要修改 `font` 和 `font-math` 参数才能生效！
+该参数从 <Badge type="warning" text="0.2.2" /> 开始已弃用；使用 `font` 参数即可完成数学字体的修改。详情参考 [字体设置](https://typst.app/docs/reference/text/text/#parameters-font)
+:::
 
-为了方便使用 `Times New Roman` 风格的字体，在 <Badge type="warning" text="0.2.2" /> 版本，新增如下两个变量：
 
-`ROMAN` : 正文的西文字体修改为新罗马字体；
+::: tip
+若想使用新罗马风格的字体，需要自行 [下载新罗马风格的字体](https://wwoq.lanzouo.com/b016kazkba) （密码：2vfb） 并安装在对应的操作系统中（安装后需要重启系统）。通过 `TypstApp` 在线使用时，无需进行安装。
 
-`STIX` ：数学公式字体修改为类新罗马字体风格；
+为了方便使用新罗马风格的字体，从 <Badge type="warning" text="0.2.2" /> 版本开始，新增常量 `ROMAN = ("Times New Roman", "TeX Gyre Termes Math", "Noto Serif SC", "Noto Serif CJK SC", "SimSun")` ， 安装新罗马风格字体后只需将字体修改为该值即可。
+
+- 若安装的是 STIX Two Math 字体，安装字体后需要修改 `font` 和 `font-math` 参数才能生效！
+
+- 若安装的是 TeX Gyre Termes Math 字体（推荐），将 `font` 参数修改为 `ROMAN` 即可！
 :::
 
 ::: tip
-使用本模板时，会报 `unknown font family` 字体警告，原因是相同的字体，名字不同，却出现多次。之所以出现多次是为了确保不管是本地使用还是在线使用时，字体都能显示相同的效果。目前官方暂时没有压制该警告的方法，只能等后续更新看了。若排版的试卷显示正常，忽略该警告！！！
+使用本模板时，会报 `unknown font family` 字体警告，原因是相同的字体，名字不同，却出现多次。之所以出现多次是为了确保不管是本地使用还是在线使用时，字体都能显示相同的效果。目前官方暂时没有压制该警告的方法，只能等后续更新看了。若排版的试卷显示正常，忽略该警告即可！
 :::
 
 #### `line-height`

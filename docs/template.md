@@ -1,11 +1,12 @@
 # 完整模板示例
 
 ```typst
-#import "@preview/ezexam:0.2.1": *
+#import "@preview/ezexam:0.2.2": *
 
 #show: setup.with(
-  // paper: a3,
   mode: EXAM,
+  // paper: a3,
+  // font: ROMAN,
 )
 
 #outline()
