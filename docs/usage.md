@@ -7,7 +7,7 @@
 
      + 应用模板配置：`#show: setup.with(mode: EXAM)`
 
- 2. **本地使用**
+ 2. **本地使用** （推荐）
 
      + 下载 [`vscode`](https://code.visualstudio.com/download) 并安装 `typst` 插件 [`tinymist`](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist)
 
