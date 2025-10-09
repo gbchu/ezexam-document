@@ -133,11 +133,11 @@
 
 `类型: str | array`
 
-`默认值: ("New Computer Modern Math", "Noto Serif SC", "SimSun")`
+`默认值: ("New Computer Modern Math", "Source Han Serif", "SimSun")`
 
 `默认值: ("STIX Two Math", "New Computer Modern Math", "Source Han Serif", "SimSun")` <Badge type="warning" text="0.2.1" />
 
-`默认值: ("New Computer Modern Math", "Noto Serif SC", "Source Han Serif", "Noto Serif CJK SC", "SimSun")` <Badge type="warning" text="^0.2.2" />
+`默认值: ("New Computer Modern Math", "Noto Serif SC", "Noto Serif CJK SC", "SimSun")` <Badge type="warning" text="^0.2.2" />
 
 >该参数用于设置页面的字体
 
@@ -153,7 +153,7 @@
 
 `默认值: ("STIX Two Math", "New Computer Modern Math", "Source Han Serif", "SimSun")` <Badge type="warning" text="0.2.1" />
 
-`默认值: ("New Computer Modern Math", "Noto Serif SC", "Source Han Serif", "Noto Serif CJK SC", "SimSun")` <Badge type="warning" text="^0.2.2" />
+`默认值: ("New Computer Modern Math", "Noto Serif SC", "Noto Serif CJK SC", "SimSun")` <Badge type="warning" text="^0.2.2" />
 
 >该参数用于设置数学公式下的字体
 
@@ -172,7 +172,7 @@
 :::
 
 ::: tip
-使用本模板时，会报 `unknown font family` 字体警告，原因是相同的字体，名字不同，却出现多次。之所以出现多次是为了解决本地使用和在线使用时，确保字体都能显示相同的效果。目前官方暂时没有压制该警告的方法，只能等后续更新看了。若排版的试卷显示正常，忽略该警告！！！
+使用本模板时，会报 `unknown font family` 字体警告，原因是相同的字体，名字不同，却出现多次。之所以出现多次是为了确保不管是本地使用还是在线使用时，字体都能显示相同的效果。目前官方暂时没有压制该警告的方法，只能等后续更新看了。若排版的试卷显示正常，忽略该警告！！！
 :::
 
 #### `line-height`
