@@ -166,9 +166,9 @@
 
 为了方便使用 `Times New Roman` 风格的字体，在 <Badge type="warning" text="0.2.2" /> 版本，新增如下两个变量：
 
-`ROMAN` : 正文的西文字体修改为新罗马风格；
+`ROMAN` : 正文的西文字体修改为 `Times New Roman` ；
 
-`STIX` ：数学公式字体修改为新罗马风格；
+`STIX` ：数学公式字体修改为类新罗马字体风格；
 :::
 
 ::: tip
