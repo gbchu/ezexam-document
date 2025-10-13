@@ -4,29 +4,33 @@
 
 #### 示例
 ```typst
-与 NaOH 溶液反应生成酸式盐的化学方程式为 #fillin(length: 1in)[]
+与 NaOH 溶液反应生成酸式盐的化学方程式为 #fillin[]
 // 输出
-与 NaOH 溶液反应生成酸式盐的化学方程式为_____________
-
+与 NaOH 溶液反应生成酸式盐的化学方程式为____________
 ```
 
 
 ### 参数
 
-#### `length`
+#### `len`
 
 `类型: length`
 
-`默认值: 1em`
+`默认值: 1cm`
 
->该参数用于设置填空题下划线的长度
+>该参数用于设置下划线的长度
+
+::: warning
+该参数在 <Badge type="warning" text="0.2.1" /> 及以下版本名为 `length`
+:::
 
 #### `placeholder`
 
 `类型: str | symbol`
 
 `默认值: "▲"`
->该参数用于设置当不显示答案时，括号的占位符
+
+>该参数用于设置当不显示答案时的占位符
 
 ::: tip
 占位符的样式修改参考官方文档：[符号](https://typst.app/docs/reference/symbols/)。
@@ -37,6 +41,7 @@
 `类型: boolean`
 
 `默认值: false`
+
 >该参数用于设置占位符是否使用当前题号替代
 
 ::: tip
@@ -102,6 +107,7 @@ quibusdame.
 `类型: boolean`
 
 `默认值: false`
+
 >该参数用于更新题号
 
 ::: warning
@@ -134,6 +140,22 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
 ::: tip
  对于七选五这类题型，每次使用占位符都设置参数很麻烦，本模板提供了一个方法 `fillinn` ，只需要将上述 `fillin(with-number: true, update: true)[]` 直接改为 `fillinn[]` 即可，本质就是上述方法的语法糖。
 :::
+
+#### `stroke` <Badge type="warning" text="^0.2.2" />
+
+`类型: length | color | array`
+
+`默认值: .45pt`
+
+>该参数设置下划线的样式
+
+#### `offset` <Badge type="warning" text="^0.2.2" />
+
+`类型: length`
+
+`默认值: 3.5pt`
+
+>该参数设置下划线的偏移量
 
 #### `answer`
 

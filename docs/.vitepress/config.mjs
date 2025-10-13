@@ -363,10 +363,12 @@ export default defineConfig({
             link: "/reference/fillin.md",
             collapsed: true,
             items: [
-              { text: "length", link: "/reference/fillin.md#length" },
+              { text: "len", link: "/reference/fillin.md#len" },
               { text: "placeholder", link: "/reference/fillin.md#placeholder" },
               { text: "with-number", link: "/reference/fillin.md#with-number" },
               { text: "update", link: "/reference/fillin.md#update" },
+              { text: "stroke", link: "/reference/fillin.md#stroke" },
+              { text: "offset", link: "/reference/fillin.md#offset" },
               { text: "answer", link: "/reference/fillin.md#answer" },
             ],
           },
