@@ -165,7 +165,7 @@
 
 为了方便使用新罗马风格的字体，从 <Badge type="warning" text="0.2.2" /> 版本开始，新增常量 `ROMAN = ("Times New Roman", "TeX Gyre Termes Math", "Noto Serif SC", "Noto Serif CJK SC", "SimSun")` ， 安装 TeX Gyre Termes Math 字体后只需将字体修改为该值即可。
 
-- 若安装的是 STIX Two Math 字体，安装字体后需要自行修改 `font` 和 `font-math` 参数的值才能生效！参考 `ROMAN` 的值即可！
+- 若安装的是其它受支持的数学字体，安装字体后需要自行修改 `font` 和 `font-math` 参数的值才能生效！参考 `ROMAN` 的值即可！
 
 使用本模板时，会报 `unknown font family` 字体警告，原因是相同的字体，名字不同，却出现多次。之所以出现多次是为了确保不管是本地使用还是在线使用时，字体都能显示相同的效果。目前官方暂时没有压制该警告的方法，只能等后续更新看了。若排版的试卷显示正常，忽略该警告即可！
 :::
