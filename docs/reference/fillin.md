@@ -26,14 +26,14 @@
 
 #### `placeholder`
 
-`类型: str | symbol`
+`类型: str`
 
 `默认值: "▲"`
 
 >该参数用于设置当不显示答案时的占位符
 
 ::: tip
-占位符的样式修改参考官方文档：[符号](https://typst.app/docs/reference/symbols/)。
+占位符的样式修改参考官方 [符号](https://typst.app/docs/reference/symbols/) 。
 :::
 
 #### `with-number`
