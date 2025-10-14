@@ -22,8 +22,6 @@
 
 ::: warning
 该参数在 <Badge type="warning" text="0.2.1" /> 及以下版本名为 `length`
-
-该参数仅在不显示答案时生效！！！
 :::
 
 #### `placeholder`
