@@ -145,7 +145,7 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
 
 `类型: length | color | array`
 
-`默认值: .45pt`
+`默认值: .45pt + black`
 
 >该参数设置下划线的样式
 
@@ -153,7 +153,7 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
 
 `类型: length`
 
-`默认值: 3.5pt`
+`默认值: 1.5pt`
 
 >该参数设置下划线的偏移量
 
