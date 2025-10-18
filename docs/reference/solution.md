@@ -156,7 +156,7 @@
 
 >该参数用于设置解析盒子是否可断行
 
-#### `line-height`
+#### `line-height`  <Badge type="warning" text="^0.2.3" />
 
 `类型: length`
 
