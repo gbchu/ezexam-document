@@ -156,6 +156,14 @@
 
 >该参数用于设置解析盒子是否可断行
 
+#### `line-height`
+
+`类型: length`
+
+`默认值: auto`
+
+>该参数用于设置解析内容的行与行之间的距离
+
 #### `top` <Badge type="warning" text="^0.1.7" />
 
 `类型: length`
@@ -185,6 +193,7 @@
 `类型: length`
 
 `默认值: 0pt`
+
 >该参数用于设置解析内容的上方内边距
 
 #### `padding-bottom` <Badge type="warning" text="^0.1.7" />
