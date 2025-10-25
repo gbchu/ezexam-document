@@ -3,7 +3,7 @@ export default defineConfig({
   lang: "zh-CN",
   title: "ezexam",
   description:
-    "A typst exam and lecture template inspired by latex package exam-zh",
+    "An typst exam and handouts template inspired by latex package exam-zh",
   head: [
     [
       "link",
@@ -564,10 +564,10 @@ export default defineConfig({
       text: "最后更新于",
     },
 
-    editLink: {
+/*     editLink: {
       pattern: "https://github.com/gbchu/ezexam-document",
       text: "在 GitHub 上编辑此页面",
-    },
+    }, */
   },
 
   cleanUrls: true,
