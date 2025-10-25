@@ -8,7 +8,7 @@
   - [`secret`](/reference/secret) 位于左上角的绝密之类的
   - [`exam-type`](/reference/exam-type) 试卷类型
   - [`exam-info`](/reference/exam-info) 试卷信息
-  - [`score_-box`](/reference/scoring-box) 评分框
+  - [`score-box`](/reference/scoring-box) 评分框
   - [`notice`](/reference/notice) 试卷的注意事项
   - [`choices`](/reference/choices) 选择题
   - [`question`](/reference/question) 题目
