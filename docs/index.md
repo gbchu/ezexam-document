@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "ezexam"
   text: "一个用于试卷、讲义排版的Typst模板"
-  tagline: "专注内容，告别繁杂的试卷排版"
+  tagline: "专注内容，告别繁杂的排版"
   image:
     src: /show.png
   actions:
