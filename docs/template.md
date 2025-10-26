@@ -1,7 +1,7 @@
 # 完整模板示例
 
 ```typst
-#import "@preview/ezexam:0.2.2": *
+#import "@preview/ezexam:0.2.3": *
 
 #show: setup.with(
   mode: EXAM,
