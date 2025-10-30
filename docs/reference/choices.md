@@ -50,13 +50,17 @@ A. -1     B.  0    C.  1     D.  6
 
 >该参数用于设置选项的缩进
 
-#### `body-indent`
+#### `spacing` <Badge type="warning" text="^0.2.4" />
 
 `类型: length`
 
 `默认值: 5pt`
 
 >该参数用于设置选项和标签之间的距离
+
+::: tip
+该参数在 <Badge type="warning" text="0.2.4" /> 之前名为 `body-indent`
+:::
 
 #### `top`
 
@@ -98,6 +102,16 @@ A. -1     B.  0    C.  1     D.  6
 // 输出结果
 ① 选项1       ② 选项2         ③ 选项3         ④ 选项4
 ```
+
+#### `label-position`
+
+`类型: alignment`
+
+`默认值: left`
+
+`可选值: bottom`
+
+>该参数用于设置当选项为图表时，选项的标签位置；
 
 #### `options`
 
