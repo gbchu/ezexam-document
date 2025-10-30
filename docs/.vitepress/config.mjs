@@ -287,13 +287,11 @@ export default defineConfig({
               { text: "c-gap", link: "/reference/choices.md#c-gap" },
               { text: "r-gap", link: "/reference/choices.md#r-gap" },
               { text: "indent", link: "/reference/choices.md#indent" },
-              {
-                text: "body-indent",
-                link: "/reference/choices.md#body-indent",
-              },
+              { text: "sapcing", link: "/reference/choices.md#sapcing" },
               { text: "top", link: "/reference/choices.md#top" },
               { text: "bottom", link: "/reference/choices.md#bottom" },
               { text: "label", link: "/reference/choices.md#label" },
+              { text: "label-position", link: "/reference/choices.md#label-position" },
               { text: "options", link: "/reference/choices.md#options" },
             ],
           },
@@ -376,9 +374,7 @@ export default defineConfig({
             text: "着重号",
             link: "/reference/underdot.md",
             collapsed: true,
-            items: [
-              { text: "body", link: "/reference/underdot.md#body" },
-            ],
+            items: [{ text: "body", link: "/reference/underdot.md#body" }],
           },
           {
             text: "图文混排",
@@ -564,7 +560,7 @@ export default defineConfig({
       text: "最后更新于",
     },
 
-/*     editLink: {
+    /*     editLink: {
       pattern: "https://github.com/gbchu/ezexam-document",
       text: "在 GitHub 上编辑此页面",
     }, */
