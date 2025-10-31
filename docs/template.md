@@ -143,7 +143,7 @@
   + 证明：平面 $P A B perp "平面" P A D$
   + 若 $P A = A B = sqrt(2), A D = sqrt(3) + 1, B C = 2$，$P, B, C, D$ 在同一个球面上，设该球面的球心为 $O$.
     #text-figure(
-      figure: image("17.png", width: 2in),
+      figure: image("17.png", width: 2in), // 替换自己的图片
       figure-x: 20pt,
       figure-y: 10pt,
     )[
