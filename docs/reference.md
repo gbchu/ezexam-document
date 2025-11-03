@@ -22,6 +22,7 @@
   - [`draft`](/reference/draft) 草稿纸
   - [`zh-arabic`](/reference/zh-arabic) 一种页码格式
   - ~~[`inline-square`](/reference/inline-square) 方格~~
-  - [`color-box`](/reference/color-box) 彩色盒子
+  - ~~[`color-box`](/reference/color-box) 彩色盒子~~
+  - [`tag`](/reference/tag) 标签
   - [`multi`](/reference/multi) 多选标记
   - [`ezchem` ](/reference/chem) 化学相关

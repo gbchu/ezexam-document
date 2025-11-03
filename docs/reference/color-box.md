@@ -7,6 +7,11 @@
 #color-box[2025新高考I卷]#lorem(20)
 ```
 ![效果图](/color-box.png)
+
+::: warning
+该方法在 <Badge type="warning" text="^0.2.4" /> 版本中已废弃，请使用 [tag](/reference/tag) 方法代替
+:::
+
 ### 参数
 
 #### `color`

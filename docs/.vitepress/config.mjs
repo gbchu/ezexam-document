@@ -521,6 +521,18 @@ export default defineConfig({
             ],
           },
           {
+            text: "彩色标记",
+            link: "/reference/tag.md",
+            collapsed: true,
+            items: [
+              { text: "color", link: "/reference/tag.md#color" },
+              { text: "font", link: "/reference/tag.md#font" },
+              { text: "prefix", link: "/reference/tag.md#prefix" },
+              { text: "suffix", link: "/reference/tag.md#suffix" },
+              { text: "body", link: "/reference/tag.md#body" },
+            ],
+          },
+          {
             text: "多选标记",
             link: "/reference/multi.md",
           },
