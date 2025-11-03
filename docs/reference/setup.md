@@ -163,7 +163,7 @@
 ::: tip
 若想使用新罗马风格的字体，需要自行 [下载新罗马风格的字体](https://wwoq.lanzouo.com/b016kazkba) （密码：2vfb） 并安装在对应的操作系统中（安装后需要重启系统）。通过 `TypstApp` 在线使用时，无需进行安装。
 
-为了方便使用新罗马风格的字体，从 <Badge type="warning" text="0.2.2" /> 版本开始，新增常量 `roman = ((name: "Times New Roman", covers: regex("\d")), "TeX Gyre Termes Math", "Noto Serif SC", "Noto Serif CJK SC", "SimSun")` ， 安装 TeX Gyre Termes Math 字体后只需将字体修改为该值即可。
+为了方便使用新罗马风格的字体，从 <Badge type="warning" text="0.2.2" /> 版本开始，新增常量 `roman = ((name: "Times New Roman", covers: regex("\d")), "TeX Gyre Termes Math", "Noto Serif SC", "Noto Serif CJK SC")` ， 安装 TeX Gyre Termes Math 字体后只需将字体修改为该值即可。
 :::
 
 ::: warning
