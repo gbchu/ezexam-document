@@ -1,4 +1,4 @@
-# tag 方法 <Badge type="tip" text="^0.2.4" />
+# tag 方法 <Badge type="tip" text="^0.2.5" />
 
 该方法可生一个带有颜色的标记
 
