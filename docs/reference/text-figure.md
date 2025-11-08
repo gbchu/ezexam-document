@@ -87,6 +87,14 @@
 
 >该参数用于设置图片和文本之间的距离
 
+#### `align` <Badge type="warning" text="^0.2.5" />
+
+`类型: alignment`
+
+`默认值: horizon`
+
+>该参数用于设置图片和文本的对齐方式
+
 #### `top`
 
 `类型: length`
