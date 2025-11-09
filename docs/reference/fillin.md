@@ -153,7 +153,7 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
 
 `类型: length`
 
-`默认值: 1.5pt`
+`默认值: 3pt`
 
 >该参数设置下划线的偏移量
 
