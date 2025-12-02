@@ -5,7 +5,7 @@
 
 #show: setup.with(
   mode: EXAM,
-  // paper: a3,
+  paper: a3,
   // font: roman,
 )
 
@@ -26,37 +26,37 @@
   [本试卷共4页，满分150分，考试时间为120分钟.考试结束后，请将本试卷和答题卡一并交回.],
 )
 
-= 单选题：本题共 8 小题，每小题 5 分，共 40 分.在每小题给出的四个选项中，只有一项是符合题目要求的.
+= 单选题：本题共 8 小题，每小题 5 分，共 40 分.在每小题给出的四个选项中，只有一项是符合题目要求的。
 #question[
-  $(1 + 5i)i$ 的虚部为 #paren[]
+  $(1 + 5i)i$ 的虚部为 #paren[C]
   #choices([$-1$], [$0$], [$1$], [$6$])
 ]
 
 #question[
-  集合 $U = {x | x "为小于9的正整数" }$, $A = {1,3,5}$, 则 $complement_U A$ 中的元素个数为 #paren[]
+  集合 $U = {x | x "为小于9的正整数"}$, $A = {1,3,5}$, 则 $complement_U A$ 中的元素个数为 #paren[C]
   #choices([$0$], [$3$], [$5$], [$8$])
 ]
 
 #question[
-  若双曲线 $C$ 的虚轴长为实轴长的 $sqrt(7)$ 倍，则 $C$ 的离心率为 #paren[]
+  若双曲线 $C$ 的虚轴长为实轴长的 $sqrt(7)$ 倍，则 $C$ 的离心率为 #paren[D]
   #choices([$sqrt(2)$], [$2$], [$sqrt(7)$], [$2sqrt(2)$])
 ]
 
 #question[
-  若点 $(a,0) (a > 0)$ 是函数 $y = 2tan(x - pi / 3)$ 的图象的一个对称中心，则 $a$ 的最小值为 #paren[]
+  若点 $(a,0) (a > 0)$ 是函数 $y = 2tan(x - pi / 3)$ 的图象的一个对称中心，则 $a$ 的最小值为 #paren[B]
   #choices([$30°$], [$60°$], [$90°$], [$135°$])
 ]
 
 #question[
-  设 $f(x)$ 是定义在 $RR$ 上且周期为 2 的偶函数，当 $2 lt.slant x lt.slant 3$ 时，$f(x) = 5 - 2x$，则
-  $f(-3 / 4 ) =$ #paren[]
+  设 $f(x)$ 是定义在 $RR$ 上且周期为 2 的偶函数，当 $2 lt.slant x lt.slant 3$ 时，$f(x) = 5 - 2x$，则 $f(-3 / 4 ) =$
+  #paren[A]
   #choices([$-1 / 2$], [$-1 / 4$], [$1 / 4$], [$1 / 2$])
 ]
 
 #question[
-  已知视风速是真风速和船风速的和向量，船风速与船行驶速度大小相等，方向相反.则真风速等级是 #paren[]
+  已知视风速是真风速和船风速的和向量，船风速与船行驶速度大小相等，方向相反.则真风速等级是 #paren[A]
   #text-figure(
-    figure: image("6.png", width: 1.5in), // 替换自己的图片
+    figure: image("6.png", height: 1.5in),
     figure-x: -1in,
   )[#choices(
     columns: 1,
@@ -69,46 +69,45 @@
 
 #question[
   若圆 $x^2 + (y + 2)^2 = r^2 (r > 0)$ 上到直线 $y = sqrt(3)x + 2$ 的距离为 1 的点有且仅有 2 个，则 $r$ 的取值范围是
-  #paren[]
+  #paren[B]
   #choices([(0, 1)], [(1, 3)], [(3, +∞)], [(0, +∞)])
 ]
 
 #question[
-  若实数 $x, y, z$ 满足 $2 + log_2 x = 3 + log_3y = 5 + log_5 z$，则 $x, y, z$ 的大小关系不可能是 #paren[]
+  若实数 $x, y, z$ 满足 $2 + log_2 x = 3 + log_3y = 5 + log_5 z$，则 $x, y, z$ 的大小关系不可能是 #paren[B]
   #choices([$x > y > z$], [$x > z > y$], [$y > x > z$], [$y > z > x$])
 ]
 
-= 多选题：本题共 3 小题，每小题 6 分，共 18 分.在每小题给出的选项中，有多项符合题目要求.全部选对的得 6 分，部分选对的得部分分，有选错的得 0 分.
+= 多选题：本题共 3 小题，每小题 6 分，共 18 分.在每小题给出的选项中，有多项符合题目要求.全部选对的得 6 分，部分选对的得部分分，有选错的得 0 分。
 #question[
-  在正三棱柱 $A B C-A_1B_1C_1$ 中，$D$ 为 $B C$ 中点，则 #paren[]
+  在正三棱柱 $A B C-A_1B_1C_1$ 中，$D$ 为 $B C$ 中点，则 #paren[BD]
   #choices([$A D perp A_1C$], [$B_1C perp "平面" A A_1D$], [$C C_1 parallel "平面" A A_1D$], [$A D parallel A_1B_1$])
 ]
 
 #question[
-  设抛物线 $C: y^2 = 6x$ 的焦点为 $F$，过 $F$ 的直线交 $C$ 于$A、B$，过 $F$ 且垂直于 $A B$的直线交准线 $l$:
-  $y = -3 / 2x$ 于 $E$，过点$A$作准线的垂线，垂足为$D$，则 #paren[]
+  设抛物线 $C: y^2 = 6x$ 的焦点为 $F$，过 $F$ 的直线交 $C$ 于$A、B$，过 $F$ 且垂直于 $A B$的直线交准线 $l$: $y = -3 / 2x$ 于 $E$，过点$A$作准线的垂线，垂足为$D$，则 #paren[ACD]
   #choices([$|A D| = |A F|$], [$|A E| = |A B|$], [$|A B| gt.slant 6$], [$|A E| dot |B E| gt.slant 18$])
 ]
 
 #question[
-  已知 $triangle A B C$ 的面积为 $1 / 4$，若 $cos 2A + cos 2B + cos 2C = 2,cos A cos B sin C = 1 / 4$，则 #paren[]
+  已知 $triangle A B C$ 的面积为 $1 / 4$，若 $cos 2A + cos 2B + cos 2C = 2,cos A cos B sin C = 1 / 4$，则 #paren[ACD]
   #choices([$sin C = sin^2 A + sin^2 B$], [$A B = sqrt(2)$], [$sin A + sin B = sqrt(6) / 2$], [$A C^2 + B C^2 = 3$])
 ]
 
-= 填空题：本题共 3 小题，每小题 5 分，共 15 分.
+= 填空题：本题共 3 小题，每小题 5 分，共 15 分。
 #question[
-  若直线 $y = 2x + 5$ 是曲线 $y = e^x + x + a$ 的切线，则 $a =$#fillin[].
+  若直线 $y = 2x +5$ 是曲线 $y = e^x + x + a$ 的切线，则 $a =$#fillin[4].
 ]
 
 #question[
-  若一个正项等比数列的前 4 项和为 4，前 8 项和为 68，则该等比数列的公比为 #fillin[].
+  若一个正项等比数列的前 4 项和为 4，前 8 项和为 68，则该等比数列的公比为 #fillin[$plus.minus 2$].
 ]
 
 #question[
-  一个箱子里有 5 个球，分别以 1$~$5 标号，若有放回取三次，记至少取出一次的球的个数 $X$，则 $E(X) =$#fillin[].
+  一个箱子里有 5 个球，分别以 1$~$5 标号，若有放回取三次，记至少取出一次的球的个数 $X$，则 $E(X) =$#fillin[$61/25$].
 ]
 
-= 解答题：本题共 5 小题，共 77 分.解答应写出文字说明、证明过程或演算步骤.
+= 解答题：本题共 5 小题，共 77 分.解答应写出文字说明、证明过程或演算步骤。
 #question(points: 13, bottom: 2in)[
   为研究某疾病与超声波检查结果的关系，从做过超声波检查的人群中随机调查了1000人，得到如下的列联表：
   #align(center)[
@@ -143,7 +142,7 @@
   + 证明：平面 $P A B perp "平面" P A D$
   + 若 $P A = A B = sqrt(2), A D = sqrt(3) + 1, B C = 2$，$P, B, C, D$ 在同一个球面上，设该球面的球心为 $O$.
     #text-figure(
-      figure: image("17.png", width: 2in), // 替换自己的图片
+      figure: image("17.png", height: 1.8in),
       figure-x: 20pt,
       figure-y: 10pt,
     )[
@@ -168,9 +167,7 @@
   + 若存在 $phi$，使得对任意 $x$，都有 $5cos x - cos(5x + phi) lt.slant b$，求 $b$ 的最小值.
 ]
 
-
-#show: setup.with(mode: SOLUTION, show-answer: true)
-
+#show: setup.with(mode: SOLUTION, show-answer: true, paper: a3)
 #title[参考答案]
 
 #solution(title: "解析")[
@@ -180,7 +177,7 @@
 
 #solution[
   #answer[B]
-  解:
+  解: #lorem(8)#score(8)
 ]
 
 ```
