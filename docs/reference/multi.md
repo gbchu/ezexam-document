@@ -6,5 +6,5 @@
 ```typst
 #mullti
 ```
-效果：<font color="maroon">（多选）</font>
+效果：<font color="maroon"> ⦁多选 </font>
 
