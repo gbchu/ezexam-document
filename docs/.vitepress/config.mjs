@@ -18,7 +18,7 @@ export default defineConfig({
     logo: "/logo.svg",
     nav: [
       {
-        text: "0.2.5",
+        text: "0.2.6",
         items: [
           {
             text: "更新日志",
