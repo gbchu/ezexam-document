@@ -184,4 +184,4 @@
 
 ## 效果
 
-![template.pdf](/template.pdf)
+![效果图](/template.png)
