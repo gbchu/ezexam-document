@@ -6,7 +6,7 @@ hero:
   text: "一个用于试卷、讲义排版的Typst模板"
   tagline: "专注内容，告别繁杂的排版"
   image:
-    src: /show.png
+    src: /show.jpg
   actions:
     - theme: brand
       text: 使用指南
