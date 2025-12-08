@@ -148,7 +148,7 @@
 :::
 
 ::: warning
-为了减少字体警告，从 <Badge type="warning" text="^0.2.5" /> 开始，去掉 Noto Serif SC ，使用新版本时需*重新安装*思源宋体！！！
+为了减少字体警告，从 <Badge type="warning" text="^0.2.5" /> 开始，去掉 Noto Serif SC ，若你使用的是该版本以下的，使用新版本时需重新安装思源宋体！！！
 :::
 
 #### `font-math`
