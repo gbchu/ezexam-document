@@ -15,18 +15,18 @@ hero:
       text: 参考
       link: /reference
 
-# features:
-#   - icon : 📦
-#     title: 特性一
-#     details: 开箱即用
-#   - icon : 🤖
-#     title: 特性二
-#     details: 选项自动排列
-#   - icon : 🛠️
-#     title: 特性三
-#     details: 丰富的自定义选项
-#   - icon : 🎭
-#     title: 特性四
-#     details: 多面手，试卷、讲义排版全都要
+features:
+  - icon : 📦
+    title: 特性一
+    details: 开箱即用
+  - icon : 🤖
+    title: 特性二
+    details: 选项自动排列
+  - icon : 🛠️
+    title: 特性三
+    details: 丰富的自定义选项
+  - icon : 🎭
+    title: 特性四
+    details: 多面手，试卷、讲义排版全都要
 ---
 
