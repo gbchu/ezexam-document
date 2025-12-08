@@ -2,6 +2,6 @@
 
 用来生成答案和解析
 
-  - [`answer`](/reference/scoring-box) 答案
-  - [`solution`](/reference/score-box) 解析
-  - [`score`](/reference/score-box) 解析内的评分
+  - [`solution`](/reference/solution) 解析
+  - [`score`](/reference/score) 解析内的评分
+  - [`answer`](/reference/answer) 答案
