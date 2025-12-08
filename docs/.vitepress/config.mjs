@@ -345,7 +345,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "选择、判断题等需要的小括号",
+            text: "选择、判断的小括号",
             link: "/reference/paren.md",
             collapsed: true,
             items: [
@@ -357,7 +357,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "填空、解答题等需要的下划线",
+            text: "填空的线",
             link: "/reference/fillin.md",
             collapsed: true,
             items: [
