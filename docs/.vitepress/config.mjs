@@ -397,15 +397,6 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "答案",
-                link: "/reference/answer.md",
-                collapsed: true,
-                items: [
-                  { text: "color", link: "/reference/answer.md#color" },
-                  { text: "body", link: "/reference/answer.md#body" },
-                ],
-              },
-              {
                 text: "解析",
                 link: "/reference/solution.md",
                 collapsed: true,
@@ -480,7 +471,15 @@ export default defineConfig({
                   { text: "points", link: "/reference/score.md#points" },
                 ],
               },
-
+              {
+                text: "答案",
+                link: "/reference/answer.md",
+                collapsed: true,
+                items: [
+                  { text: "color", link: "/reference/answer.md#color" },
+                  { text: "body", link: "/reference/answer.md#body" },
+                ],
+              }
             ],
           },
           {
@@ -575,10 +574,10 @@ export default defineConfig({
       message: "Released under the MIT License.",
       copyright: "Copyright © 2025-present gbchu",
     },
-/*
-    lastUpdated: {
-      text: "最后更新于",
-    }, */
+    /*
+        lastUpdated: {
+          text: "最后更新于",
+        }, */
 
     /*     editLink: {
       pattern: "https://github.com/gbchu/ezexam-document",
