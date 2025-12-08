@@ -240,7 +240,7 @@ export default defineConfig({
           },
           {
             text: "评分框",
-            link: "/reference/score_-box.md",
+            link: "/reference/score_box.md",
             collapsed: true,
             items: [
               {
@@ -263,7 +263,6 @@ export default defineConfig({
               },
             ],
           },
-
           {
             text: "试卷的注意事项",
             link: "/reference/notice.md",
@@ -393,87 +392,95 @@ export default defineConfig({
             ],
           },
           {
-            text: "解析",
-            link: "/reference/solution.md",
-            collapsed: true,
-            items: [
-              { text: "title", link: "/reference/solution.md#title" },
-              { text: "title-size", link: "/reference/solution.md#title-size" },
-              {
-                text: "title-weight",
-                link: "/reference/solution.md#title-weight",
-              },
-              {
-                text: "title-color",
-                link: "/reference/solution.md#title-color",
-              },
-              {
-                text: "title-bg-color",
-                link: "/reference/solution.md#title-bg-color",
-              },
-              {
-                text: "title-radius",
-                link: "/reference/solution.md#title-radius",
-              },
-              {
-                text: "title-align",
-                link: "/reference/solution.md#title-align",
-              },
-              { text: "title-x", link: "/reference/solution.md#title-x" },
-              { text: "title-y", link: "/reference/solution.md#title-y" },
-              {
-                text: "border-style",
-                link: "/reference/solution.md#border-style",
-              },
-              {
-                text: "border-width",
-                link: "/reference/solution.md#border-width",
-              },
-              {
-                text: "border-color",
-                link: "/reference/solution.md#border-color",
-              },
-              { text: "color", link: "/reference/solution.md#color" },
-              { text: "radius", link: "/reference/solution.md#radius" },
-              { text: "inset", link: "/reference/solution.md#inset" },
-              { text: "breakable", link: "/reference/solution.md#breakable" },
-              { text: "top", link: "/reference/solution.md#top" },
-              { text: "bottom", link: "/reference/solution.md#bottom" },
-              {
-                text: "padding-top",
-                link: "/reference/solution.md#padding-top",
-              },
-              {
-                text: "padding-bottom",
-                link: "/reference/solution.md#padding-bottom",
-              },
-              { text: "body", link: "/reference/solution.md#body" },
-            ],
-          },
-          {
-            text: "解析内的评分",
-            link: "/reference/score.md",
+            text: "答案及解析",
+            link: "/reference/answer-solution.md",
             collapsed: true,
             items: [
               {
-                text: "score-prefix",
-                link: "/reference/score.md#score-prefix",
+                text: "答案",
+                link: "/reference/answer.md",
+                collapsed: true,
+                items: [
+                  { text: "color", link: "/reference/answer.md#color" },
+                  { text: "body", link: "/reference/answer.md#body" },
+                ],
               },
               {
-                text: "score-suffix",
-                link: "/reference/score.md#score-suffix",
+                text: "解析",
+                link: "/reference/solution.md",
+                collapsed: true,
+                items: [
+                  { text: "title", link: "/reference/solution.md#title" },
+                  { text: "title-size", link: "/reference/solution.md#title-size" },
+                  {
+                    text: "title-weight",
+                    link: "/reference/solution.md#title-weight",
+                  },
+                  {
+                    text: "title-color",
+                    link: "/reference/solution.md#title-color",
+                  },
+                  {
+                    text: "title-bg-color",
+                    link: "/reference/solution.md#title-bg-color",
+                  },
+                  {
+                    text: "title-radius",
+                    link: "/reference/solution.md#title-radius",
+                  },
+                  {
+                    text: "title-align",
+                    link: "/reference/solution.md#title-align",
+                  },
+                  { text: "title-x", link: "/reference/solution.md#title-x" },
+                  { text: "title-y", link: "/reference/solution.md#title-y" },
+                  {
+                    text: "border-style",
+                    link: "/reference/solution.md#border-style",
+                  },
+                  {
+                    text: "border-width",
+                    link: "/reference/solution.md#border-width",
+                  },
+                  {
+                    text: "border-color",
+                    link: "/reference/solution.md#border-color",
+                  },
+                  { text: "color", link: "/reference/solution.md#color" },
+                  { text: "radius", link: "/reference/solution.md#radius" },
+                  { text: "inset", link: "/reference/solution.md#inset" },
+                  { text: "breakable", link: "/reference/solution.md#breakable" },
+                  { text: "top", link: "/reference/solution.md#top" },
+                  { text: "bottom", link: "/reference/solution.md#bottom" },
+                  {
+                    text: "padding-top",
+                    link: "/reference/solution.md#padding-top",
+                  },
+                  {
+                    text: "padding-bottom",
+                    link: "/reference/solution.md#padding-bottom",
+                  },
+                  { text: "body", link: "/reference/solution.md#body" },
+                ],
               },
-              { text: "color", link: "/reference/score.md#color" },
-              { text: "points", link: "/reference/score.md#points" },
-            ],
-          },
-          {
-            text: "答案",
-            link: "/reference/answer.md",
-            collapsed: true,
-            items: [
-              { text: "color", link: "/reference/answer.md#color" },
-              { text: "body", link: "/reference/answer.md#body" },
+              {
+                text: "解析内的评分",
+                link: "/reference/score.md",
+                collapsed: true,
+                items: [
+                  {
+                    text: "score-prefix",
+                    link: "/reference/score.md#score-prefix",
+                  },
+                  {
+                    text: "score-suffix",
+                    link: "/reference/score.md#score-suffix",
+                  },
+                  { text: "color", link: "/reference/score.md#color" },
+                  { text: "points", link: "/reference/score.md#points" },
+                ],
+              },
+
             ],
           },
           {

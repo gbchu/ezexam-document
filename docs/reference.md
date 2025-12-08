@@ -8,17 +8,15 @@
   - [`secret`](/reference/secret) 位于左上角的绝密之类的
   - [`exam-type`](/reference/exam-type) 试卷类型
   - [`exam-info`](/reference/exam-info) 试卷信息
-  - [`score*-box`](/reference/scoring-box) 评分框
+  - [`score*-box`](/reference/score_box) 评分框
   - [`notice`](/reference/notice) 试卷的注意事项
   - [`choices`](/reference/choices) 选择题
   - [`question`](/reference/question) 题目
-  - [`paren`](/reference/paren) 选择题的括号
-  - [`fillin`](/reference/fillin) 填空的下划线
+  - [`paren`](/reference/paren) 选择、判断的小括号
+  - [`fillin`](/reference/fillin) 填空的线
   - [`underdot`](/reference/underdot) 着重号
   - [`text-figure`](/reference/text-figure) 图文混排
-  - [`solution`](/reference/solution) 解析
-  - [`score`](/reference/score) 解析内的评分
-  - [`answer`](/reference/answer) 答案
+  - [`answer-solution`](/reference/answer-solution) 答案及解析
   - [`draft`](/reference/draft) 草稿纸
   - [`zh-arabic`](/reference/zh-arabic) 一种页码格式
   - ~~[`inline-square`](/reference/inline-square) 方格~~
