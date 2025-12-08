@@ -2,6 +2,6 @@
 
 用来生成答案和解析
 
-  - [`answer`](https://ezexam.pages.dev/reference/scoring-box) 答案
-  - [`solution`](https://ezexam.pages.dev/reference/score-box) 解析
-  - [`score`](https://ezexam.pages.dev/reference/score-box) 解析内的评分
+  - [`answer`](/reference/scoring-box) 答案
+  - [`solution`](/reference/score-box) 解析
+  - [`score`](/reference/score-box) 解析内的评分
