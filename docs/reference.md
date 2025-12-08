@@ -23,4 +23,4 @@
   - ~~[`color-box`](/reference/color-box) 彩色盒子~~
   - [`tag`](/reference/tag) 标签
   - [`multi`](/reference/multi) 多选标记
-  - [`ezchem` ](/reference/chem) 化学相关
+  - [`ezchem` ](/reference/chemistry/ezchem) 化学相关

@@ -546,11 +546,11 @@ export default defineConfig({
           },
           {
             text: "化学相关",
-            link: "/reference/chem.md",
+            link: "/reference/chemistry/ezchem.md",
             collapsed: true,
             items: [
-              { text: "单、双线桥", link: "/reference/e-bridge.md" },
-              { text: "离子、原子结构式", link: "/reference/ai-struct.md" },
+              { text: "单、双线桥", link: "/reference/chemistry/e-bridge.md" },
+              { text: "离子、原子结构式", link: "/reference/chemistry/ai-struct.md" },
             ],
           },
         ],
