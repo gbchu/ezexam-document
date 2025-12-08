@@ -575,10 +575,10 @@ export default defineConfig({
       message: "Released under the MIT License.",
       copyright: "Copyright © 2025-present gbchu",
     },
-
+/*
     lastUpdated: {
       text: "最后更新于",
-    },
+    }, */
 
     /*     editLink: {
       pattern: "https://github.com/gbchu/ezexam-document",
