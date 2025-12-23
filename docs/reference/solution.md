@@ -184,6 +184,7 @@
 `默认值: 0pt`
 
 >该参数用于设置解析盒子距离下方的间距
+
 ::: tip
 该参数在 <Badge type="warning" text="0.1.7" /> 版本之前，名为 `bottom` 。
 :::
@@ -196,6 +197,10 @@
 
 >该参数用于设置解析内容的上方内边距
 
+::: warning
+该参数在 <Badge type="warning" text="^0.2.8" /> 版本之后已废弃。
+:::
+
 #### `padding-bottom` <Badge type="warning" text="^0.1.7" />
 
 `类型: length`
@@ -204,8 +209,12 @@
 
 >该参数用于设置解析内容的下方内边距
 
+::: warning
+该参数在 <Badge type="warning" text="^0.2.8" /> 版本之后已废弃。
+:::
+
 ::: tip
-`padding-top` 和 `padding-bottom` 参数是用来解决题号和解析对不齐的问题；如遇到该问题可调节该参数。详情参考 [使用技巧](https://ezexam.pages.dev/tips)。
+`padding-top` 和 `padding-bottom` 参数是用来解决题号和解析对不齐的问题；在 <Badge type="warning" text="^0.2.8" /> 版本之后，该问题已解决 。
 :::
 
 示例

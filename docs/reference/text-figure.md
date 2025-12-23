@@ -95,6 +95,10 @@
 
 >该参数用于设置图片和文本的对齐方式
 
+::: warning
+该参数在 <Badge type="warning" text="^0.2.8" /> 版本及之后已废弃
+:::
+
 #### `top`
 
 `类型: length`

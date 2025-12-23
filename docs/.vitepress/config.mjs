@@ -18,7 +18,7 @@ export default defineConfig({
     logo: "/logo.svg",
     nav: [
       {
-        text: "0.2.7",
+        text: "0.2.8 beta",
         items: [
           {
             text: "更新日志",
@@ -283,8 +283,8 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "body-indent",
-                link: "/reference/question.md#body-indent",
+                text: "first-line-indent",
+                link: "/reference/question.md#first-line-indent",
               },
               { text: "indent", link: "/reference/question.md#indent" },
               { text: "label", link: "/reference/question.md#label" },
@@ -534,8 +534,10 @@ export default defineConfig({
             items: [
               { text: "color", link: "/reference/tag.md#color" },
               { text: "font", link: "/reference/tag.md#font" },
+              { text: "weight", link: "/reference/tag.md#weight" },
               { text: "prefix", link: "/reference/tag.md#prefix" },
               { text: "suffix", link: "/reference/tag.md#suffix" },
+              { text: "dx", link: "/reference/tag.md#dx" },
               { text: "body", link: "/reference/tag.md#body" },
             ],
           },

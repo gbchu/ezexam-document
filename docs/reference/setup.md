@@ -169,13 +169,44 @@
 ::: tip
 若想使用新罗马风格的字体，需要自行 [下载新罗马风格的字体](https://wwoq.lanzouo.com/b016kazkba) （密码：666） 并安装在对应的操作系统中（安装后需要重启系统）。通过 `TypstApp` 在线使用时，无需进行安装。
 
-为了方便使用新罗马风格的字体，从 <Badge type="warning" text="0.2.2" /> 版本开始，新增常量 `roman = ((name: "Times New Roman", covers: "latin-in-cjk"), "TeX Gyre Termes Math", "Noto Serif SC", "Noto Serif CJK SC")` ，本地使用时需要安装 TeX Gyre Termes Math 字体后才能生效。在线使用则无需安装。从 <Badge type="warning" text="0.2.5" /> 版本开始，`roman` 去除字体 Noto Serif SC ！
+为了方便使用新罗马风格的字体，从 <Badge type="warning" text="0.2.2" /> 版本开始，新增常量
 
-若安装的是其它受支持的数学字体，安装字体后需要自行修改 `font` 参数的值才能生效！该值必须为数组，且该数组中至少有2个元素，西文字体在前，中文字体在后；可参考 `roman` 的值。特别的，当使用 STIX Two Math 字体时，在线使用或 Mac 用户本地使用时无需安装字体就能生效！
+ ```
+ roman = (
+    (name: "Times New Roman", covers: "latin-in-cjk"),
+    "TeX Gyre Termes Math",
+    "Noto Serif SC",
+    "Noto Serif CJK SC"
+  ) + font // 默认字体
+ ```
+ 本地使用时需要安装 TeX Gyre Termes Math 字体后才能生效。在线使用则无需安装。
+
+从 <Badge type="warning" text="0.2.5" /> 版本开始，`roman` 的值修改为：
+
+```
+roman = (
+  (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
+  "TeX Gyre Termes Math", // 数学字体
+  "Noto Serif CJK SC" // 正文字体
+  ) + font // 默认字体
+```
+
+从 <Badge type="warning" text="0.2.8" /> 版本开始，`roman` 的值修改为：
+
+```
+roman = (
+  (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
+  (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体
+  "TeX Gyre Termes Math", // 数学字体
+  "Noto Serif CJK SC" // 正文字体
+  )
+```
+
+若安装的是其它受支持的数学字体，安装字体后需要自行修改 `font` 参数的值才能生效！该值必须为数组，且该数组中至少有2个元素，西文字体在前，中文字体在后；可参考 `roman` 的值。特别的，当使用 STIX Two Math 字体时，在线使用或 Mac 用户本地使用时无需安装字体，只需修改 `font` 值就能生效！
 :::
 
 ::: warning
-  使用本模板时，会报 `unknown font family` 字体警告，原因是当前系统中没有对应的字体。之所以有多个字体，是为了确保不管是本地使用还是在线使用时，字体都能显示相同的效果。目前官方暂时没有压制该警告的方法。若排版的试卷显示正常，忽略该警告即可！
+  使用本模板时，会报 `unknown font family` 字体警告，原因是当前系统中没有对应的字体。之所以有多个字体，是为了确保不管是本地使用还是在线使用时，字体都能按照预设的格式显示。若排版的试卷显示正常，忽略该警告即可！若想完全去除该警告，将警告中缺少的字体安装在当前系统中即可去除！
 :::
 
 #### `line-height`

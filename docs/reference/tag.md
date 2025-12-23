@@ -1,4 +1,4 @@
-# tag 方法 <Badge type="tip" text="^0.2.5" />
+# tag 方法 <Badge type="warning" text="^0.2.5" />
 
 该方法可生一个带有颜色的标记
 
@@ -25,6 +25,14 @@
 
 >该参数用于设置标记的字体
 
+#### `weight` <Badge type="warning" text="^0.2.8" />
+
+`类型: str | int`
+
+`默认值: 400`
+
+>该参数用于设置标记的粗细
+
 #### `prefix`
 
 `类型: str`
@@ -40,6 +48,14 @@
 `默认值: "】"`
 
 >该参数用于设置标记的后缀
+
+#### `dx` <Badge type="warning" text="^0.2.8" />
+
+`类型: length`
+
+`默认值: - 0.4em`
+
+>该参数用于设置标记的水平偏移
 
 #### `body`
 
