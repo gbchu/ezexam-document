@@ -141,6 +141,8 @@
 
 `默认值: ("New Computer Modern Math", "Noto Serif CJK SC")` <Badge type="warning" text="^0.2.5" />
 
+`默认值: roman`  <Badge type="warning" text="^0.2.8" />
+
 >该参数用于设置页面的字体
 
 ::: tip
@@ -173,10 +175,10 @@
     "Noto Serif CJK SC"
   ) + font // 默认字体
  ```
-若想使用新罗马风格的字体，需要 [下载新罗马风格的字体](https://wwoq.lanzouo.com/b016kazkba) （密码：666）（推荐 TeX Gyre Termes Math） 并安装在对应的操作系统中（安装后需要重启系统），然后将 `font` 的值修改为 `roman` 。
-（通过 `TypstApp` 在线使用时，无需安装上述字体）
+若想使用新罗马风格的字体，需要 [下载新罗马风格的字体](https://wwbbc.lanzouv.com/ilVFJ3ef6rta) 并安装在对应的操作系统中（安装后需要重启系统）。
+（通过 `TypstApp` 在线使用时，无需安装该字体）
 
-从 <Badge type="warning" text="0.2.5" /> 版本开始，`roman` 的值修改为：
+从 <Badge type="warning" text="0.2.5" /> 版本开始，`roman` 的值为：
 
 ```
 roman = (
@@ -186,20 +188,20 @@ roman = (
   ) + font // 默认字体
 ```
 
-从 <Badge type="warning" text="0.2.8" /> 版本开始，`roman` 的值修改为：
+从 <Badge type="warning" text="0.2.8" /> 版本开始，`roman` 作为默认字体， 其值如下：
 
 ```
 roman = (
   (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
-  (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体（在线使用时，Times New Roman 缺少，就会使用该字体）
+  (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体
   "TeX Gyre Termes Math", // 数学字体
   "Noto Serif CJK SC" // 正文字体
   )
 ```
 
-若安装的是其它受支持的数学字体，安装字体后需要自行修改 `font` 参数的值才能生效！该值必须为数组，且该数组中至少有2个元素，西文字体在前，中文字体在后；可参考最新的 `roman` 的值。
+若安装的是其它受支持的数学字体，安装字体后需要自行修改 `font` 参数的值才能生效！该值必须为数组，且该数组中至少有2个元素，西文字体在前，中文字体在后；可参考最新 `roman` 的值。
 
-特别的，当使用 STIX Two 字体时，在线或 Mac 用户本地使用时无需安装字体。
+特别的，当使用 [STIX Two](https://wwbbc.lanzouv.com/iJ9Ew3ef73ad) 字体时（该字体也是新罗马字体风格），在线或 Mac 用户本地使用时无需安装字体。
 :::
 
 ::: warning
