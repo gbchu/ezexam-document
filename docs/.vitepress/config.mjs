@@ -530,7 +530,7 @@ export default defineConfig({
               { text: "weight", link: "/reference/tag.md#weight" },
               { text: "prefix", link: "/reference/tag.md#prefix" },
               { text: "suffix", link: "/reference/tag.md#suffix" },
-              { text: "dx", link: "/reference/tag.md#dx" },
+              { text: "x", link: "/reference/tag.md#x" },
               { text: "body", link: "/reference/tag.md#body" },
               {
                 text: "多选标记",

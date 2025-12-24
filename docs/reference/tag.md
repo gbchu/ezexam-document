@@ -49,7 +49,7 @@
 
 >该参数用于设置标记的后缀
 
-#### `dx` <Badge type="warning" text="^0.2.8" />
+#### `x` <Badge type="warning" text="^0.2.8" />
 
 `类型: length`
 
