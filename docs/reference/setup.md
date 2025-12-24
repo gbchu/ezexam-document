@@ -158,7 +158,7 @@
 >该参数用于设置数学公式下的字体
 
 ::: warning
-该参数从 <Badge type="warning" text="0.2.2" /> 开始已弃用；使用 `font` 参数即可完成数学字体的修改。详情参考下面的 `roman` 的值。
+该参数从 <Badge type="warning" text="0.2.2" /> 开始已弃用；使用 `font` 参数即可完成数学字体的修改。详情参考下面 `roman` 的值。
 :::
 
 
@@ -192,7 +192,7 @@ roman = (
 ```
 roman = (
   (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
-  (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体
+  (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体（在线使用时，Times New Roman 缺少，就会使用该字体）
   "TeX Gyre Termes Math", // 数学字体
   "Noto Serif CJK SC" // 正文字体
   )
