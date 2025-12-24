@@ -70,16 +70,16 @@ export default defineConfig({
                 link: "/reference/setup.md#show-gap-line",
               },
               {
-                text: "font-size",
-                link: "/reference/setup.md#font-size",
-              },
-              {
                 text: "font",
                 link: "/reference/setup.md#font",
               },
               {
                 text: "font-math",
                 link: "/reference/setup.md#font-math",
+              },
+              {
+                text: "font-size",
+                link: "/reference/setup.md#font-size",
               },
               {
                 text: "line-height",
