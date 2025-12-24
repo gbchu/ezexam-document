@@ -147,10 +147,6 @@
 由于宋体不支持加粗，故本包中文默认字体为思源宋体；在本地使用该模板时，自行下载 [思源宋体](https://wwoq.lanzouo.com/irYZH3bhmzcb) （密码：666）并安装在对应的操作系统中（安装后需要重启系统）即可。通过 `TypstApp` 在线使用时，无需安装。
 :::
 
-::: warning
-为了减少字体警告，从 <Badge type="warning" text="^0.2.5" /> 开始，去掉 Noto Serif SC ，若你使用的是该版本以下的，使用新版本时需重新安装思源宋体！！！
-:::
-
 #### `font-math`
 
 `类型: str | array`
@@ -162,7 +158,7 @@
 >该参数用于设置数学公式下的字体
 
 ::: warning
-该参数从 <Badge type="warning" text="0.2.2" /> 开始已弃用；使用 `font` 参数即可完成数学字体的修改。详情参考 [字体设置](https://typst.app/docs/reference/text/text/#parameters-font)
+该参数从 <Badge type="warning" text="0.2.2" /> 开始已弃用；使用 `font` 参数即可完成数学字体的修改。详情参考下面的 `roman` 的值。
 :::
 
 
