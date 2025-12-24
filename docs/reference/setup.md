@@ -163,7 +163,7 @@
 
 
 ::: tip
-从 <Badge type="warning" text="0.2.2" /> 版本开始，新增常量
+从 <Badge type="warning" text="0.2.2" /> 版本开始，新增常量 `roman`
 
  ```
  roman = (
