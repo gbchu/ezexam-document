@@ -131,7 +131,7 @@
 
 #### `font`
 
-`类型: str | array`
+`类型: array`
 
 `默认值: ("New Computer Modern Math", "Source Han Serif", "SimSun")`
 
