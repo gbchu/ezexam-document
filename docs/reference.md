@@ -19,8 +19,6 @@
   - [`answer-solution`](/reference/answer-solution) 答案及解析
   - [`draft`](/reference/draft) 草稿纸
   - [`zh-arabic`](/reference/zh-arabic) 一种页码格式
-  - ~~[`inline-square`](/reference/inline-square) 方格~~
   - ~~[`color-box`](/reference/color-box) 彩色盒子~~
-  - [`tag`](/reference/tag) 标签
-  - [`multi`](/reference/multi) 多选标记
+  - [`tag`](/reference/tag) 标记
   - [`ezchem` ](/reference/chemistry/ezchem) 化学相关

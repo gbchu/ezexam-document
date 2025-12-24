@@ -64,3 +64,17 @@
 `默认值: 无`
 
 >该参数为位置参数，设置内容
+
+# `multi`
+
+用来标记多选题；颜色为 maroon，该值为 `tag` 方法实现的一个常量
+
+#### 示例
+```typst
+#mullti
+```
+效果：<font color="maroon"> ⦁多选 </font>
+
+:::warning
+该常量在 <Badge type="tip" text="^0.2.8" /> 版本及以后已废弃。
+:::

@@ -510,17 +510,6 @@ export default defineConfig({
             ],
           },
           {
-            text: "方格",
-            link: "/reference/inline-square.md",
-            collapsed: true,
-            items: [
-              { text: "num", link: "/reference/inline-square.md#num" },
-              { text: "width", link: "/reference/inline-square.md#width" },
-              { text: "gap", link: "/reference/inline-square.md#gap" },
-              { text: "body", link: "/reference/inline-square.md#body" },
-            ],
-          },
-          {
             text: "彩色盒子",
             link: "/reference/color-box.md",
             collapsed: true,
@@ -543,11 +532,11 @@ export default defineConfig({
               { text: "suffix", link: "/reference/tag.md#suffix" },
               { text: "dx", link: "/reference/tag.md#dx" },
               { text: "body", link: "/reference/tag.md#body" },
+              {
+                text: "多选标记",
+                link: "/reference/tag.md#multi",
+              },
             ],
-          },
-          {
-            text: "多选标记",
-            link: "/reference/multi.md",
           },
           {
             text: "化学相关",
