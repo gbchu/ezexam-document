@@ -6,7 +6,7 @@
 ```typst
 与 NaOH 溶液反应生成酸式盐的化学方程式为 #fillin[]
 // 输出
-与 NaOH 溶液反应生成酸式盐的化学方程式为____________
+与 NaOH 溶液反应生成酸式盐的化学方程式为__________
 ```
 
 
@@ -16,7 +16,7 @@
 
 `类型: length`
 
-`默认值: 1.5cm - text.size`
+`默认值: 1.25cm`
 
 >该参数用于设置下划线的长度
 
@@ -157,10 +157,10 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
 
 >该参数设置下划线的偏移量
 
-#### `answer`
+#### `body`
 
-`类型: content`
+`类型: str | content`
 
 `默认值: 无`
 
->该参数为位置参数，显示答案
+>该参数为位置参数，空线显示的内容

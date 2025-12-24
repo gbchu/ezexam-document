@@ -13,7 +13,7 @@
 效果： <font color="maroon">答案：D</font>
 
 ::: warning
-该方法在 <Badge type="info" text="^0.2.8" /> 版本及以后已废弃，使用官方的 [`tag`](/reference/tag) 方法代替。
+该方法在 <Badge type="tip" text="^0.2.8" /> 版本及以后已废弃，使用官方的 [`tag`](/reference/tag) 方法代替。
 :::
 
 ### 参数

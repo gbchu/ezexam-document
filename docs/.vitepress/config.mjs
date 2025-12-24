@@ -287,6 +287,10 @@ export default defineConfig({
                 link: "/reference/question.md#first-line-indent",
               },
               { text: "indent", link: "/reference/question.md#indent" },
+              {
+                text: "hanging-indent",
+                link: "/reference/question.md#hanging-indent",
+              },
               { text: "label", link: "/reference/question.md#label" },
               {
                 text: "label-color",
@@ -366,7 +370,7 @@ export default defineConfig({
               { text: "update", link: "/reference/fillin.md#update" },
               { text: "stroke", link: "/reference/fillin.md#stroke" },
               { text: "offset", link: "/reference/fillin.md#offset" },
-              { text: "answer", link: "/reference/fillin.md#answer" },
+              { text: "body", link: "/reference/fillin.md#body" },
             ],
           },
           {
@@ -528,7 +532,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "彩色标记",
+            text: "标记",
             link: "/reference/tag.md",
             collapsed: true,
             items: [
