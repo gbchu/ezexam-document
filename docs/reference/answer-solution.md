@@ -4,4 +4,4 @@
 
   - [`solution`](/reference/solution) 解析
   - [`score`](/reference/score) 解析内的评分
-  - [`answer`](/reference/answer) 答案
+  - ~~[`answer`](/reference/answer) 答案~~

@@ -14,11 +14,11 @@
   - [`question`](/reference/question) 题目
   - [`paren`](/reference/paren) 选择、判断的小括号
   - [`fillin`](/reference/fillin) 填空的线
-  - [`underdot`](/reference/underdot) 着重号
   - [`text-figure`](/reference/text-figure) 图文混排
   - [`answer-solution`](/reference/answer-solution) 答案及解析
   - [`draft`](/reference/draft) 草稿纸
   - [`zh-arabic`](/reference/zh-arabic) 一种页码格式
+  - ~~[`underdot`](/reference/underdot) 着重号~~
   - ~~[`color-box`](/reference/color-box) 彩色盒子~~
   - [`tag`](/reference/tag) 标记
   - [`ezchem` ](/reference/chemistry/ezchem) 化学相关
