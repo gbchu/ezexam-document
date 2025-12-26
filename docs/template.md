@@ -6,7 +6,6 @@
 #show: setup.with(
   mode: EXAM,
   paper: a3,
-  font: roman
 )
 
 #outline()
@@ -167,7 +166,7 @@
   + 若存在 $phi$，使得对任意 $x$，都有 $5cos x - cos(5x + phi) lt.slant b$，求 $b$ 的最小值.
 ]
 
-#show: setup.with(mode: SOLUTION, show-answer: true, paper: a3, font: roman)
+#show: setup.with(mode: SOLUTION, paper: a3, show-answer: true,)
 #title[参考答案]
 
 #solution(title: "解析")[
