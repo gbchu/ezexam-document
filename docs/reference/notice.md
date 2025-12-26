@@ -23,6 +23,10 @@
 
 >该参数用于设置注意事项前的编号格式
 
+::: tip
+该参数在 <Badge type="warning" text="0.2.8" /> 版本之前名为 `format` 。
+:::
+
 ```typst
 #notice(
   label: "①",
