@@ -21,7 +21,7 @@
 
 `类型: str | dictionary`
 
-`默认值: ("New Computer Modern Math", "Source Han Serif")`
+`默认值: auto`
 
 >该参数用于设置标题的字体
 
