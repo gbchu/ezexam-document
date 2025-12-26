@@ -19,7 +19,7 @@
 
 #### `font`
 
-`类型: str | dictionary`
+`类型: str | array`
 
 `默认值: auto`
 
