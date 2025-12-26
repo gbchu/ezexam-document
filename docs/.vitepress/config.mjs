@@ -268,7 +268,7 @@ export default defineConfig({
             link: "/reference/notice.md",
             collapsed: true,
             items: [
-              { text: "format", link: "/reference/notice.md#format" },
+              { text: "label", link: "/reference/notice.md#label" },
               { text: "indent", link: "/reference/notice.md#indent" },
               {
                 text: "hanging-indent",
