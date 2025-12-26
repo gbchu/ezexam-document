@@ -19,9 +19,9 @@
 
 #### `font`
 
-`类型: str | dictionary`
+`类型: str | array`
 
-`默认值: ("New Computer Modern Math", "simhei")`
+`默认值: auto`
 
 >该参数用于设置科目的字体
 
