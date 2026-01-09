@@ -316,6 +316,14 @@ roman = (
 
 >该参数用于设置有序列表的缩进
 
+#### `resume` <Badge type="warning" text="^0.2.8" />
+
+`类型: boolean`
+
+`默认值: true`
+
+>该参数用于设置题目的题号在使用 `heading` 中断后是否继续编号
+
 #### `watermark` <Badge type="warning" text="^0.1.4" />
 
 `类型: none | content | image`

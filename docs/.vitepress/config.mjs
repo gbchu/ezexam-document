@@ -134,6 +134,10 @@ export default defineConfig({
                 link: "/reference/setup.md#enum-indent",
               },
               {
+                text: "resume",
+                link: "/reference/setup.md#resume",
+              },
+              {
                 text: "watermark",
                 link: "/reference/setup.md#watermark",
               },
