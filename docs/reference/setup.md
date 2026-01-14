@@ -397,6 +397,10 @@ roman = (
 
 >该参数用于设置是否显示弥封线
 
+::: warning
+弥封线的实现依托于 `title` 方法添加的 label，因此，若要显示弥封线，需要在文档中调用 `title` 方法。
+:::
+
 #### `seal-line-student-info`
 
 `类型: dictionary`
