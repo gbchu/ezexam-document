@@ -1,11 +1,12 @@
 # 完整模板示例
 
 ```typst
-#import "@preview/ezexam:0.2.8": *
+#import "@preview/ezexam:0.2.9": *
 
 #show: setup.with(
   mode: EXAM,
   paper: a3,
+  show-answer: true,
 )
 
 #outline()
@@ -99,11 +100,12 @@
 ]
 
 #question[
-  若一个正项等比数列的前 4 项和为 4，前 8 项和为 68，则该等比数列的公比为 #fillin[$plus.minus 2$].
+  若一个正项等比数列的前 4 项和为 4，前 8 项和为 68，则该等比数列的公比为 #fillin[$underline(plus.minus 2)$].
 ]
 
 #question[
-  一个箱子里有 5 个球，分别以 1$~$5 标号，若有放回取三次，记至少取出一次的球的个数 $X$，则 $E(X) =$#fillin[$61/25$].
+  一个箱子里有 5 个球，分别以 1$~$5 标号，若有放回取三次，记至少取出一次的球的个数 $X$，则
+  $E(X) =$#fillin[$underline(61/25)$].
 ]
 
 = 解答题：本题共 5 小题，共 77 分.解答应写出文字说明、证明过程或演算步骤。
@@ -166,17 +168,16 @@
   + 若存在 $phi$，使得对任意 $x$，都有 $5cos x - cos(5x + phi) lt.slant b$，求 $b$ 的最小值.
 ]
 
-#show: setup.with(mode: SOLUTION, paper: a3, show-answer: true,)
-#title[参考答案]
+#solution-block[
+  #solution(title: "解析")[
+    #answer[A]
+    解: #lorem(6)#score(6)
+  ]
 
-#solution(title: "解析")[
-  #answer[A]
-  解: #lorem(6)#score(6)
-]
-
-#solution[
-  #answer[B]
-  解: #lorem(8)#score(8)
+  #solution[
+    #answer[B]
+    解: #lorem(8)#score(8)
+  ]
 ]
 
 ```
