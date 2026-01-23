@@ -103,7 +103,7 @@ A. -1     B.  0    C.  1     D.  6
 ① 选项1       ② 选项2         ③ 选项3         ④ 选项4
 ```
 
-#### `label-position`
+#### `label-position` <Badge type="warning" text="^0.2.9" />
 
 `类型: alignment`
 
