@@ -523,6 +523,14 @@ export default defineConfig({
             ],
           },
           {
+            text: "指定开始页码数",
+            link: "/reference/page-restart.md",
+            collapsed: true,
+            items: [
+              { text: "num", link: "/reference/page-restart.md#num" },
+            ],
+          },
+          {
             text: "彩色盒子",
             link: "/reference/color-box.md",
             collapsed: true,
