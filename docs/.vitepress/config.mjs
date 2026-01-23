@@ -405,6 +405,15 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
+                text: "解析块",
+                link: "/reference/solution-block.md",
+                collapsed: true,
+                items: [
+                  { text: "color", link: "/reference/solution-block.md#name" },
+                  { text: "body", link: "/reference/solution-block.md#body" },
+                ],
+              },
+              {
                 text: "解析",
                 link: "/reference/solution.md",
                 collapsed: true,

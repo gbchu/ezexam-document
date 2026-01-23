@@ -398,7 +398,7 @@ roman = (
 >该参数用于设置是否显示弥封线
 
 ::: warning
-弥封线的实现依赖于 `title` 和 `chapter` 方法，因此，若要该参数生效，需要在文档中调用 `title` 和 `chapter` 方法。
+弥封线的实现依赖于 `title` 方法，因此，若要该参数生效，需要在文档中调用 `title` 方法。
 :::
 
 #### `seal-line-student-info`
