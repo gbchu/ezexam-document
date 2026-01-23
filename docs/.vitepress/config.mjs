@@ -409,7 +409,7 @@ export default defineConfig({
                 link: "/reference/solution-block.md",
                 collapsed: true,
                 items: [
-                  { text: "color", link: "/reference/solution-block.md#name" },
+                  { text: "name", link: "/reference/solution-block.md#name" },
                   { text: "body", link: "/reference/solution-block.md#body" },
                 ],
               },
