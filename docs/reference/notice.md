@@ -43,7 +43,7 @@
 若要修改显示格式可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置。
 :::
 
-#### `indent`  <Badge type="warning" text="^0.1.8" />
+#### `indent`  <Badge type="warning" text="0.1.8" />
 
 
 `类型: length`
@@ -52,7 +52,7 @@
 
 >该参数用于设置首行缩进
 
-#### `hanging-indent`  <Badge type="warning" text="^0.1.8" />
+#### `hanging-indent`  <Badge type="warning" text="0.1.8" />
 
 
 `类型: length`

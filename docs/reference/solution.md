@@ -1,4 +1,4 @@
-# `solution` 方法 <Badge type="warning" text="^0.1.4" />
+# `solution` 方法 <Badge type="warning" text="0.1.4" />
 
 该方法为题目的解析
 
@@ -24,7 +24,7 @@
 
 `类型: str`
 
-`默认值: none` <Badge type="warning" text="^0.1.2" /> `解析：` <Badge type="warning" text="0.1.0~0.1.1" />
+`默认值: none` <Badge type="warning" text="0.1.2" /> `解析：` <Badge type="warning" text="0.1.0~0.1.1" />
 
 >该参数用于设置解析的标题
 
@@ -156,7 +156,7 @@
 
 >该参数用于设置解析盒子是否可断行
 
-#### `line-height`  <Badge type="warning" text="^0.2.3" />
+#### `line-height`  <Badge type="warning" text="0.2.3" />
 
 `类型: length`
 
@@ -164,7 +164,7 @@
 
 >该参数用于设置解析内容的行与行之间的距离
 
-#### `top` <Badge type="warning" text="^0.1.7" />
+#### `top` <Badge type="warning" text="0.1.7" />
 
 `类型: length`
 
@@ -177,7 +177,7 @@
 :::
 
 
-#### `bottom` <Badge type="warning" text="^0.1.7" />
+#### `bottom` <Badge type="warning" text="0.1.7" />
 
 `类型: length`
 
@@ -189,7 +189,7 @@
 该参数在 <Badge type="warning" text="0.1.7" /> 版本之前，名为 `bottom` 。
 :::
 
-#### `padding-top` <Badge type="warning" text="^0.1.7" />
+#### `padding-top` <Badge type="warning" text="0.1.7" />
 
 `类型: length`
 
@@ -198,10 +198,10 @@
 >该参数用于设置解析内容的上方内边距
 
 ::: warning
-该参数在 <Badge type="warning" text="^0.2.8" /> 版本之后已废弃。
+该参数在 <Badge type="warning" text="0.2.8" /> 版本之后已废弃。
 :::
 
-#### `padding-bottom` <Badge type="warning" text="^0.1.7" />
+#### `padding-bottom` <Badge type="warning" text="0.1.7" />
 
 `类型: length`
 
@@ -210,11 +210,11 @@
 >该参数用于设置解析内容的下方内边距
 
 ::: warning
-该参数在 <Badge type="warning" text="^0.2.8" /> 版本之后已废弃。
+该参数在 <Badge type="warning" text="0.2.8" /> 版本之后已废弃。
 :::
 
 ::: tip
-`padding-top` 和 `padding-bottom` 参数是用来解决题号和解析对不齐的问题；在 <Badge type="warning" text="^0.2.8" /> 版本之后，该问题已解决 。
+`padding-top` 和 `padding-bottom` 参数是用来解决题号和解析对不齐的问题；在 <Badge type="warning" text="0.2.8" /> 版本之后，该问题已解决 。
 :::
 
 示例
@@ -241,7 +241,7 @@
 
 ![效果图](/tips2.png)
 
-#### `show-number` <Badge type="warning" text="^0.1.2" />
+#### `show-number` <Badge type="warning" text="0.1.2" />
 
 `类型: boolean`
 

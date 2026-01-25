@@ -41,7 +41,7 @@
 
 >该参数用于设置标题字体的粗细
 
-#### `color`  <Badge type="warning" text="^0.1.7" />
+#### `color`  <Badge type="warning" text="0.1.7" />
 
 `类型: color`
 

@@ -1,4 +1,4 @@
-# `underdot` 方法 <Badge type="warning" text="^0.2.0" />
+# `underdot` 方法 <Badge type="warning" text="0.2.0" />
 
 该方法可为文本添加着重号
 
@@ -8,7 +8,7 @@
 ```
 
 ::: warning
-  该方法在 <Badge type="warning" text="^0.2.5" /> 已废弃，如需给指定的中文加着重号，只需要使用 * 包裹即可。
+  该方法在 <Badge type="warning" text="0.2.5" /> 已废弃，如需给指定的中文加着重号，只需要使用 * 包裹即可。
 
 例: \*中国\*
 :::

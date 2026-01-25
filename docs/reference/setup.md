@@ -12,9 +12,9 @@
 
 `类型: str`
 
-`默认值: HANDOUTS` <Badge type="warning" text="^0.1.4" /> `LECTURE` <Badge type="warning" text="0.1.0~0.1.3" />
+`默认值: HANDOUTS` <Badge type="warning" text="0.1.4" /> `LECTURE` <Badge type="warning" text="0.1.0~0.1.3" />
 
-`可选值: EXAM` 、 `SOLUTION` <Badge type="warning" text="^0.1.8" />
+`可选值: EXAM` 、 `SOLUTION` <Badge type="warning" text="0.1.8" />
 
 >该参数用于设置模板的显示模式
 >
@@ -137,11 +137,11 @@
 
 `默认值: ("STIX Two Math", "New Computer Modern Math", "Source Han Serif", "SimSun")` <Badge type="warning" text="0.2.1" />
 
-`默认值: ("New Computer Modern Math", "Noto Serif SC", "Noto Serif CJK SC")` <Badge type="warning" text="^0.2.2" />
+`默认值: ("New Computer Modern Math", "Noto Serif SC", "Noto Serif CJK SC")` <Badge type="warning" text="0.2.2" />
 
-`默认值: ("New Computer Modern Math", "Noto Serif CJK SC")` <Badge type="warning" text="^0.2.5" />
+`默认值: ("New Computer Modern Math", "Noto Serif CJK SC")` <Badge type="warning" text="0.2.5" />
 
-`默认值: roman`  <Badge type="warning" text="^0.2.8" />
+`默认值: roman`  <Badge type="warning" text="0.2.8" />
 
 >该参数用于设置页面的字体
 
@@ -232,7 +232,7 @@ roman = (
 
 >该参数用于设置首行缩进
 
-#### `heading-numbering` <Badge type="warning" text="^0.1.3" />
+#### `heading-numbering` <Badge type="warning" text="0.1.3" />
 
 `类型: str | function`
 
@@ -240,7 +240,7 @@ roman = (
 
 >该参数用于设置节标题前的编号方式
 
-#### `heading-hang-indent` <Badge type="warning" text="^0.1.3" />
+#### `heading-hang-indent` <Badge type="warning" text="0.1.3" />
 
 `类型: length`
 
@@ -256,7 +256,7 @@ roman = (
 
 >该参数用于设置节标题的字体
 
-#### `h1-size` <Badge type="warning" text="^0.1.7" />
+#### `h1-size` <Badge type="warning" text="0.1.7" />
 
 `类型: length`
 
@@ -292,15 +292,15 @@ roman = (
 
 >该参数用于设置节标题的下间距
 
-#### `enum-numbering` <Badge type="warning" text="^0.1.2" />
+#### `enum-numbering` <Badge type="warning" text="0.1.2" />
 
 `类型: str | function`
 
-`默认值: "（1.i.a）"` <Badge type="warning" text="^0.1.8" /> `（1.1.i.a）` <Badge type="warning" text="0.1.0~0.1.7" />
+`默认值: "（1.i.a）"` <Badge type="warning" text="0.1.8" /> `（1.1.i.a）` <Badge type="warning" text="0.1.0~0.1.7" />
 
 >该参数用于设置有序列表的编号方式
 
-#### `enum-spacing` <Badge type="warning" text="^0.1.3" />
+#### `enum-spacing` <Badge type="warning" text="0.1.3" />
 
 `类型: length`
 
@@ -308,7 +308,7 @@ roman = (
 
 >该参数用于设置有序列表的之间的间距
 
-#### `enum-indent` <Badge type="warning" text="^0.1.3" />
+#### `enum-indent` <Badge type="warning" text="0.1.3" />
 
 `类型: length`
 
@@ -316,7 +316,7 @@ roman = (
 
 >该参数用于设置有序列表的缩进
 
-#### `resume` <Badge type="warning" text="^0.2.8" />
+#### `resume` <Badge type="warning" text="0.2.8" />
 
 `类型: boolean`
 
@@ -324,7 +324,7 @@ roman = (
 
 >该参数用于设置题目的题号在使用 `heading` 中断后是否继续编号
 
-#### `watermark` <Badge type="warning" text="^0.1.4" />
+#### `watermark` <Badge type="warning" text="0.1.4" />
 
 `类型: none | content | image`
 
@@ -332,7 +332,7 @@ roman = (
 
 >该参数用于设置水印的内容
 
-#### `watermark-color` <Badge type="warning" text="^0.1.4" />
+#### `watermark-color` <Badge type="warning" text="0.1.4" />
 
 `类型: color`
 
@@ -343,7 +343,7 @@ roman = (
 该参数对图片水印无效。在修改该参数时，一定要修改颜色的透明度，否则水印将覆盖在文字之上。（这是由于水印的实现是基于前景色）详情设置参考 [color](https://typst.app/docs/reference/visualize/color/)。
 :::
 
-#### `watermark-font` <Badge type="warning" text="^0.1.4" />
+#### `watermark-font` <Badge type="warning" text="0.1.4" />
 
 `类型: str | array`
 
@@ -354,7 +354,7 @@ roman = (
 该参数对图片水印无效。
 :::
 
-#### `watermark-size` <Badge type="warning" text="^0.1.4" />
+#### `watermark-size` <Badge type="warning" text="0.1.4" />
 
 `类型: length`
 
@@ -365,7 +365,7 @@ roman = (
 该参数对图片水印无效，但可以通过传入图片时设置宽高调整图片大小。
 :::
 
-#### `watermark-rotate` <Badge type="warning" text="^0.1.4" />
+#### `watermark-rotate` <Badge type="warning" text="0.1.4" />
 
 `类型: angle`
 

@@ -14,7 +14,7 @@ A. -1     B.  0    C.  1     D.  6
 
 ### 参数
 
-#### `columns` <Badge type="warning" text="^0.1.8" />
+#### `columns` <Badge type="warning" text="0.1.8" />
 
 `类型: int | auto`
 
@@ -50,7 +50,7 @@ A. -1     B.  0    C.  1     D.  6
 
 >该参数用于设置选项的缩进
 
-#### `spacing` <Badge type="warning" text="^0.2.4" />
+#### `spacing` <Badge type="warning" text="0.2.4" />
 
 `类型: length`
 
@@ -103,7 +103,7 @@ A. -1     B.  0    C.  1     D.  6
 ① 选项1       ② 选项2         ③ 选项3         ④ 选项4
 ```
 
-#### `label-position` <Badge type="warning" text="^0.2.9" />
+#### `label-position` <Badge type="warning" text="0.2.9" />
 
 `类型: alignment`
 

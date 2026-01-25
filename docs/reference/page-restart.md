@@ -1,4 +1,4 @@
-# `page-restart` 方法 <Badge type="tip" text="^0.2.9" />
+# `page-restart` 方法 <Badge type="tip" text="0.2.9" />
 
 该方法可以指定页码从xx开始。
 

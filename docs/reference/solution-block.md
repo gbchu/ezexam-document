@@ -1,4 +1,4 @@
-# `solution-block` 方法 <Badge type="tip" text="^0.2.9" />
+# `solution-block` 方法 <Badge type="tip" text="0.2.9" />
 
 解析块，该方法可以自动设置标题为参考答案，页码的格式符合参考答案格式。
 

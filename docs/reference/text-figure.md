@@ -35,7 +35,7 @@
   )[#image("wechatpay.png")]
 ```
 
-#### `figure` <Badge type="warning" text="^0.1.9" />
+#### `figure` <Badge type="warning" text="0.1.9" />
 
 `类型: image | table`
 
@@ -60,7 +60,7 @@
 
 >该参数用于设置图表垂直方向上的距离
 
-#### `style` <Badge type="warning" text="^0.1.9" />
+#### `style` <Badge type="warning" text="0.1.9" />
 
 `类型: str`
 
@@ -79,7 +79,7 @@
 ```
 ![效果图](/tf2.png)
 
-#### `gap` <Badge type="warning" text="^0.1.9" />
+#### `gap` <Badge type="warning" text="0.1.9" />
 
 `类型: length`
 
@@ -87,7 +87,7 @@
 
 >该参数用于设置图片和文本之间的距离
 
-#### `align` <Badge type="warning" text="^0.2.5" />
+#### `align` <Badge type="warning" text="0.2.5" />
 
 `类型: alignment`
 
@@ -96,7 +96,7 @@
 >该参数用于设置图片和文本的对齐方式
 
 ::: warning
-该参数在 <Badge type="warning" text="^0.2.8" /> 版本及之后已废弃
+该参数在 <Badge type="warning" text="0.2.8" /> 版本及之后已废弃
 :::
 
 #### `top`

@@ -141,7 +141,7 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
  对于七选五这类题型，每次使用占位符都设置参数很麻烦，本模板提供了一个方法 `fillinn` ，只需要将上述 `fillin(with-number: true, update: true)[]` 直接改为 `fillinn[]` 即可，本质就是上述方法的语法糖。
 :::
 
-#### `stroke` <Badge type="warning" text="^0.2.2" />
+#### `stroke` <Badge type="warning" text="0.2.2" />
 
 `类型: length | color | array`
 
@@ -149,7 +149,7 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
 
 >该参数设置下划线的样式
 
-#### `offset` <Badge type="warning" text="^0.2.2" />
+#### `offset` <Badge type="warning" text="0.2.2" />
 
 `类型: length`
 

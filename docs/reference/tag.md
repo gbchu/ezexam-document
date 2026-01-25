@@ -1,4 +1,4 @@
-# tag 方法 <Badge type="warning" text="^0.2.5" />
+# tag 方法 <Badge type="warning" text="0.2.5" />
 
 该方法可生一个带有颜色的标记
 
@@ -25,7 +25,7 @@
 
 >该参数用于设置标记的字体
 
-#### `weight` <Badge type="warning" text="^0.2.8" />
+#### `weight` <Badge type="warning" text="0.2.8" />
 
 `类型: str | int`
 
@@ -49,7 +49,7 @@
 
 >该参数用于设置标记的后缀
 
-#### `x` <Badge type="warning" text="^0.2.8" />
+#### `x` <Badge type="warning" text="0.2.8" />
 
 `类型: length`
 
@@ -76,5 +76,5 @@
 效果：<font color="maroon"> ⦁多选 </font>
 
 :::warning
-该常量在 <Badge type="tip" text="^0.2.8" /> 版本及以后已废弃。
+该常量在 <Badge type="tip" text="0.2.8" /> 版本及以后已废弃。
 :::

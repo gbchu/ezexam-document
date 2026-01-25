@@ -1,4 +1,4 @@
-# `cover` 方法 <Badge type="warning" text="^0.2.0" />
+# `cover` 方法 <Badge type="warning" text="0.2.0" />
 
 该方法可生成一个封面
 

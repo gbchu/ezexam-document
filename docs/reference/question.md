@@ -34,7 +34,7 @@
 
 >该参数用于设置题目的缩进
 
-#### `hanging-indent` <Badge type="warning" text="^0.2.8" />
+#### `hanging-indent` <Badge type="warning" text="0.2.8" />
 
 `类型: length`
 
@@ -109,7 +109,7 @@
   安得广厦千万间，大庇天下寒士俱欢颜
 ```
 
-#### `points-separate` <Badge type="warning" text="^0.1.3" />
+#### `points-separate` <Badge type="warning" text="0.1.3" />
 
 `类型: boolean`
 
@@ -185,7 +185,7 @@
 
 >该参数用于设置题目距离下方的外边距
 
-#### `padding-top` <Badge type="warning" text="^0.1.7" />
+#### `padding-top` <Badge type="warning" text="0.1.7" />
 
 `类型: length`
 
@@ -194,10 +194,10 @@
 >该参数用于设置题目上方内边距
 
 ::: warning
-该参数在 <Badge type="warning" text="^0.2.8" /> 版本之后已废弃。
+该参数在 <Badge type="warning" text="0.2.8" /> 版本之后已废弃。
 :::
 
-#### `padding-bottom` <Badge type="warning" text="^0.1.7" />
+#### `padding-bottom` <Badge type="warning" text="0.1.7" />
 
 `类型: length`
 
@@ -206,11 +206,11 @@
 >该参数用于设置题目的下方内边距
 
 ::: warning
-该参数在 <Badge type="warning" text="^0.2.8" /> 版本之后已废弃。
+该参数在 <Badge type="warning" text="0.2.8" /> 版本之后已废弃。
 :::
 
 ::: tip
-`padding-top` 和 `padding-bottom` 参数是用来解决题号和题目对不齐的问题；在 <Badge type="warning" text="^0.2.8" /> 版本之后，该问题已解决 。
+`padding-top` 和 `padding-bottom` 参数是用来解决题号和题目对不齐的问题；在 <Badge type="warning" text="0.2.8" /> 版本之后，该问题已解决 。
 :::
 
 示例
