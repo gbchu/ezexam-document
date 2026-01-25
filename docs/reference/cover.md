@@ -4,7 +4,7 @@
 
 #### 示例
 ```typst
-#cover(title: "2025 高考真题 （全国卷）", subtitle: "数 学", author: "gbchu")
+#cover(title: "2010～2025高考真题（全国卷）", subtitle: "数学", author: "gbchu")
 ```
 ![效果图](/cover.png)
 
