@@ -425,6 +425,10 @@ roman = (
 
 >该参数用于设置弥封线的样式
 
+::: tip
+此设置的可选值参考官方文档 [线的类型](https://typst.app/docs/reference/visualize/stroke/#constructor-dash)。
+:::
+
 #### `seal-line-decoration` <Badge type="warning" text="0.2.9" />
 
 `类型: str | none`
@@ -433,11 +437,8 @@ roman = (
 
 `可选值: "text" 、 "circle" 、 "text-circle"`
 
->该参数用于设置弥封线的样式
+>该参数用于为弥封线添加额外的装饰
 
-::: tip
-此设置的可选值参考官方文档 [线的类型](https://typst.app/docs/reference/visualize/stroke/#constructor-dash)。
-:::
 
 #### `seal-line-supplement`
 
