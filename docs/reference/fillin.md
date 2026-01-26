@@ -18,6 +18,8 @@
 
 `默认值: 1.25cm`
 
+`默认值: 27.5pt` <Badge type="warning" text="0.2.9" />
+
 >该参数用于设置下划线的长度
 
 ::: warning
