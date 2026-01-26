@@ -174,6 +174,10 @@ export default defineConfig({
                 link: "/reference/setup.md#seal-line-type",
               },
               {
+                text: "seal-line-decoration",
+                link: "/reference/setup.md#seal-line-decoration",
+              },
+              {
                 text: "seal-line-supplement",
                 link: "/reference/setup.md#seal-line-supplement",
               },
