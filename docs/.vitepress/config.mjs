@@ -90,6 +90,10 @@ export default defineConfig({
                 link: "/reference/setup.md#par-spacing",
               },
               {
+                text: "par-justify",
+                link: "/reference/setup.md#par-justify",
+              },
+              {
                 text: "first-line-indent",
                 link: "/reference/setup.md#first-line-indent",
               },

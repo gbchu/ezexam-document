@@ -224,6 +224,14 @@ roman = (
 
 >该参数用于设置段落间距
 
+#### `par-justify` <Badge type="tip" text="0.2.9" />
+
+`类型: boolean`
+
+`默认值: false`
+
+>该参数用于设置段落是否两端对齐
+
 #### `first-line-indent`
 
 `类型: length`
