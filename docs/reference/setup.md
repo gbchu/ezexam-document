@@ -445,7 +445,7 @@ roman = (
 
 `默认值: none`
 
-`可选值: "text" 、 "circle" 、 "text-circle"`
+`可选值: "text" 、 "circle"`
 
 >该参数用于为弥封线添加额外的装饰
 
