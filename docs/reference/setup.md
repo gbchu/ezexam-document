@@ -73,7 +73,7 @@
 
 #### `page-align`
 
-`类型: alignment | str`
+`类型: alignment`
 
 `默认值: center`
 
@@ -82,9 +82,9 @@
 >该参数用于设置模板的页码对齐方式
 
 ::: tip
-若要修改对齐方式可参考官方文档 [alignment](https://typst.app/docs/reference/layout/alignment/) 的参数设置。
+1. 若要修改对齐方式可参考官方文档 [alignment](https://typst.app/docs/reference/layout/alignment/) 的参数设置。
 
-"odd-r-even-l" 是一个特殊值，表示奇数页从右开始，偶数页从左开始。
+2. 从 `0.2.9` 版本开始，若要实现奇数页从右开始，偶数页从左开始，使用可选值即可实现。废弃掉设置 [`footer-is-separate`](#footer-is-separate) 参数为 `false` 实现该效果。
 :::
 
 #### `footer-is-separate`
