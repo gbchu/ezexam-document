@@ -517,7 +517,7 @@ export default defineConfig({
                 text: "student-info",
                 link: "/reference/draft.md#student-info",
               },
-              { text: "dash", link: "/reference/draft.md#dash" },
+              { text: "line-type", link: "/reference/draft.md#line-type" },
               { text: "supplement", link: "/reference/draft.md#supplement" },
             ],
           },

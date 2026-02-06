@@ -35,7 +35,7 @@
 
 >该参数用于设置考生信息
 
-#### `dash`
+#### `line-type`
 
 `类型: str | none | auto | array | dictionary`
 
@@ -45,6 +45,10 @@
 
 ::: tip
 此设置的可选值参考官方文档 [线的类型](https://typst.app/docs/reference/visualize/stroke/#constructor-dash)。
+:::
+
+::: warning
+该参数在 <Badge type="warning" text="0.2.9" /> 版本前名为 `dash`
 :::
 #### `supplement`
 
