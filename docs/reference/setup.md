@@ -73,16 +73,18 @@
 
 #### `page-align`
 
-`类型: alignment`
+`类型: alignment | str`
 
 `默认值: center`
+
+`可选值: "odd-r-even-l"` <Badge type="warning" text="0.2.9" />
 
 >该参数用于设置模板的页码对齐方式
 
 ::: tip
-1. 若要修改对齐方式可参考官方文档 [alignment](https://typst.app/docs/reference/layout/alignment/) 的参数设置。
+若要修改对齐方式可参考官方文档 [alignment](https://typst.app/docs/reference/layout/alignment/) 的参数设置。
 
-2. 若想实现奇数页在右侧显示，偶数页在左侧显示的效果，可忽略该参数，修改 [`footer-is-separate`](#footer-is-separate) 参数为 `false` 即可。
+"odd-r-even-l" 是一个特殊值，表示奇数页从右开始，偶数页从左开始。
 :::
 
 #### `footer-is-separate`
