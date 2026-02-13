@@ -61,14 +61,18 @@
 
 >该参数用于设置模板的页码显示方式
 >
->`EXAM` 模式下默认显示为: `XX试题  第X页（共X页）`
+>`EXAM` 模式下默认显示为: `XX试题第X页（共X页）`
 >
->`SOLUTION` 模式下默认显示为: `XX试题答案  第X页（共X页）`
+>`SOLUTION` 模式下默认显示为: `XX参考答案第X页（共X页）`
 >
 >`HANDOUTS` 模式下默认显示为: `X / X`
 
 ::: tip
 若要修改显示格式可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置。
+:::
+
+::: warning
+若该参数传入的是函数，请使用内置的 [zh-arabic](/reference/zh-arabic) 方法，不要自定义方法，否则页码的显示可能会出现问题！
 :::
 
 #### `page-align`
@@ -105,6 +109,10 @@
 
 ::: tip
 若要修改显示格式可参考官方文档 [numbering](https://typst.app/docs/reference/model/numbering/) 的参数设置。
+:::
+
+::: warning
+若该参数传入的是函数，请使用内置的 [zh-arabic](/reference/zh-arabic) 方法，不要自定义方法，否则页码的显示可能会出现问题！
 :::
 
 #### `gap`
