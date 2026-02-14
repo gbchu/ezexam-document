@@ -169,6 +169,7 @@
 ]
 
 #solution-block[
+  #let answer = tag.with(prefix: "答案：", suffix: [ \ ], color: maroon)
   #solution(title: "解析")[
     #answer[A]
     解: #lorem(6)#score(6)
