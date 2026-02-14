@@ -156,7 +156,7 @@
 >该参数用于设置页面的字体
 
 ::: tip
-由于宋体不支持加粗，故本包中文默认字体为思源宋体；在本地使用该模板时，自行下载 [思源宋体](https://wwoq.lanzouo.com/irYZH3bhmzcb) （密码：666）并安装在对应的操作系统中（安装后需要重启系统）即可。通过 `TypstApp` 在线使用时，无需安装。
+由于 Windows 下的宋体不支持加粗，故本包中文默认字体为 Mac 下的 [宋体-简](https://wwbbc.lanzouv.com/iPcGx3ii3igh)、[思源宋体](https://wwbbc.lanzouv.com/io4o73ii4ele) （密码：666）。在本地使用该模板时，可选择上述任意一个字体下载并安装在对应的操作系统中（安装后需要重启系统）即可。本地 Windows 用户推荐 [宋体-简](https://wwbbc.lanzouv.com/iPcGx3ii3igh) ，原因是该字体更接近 Windows 下的宋体且该字体体积比思源要小。通过 `TypstApp` 在线使用或 Mac 本地用户，无需安装。
 :::
 
 #### `font-math`
