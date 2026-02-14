@@ -209,6 +209,18 @@ roman = (
   )
 ```
 
+从 <Badge type="warning" text="0.2.9" /> 版本开始，`roman` 作为默认字体， 其值如下：
+
+```
+roman = (
+  (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
+  (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体
+  "TeX Gyre Termes Math", // 数学字体
+  "Songti SC",
+  "Noto Serif CJK SC" // 正文字体
+  )
+```
+
 若安装的是其它受支持的数学字体，安装字体后需要自行修改 `font` 参数的值才能生效！该值必须为数组，且该数组中至少有2个元素，西文字体在前，中文字体在后；可参考最新 `roman` 的值。
 
 特别的，当使用 [STIX Two](https://wwbbc.lanzouv.com/iJ9Ew3ef73ad) 字体时（该字体也是新罗马字体风格），在线或 Mac 用户本地使用时无需安装字体。
