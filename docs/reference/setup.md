@@ -174,9 +174,9 @@
 >该参数用于设置页面的字体
 
 ::: tip
-1. 由于 `Windows` 下的宋体不支持加粗，故本包中文默认字体使用顺序为 `Mac` 下的 [Songti SC](https://wwbbc.lanzouv.com/iPcGx3ii3igh) 、[思源宋体](https://wwbbc.lanzouv.com/io4o73ii4ele) （密码：666）。`Windows` 用户在本地使用该模板时，可选择上述任意一个字体下载并安装在对应的操作系统中（安装后需要重启系统）。通过 `TypstApp` 在线使用或 `Mac` 本地用户，无需安装。
+1. `Windows` 下的宋体不支持加粗，故模板中文默认字体使用顺序为 `Mac` 下的 [Songti SC](https://wwbbc.lanzouv.com/iPcGx3ii3igh) 、[思源宋体](https://wwbbc.lanzouv.com/io4o73ii4ele) （密码：666）。`Windows` 用户在本地使用该模板时，可选择上述任意一个字体下载并安装在对应的操作系统中（安装后需要重启系统）。通过 `TypstApp` 在线使用或 `Mac` 本地用户，无需安装。
 
-2. 本模版黑体默认使用顺序为 [Simhei](https://wwbbc.lanzouv.com/iPcGx3ii3igh) 、[思源黑体](https://wwbbc.lanzouv.com/io4o73ii4ele) （密码：666）。`Mac` 用户在本地使用该模板时，需要安装上述任意一个字体在对应的操作系统中（安装后需要重启系统）。
+2. 黑体默认使用顺序为 [Simhei](https://wwbbc.lanzouv.com/ird7q3ikm5wb) （密码：666）、[思源黑体](https://wwbbc.lanzouv.com/iyAnk3bgnwhi) （密码：666）。`Mac` 用户在本地使用该模板时，需要安装上述任意一个字体在对应的操作系统中（安装后需要重启系统）。
 :::
 
 #### `font-math`
@@ -196,12 +196,12 @@
 
 ::: tip
 
-若想使用新罗马风格的字体，需要 [下载新罗马风格的字体](https://wwbbc.lanzouv.com/ilVFJ3ef6rta) 并安装在对应的操作系统中（安装后需要重启系统）。
+1. 若想使用新罗马风格的字体，需要 [下载新罗马风格的字体](https://wwbbc.lanzouv.com/b016kazkba)（密码：666） 并安装在对应的操作系统中（安装后需要重启系统）。
 （通过 `TypstApp` 在线使用时，无需安装该字体）
 
-若安装的是其它受支持的数学字体，安装字体后需要自行修改 [font](#font) 参数的值才能生效！该值必须为数组，且该数组中至少有2个元素，西文字体在前，中文字体在后；可参考最新 [font](#font) 的值。
+2. 若安装的是其它受支持的数学字体，安装字体后需要自行修改 [font](#font) 参数的值才能生效！该值必须为数组，且该数组中至少有2个元素，西文字体在前，中文字体在后；可参考最新 [font](#font) 的值。
 
-特别的，当使用 [STIX Two](https://wwbbc.lanzouv.com/iJ9Ew3ef73ad) 字体时（该字体也是新罗马字体风格），在线或 Mac 用户本地使用时无需安装字体。
+3. 特别的，当使用 [STIX Two](https://wwbbc.lanzouv.com/iJ9Ew3ef73ad) 字体时（该字体也是新罗马字体风格），在线或 Mac 用户本地使用时无需安装字体。
 
 从 <Badge type="warning" text="0.2.2" /> 版本开始，新增常量 `roman`
 
