@@ -145,18 +145,38 @@
 
 `默认值: ("New Computer Modern Math", "Source Han Serif", "SimSun")`
 
-`默认值: ("STIX Two Math", "New Computer Modern Math", "Source Han Serif", "SimSun")` <Badge type="warning" text="0.2.1" />
-
 `默认值: ("New Computer Modern Math", "Noto Serif SC", "Noto Serif CJK SC")` <Badge type="warning" text="0.2.2" />
 
 `默认值: ("New Computer Modern Math", "Noto Serif CJK SC")` <Badge type="warning" text="0.2.5" />
 
-`默认值: roman`  <Badge type="warning" text="0.2.8" />
+`默认值:` <Badge type="warning" text="0.2.8" />
+```typst
+ (
+    (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
+    (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体
+    "TeX Gyre Termes Math", // 数学字体
+    "Noto Serif CJK SC" // 正文字体
+ )
+```
+
+`默认值:` <Badge type="warning" text="0.2.9" />
+```typst
+ (
+    (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
+    (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体
+    "TeX Gyre Termes Math", // 数学字体
+    "Songti SC",
+    "Noto Serif CJK SC" // 正文字体
+ )
+```
+
 
 >该参数用于设置页面的字体
 
 ::: tip
-由于 `Windows` 下的宋体不支持加粗，故本包中文默认字体为 `Mac` 下的 [宋体-简](https://wwbbc.lanzouv.com/iPcGx3ii3igh) 、[思源宋体](https://wwbbc.lanzouv.com/io4o73ii4ele) （密码：666）。`Windows` 用户在本地使用该模板时，可选择上述任意一个字体下载并安装在对应的操作系统中（安装后需要重启系统）。推荐 [宋体-简](https://wwbbc.lanzouv.com/iPcGx3ii3igh) ，原因是该字体更接近 `Windows` 下的宋体且该字体体积比思源要小。通过 `TypstApp` 在线使用或 `Mac` 本地用户，无需安装。
+1. 由于 `Windows` 下的宋体不支持加粗，故本包中文默认字体使用顺序为 `Mac` 下的 [Songti SC](https://wwbbc.lanzouv.com/iPcGx3ii3igh) 、[思源宋体](https://wwbbc.lanzouv.com/io4o73ii4ele) （密码：666）。`Windows` 用户在本地使用该模板时，可选择上述任意一个字体下载并安装在对应的操作系统中（安装后需要重启系统）。通过 `TypstApp` 在线使用或 `Mac` 本地用户，无需安装。
+
+2. 本模版黑体默认使用顺序为 [Simhei](https://wwbbc.lanzouv.com/iPcGx3ii3igh) 、[思源黑体](https://wwbbc.lanzouv.com/io4o73ii4ele) （密码：666）。`Mac` 用户在本地使用该模板时，需要安装上述任意一个字体在对应的操作系统中（安装后需要重启系统）。
 :::
 
 #### `font-math`
@@ -170,11 +190,19 @@
 >该参数用于设置数学公式下的字体
 
 ::: warning
-该参数从 <Badge type="warning" text="0.2.2" /> 开始已弃用；使用 `font` 参数即可完成数学字体的修改。详情参考下面 `roman` 的值。
+该参数从 <Badge type="warning" text="0.2.2" /> 开始已弃用；使用 [font](#font) 参数即可完成数学字体的修改。详情参考最新 [font](#font) 的值。
 :::
 
 
 ::: tip
+
+若想使用新罗马风格的字体，需要 [下载新罗马风格的字体](https://wwbbc.lanzouv.com/ilVFJ3ef6rta) 并安装在对应的操作系统中（安装后需要重启系统）。
+（通过 `TypstApp` 在线使用时，无需安装该字体）
+
+若安装的是其它受支持的数学字体，安装字体后需要自行修改 [font](#font) 参数的值才能生效！该值必须为数组，且该数组中至少有2个元素，西文字体在前，中文字体在后；可参考最新 [font](#font) 的值。
+
+特别的，当使用 [STIX Two](https://wwbbc.lanzouv.com/iJ9Ew3ef73ad) 字体时（该字体也是新罗马字体风格），在线或 Mac 用户本地使用时无需安装字体。
+
 从 <Badge type="warning" text="0.2.2" /> 版本开始，新增常量 `roman`
 
  ```
@@ -185,45 +213,10 @@
     "Noto Serif CJK SC"
   ) + font // 默认字体
  ```
-若想使用新罗马风格的字体，需要 [下载新罗马风格的字体](https://wwbbc.lanzouv.com/ilVFJ3ef6rta) 并安装在对应的操作系统中（安装后需要重启系统）。
-（通过 `TypstApp` 在线使用时，无需安装该字体）
 
-从 <Badge type="warning" text="0.2.5" /> 版本开始，`roman` 的值为：
+从 <Badge type="warning" text="0.2.5" /> 版本开始，`roman` 的值删除掉 `Noto Serif SC`
 
-```
-roman = (
-  (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
-  "TeX Gyre Termes Math", // 数学字体
-  "Noto Serif CJK SC" // 正文字体
-  ) + font // 默认字体
-```
-
-从 <Badge type="warning" text="0.2.8" /> 版本开始，`roman` 作为默认字体， 其值如下：
-
-```
-roman = (
-  (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
-  (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体
-  "TeX Gyre Termes Math", // 数学字体
-  "Noto Serif CJK SC" // 正文字体
-  )
-```
-
-从 <Badge type="warning" text="0.2.9" /> 版本开始，`roman` 作为默认字体， 其值如下：
-
-```
-roman = (
-  (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
-  (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体
-  "TeX Gyre Termes Math", // 数学字体
-  "Songti SC",
-  "Noto Serif CJK SC" // 正文字体
-  )
-```
-
-若安装的是其它受支持的数学字体，安装字体后需要自行修改 `font` 参数的值才能生效！该值必须为数组，且该数组中至少有2个元素，西文字体在前，中文字体在后；可参考最新 `roman` 的值。
-
-特别的，当使用 [STIX Two](https://wwbbc.lanzouv.com/iJ9Ew3ef73ad) 字体时（该字体也是新罗马字体风格），在线或 Mac 用户本地使用时无需安装字体。
+从 <Badge type="warning" text="0.2.8" /> 版本开始，`roman` 为默认值，不需要再手动设置！
 :::
 
 ::: warning
