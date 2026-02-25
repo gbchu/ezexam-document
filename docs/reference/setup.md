@@ -159,22 +159,10 @@
  )
 ```
 
-`默认值:` <Badge type="warning" text="0.2.9" />
-```typst
- (
-    (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
-    (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体
-    "TeX Gyre Termes Math", // 数学字体
-    "Songti SC",
-    "Noto Serif CJK SC" // 正文字体
- )
-```
-
-
 >该参数用于设置页面的字体
 
 ::: tip
-1. `Windows` 下的宋体不支持加粗，故模板中文默认字体使用顺序为 `Mac` 下的 [Songti SC](https://wwbbc.lanzouv.com/iPcGx3ii3igh) 、[思源宋体](https://wwbbc.lanzouv.com/io4o73ii4ele) （密码：666）。`Windows` 用户在本地使用该模板时，可选择上述任意一个字体下载并安装在对应的操作系统中（安装后需要重启系统）。通过 `TypstApp` 在线使用或 `Mac` 本地用户，无需安装。
+1. `Windows` 下的宋体不支持加粗，故本模板中文默认字体为 [思源宋体](https://wwbbc.lanzouv.com/io4o73ii4ele) （密码：666）。在本地使用该模板时，需要将字体安装在对应的操作系统中（安装后需要重启系统）。通过 `TypstApp` 在线使用无需安装。
 
 2. 黑体默认使用顺序为 [Simhei](https://wwbbc.lanzouv.com/ird7q3ikm5wb) （密码：666）、[思源黑体](https://wwbbc.lanzouv.com/iyAnk3bgnwhi) （密码：666）。`Mac` 用户在本地使用该模板时，需要安装上述任意一个字体在对应的操作系统中（安装后需要重启系统）。
 :::
