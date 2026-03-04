@@ -227,7 +227,7 @@
 
 >该参数用于设置段落间距
 
-#### `par-justify` <Badge type="tip" text="0.2.9" />
+#### `par-justify` <Badge type="warning" text="0.2.9" />
 
 `类型: boolean`
 
@@ -276,7 +276,7 @@
 >该参数用于设置一级标题的字体大小
 
 ::: warning
-在 <Badge type="tip" text="0.1.7" /> 版本之前，该参数名为 `heading-size` 且会改变所有级别的节标题。
+在 <Badge type="warning" text="0.1.7" /> 版本之前，该参数名为 `heading-size` 且会改变所有级别的节标题。
 :::
 
 #### `heading-color`

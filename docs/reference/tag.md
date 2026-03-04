@@ -56,7 +56,7 @@
 `默认值: - 0.4em`
 
 ::: warning
-该参数在 <Badge type="tip" text="0.2.9" /> 版本及以后已废弃。
+该参数在 <Badge type="warning" text="0.2.9" /> 版本及以后已废弃。
 :::
 
 >该参数用于设置标记的水平偏移
@@ -80,5 +80,5 @@
 效果：<font color="maroon"> ⦁多选 </font>
 
 :::warning
-该常量在 <Badge type="tip" text="0.2.8" /> 版本及以后已废弃。
+该常量在 <Badge type="warning" text="0.2.8" /> 版本及以后已废弃。
 :::

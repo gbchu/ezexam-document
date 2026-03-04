@@ -6,6 +6,8 @@
 ```typst
 #cover(title: "2010～2025高考真题（全国卷）", subtitle: "数学", author: "gbchu")
 ```
+效果：
+
 ![效果图](/cover.png)
 
 ### 参数
