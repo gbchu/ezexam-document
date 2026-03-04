@@ -21,7 +21,8 @@
 
 ```
 
-### 效果
+效果：
+
 ![效果图](/solution-block.jpg)
 
 ::: warning
