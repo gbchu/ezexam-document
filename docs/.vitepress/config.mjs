@@ -582,7 +582,10 @@ export default defineConfig({
         text: "小贴士",
         link: "/tips.md",
         collapsed: true,
-        items: [{ text: "方法的全局配置", link: "/tips.md#方法的全局配置" }],
+        items: [
+          { text: "方法的全局配置", link: "/tips.md#方法的全局配置" },
+          { text: "Ai 提示词", link: "/tips.md#ai-提示词" }
+        ],
       },
     ],
 
