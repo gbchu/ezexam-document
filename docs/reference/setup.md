@@ -327,6 +327,14 @@
 
 >该参数用于设置有序列表的缩进
 
+#### `ref-color` <Badge type="warning" text="0.3.0" />
+
+`类型: color`
+
+`默认值: rgb("#0a6e96")`
+
+>该参数用于设置引用的颜色
+
 #### `resume` <Badge type="warning" text="0.2.8" />
 
 `类型: boolean`

@@ -18,7 +18,7 @@ export default defineConfig({
     logo: "/logo.svg",
     nav: [
       {
-        text: "0.2.9",
+        text: "0.3.0-beta",
         items: [
           {
             text: "更新日志",
@@ -136,6 +136,10 @@ export default defineConfig({
               {
                 text: "enum-indent",
                 link: "/reference/setup.md#enum-indent",
+              },
+              {
+                text: "ref-color",
+                link: "/reference/setup.md#ref-color",
               },
               {
                 text: "resume",
@@ -338,6 +342,14 @@ export default defineConfig({
               {
                 text: "with-heading-label",
                 link: "/reference/question.md#with-heading-label",
+              },
+              {
+                text: "ref-on",
+                link: "/reference/question.md#ref-on",
+              },
+              {
+                text: "supplement",
+                link: "/reference/question.md#supplement",
               },
               { text: "body", link: "/reference/question.md#body" },
             ],

@@ -241,6 +241,42 @@
 
 >该参数用于设置题目是否带有标题的标签
 
+#### `ref-on` <Badge type="warning" text="0.3.0" />
+
+`类型: boolean`
+
+`默认值: false`
+
+>该参数用于设置题目是否生成可被引用的 label ；若设为 `true` ，则题目对应将生成一个可被引用的 label，值为：`当前题目所在的位次` (非题号)
+
+```typst
+// 示例
+#question(ref-on:true)[]
+@1
+
+#question(ref-on:true)[]
+@2
+```
+
+#### `supplement` <Badge type="warning" text="0.3.0" />
+
+`类型: str | none`
+
+`默认值: none`
+
+>该参数用于设置被引用 label 的前缀
+
+```typst
+// 示例
+#question(ref-on:true, supplement:"题")[]
+@题1
+
+#question(ref-on:true)[]
+@2
+```
+
+
+
 #### `body`
 
 `类型: content`
