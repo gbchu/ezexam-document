@@ -20,12 +20,25 @@
 
 `类型: counter`
 
+示例
+
+```typst
+// 将章节计数器加1
+#counter-chapter.step()
+```
+
 ### 标题
 
 #### `counter-title`
 
 `类型: counter`
 
+示例
+
+```typst
+// 获取当前文档标题的个数
+#counter-title.final().frist()
+```
 
 ::: warning
 一定要确保自己有修改计数器的需求，否则不建议修改计数器！
