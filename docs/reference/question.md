@@ -247,16 +247,20 @@
 
 `默认值: false`
 
->该参数用于设置题目是否生成可被引用的 label ；若设为 `true` ，则题目将对应生成一个可被引用的 label，值为：`当前题目所在的位次` (非题号)
+>该参数用于设置题目是否生成可被引用的 label ；若设为 `true` ，则题目将对应生成一个可被引用的 label，值为：`当前章节-题号`
 
 ```typst
 // 示例
 #question(ref-on:true)[]
-@1
+@1-1
 
 #question(ref-on:true)[]
-@2
+@1-2
 ```
+
+::: warning
+若在同一个文档中排版多套试卷，且要使用引用标签，必须在对应试卷中调用  [chapter](/reference/chapter) 方法。否则引用时将报错!
+:::
 
 #### `supplement` <Badge type="warning" text="0.3.0" />
 
@@ -269,10 +273,10 @@
 ```typst
 // 示例
 #question(ref-on:true, supplement:"题")[]
-@题1
+@题1-1
 
 #question(ref-on:true)[]
-@2
+@1-2
 ```
 
 
