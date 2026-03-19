@@ -260,7 +260,7 @@
 ```
 
 ::: warning
-若在同一个文档中排版多套试卷，且要使用引用标签，必须在对应试卷中调用  [chapter](/reference/chapter) 方法。否则引用时将报错!
+若在同一个文档中排版多套试卷，且要使用引用标签，必须在对应试卷中调用  [chapter](/reference/chapter) 方法。或者手动更新 [chapter 的计数器](/reference/counter#counter-chapter)，否则引用时将报错!
 :::
 
 #### `supplement` <Badge type="warning" text="0.3.0" />

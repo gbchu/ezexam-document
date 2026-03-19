@@ -588,6 +588,10 @@ export default defineConfig({
               { text: "离子、原子结构式", link: "/reference/chemistry/ezchem/ai-struct.md" },
             ],
           },
+          {
+            text: "计数器",
+            link: "/reference/counter.md",
+          },
         ],
       },
       {

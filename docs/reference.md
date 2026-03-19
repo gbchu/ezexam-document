@@ -23,3 +23,4 @@
   - ~~[`color-box`](/reference/color-box) 彩色盒子~~
   - [`tag`](/reference/tag) 标记
   - [`ezchem` ](/reference/chemistry/ezchem) 化学相关
+  - [`counter` ](/reference/counter) 计数器
