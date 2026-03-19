@@ -249,8 +249,9 @@
 
 >该参数用于设置题目是否生成可被引用的 label ；若设为 `true` ，则题目将对应生成一个可被引用的 label，值为：`当前章节-题号`
 
+示例
+
 ```typst
-// 示例
 #question(ref-on:true)[]
 @1-1
 
@@ -270,8 +271,9 @@
 
 >该参数用于设置被引用 label 的前缀
 
+示例
+
 ```typst
-// 示例
 #question(ref-on:true, supplement:"题")[]
 @题1-1
 
