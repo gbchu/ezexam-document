@@ -23,7 +23,7 @@
 示例
 
 ```typst
-// 将章节计数器加1
+// 将章节计数器加 1
 #counter-chapter.step()
 ```
 
@@ -37,7 +37,7 @@
 
 ```typst
 // 获取当前文档标题的个数
-#counter-title.final().frist()
+#counter-title.final().first()
 ```
 
 ::: warning
