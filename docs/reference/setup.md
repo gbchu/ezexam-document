@@ -12,15 +12,15 @@
 
 `类型: str`
 
-`默认值: HANDOUTS` <Badge type="warning" text="0.1.4" /> `LECTURE` <Badge type="warning" text="0.1.0~0.1.3" />
+`默认值: HANDOUTS` <Badge type="warning" text="0.1.4" />
 
-`可选值: EXAM` 、 `SOLUTION` <Badge type="warning" text="0.1.8" />
+`可选值: EXAM`
 
 >该参数用于设置模板的显示模式
 >
->`EXAM` : 试卷模式；`SOLUTION` : 解析模式；`HANDOUTS` : 讲义模式
+>`EXAM` : 试卷模式；`HANDOUTS` : 讲义模式
 ::: tip
-`HANDOUTS` 模式和 `EXAM` 模式二者仅在题号的显示方式、目录显示方式、页码显示上有所不同。若你只想组卷则只用 `EXAM` 模式即可！`SOLUTION` 模式仅当答案独立于内容时，使用该模式。该模式为预定义好的格式，如果不满意可不用该模式自行调整！
+`HANDOUTS` 模式和 `EXAM` 模式二者仅在题号的显示方式、目录显示方式、页码显示上有所不同。若你只想排版试卷则只用 `EXAM` 模式即可！
 :::
 
 #### `paper`
@@ -62,8 +62,6 @@
 >该参数用于设置模板的页码显示方式
 >
 >`EXAM` 模式下默认显示为: `XX试题第X页（共X页）`
->
->`SOLUTION` 模式下默认显示为: `XX参考答案第X页（共X页）`
 >
 >`HANDOUTS` 模式下默认显示为: `X / X`
 
