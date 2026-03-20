@@ -4,7 +4,7 @@
 
 #### 示例
 ```typst
-#cover(title: "2010～2025高考真题（全国卷）", subtitle: "数学", author: "gbchu")
+#cover(title: "2010～2025高考真题（全国卷）", subtitle: "数学", author: "gbchu", date: "2026年01月01号")
 ```
 效果：
 
