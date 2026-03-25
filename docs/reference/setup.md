@@ -309,7 +309,7 @@
 
 `默认值: "（1.i.a）"` <Badge type="warning" text="0.1.8" /> `（1.1.i.a）` <Badge type="warning" text="0.1.0~0.1.7" />
 
->该参数用于设置有序列表的编号方式
+>该参数用于设置有序列表前的编号方式
 
 #### `enum-spacing` <Badge type="warning" text="0.1.3" />
 
@@ -317,7 +317,7 @@
 
 `默认值: 2em`
 
->该参数用于设置有序列表的之间的间距
+>该参数用于设置有序列表项之间的间距
 
 #### `enum-indent` <Badge type="warning" text="0.1.3" />
 
@@ -326,6 +326,30 @@
 `默认值: 0pt`
 
 >该参数用于设置有序列表的缩进
+
+#### `list-marker` <Badge type="warning" text="0.3.0" />
+
+`类型: content | array | function`
+
+`默认值: ([•], [‣], [–])`
+
+>该参数用于设置无序列表前的标记样式
+
+#### `list-spacing` <Badge type="warning" text="0.3.0" />
+
+`类型: length`
+
+`默认值: auto`
+
+>该参数用于设置无序列表项之间的间距
+
+#### `list-indent` <Badge type="warning" text="0.3.0" />
+
+`类型: length`
+
+`默认值: 0pt`
+
+>该参数用于设置无序列表的缩进
 
 #### `ref-color` <Badge type="warning" text="0.3.0" />
 

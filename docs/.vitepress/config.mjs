@@ -138,6 +138,18 @@ export default defineConfig({
                 link: "/reference/setup.md#enum-indent",
               },
               {
+                text: "list-marker",
+                link: "/reference/setup.md#list-marker",
+              },
+              {
+                text: "list-spacing",
+                link: "/reference/setup.md#list-spacing",
+              },
+              {
+                text: "list-indent",
+                link: "/reference/setup.md#list-indent",
+              },
+              {
                 text: "ref-color",
                 link: "/reference/setup.md#ref-color",
               },
