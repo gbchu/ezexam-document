@@ -4,7 +4,7 @@
 
 ### 题号
 
-#### `counter-question`
+#### `counter-question` <Badge type="warning" text="0.3.0" />
 
 `类型: counter`
 
@@ -16,7 +16,7 @@
 
 ### 章节
 
-#### `counter-chapter`
+#### `counter-chapter` <Badge type="warning" text="0.3.0" />
 
 `类型: counter`
 
@@ -29,7 +29,7 @@
 
 ### 标题
 
-#### `counter-title`
+#### `counter-title` <Badge type="warning" text="0.3.0" />
 
 `类型: counter`
 

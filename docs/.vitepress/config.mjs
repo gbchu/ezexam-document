@@ -607,7 +607,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "小贴士",
+        text: "使用技巧",
         link: "/tips.md",
         collapsed: true,
         items: [
