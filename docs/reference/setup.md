@@ -488,3 +488,13 @@
 `默认值: "弥封线内不得答题"`
 
 >该参数用于设置弥封线内的补充信息
+
+#### `seal-line-scope` <Badge type="warning" text="0.3.0" />
+
+`类型: str`
+
+`默认值: "every-page"`
+
+`可选值: "first-page" 、 "odd-page"`
+
+>该参数用于设置弥封线的页码范围

@@ -201,6 +201,10 @@ export default defineConfig({
                 text: "seal-line-supplement",
                 link: "/reference/setup.md#seal-line-supplement",
               },
+              {
+                text: "seal-line-scope",
+                link: "/reference/setup.md#seal-line-scope",
+              },
             ],
           },
           {
