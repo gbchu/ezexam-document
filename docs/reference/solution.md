@@ -8,14 +8,14 @@
 
 #### 示例
 ```typst
-  #solution(inset: (top: 30pt), padding-top: 7pt, title: "解析")[
-   $"解：原式" &=∫(1+cos 2x)/2 d x = 1/2 ∫(1+cos 2x)d x =
-    1/2(∫1d x+ ∫cos 2x d x)\ &=1/2(x+∫cos 2x d x)=1/2(x+1/2 ∫cos 2x d 2x)\ &=1/2 (x+1/2
-      sin 2x)=1/2 x+1/4 sin 2x+c$
-  ]
+#solution(inset: (top: 30pt))[
+  $"解：原式" &=∫(1+cos 2x)/2 dif x = 1/2 ∫(1+cos 2x)dif x =
+  1/2(∫1dif x+ ∫cos 2x dif x)\ &=1/2(x+∫cos 2x dif x)=1/2(x+1/2 ∫cos 2x dif 2x)\ &=1/2 (x+1/2
+    sin 2x)=1/2 x+1/4 sin 2x+c$
+]
 ```
-
-![效果图](/tips2.png)
+效果：
+![效果图](/solution.png)
 
 
 ### 参数
@@ -188,58 +188,6 @@
 ::: tip
 该参数在 <Badge type="warning" text="0.1.7" /> 版本之前，名为 `bottom` 。
 :::
-
-#### `padding-top` <Badge type="warning" text="0.1.7" />
-
-`类型: length`
-
-`默认值: 0pt`
-
->该参数用于设置解析内容的上方内边距
-
-::: warning
-该参数在 <Badge type="warning" text="0.2.8" /> 版本之后已废弃。
-:::
-
-#### `padding-bottom` <Badge type="warning" text="0.1.7" />
-
-`类型: length`
-
-`默认值: 0pt`
-
->该参数用于设置解析内容的下方内边距
-
-::: warning
-该参数在 <Badge type="warning" text="0.2.8" /> 版本之后已废弃。
-:::
-
-::: tip
-`padding-top` 和 `padding-bottom` 参数是用来解决题号和解析对不齐的问题；在 <Badge type="warning" text="0.2.8" /> 版本之后，该问题已解决 。
-:::
-
-示例
-```typst
-// 修改之前的代码
-  #solution(title: "解析")[
-    $"解：原式" &=∫(1+cos 2x)/2 d x = 1/2 ∫(1+cos 2x)d x =
-    1/2(∫1d x+ ∫cos 2x d x)\ &=1/2(x+∫cos 2x d x)=1/2(x+1/2 ∫cos 2x d 2x)\ &=1/2 (x+1/2
-      sin 2x)=1/2 x+1/4 sin 2x+c$
-  ]
-```
-
-![效果图](/tips1.png)
-
-```typst
-
-// 修改之后的代码
-  #solution(inset: (top: 30pt),padding-top: 7pt, title: "解析")[
-   $"解：原式" &=∫(1+cos 2x)/2 d x = 1/2 ∫(1+cos 2x)d x =
-    1/2(∫1d x+ ∫cos 2x d x)\ &=1/2(x+∫cos 2x d x)=1/2(x+1/2 ∫cos 2x d 2x)\ &=1/2 (x+1/2
-      sin 2x)=1/2 x+1/4 sin 2x+c$
-  ]
-```
-
-![效果图](/tips2.png)
 
 #### `show-number` <Badge type="warning" text="0.1.2" />
 

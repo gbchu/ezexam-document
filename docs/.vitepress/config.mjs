@@ -348,14 +348,6 @@ export default defineConfig({
               { text: "top", link: "/reference/question.md#top" },
               { text: "bottom", link: "/reference/question.md#bottom" },
               {
-                text: "padding-top",
-                link: "/reference/question.md#padding-top",
-              },
-              {
-                text: "padding-bottom",
-                link: "/reference/question.md#padding-bottom",
-              },
-              {
                 text: "with-heading-label",
                 link: "/reference/question.md#with-heading-label",
               },
@@ -496,14 +488,6 @@ export default defineConfig({
                   { text: "breakable", link: "/reference/solution.md#breakable" },
                   { text: "top", link: "/reference/solution.md#top" },
                   { text: "bottom", link: "/reference/solution.md#bottom" },
-                  {
-                    text: "padding-top",
-                    link: "/reference/solution.md#padding-top",
-                  },
-                  {
-                    text: "padding-bottom",
-                    link: "/reference/solution.md#padding-bottom",
-                  },
                   { text: "body", link: "/reference/solution.md#body" },
                 ],
               },

@@ -38,7 +38,7 @@
 
 `类型: length`
 
-`默认值: 2em`
+`默认值: auto`
 
 >该参数用于设置非首行缩进
 
@@ -184,54 +184,6 @@
 `默认值: 0pt`
 
 >该参数用于设置题目距离下方的外边距
-
-#### `padding-top` <Badge type="warning" text="0.1.7" />
-
-`类型: length`
-
-`默认值: 0pt`
-
->该参数用于设置题目上方内边距
-
-::: warning
-该参数在 <Badge type="warning" text="0.2.8" /> 版本之后已废弃。
-:::
-
-#### `padding-bottom` <Badge type="warning" text="0.1.7" />
-
-`类型: length`
-
-`默认值: 0pt`
-
->该参数用于设置题目的下方内边距
-
-::: warning
-该参数在 <Badge type="warning" text="0.2.8" /> 版本之后已废弃。
-:::
-
-::: tip
-`padding-top` 和 `padding-bottom` 参数是用来解决题号和题目对不齐的问题；在 <Badge type="warning" text="0.2.8" /> 版本之后，该问题已解决 。
-:::
-
-示例
-
-```typst
-// 修改之前的代码
-#question[
-  已知行列式$mat(1, 2, a; 0, 1, -1; 3, 4, 5)$的代数余子式$C_21$ 值为2，求$a$的值
-]
-```
-
-![效果图](/tips3.png)
-
-
-```typst
-// 修改之后的代码
-#question(top: 14pt,padding-top: -6.5pt)[
-  已知行列式$mat(1, 2, a; 0, 1, -1; 3, 4, 5)$的代数余子式$C_21$ 值为2，求$a$的值
-]
-```
-![效果图](/tips4.png)
 
 #### `with-heading-label`
 
