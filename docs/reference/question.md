@@ -199,25 +199,92 @@
 
 `默认值: false`
 
->该参数用于设置题目是否生成可被引用的 label ；若设为 `true` ，则题目将对应生成一个可被引用的 label，值为：`当前章节-题号`
+>该参数用于设置题目是否生成可被引用的 label ；若设为 `true` ，则题目将对应生成一个可被引用的 label，值为：`当前章节-小节-题号` ； 没有小节时，则小节不显示
 
 示例
 
 ```typst
+= 小节
 #question(ref-on:true)[]
-@1-1
+@1-1-1
 
 #question(ref-on:true)[]
-@1-2
+@1-1-2
 ```
 
 ::: warning
-若在同一个文档中排版多套试卷，且要使用引用标签，必须在对应试卷中调用  [chapter](/reference/chapter) 方法。或者手动更新 [chapter 的计数器](/reference/counter#counter-chapter)，否则引用时将报错!
+1. 若在同一个文档中排版多套试卷，且要使用引用标签，必须在对应试卷中调用  [chapter](/reference/chapter) 方法。或者手动更新 [chapter 的计数器](/reference/counter#counter-chapter)，否则引用时将报错!
+
+2. 不能在同一个小节重置多次题号。否则会报以下错误： `label xxx occurs multiple times in the document`。事实上，在同一个小节里，题号不应该被反复重置。
+```typst
+#let question = question.with(ref-on:true)
+
+= 1
+#question[]
+
+#counter-question.update(0)
+#question[]
+
+// 这里引用还是会报错，原因是在同一个小节重置题号
+@1-1-1
+
+// 正确的打开方式
+= 1
+#question[]
+
+= 2
+#counter-question.update(0)
+#question[]
+
+@1-1-1 // 引用第1小节的第1道题
+@1-2-1 // 引用第2小节的第1道题
+
+// 在不同子小节中重置题号也是可以的
+= 1
+#question[]
+
+== 1.1
+#counter-question.update(0)
+#question[]
+#question[]
+
+== 1.2
+#counter-question.update(0)
+#question[]
+#question[]
+
+@1-1.1-1
+@1-1.2-1
+
+```
 :::
+
+#### `show-ref-prefix` <Badge type="warning" text="0.3.1" />
+
+`类型: boolean`
+
+`默认值: true`
+
+>该参数用于设置可被引用的 label 在编译后的显示是否带有章节-小节前缀
+
+示例
+
+```typst
+#question(ref-on: true)[]
+@1-1
+
+// 输出： 1 - 1
+
+#question(ref-on: true,show-ref-prefix: false)[]
+@1-1
+
+// 输出： 1
+```
+
 
 #### `supplement` <Badge type="warning" text="0.3.0" />
 
-`类型: str | none`
+`类型: str | content | function | none`
 
 `默认值: none`
 
@@ -227,10 +294,12 @@
 
 ```typst
 #question(ref-on:true, supplement:"题")[]
-@题1-1
+@1-1
+// 输出：题 1 - 1
 
 #question(ref-on:true)[]
 @1-2
+// 输出：1 - 2
 ```
 
 
