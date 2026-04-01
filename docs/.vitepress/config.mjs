@@ -356,6 +356,10 @@ export default defineConfig({
                 link: "/reference/question.md#ref-on",
               },
               {
+                text: "show-ref-prefix",
+                link: "/reference/question.md#show-ref-prefix",
+              },
+              {
                 text: "supplement",
                 link: "/reference/question.md#supplement",
               },
