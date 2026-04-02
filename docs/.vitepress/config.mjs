@@ -379,7 +379,7 @@ export default defineConfig({
               { text: "placeholder", link: "/reference/paren.md#placeholder" },
               { text: "with-number", link: "/reference/paren.md#with-number" },
               { text: "update", link: "/reference/paren.md#update" },
-              { text: "answer", link: "/reference/paren.md#answer" },
+              { text: "body", link: "/reference/paren.md#body" },
             ],
           },
           {
@@ -534,17 +534,6 @@ export default defineConfig({
             ],
           },
           {
-            text: "彩色盒子",
-            link: "/reference/color-box.md",
-            collapsed: true,
-            items: [
-              { text: "color", link: "/reference/color-box.md#color" },
-              { text: "dash", link: "/reference/color-box.md#dash" },
-              { text: "radius", link: "/reference/color-box.md#radius" },
-              { text: "body", link: "/reference/color-box.md#body" },
-            ],
-          },
-          {
             text: "标记",
             link: "/reference/tag.md",
             collapsed: true,
@@ -555,11 +544,7 @@ export default defineConfig({
               { text: "prefix", link: "/reference/tag.md#prefix" },
               { text: "suffix", link: "/reference/tag.md#suffix" },
               { text: "x", link: "/reference/tag.md#x" },
-              { text: "body", link: "/reference/tag.md#body" },
-              {
-                text: "多选标记",
-                link: "/reference/tag.md#multi",
-              },
+              { text: "body", link: "/reference/tag.md#body" }
             ],
           },
           {

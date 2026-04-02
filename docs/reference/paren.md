@@ -158,10 +158,10 @@ omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusda
  对于七选五这类题型，每次使用占位符都设置参数很麻烦，本模板提供了一个方法 `parenn` ，只需要将上述 `paren(with-number: true, update: true)[]` 直接改为 `parenn[]` 即可，本质就是上述方法的语法糖。
 :::
 
-#### `answer`
+#### `body`
 
 `类型: content`
 
 `默认值: 无`
 
->该参数为位置参数，显示答案
+>该参数为位置参数，括号中要显示的内容
