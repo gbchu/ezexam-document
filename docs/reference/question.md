@@ -90,6 +90,14 @@
 
 >该参数用于设置题号字体的粗细
 
+#### `with-heading-label`
+
+`类型: boolean`
+
+`默认值: false`
+
+>该参数用于设置题目是否带有标题的编号
+
 #### `points`
 
 `类型: none | int`
@@ -184,14 +192,6 @@
 `默认值: 0pt`
 
 >该参数用于设置题目距离下方的外边距
-
-#### `with-heading-label`
-
-`类型: boolean`
-
-`默认值: false`
-
->该参数用于设置题目是否带有标题的标签
 
 #### `ref-on` <Badge type="warning" text="0.3.0" />
 

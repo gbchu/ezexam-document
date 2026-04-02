@@ -319,6 +319,10 @@ export default defineConfig({
                 text: "label-weight",
                 link: "/reference/question.md#label-weight",
               },
+              {
+                text: "with-heading-label",
+                link: "/reference/question.md#with-heading-label",
+              },
               { text: "points", link: "/reference/question.md#points" },
               {
                 text: "points-separate",
@@ -334,10 +338,6 @@ export default defineConfig({
               },
               { text: "top", link: "/reference/question.md#top" },
               { text: "bottom", link: "/reference/question.md#bottom" },
-              {
-                text: "with-heading-label",
-                link: "/reference/question.md#with-heading-label",
-              },
               {
                 text: "ref-on",
                 link: "/reference/question.md#ref-on",
