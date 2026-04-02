@@ -92,29 +92,17 @@
 
 >该参数用于设置标题的垂直方向上的位置
 
-#### `border-style`
+#### `border-stroke` <Badge type="warning" text="0.3.1" />
 
-`类型: str`
+`类型: dictionary | str | length | color`
 
-`默认值: "dashed"`
+`默认值: (thickness:-5pt, paint: maroon, dash: "dashed")`
 
 >该参数用于设置解析盒子的边框样式
 
-#### `border-width`
-
-`类型: length`
-
-`默认值: 0.5pt`
-
->该参数用于设置解析盒子的边框宽度
-
-#### `border-color`
-
-`类型: color`
-
-`默认值: maroon`
-
->该参数用于设置解析盒子的边框颜色
+::: warning
+在 <Badge type="warning" text="0.3.1" /> 之前该属性是分开的，分别为 `border-style`, `border-width`, `border-color` 。
+:::
 
 #### `color`
 

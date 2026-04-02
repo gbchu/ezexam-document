@@ -8,7 +8,7 @@
   - [`secret`](/reference/secret) 位于左上角的绝密之类的
   - [`exam-type`](/reference/exam-type) 试卷类型
   - [`exam-info`](/reference/exam-info) 试卷信息
-  - [`score*-box`](/reference/score_box) 评分框
+  - [`score-box`](/reference/score-box) 评分框
   - [`notice`](/reference/notice) 试卷的注意事项
   - [`choices`](/reference/choices) 选择题
   - [`question`](/reference/question) 题目
@@ -20,7 +20,6 @@
   - [`draft`](/reference/draft) 草稿纸
   - [`zh-arabic`](/reference/zh-arabic) 一种页码格式
   - [`page-restart`](/reference/page-restart) 指定开始页码数
-  - ~~[`color-box`](/reference/color-box) 彩色盒子~~
   - [`tag`](/reference/tag) 标记
   - [`ezchem` ](/reference/chemistry/ezchem) 化学相关
   - [`counter` ](/reference/counter) 计数器

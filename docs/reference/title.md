@@ -49,6 +49,14 @@
 
 >该参数用于设置标题的颜色
 
+#### `spacing`  <Badge type="warning" text="0.3.1" />
+
+`类型: length`
+
+`默认值: 1em`
+
+>该参数用于设置文字之间的间距
+
 #### `position`
 
 `类型: alignment`

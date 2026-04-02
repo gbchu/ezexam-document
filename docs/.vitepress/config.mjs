@@ -228,6 +228,8 @@ export default defineConfig({
               { text: "font", link: "/reference/title.md#font" },
               { text: "size", link: "/reference/title.md#size" },
               { text: "weight", link: "/reference/title.md#weight" },
+              { text: "color", link: "/reference/title.md#color" },
+              { text: "spacing", link: "/reference/title.md#spacing" },
               { text: "position", link: "/reference/title.md#position" },
               { text: "top", link: "/reference/title.md#top" },
               { text: "bottom", link: "/reference/title.md#bottom" },
@@ -272,27 +274,12 @@ export default defineConfig({
           },
           {
             text: "评分框",
-            link: "/reference/score_box.md",
+            link: "/reference/score-box.md",
             collapsed: true,
             items: [
-              {
-                text: "带阅卷人",
-                link: "/reference/scoring-box.md",
-                collapsed: true,
-                items: [
-                  { text: "x", link: "/reference/scoring-box.md#x" },
-                  { text: "y", link: "/reference/scoring-box.md#y" },
-                ],
-              },
-              {
-                text: "不带阅卷人",
-                link: "/reference/score-box.md",
-                collapsed: true,
-                items: [
-                  { text: "x", link: "/reference/score-box.md#x" },
-                  { text: "y", link: "/reference/score-box.md#y" },
-                ],
-              },
+              { text: "x", link: "/reference/score-box.md#x" },
+              { text: "y", link: "/reference/score-box.md#y" },
+              { text: "show-rater", link: "/reference/score-box.md#show-rater" },
             ],
           },
           {
@@ -475,16 +462,8 @@ export default defineConfig({
                   { text: "title-x", link: "/reference/solution.md#title-x" },
                   { text: "title-y", link: "/reference/solution.md#title-y" },
                   {
-                    text: "border-style",
-                    link: "/reference/solution.md#border-style",
-                  },
-                  {
-                    text: "border-width",
-                    link: "/reference/solution.md#border-width",
-                  },
-                  {
-                    text: "border-color",
-                    link: "/reference/solution.md#border-color",
+                    text: "border-stroke",
+                    link: "/reference/solution.md#border-stroke",
                   },
                   { text: "color", link: "/reference/solution.md#color" },
                   { text: "radius", link: "/reference/solution.md#radius" },
