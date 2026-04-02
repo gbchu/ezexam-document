@@ -189,4 +189,4 @@
 
 ## 讲义效果
 
-![讲义效果](/handouts.pdf)
+[讲义pdf](/handouts.pdf)
