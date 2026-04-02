@@ -186,7 +186,3 @@
 ## 效果
 
 ![效果图](/template.png)
-
-## 讲义效果
-
-[讲义pdf](/handouts.pdf)
