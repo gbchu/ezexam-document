@@ -1,7 +1,7 @@
 # 完整模板示例
 
 ```typst
-#import "@preview/ezexam:0.3.0": *
+#import "@preview/ezexam:0.3.1": *
 
 #show: setup.with(
   mode: EXAM,
@@ -14,7 +14,7 @@
 #title[2025新高考I卷]
 #subject[数学]
 #secret()
-#scoring-box(y: .5in)
+#score-box(y: .5in)
 #exam-type[A]
 #exam-info(info: (命题人: "张三  李四  王五", 审题: "老六教研组"))
 #exam-info()
