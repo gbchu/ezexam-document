@@ -151,18 +151,35 @@
 ```typst
  (
     (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
-    (name: "TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体
+    (name: "TeX Gyre Termes", covers: regex("\w")), // （无Times New Roman字体时）正文中的数字，字母字体
     "TeX Gyre Termes Math", // 数学字体
-    "Noto Serif CJK SC" // 正文字体
+    "Noto Serif CJK SC" // 中文字体
+ )
+```
+
+`默认值:` <Badge type="warning" text="0.3.1" />
+```typst
+ (
+    (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
+    (name: "TeX Gyre Termes", covers: regex("\w")), // （无Times New Roman字体时）正文中的数字，字母字体
+    (name: "STIX Two Math", covers: regex("[𝑗𝑓𝑧𝜋/⟂∅()±]")), // 个别符号的字体
+    "TeX Gyre Termes Math", // 数学字体
+    "Noto Serif CJK SC" // 中文字体
  )
 ```
 
 >该参数用于设置页面的字体
 
 ::: tip
-1. `Windows` 下的宋体不支持加粗，故本模板中文默认字体为 [思源宋体](https://wwbbc.lanzouv.com/io4o73ii4ele) （密码：666）。在本地使用该模板时，需要将字体安装在对应的操作系统中（安装后需要重启系统）。通过 `TypstApp` 在线使用无需安装。
+1. Windows 下的宋体不支持加粗，故本模板中文默认字体为 [思源宋体](https://wwbbc.lanzouv.com/io4o73ii4ele) （密码：666）。在本地使用该模板时，需要将字体安装在对应的操作系统中（安装后需要重启系统）。通过 `TypstApp` 在线使用无需安装。
 
-2. 黑体默认使用顺序为 [Simhei](https://wwbbc.lanzouv.com/ird7q3ikm5wb) （密码：666）、[思源黑体](https://wwbbc.lanzouv.com/iyAnk3bgnwhi) （密码：666）。`Mac` 用户在本地使用该模板时，需要安装上述任意一个字体在对应的操作系统中（安装后需要重启系统）。
+2. 黑体默认使用顺序为 [Simhei](https://wwbbc.lanzouv.com/ird7q3ikm5wb) （密码：666）、[思源黑体](https://wwbbc.lanzouv.com/iyAnk3bgnwhi) （密码：666）。Mac 用户在本地使用该模板时，需要安装上述任意一个字体在对应的操作系统中（安装后需要重启系统）。
+
+3. 若想数学公式完美显示，需要 [下载新罗马风格的字体](https://wwbbc.lanzouv.com/b016kazkba)（密码：666） 并安装在对应的操作系统中（安装后需要重启系统）。（通过 `TypstApp` 在线使用时，无需安装）
+
+4. 若想自定义字体，可在安装字体后需要自行修改 [font](#font) 参数的值！该值必须为数组，西文字体、数学字体在前，中文字体在后（若用到数学公式之类的则必须指定数学字体）；可参考最新 [font](#font) 的值。
+
+5. 使用本模板时，可能会报 `unknown font family` 字体警告，原因是当前系统中没有对应的字体。若排版显示正常，可忽略该警告！若想完全去除该警告，将警告中缺少的字体安装在当前系统中即可去除！
 :::
 
 #### `font-math`
@@ -176,37 +193,7 @@
 >该参数用于设置数学公式下的字体
 
 ::: warning
-该参数从 <Badge type="warning" text="0.2.2" /> 开始已弃用；使用 [font](#font) 参数即可完成数学字体的修改。详情参考最新 [font](#font) 的值。
-:::
-
-
-::: tip
-
-1. 若想使用新罗马风格的字体，需要 [下载新罗马风格的字体](https://wwbbc.lanzouv.com/b016kazkba)（密码：666） 并安装在对应的操作系统中（安装后需要重启系统）。
-（通过 `TypstApp` 在线使用时，无需安装该字体）
-
-2. 若安装的是其它受支持的数学字体，安装字体后需要自行修改 [font](#font) 参数的值才能生效！该值必须为数组，且该数组中至少有2个元素，西文字体在前，中文字体在后；可参考最新 [font](#font) 的值。
-
-3. 特别的，当使用 [STIX Two](https://wwbbc.lanzouv.com/iJ9Ew3ef73ad) 字体时（该字体也是新罗马字体风格），在线或 Mac 用户本地使用时无需安装字体。
-
-从 <Badge type="warning" text="0.2.2" /> 版本开始，新增常量 `roman`
-
- ```
- roman = (
-    (name: "Times New Roman", covers: "latin-in-cjk"),
-    "TeX Gyre Termes Math",
-    "Noto Serif SC",
-    "Noto Serif CJK SC"
-  ) + font // 默认字体
- ```
-
-从 <Badge type="warning" text="0.2.5" /> 版本开始，`roman` 的值删除掉 `Noto Serif SC`
-
-从 <Badge type="warning" text="0.2.8" /> 版本开始，`roman` 为默认值，不需要再手动设置！
-:::
-
-::: warning
-  使用本模板时，会报 `unknown font family` 字体警告，原因是当前系统中没有对应的字体。若排版的试卷显示正常，忽略该警告即可！若想完全去除该警告，将警告中缺少的字体安装在当前系统中即可去除！
+该参数从 <Badge type="warning" text="0.2.2" /> 开始已弃用；使用 [font](#font) 参数即可完成数学字体的修改。
 :::
 
 #### `line-height`
