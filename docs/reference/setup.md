@@ -157,8 +157,8 @@
 ```typst
  (
     (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
-    (name: "TeX Gyre Termes Math", covers: regex("[^𝑗𝑓𝑧𝜋∅/]")), // 除𝑗𝑓𝑧𝜋∅/符号外的数学字体
-    "STIX Two Math", // 𝑗𝑓𝑧𝜋∅/ 的数学字体
+    (name: "STIX Two Math", covers: regex("[^𝑗𝑓𝑧𝜋∅/]")), // 除𝑗𝑓𝑧𝜋∅/符号外的数学字体
+    "TeX Gyre Termes Math", // 𝑗𝑓𝑧𝜋∅/ 的数学字体
     "Noto Serif CJK SC" // 中文字体
  )
 ```
