@@ -141,10 +141,6 @@
 
 `类型: array`
 
-`默认值: ("New Computer Modern Math", "Source Han Serif", "SimSun")`
-
-`默认值: ("New Computer Modern Math", "Noto Serif SC", "Noto Serif CJK SC")` <Badge type="warning" text="0.2.2" />
-
 `默认值: ("New Computer Modern Math", "Noto Serif CJK SC")` <Badge type="warning" text="0.2.5" />
 
 `默认值:` <Badge type="warning" text="0.2.8" />
