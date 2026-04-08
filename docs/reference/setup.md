@@ -153,12 +153,12 @@
  )
 ```
 
-`默认值:` <Badge type="warning" text="0.3.1" />
+`默认值:` <Badge type="warning" text="0.3.2" />
 ```typst
  (
     (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
     (name: "TeX Gyre Termes", covers: regex("\w")), // （无Times New Roman字体时）正文中的数字，字母字体
-    (name: "STIX Two Math", covers: regex("[𝑗𝑓𝑧𝜋/⟂∅()±]")), // 个别符号的字体
+    (name: "STIX Two Math", covers: regex("[𝑗𝑓𝑧𝜋/∅±]")), // 个别符号的字体
     "TeX Gyre Termes Math", // 数学字体
     "Noto Serif CJK SC" // 中文字体
  )
