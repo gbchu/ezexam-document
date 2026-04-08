@@ -141,7 +141,7 @@
 
 `类型: array`
 
-`默认值: ("New Computer Modern Math", "Noto Serif CJK SC")` <Badge type="warning" text="0.2.5" />
+`默认值: ("New Computer Modern Math", "Noto Serif CJK SC")`<!--  <Badge type="warning" text="0.2.5" /> -->
 
 `默认值:` <Badge type="warning" text="0.2.8" />
 ```typst
@@ -174,7 +174,7 @@
 3. <Badge type="warning" text="0.3.2" /> 新增可选字体 `ncm-font` (New Computer Modern系列字体)
 :::
 
-#### `font-math`
+<!-- #### `font-math`
 
 `类型: str | array`
 
@@ -186,7 +186,7 @@
 
 ::: warning
 该参数从 <Badge type="warning" text="0.2.2" /> 开始已弃用；使用 [font](#font) 参数即可完成数学字体的修改。
-:::
+::: -->
 
 #### `line-height`
 
