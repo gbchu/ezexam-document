@@ -175,6 +175,7 @@
 [字体](https://wwbbc.lanzouv.com/b016kpznmj) （密码：666）
 
 2. 若想自定义字体，可在安装字体后需要自行修改 [font](#font) 参数的值！该值必须为数组，西文字体、数学字体在前，中文字体在后（若用到数学公式则必须指定数学字体）；可参考最新 [font](#font) 的值。
+3. <Badge type="warning" text="0.3.1" /> 新增可选字体 `ncm-font` (New Computer Modern系列字体)
 :::
 
 #### `font-math`
