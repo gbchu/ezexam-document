@@ -157,8 +157,8 @@
 ```typst
  (
     (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
-    (TeX Gyre Termes", covers: regex("\w")), // 正文中的数字，字母字体
-    (name: "STIX Two Math", covers: regex("[^𝑗𝑓𝑧𝜋∅/±]")), // 除𝑗𝑓𝑧𝜋∅/±符号外的数学字体
+    (TeX Gyre Termes", covers: regex("\w")), // 西文字体（无 Times New Roman 时）
+    (name: "STIX Two Math", covers: regex("[𝑗𝑓𝑧𝜋∅/±]")), // 𝑓𝑧𝜋∅/± 符号的数学字体
     "TeX Gyre Termes Math", // 数学字体
     "Noto Serif CJK SC" // 中文字体
  )
@@ -207,7 +207,7 @@
 
 `类型: boolean`
 
-`默认值: false`
+`默认值: true`
 
 >该参数用于设置段落是否两端对齐
 
