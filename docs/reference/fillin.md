@@ -6,7 +6,7 @@
 ```typst
 与 NaOH 溶液反应生成酸式盐的化学方程式为 #fillin[]
 // 输出
-与 NaOH 溶液反应生成酸式盐的化学方程式为__________
+与 NaOH 溶液反应生成酸式盐的化学方程式为 __________
 ```
 
 
@@ -20,10 +20,16 @@
 
 `默认值: 27.5pt` <Badge type="warning" text="0.2.9" />
 
+`可选值: 1fr` <Badge type="warning" text="0.3.2" />
+
 >该参数用于设置下划线的长度
 
 ::: warning
 该参数在 <Badge type="warning" text="0.2.1" /> 及以下版本名为 `length`
+:::
+
+::: tip
+如果想在当前行将剩余空间使用下划线填满，可将该值设置为 `1fr`
 :::
 
 #### `placeholder`
