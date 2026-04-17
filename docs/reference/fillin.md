@@ -8,7 +8,9 @@
 // 输出
 与 NaOH 溶液反应生成酸式盐的化学方程式为 __________
 ```
-
+::: warning
+某些情况下该方法会报 `layout did not converge within 5 attempts` 警告的问题；如排版无异常可忽略该警告！或尝试将 [par-justify](/reference/setup#par-justify) 设置为 `false` 解决。
+:::
 
 ### 参数
 
