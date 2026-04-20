@@ -30,6 +30,14 @@
 命题人：张三  李四  王五       审题人：老王
 ```
 
+#### `columns`  <Badge type="warning" text="0.3.2" />
+
+`类型: int | auto`
+
+`默认值: auto`
+
+>该参数用于设置 `info` 的内容展示时的列数
+
 #### `font`
 
 `类型: str | array`

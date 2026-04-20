@@ -73,10 +73,10 @@ export default defineConfig({
                 text: "font",
                 link: "/reference/setup.md#font",
               },
-             /*  {
-                text: "font-math",
-                link: "/reference/setup.md#font-math",
-              }, */
+              /*  {
+                 text: "font-math",
+                 link: "/reference/setup.md#font-math",
+               }, */
               {
                 text: "font-size",
                 link: "/reference/setup.md#font-size",
@@ -264,6 +264,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "info", link: "/reference/exam-type.md#info" },
+              { text: "columns", link: "/reference/exam-type.md#columns" },
               { text: "font", link: "/reference/exam-type.md#font" },
               { text: "size", link: "/reference/exam-type.md#size" },
               { text: "weight", link: "/reference/exam-type.md#weight" },
