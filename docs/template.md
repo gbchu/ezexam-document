@@ -1,7 +1,7 @@
 # 完整模板示例
 
 ```typst
-#import "@preview/ezexam:0.3.1": *
+#import "@preview/ezexam:0.3.2": *
 
 #show: setup.with(
   mode: EXAM,
@@ -16,8 +16,10 @@
 #secret()
 #score-box(y: .5in)
 #exam-type[A]
-#exam-info(info: (命题人: "张三  李四  王五", 审题: "老六教研组"))
-#exam-info()
+#exam-info(
+  info: (命题人: "张三  李四  王五", 审题: "老六教研组", 时间: "120分钟", 满分: 150),
+  columns: 2
+)
 
 #notice(
   [答题前，请务必将自已的姓名、准考证号用0.5毫米黑色墨水的签字笔填写在试卷及答题卡的规定位置.],
