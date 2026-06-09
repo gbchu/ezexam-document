@@ -47,12 +47,16 @@
 
 `默认值: 0pt`
 
+`默认值: -1.3em` <Badge type="warning" text="0.3.2" />
+
 >该参数用于设置科目的上间距
 
 #### `bottom`
 
 `类型: length`
 
-`默认值: 18pt`
+`默认值: 0pt`
+
+`默认值: -1.3em` <Badge type="warning" text="0.3.2" />
 
 >该参数用于设置科目的下间距
