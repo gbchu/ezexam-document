@@ -29,7 +29,7 @@
 
 #set-pts(5, 6, 5) // 设置每个小节每题的分数
 
-= 单选题：本题共 #q-count 小题，每小题 #per-pts 分，共 #sec-pts 分。在每小题给出的四个选项中，只有一项是符合题目要求的。
+= 单选题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。在每小题给出的四个选项中，只有一项是符合题目要求的。
 
 #question[
   $(1 + 5"i")"i"$ 的虚部为 #paren[C]
@@ -83,7 +83,7 @@
   #choices([$x > y > z$], [$x > z > y$], [$y > x > z$], [$y > z > x$])
 ]
 
-= 多选题：本题共 #q-count 小题，每小题 #per-pts 分，共 #sec-pts 分。在每小题给出的选项中，有多项符合题目要求。全部选对的得 #per-pts 分，部分选对的得部分分，有选错的得 0 分。
+= 多选题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。在每小题给出的选项中，有多项符合题目要求。全部选对的得 #per-pts 分，部分选对的得部分分，有选错的得 0 分。
 #question[
   在正三棱柱 $A B C-A_1B_1C_1$ 中，$D$ 为 $B C$ 中点，则 #paren[BD]
   #choices([$A D perp A_1C$], [$B C perp "平面" A A_1D$], [$C C_1 parallel "平面" A A_1D$], [$A D parallel A_1B_1$])
@@ -100,7 +100,7 @@
   #choices([$sin C = sin^2 A + sin^2 B$], [$A B = sqrt(2)$], [$sin A + sin B = sqrt(6) / 2$], [$A C^2 + B C^2 = 3$])
 ]
 
-= 填空题：本题共 #q-count 小题，每小题 #per-pts 分，共 #sec-pts 分。
+= 填空题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。
 #question[
   若直线 $y = 2x +5$ 是曲线 $y = e^x + x + a$ 的切线，则 $a =$#fillin[4].
 ]
@@ -113,7 +113,7 @@
   一个箱子里有 5 个球，分别以 1$~$5 标号，若有放回取三次，记至少取出一次的球的个数 $X$，则 $E(X) =$#fillin[$61/25$].
 ]
 
-= 解答题：本题共 #q-count 小题，共 #sec-pts 分。解答应写出文字说明、证明过程或演算步骤。
+= 解答题：本题共 #sec-q-cnt 小题，共 #sec-pts 分。解答应写出文字说明、证明过程或演算步骤。
 #question(points: 13, bottom: 1in)[
   为研究某疾病与超声波检查结果的关系，从做过超声波检查的人群中随机调查了1000人，得到如下的列联表：
   #align(center)[
