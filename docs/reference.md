@@ -10,6 +10,7 @@
   - [`exam-info`](/reference/exam-info) 试卷信息
   - [`score-box`](/reference/score-box) 评分框
   - [`notice`](/reference/notice) 试卷的注意事项
+  - [`set-per-pts`, `sec-q-cnt`, `per-pts`, `sec-pts`, `tot-pts`, `tot-q-cnt`](/reference/q-count-pts) 题量、小节分数、总分等统计
   - [`choices`](/reference/choices) 选择题
   - [`question`](/reference/question) 题目
   - [`paren`](/reference/paren) 选择、判断的小括号

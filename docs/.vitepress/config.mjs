@@ -298,6 +298,19 @@ export default defineConfig({
             ],
           },
           {
+            text: "题量、小节分数、总分统计",
+            link: "/reference/q-count-pts.md",
+            collapsed: true,
+            items: [
+              { text: "set-per-pts", link: "/reference/q-count-pts.md#set-per-pts-方法" },
+              { text: "sec-q-cnt", link: "/reference/q-count-pts.md#sec-q-cnt" },
+              { text: "per-pts", link: "/reference/q-count-pts.md#per-pts" },
+              { text: "sec-pts", link: "/reference/q-count-pts.md#sec-pts" },
+              { text: "tot-pts", link: "/reference/q-count-pts.md#tot-pts" },
+              { text: "tot-q-cnt", link: "/reference/q-count-pts.md#tot-q-cnt" },
+            ],
+          },
+          {
             text: "题目",
             link: "/reference/question.md",
             collapsed: true,
