@@ -96,7 +96,7 @@
 
 `类型: dictionary | str | length | color`
 
-`默认值: (thickness:-5pt, paint: maroon, dash: "dashed")`
+`默认值: (thickness: -5pt, paint: maroon, dash: "dashed")`
 
 >该参数用于设置解析盒子的边框样式
 
@@ -124,7 +124,7 @@
 
 `类型: dictionary`
 
-`默认值: (left: 10pt, right: 10pt, top: 20pt, bottom: 20pt)`
+`默认值: (x: 8pt, top: 20pt, bottom: 20pt)`
 
 >该参数用于设置最外层盒子的内边距
 
