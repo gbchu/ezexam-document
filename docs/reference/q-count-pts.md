@@ -18,13 +18,9 @@
 #### 示例
 ```typst
 // 设置小节每题的分数，第 1 小节每题 5 分，第 2 小节每题 6 分，第 3 小节每题 5 分
-// #set-per-pts(5, 6, 5)
+#set-per-pts(5, 6, 5)
 
 = 单选题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。
-
-// 在这里调用，上面的小节 #per-pts 的值默认为 none
-// 填空小节 #per-pts 的值为 5，解答小节 #per-pts 的值为 6；最后的 5 将被忽略
-// #set-per-pts(5, 6, 5)
 
 = 填空题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。
 
@@ -55,13 +51,7 @@
 
 #### 示例
 ```typst
-// 以上常量需要在小节中或小节之后使用，否则会报错！
-
-#sec-q-cnt // 前面没有小节，调用上述常量会报错
-
-= 单选题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。 // 小节中，正常
-
-#sec-q-cnt // 小节之后，正常
+= 单选题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。
 ```
 
 # `tot-pts` <badge type="warning" text="0.3.2" />
