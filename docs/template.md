@@ -6,7 +6,8 @@
 #show: setup.with(
   mode: EXAM,
   paper: a3,
-  show-answer: true
+  show-answer: true,
+  show-gap-line: true,
 )
 
 #outline()
@@ -27,7 +28,7 @@
   [考试结束后，请将本试卷和答题卡一并交回。],
 )
 
-#set-pts(5, 6, 5) // 设置每个小节每题的分数
+#set-per-pts(5, 6, 5) // 设置小节每题的分数
 
 = 单选题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。在每小题给出的四个选项中，只有一项是符合题目要求的。
 
@@ -52,7 +53,7 @@
 ]
 
 #question[
-  设 $f(x)$ 是定义在 $R$ 上且周期为 2 的偶函数，当 $2 lt.slant x lt.slant 3$ 时，$f(x) = 5 - 2x$，则 $f(-3 / 4 ) =$
+  设 $f(x)$ 是定义在 R 上且周期为 2 的偶函数，当 $2 lt.slant x lt.slant 3$ 时，$f(x) = 5 - 2x$，则 $f(-3 / 4 ) =$
   #paren[A]
   #choices([$-1 / 2$], [$-1 / 4$], [$1 / 4$], [$1 / 2$])
 ]
@@ -171,8 +172,10 @@
   + 若存在 $phi$，使得对任意 $x$，都有 $5cos x - cos(5x + phi) lt.slant b$，求 $b$ 的最小值.
 ]
 
-#let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)
+#page-restart()
+
 #solution-block[
+  #let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)
   #solution(title: "解析")[
     #answer[A]
 
@@ -185,6 +188,8 @@
     解: #lorem(8)#score(8)
   ]
 ]
+
+#draft()
 
 ```
 
