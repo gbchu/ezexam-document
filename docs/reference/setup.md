@@ -156,9 +156,9 @@
 `默认值:` <Badge type="warning" text="0.3.2" />
 ```typst
  (
-    (name: "Times New Roman", covers: regex("\w")), // 正文中的数字，字母字体
-    (TeX Gyre Termes", covers: regex("\w")), // 西文字体（无 Times New Roman 时）
-    (name: "STIX Two Math", covers: regex("[𝑗𝑓𝑧𝜋∅/±]")), // 𝑓𝑧𝜋∅/± 符号的数学字体
+    (name: "Times New Roman", covers: regex("[a-zA-Z0-9]")), // 正文中的数字，字母字体
+    (TeX Gyre Termes", covers: regex("[a-zA-Z0-9]")), // 西文字体（无 Times New Roman 时）
+    (name: "STIX Two Math", covers: regex("[𝑗𝑓𝑧𝜋∅/±\u2460-\u2473]")), // 𝑗𝑓𝑧𝜋∅±/①～⑳ 符号的数学字体
     "TeX Gyre Termes Math", // 数学字体
     "Noto Serif CJK SC" // 中文字体
  )
