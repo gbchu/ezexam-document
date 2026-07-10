@@ -15,7 +15,7 @@
   - [`question`](/reference/question) 题目
   - [`paren`](/reference/paren) 选择、判断的小括号
   - [`fillin`](/reference/fillin) 填空的线
-  - ~~[`underdot`](/reference/underdot) 着重号~~
+  - [`emph-dot`](/reference/emph-dot) 着重号
   - [`text-figure`](/reference/text-figure) 图文混排
   - [`answer-solution`](/reference/answer-solution) 答案及解析
   - [`draft`](/reference/draft) 草稿纸

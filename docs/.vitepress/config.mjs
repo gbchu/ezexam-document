@@ -412,9 +412,9 @@ export default defineConfig({
           },
           {
             text: "着重号",
-            link: "/reference/underdot.md",
+            link: "/reference/emph-dot.md",
             collapsed: true,
-            items: [{ text: "body", link: "/reference/underdot.md#body" }],
+            items: [{ text: "body", link: "/reference/emph-dot.md#body" }],
           },
           {
             text: "图文混排",
