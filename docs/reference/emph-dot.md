@@ -5,6 +5,21 @@
 #### 示例
 ```typst
 #emph-dot[重点]
+
+// 若文本中包含非中文，中文与非中文之间的空格会被忽略。
+#emph-dot[abc中文abc]
+// 效果
+abc中文abc
+
+// 解决办法
+#emph-dot[abc 中文 abc]
+
+abc#emph-dot[ 中文 ]abc
+
+abc #emph-dot[中文] abc
+
+// 效果
+abc 中文 abc
 ```
 
 ::: warning
