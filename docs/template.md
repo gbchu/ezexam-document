@@ -1,5 +1,6 @@
-# 完整模板示例
+# 模板示例
 
+## 试卷模版
 ```typst
 #import "@preview/ezexam:0.3.2": *
 
@@ -191,6 +192,141 @@
 
 ```
 
-## 效果
+## 试卷模版效果
 
 ![效果图](/template.png)
+
+## 讲义模版
+
+```typst
+#import "/package.typ": *
+
+#show: setup.with(
+  show-answer: true,
+  heading-color: fuchsia,
+  enum-spacing: 2.5em,
+)
+#let solution = solution.with(
+  title: "解析",
+  top: 10pt,
+  show-number: false,
+)
+#let answer = tag.with(color: maroon)
+#let marker = tag.with(color: green, weight: 700)
+#let star(num) = tag(prefix: none, suffix: none, "★") * num
+
+#outline()
+#title[高等数学]
+= 极限
+== 两个重要的极限 #star(3)
++ $lim_(x arrow 0) (sin x) / x = 1$
++ $lim_(x arrow infinity) (1+1/x)^x = e$
+
+== 最高次幂法(取高阶)
+$
+  lim_(x arrow infinity) frac(a_0x^m + a_1x^(m-1)+dots.c+a_m, b_0x^n + b_1x^(n-1)+dots.c+b_m)= cases(0 & space.quad m<n, display(a_0/b_0) & space.quad m=n, infinity & space.quad m>n)
+$
+
+
+#question[$lim_(n -> infinity) frac(1 + 2 + 3 + dots.c + n-1, n^2)=1/2$]
+
+== 等价无穷小
++ $x~sin x~tan x~arcsin x ~arctan x ~log (1+x) ~e^x - 1$
+
++ $1~cos x~x^2/2$
+
++ $a^x-1~x ln a$
+
++ $(1+x)^a-1~a x$
+
+#text(maroon)[注: 以上只在$x arrow 0$时成立]
+
+== 洛必达法则
+
+#marker[条件: 未定式]未定式指的是无法确定计算的值: 例如 $0/0 、 infinity/infinity$等.
+
+$ lim frac(f(x), g(x))=lim frac(f'(x), g'(x))=lim frac(f''(x), g''(x))=dots.c $
+
+#question[
+  $lim_(x arrow 0)[1/x - frac(ln (x+1), x^2)]=1/2$
+]
+
+== 左右极限
+左极限：$lim_(x arrow x_0^-) f(x)$ ~~~~~~~~ 右极限：$lim_(x arrow x_0^+) f(x)$
+
+极限存在的条件: $lim_(x arrow x_0^-) f(x)=lim_(x arrow x_0^+) f(x)$;
+
+#question(top: 10pt)[
+  $f(x)= cases(x-1 & space.quad x<0, 0 & space.quad x=0, x+1 & space.quad x>0)$，判断$lim_(x arrow 0) f(x)$极限是否存在？若存在求出极限。
+]
+#solution(inset: (top: 30pt))[
+  #answer[不存在]
+
+  解: $lim_(x arrow 0) f(x)= cases(display(lim_(x arrow 0^-)(x-1))=-1, display(lim_(x arrow 0^+))(x+1)=1)$ ~~~~~~
+  $because lim_(x arrow 0^-) f(x)!=lim_(x arrow 0^+) f(x)$
+  $therefore$ 不存在
+]
+
+== 函数连续
+#marker[充要条件]
+#[#set enum(indent: 2em)
+  + 在该点有意义
+  + 左极限=右极限=该点函数值;
+  + 左极限=该点函数值⟺左连续 ~~~~~~右极限=该点函数值⟺右连续
+]
+
+函数在某个点$x_0$处连续，$lim_(x arrow x_0^+) f(x)=lim_(x arrow x_0^-) f(x)=f(x_0)$
+
+#question(top: 10pt)[
+  $f(x)=cases(e^(1/x) & space.quad x<0, 0 & space.quad x=0, x sin x & space.quad x>0)$，判断$f(x)$在$x=0$处是否连续？
+]
+#solution[
+  #answer[连续]
+
+  解: $because f(0)=0$
+
+  $lim_(x arrow 0) f(x)=cases(display(lim_(x arrow 0^+)) (x sin x)=0, display(lim_(x arrow 0^-)) e^(1/x)=0)$
+
+  $display(lim_(x arrow 0^+)) (x sin x) = display(lim_(x arrow 0^-)) e^(1/x)=f(0)=0$
+  $therefore$ $f(x)$在$x=0$处连续
+]
+
+== 函数可导
+#marker[充要条件]
+#[
+  #set enum(indent: 2em)
+  + 左右导数都存在
+  + 左导数=右导数
+]
+
+#text(maroon)[注：可导一定连续，连续不一定可导]
+
+#question[
+  函数$f(x)=|x|+1$在$x=0$处#paren[D]
+  #choices([无定义], [连续], [可导], [连续但不可导])
+]
+#solution[
+  解：连续性：$because f(0) = lim_(x arrow 0^+) (|x|+1)=lim_(x arrow 0^-) (|x|+1)=1$
+
+  即：左极限等于右极限等于在$x=0$处函数值
+
+  $therefore$函数在$x=0$处连续。
+
+  可导性：$because f'(0)=lim_(Delta x arrow 0) frac(f(0+Delta x)-f(0), Delta x) = cases(display(lim_(Delta x arrow 0^+)) frac(Delta x + 1-1, Delta x)=1, display(lim_(Delta x arrow 0^-)) frac(1-Delta x+1, Delta x)=-1)$
+  #v(10pt)
+  左导数不等于右导数； $therefore$函数在$x=0$处不可导。
+]
+
+== 间断点
+=== 定义
+在非连续函数$f(x)$中某点$x_0$处有中断现象，那么，$x_0$就称为函数的不连续点。
+=== 第一类间断点（极限存在）
++ 可去间断点（左右极限相等）
++ 跳跃间断点（左右极限不相等）
+
+例：$x=0$是函数$f(x)=(sin x)/x$ 的可去间断点；是函数$f(x)=(|x|)/x$ 的跳跃间断点
+```
+
+## 讲义模版效果
+
+![效果图](/template2.png)
