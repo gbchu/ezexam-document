@@ -9,8 +9,8 @@ hero:
     src: /show.jpg
   actions:
     - theme: brand
-      text: 使用指南
-      link: /about
+      text: 快速开始
+      link: /usage
     - theme: alt
       text: 参考
       link: /reference

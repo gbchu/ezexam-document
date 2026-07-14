@@ -36,7 +36,6 @@ export default defineConfig({
       {
         text: "指南",
         items: [
-          { text: "简介", link: "/about.md" },
           { text: "快速开始", link: "/usage.md" },
           { text: "模板示例", link: "/template.md" },
         ],
