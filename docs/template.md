@@ -199,7 +199,7 @@
 ## 讲义模版
 
 ```typst
-#import "/package.typ": *
+#import "@preview/ezexam:0.3.2": *
 
 #show: setup.with(
   show-answer: true,
