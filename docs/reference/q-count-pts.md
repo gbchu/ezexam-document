@@ -46,7 +46,8 @@
 `默认值: 0`
 
 :::tip
-如果题目设置了 [points](/reference/question#points) ，则 `sec-pts` 会优先累加题目设置的分数，而不是 `set-per-pts` 设置的分数。若都没有设置，则 `sec-pts` 使用默认值
+1. 如果题目设置了 [points](/reference/question#points) ，则 `sec-pts` 会优先累加题目设置的分数，而不是 `set-per-pts` 设置的分数。若都没有设置，则 `sec-pts` 使用默认值！
+2. 以上  `sec-q-cnt`、`per-pts`、`sec-pts`  3 个常量，若在调用时，前面没有任何小节，则将默认使用后面第一个小节的值。
 :::
 
 #### 示例
