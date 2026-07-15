@@ -6,7 +6,6 @@
 
 #show: setup.with(
   mode: EXAM,
-  outline-chapter-width: 2em,
   paper: a3,
   show-answer: true,
   show-gap-line: true,
