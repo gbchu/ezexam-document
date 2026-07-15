@@ -113,6 +113,31 @@
 若该参数传入的是函数，请使用内置的 [zh-arabic](/reference/zh-arabic) 方法，不要自定义方法，否则页码的显示可能会出现问题！
 :::
 
+#### `outline-chapter-width` <Badge type="warning" text="0.3.6" />
+
+`类型: length | auto`
+
+`默认值: auto`
+
+>该参数用于设置目录页章节编号的宽度
+
+#### `outline-chapter-weight` <Badge type="warning" text="0.3.6" />
+
+`类型: str | int`
+
+`默认值: 700`
+
+>该参数用于设置目录页章节的字体粗细
+
+#### `outline-chapter-color` <Badge type="warning" text="0.3.6" />
+
+`类型: color`
+
+`默认值: purple`
+
+>该参数用于设置目录页章节的字体颜色
+
+
 #### `gap`
 
 `类型: length`

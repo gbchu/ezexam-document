@@ -2,10 +2,11 @@
 
 ## 试卷模版
 ```typst
-#import "@preview/ezexam:0.3.2": *
+#import "@preview/ezexam:0.3.6": *
 
 #show: setup.with(
   mode: EXAM,
+  outline-chapter-width: 2em,
   paper: a3,
   show-answer: true,
   show-gap-line: true,
@@ -199,7 +200,7 @@
 ## 讲义模版
 
 ```typst
-#import "@preview/ezexam:0.3.2": *
+#import "@preview/ezexam:0.3.6": *
 
 #show: setup.with(
   show-answer: true,

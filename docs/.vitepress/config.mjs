@@ -18,7 +18,7 @@ export default defineConfig({
     logo: "/logo.svg",
     nav: [
       {
-        text: "0.3.2-beta",
+        text: "0.3.6-beta",
         items: [
           {
             text: "更新日志",
@@ -63,6 +63,18 @@ export default defineConfig({
               {
                 text: "outline-page-numbering",
                 link: "/reference/setup.md#outline-page-numbering",
+              },
+              {
+                text: "outline-chapter-width",
+                link: "/reference/setup.md#outline-chapter-width",
+              },
+              {
+                text: "outline-chapter-weight",
+                link: "/reference/setup.md#outline-chapter-weight",
+              },
+              {
+                text: "outline-chapter-color",
+                link: "/reference/setup.md#outline-chapter-color",
               },
               {
                 text: "show-gap-line",
@@ -217,7 +229,13 @@ export default defineConfig({
               { text: "date", link: "/reference/title.md#date" },
             ],
           },
-          { text: "章节", link: "/reference/chapter.md" },
+          {
+            text: "章节", link: "/reference/chapter.md",
+            collapsed: true,
+            items: [
+              { text: "body", link: "/reference/chapter.md#body" },
+              { text: "font", link: "/reference/chapter.md#label" },]
+          },
           {
             text: "标题",
             link: "/reference/title.md",
