@@ -32,7 +32,6 @@
 #set-per-pts(5, 6, 5) // 设置小节每题的分数
 
 = 单选题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。在每小题给出的四个选项中，只有一项是符合题目要求的。
-
 #question[
   $(1 + 5"i")"i"$ 的虚部为 #paren[C]
   #choices(-1, 0, 1, 6)
@@ -172,8 +171,6 @@
   + 给定 $theta in (0,pi)，a$ 为实数，证明：存在 $y in [a - theta, a + theta]$，使得 $cos y lt.slant cos theta$；
   + 若存在 $phi$，使得对任意 $x$，都有 $5cos x - cos(5x + phi) lt.slant b$，求 $b$ 的最小值.
 ]
-
-#page-restart()
 
 #solution-block[
   #let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)
