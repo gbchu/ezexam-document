@@ -22,7 +22,7 @@
 
 `默认值: 27.5pt` <Badge type="warning" text="0.2.9" />
 
-`可选值: 1fr` <Badge type="warning" text="0.3.2" />
+`可选值: 1fr` <Badge type="warning" text="0.3.6" />
 
 >该参数用于设置下划线的长度
 

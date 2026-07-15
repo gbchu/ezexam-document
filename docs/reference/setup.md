@@ -178,7 +178,7 @@
  )
 ```
 
-`默认值:` <Badge type="warning" text="0.3.2" />
+`默认值:` <Badge type="warning" text="0.3.6" />
 ```typst
  (
     (name: "Times New Roman", covers: regex("[a-zA-Z0-9]")), // 正文中的数字，字母字体

@@ -1,6 +1,6 @@
 设置小节每道题的分数，统计小节题目数量、题目总量、小节分数、试卷总分数的常量；
 
-# `set-per-pts` 方法 <badge type="warning" text="0.3.2" />
+# `set-per-pts` 方法 <badge type="warning" text="0.3.6" />
 
 该方法为小节设置每道题的分数
 
@@ -27,19 +27,19 @@
 = 解答题：本题共 #sec-q-cnt 小题，共 #sec-pts 分。
 ```
 
-# `sec-q-cnt` <badge type="warning" text="0.3.2" />
+# `sec-q-cnt` <badge type="warning" text="0.3.6" />
 
 该常量统计小节的题目数量
 
 `默认值: 0`
 
-# `per-pts` <badge type="warning" text="0.3.2" />
+# `per-pts` <badge type="warning" text="0.3.6" />
 
 该常量为小节每题的分数
 
 `默认值: none`
 
-# `sec-pts` <badge type="warning" text="0.3.2" />
+# `sec-pts` <badge type="warning" text="0.3.6" />
 
 该常量统计小节的总分数
 
@@ -54,13 +54,13 @@
 = 单选题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。
 ```
 
-# `tot-pts` <badge type="warning" text="0.3.2" />
+# `tot-pts` <badge type="warning" text="0.3.6" />
 
 该常量统计试卷的总分数
 
 `默认值: 0`
 
-# `tot-q-cnt` <badge type="warning" text="0.3.2" />
+# `tot-q-cnt` <badge type="warning" text="0.3.6" />
 
 该常量统计试卷的总题目数量
 

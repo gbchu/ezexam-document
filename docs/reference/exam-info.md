@@ -30,7 +30,7 @@
 命题人：张三  李四  王五       审题人：老王
 ```
 
-#### `columns`  <Badge type="warning" text="0.3.2" />
+#### `columns`  <Badge type="warning" text="0.3.6" />
 
 `类型: int | auto`
 

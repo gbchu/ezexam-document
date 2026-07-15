@@ -1,4 +1,4 @@
-# `emph-dot` 方法 <Badge type="warning" text="0.3.2" />
+# `emph-dot` 方法 <Badge type="warning" text="0.3.6" />
 
 该方法可为文本添加着重号
 
