@@ -35,9 +35,24 @@
 
 `类型: str`
 
-`默认值: 科目名 + "参考答案"`
+`默认值: "参考答案"`
 
 >该参数用于设置解析块的标题
+
+#### `paper` <Badge type="warning" text="0.3.6" />
+
+`类型: dictionary`
+
+`默认值: (:)`
+
+>该参数可以设置解析页面显示方式
+
+::: tip
+在排版试卷时，经常试卷页需要 `a3` 显示，解析页 `a4` 显示，此时该参数就派上用场了。
+推荐使用本模版内置的常量 [`a3` 和 `a4`](/reference/setup.md#paper) 即可达成想要的效果。
+
+如果效果不满意，该参数字典的值可以参考官方 [`page`](https://typst.app/docs/reference/layout/page/#parameters) 的参数进行设置！
+:::
 
 #### `body`
 
