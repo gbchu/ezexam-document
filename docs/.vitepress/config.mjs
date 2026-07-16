@@ -234,7 +234,11 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "body", link: "/reference/chapter.md#body" },
-              { text: "font", link: "/reference/chapter.md#label" },]
+              { text: "label", link: "/reference/chapter.md#label" },
+              { text: "color", link: "/reference/chapter.md#color" },
+              { text: "font", link: "/reference/chapter.md#font" },
+              { text: "size", link: "/reference/chapter.md#size" },
+            ]
           },
           {
             text: "标题",
