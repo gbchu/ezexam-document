@@ -26,7 +26,7 @@
 
 #### `label` <Badge type="warning" text="0.3.6" />
 
-`类型: str | function`
+`类型: str`
 
 `默认值: EXAM 模式下为 "1. " ；HANDOUTS 模式下为 "第1章"`
 
