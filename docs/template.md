@@ -2,7 +2,7 @@
 
 ## 试卷模版
 ```typst
-#import "@preview/ezexam:0.3.6": *
+#import "@preview/ezexam:0.4.0": *
 
 #show: setup.with(
   mode: EXAM,
@@ -196,7 +196,7 @@
 ## 讲义模版
 
 ```typst
-#import "@preview/ezexam:0.3.6": *
+#import "@preview/ezexam:0.4.0": *
 
 #show: setup.with(
   show-answer: true,

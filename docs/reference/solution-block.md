@@ -39,7 +39,7 @@
 
 >该参数用于设置解析块的标题
 
-#### `paper` <Badge type="warning" text="0.3.6" />
+#### `paper` <Badge type="warning" text="0.4.0" />
 
 `类型: dictionary`
 

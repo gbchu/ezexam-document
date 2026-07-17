@@ -117,7 +117,7 @@
 若该参数传入的是函数，请使用内置的 [zh-arabic](/reference/zh-arabic) 方法，不要自定义方法，否则页码的显示可能会出现问题！
 :::
 
-#### `outline-chapter-width` <Badge type="warning" text="0.3.6" />
+#### `outline-chapter-width` <Badge type="warning" text="0.4.0" />
 
 `类型: length | auto`
 
@@ -125,7 +125,7 @@
 
 >该参数用于设置目录页章节编号的宽度
 
-#### `outline-chapter-weight` <Badge type="warning" text="0.3.6" />
+#### `outline-chapter-weight` <Badge type="warning" text="0.4.0" />
 
 `类型: str | int`
 
@@ -133,7 +133,7 @@
 
 >该参数用于设置目录页章节的字体粗细
 
-#### `outline-chapter-color` <Badge type="warning" text="0.3.6" />
+#### `outline-chapter-color` <Badge type="warning" text="0.4.0" />
 
 `类型: color`
 
@@ -182,7 +182,7 @@
  )
 ```
 
-`默认值:` <Badge type="warning" text="0.3.6" />
+`默认值:` <Badge type="warning" text="0.4.0" />
 ```typst
  (
     (name: "Times New Roman", covers: regex("[a-zA-Z0-9]")), // 正文中的数字，字母字体

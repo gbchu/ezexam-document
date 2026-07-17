@@ -5,7 +5,7 @@
 ::: tip
 章节不会显示在文章中，只会出现在目录中。
 
-从 <Badge type="warning" text="0.3.6" /> 版本开始，章节将在非 `EXAM` 模式中水平居中显示!
+从 <Badge type="warning" text="0.4.0" /> 版本开始，章节将在非 `EXAM` 模式中水平居中显示!
 :::
 
 
@@ -24,15 +24,15 @@
 
 >该参数为位置参数，用于设置章节名
 
-#### `label` <Badge type="warning" text="0.3.6" />
+#### `label` <Badge type="warning" text="0.4.0" />
 
 `类型: str`
 
-`默认值: EXAM 模式下为 "1. " ；HANDOUTS 模式下为 "第1章"`
+`默认值: "1．"`
 
 >该参数用于设置目录页章节的编号方式
 
-#### `color` <Badge type="warning" text="0.3.6" />
+#### `color` <Badge type="warning" text="0.4.0" />
 
 `类型: color`
 
@@ -40,7 +40,7 @@
 
 >该参数用于设置章节的文字颜色
 
-#### `font` <Badge type="warning" text="0.3.6" />
+#### `font` <Badge type="warning" text="0.4.0" />
 
 `类型: str | array`
 
@@ -48,7 +48,7 @@
 
 >该参数用于设置章节的字体
 
-#### `size` <Badge type="warning" text="0.3.6" />
+#### `size` <Badge type="warning" text="0.4.0" />
 
 `类型: length`
 
