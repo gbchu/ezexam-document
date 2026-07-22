@@ -1,23 +1,37 @@
 # 快速开始
-本模板可以快速且高效的排版常见的小、初、高、大学试卷，只需一会儿就可以排版出一份精美的试卷。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  本模板可以快速且高效的排版常见的小、初、高、大学试卷，只需一会儿就可以排版出一份精美的试卷。
 
  1. **在线使用**
 
-     + 使用 [官方 web](https://typst.app)
+     + 使用 [官方web](https://typst.app)
 
-     + 导入模板：`#import "@preview/ezexam:0.4.0": *`
-
-     + 应用模板配置：`#show: setup.with(mode: EXAM)`
-
- 6. **本地使用**
+ 2. **本地使用**
 
      + 使用 [vscode](https://code.visualstudio.com/download) 并安装插件 [tinymist](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist)
 
-     + 导入模板：`#import "@preview/ezexam:0.4.0": *`
+```typst
+// demo.typ
+#import "@preview/ezexam:0.4.0": *  // 导入模版
+#show: setup.with(mode: EXAM, paper: a3) // 应用模版配置
 
-     + 应用模板配置：`#show: setup.with(mode: EXAM)`
+#title[ezexam]
 
-更多详情可以查看 [模版示例](/template) 和 [语法参考](/reference)
+= 选择
+#question[
+  $(1 + 5"i")"i"$ 的虚部为 #paren[]
+  #choices(-1, 0, 1, 6)
+]
+
+......
+
+= 填空
+#question[
+  若直线 $y = 2x +5$ 是曲线 $y = e^x + x + a$ 的切线，则 $a$= #fillin[].
+]
+
+......
+
+```
 
 ::: tip
 模版早期版本存在一些 bug ，新版已经修复和优化；推荐使用最新版本。
