@@ -4,7 +4,7 @@
 
 ## 使用方法
 
-`#import "@preview/ezchem:0.1.0": *`
+`#import "@preview/ezchem:0.1.1": *`
 
 
 
