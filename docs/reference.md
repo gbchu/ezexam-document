@@ -22,6 +22,7 @@
   - [`zh-arabic`](/reference/zh-arabic) 一种页码格式
   - [`page-restart`](/reference/page-restart) 指定开始页码数
   - [`tag`](/reference/tag) 标记
-  - [`ezchem` ](/reference/chemistry/ezchem) 化学相关
+  - [`quan`](/reference/circled-number) 带圈数字
   - [`counter` ](/reference/counter) 计数器
+  - [`ezchem` ](/reference/chemistry/ezchem) 化学相关
   - [`tips` ](/tips) 使用技巧

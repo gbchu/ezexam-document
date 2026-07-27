@@ -583,6 +583,14 @@ export default defineConfig({
             ],
           },
           {
+            text: "带圈数字",
+            link: "/reference/circled-number.md",
+          },
+          {
+            text: "计数器",
+            link: "/reference/counter.md",
+          },
+          {
             text: "化学相关",
             link: "/reference/chemistry/ezchem.md",
             collapsed: true,
@@ -591,10 +599,7 @@ export default defineConfig({
               { text: "离子、原子结构式", link: "/reference/chemistry/ezchem/ai-struct.md" },
             ],
           },
-          {
-            text: "计数器",
-            link: "/reference/counter.md",
-          },
+
         ],
       },
       {
