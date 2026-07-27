@@ -1,10 +1,10 @@
-# `quan` 方法 <Badge type="warning" text="0.4.0" />
+# `circ-num` 方法 <Badge type="warning" text="0.4.0" />
 
 该方法可快速输入 1～20 的带圈数字
 
 #### 示例
 ```typst
-#quan(1)
+#circ-num(1)
 ```
 效果：
 
