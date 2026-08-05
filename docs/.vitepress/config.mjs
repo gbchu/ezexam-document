@@ -113,6 +113,10 @@ export default defineConfig({
                 link: "/reference/setup.md#heading-numbering",
               },
               {
+                text: "heading-body-indent",
+                link: "/reference/setup.md#heading-body-indent",
+              },
+              {
                 text: "heading-hanging-indent",
                 link: "/reference/setup.md#heading-hanging-indent",
               },

@@ -250,11 +250,19 @@
 
 #### `heading-numbering` <Badge type="warning" text="0.1.3" />
 
-`类型: str | function`
+`类型: str`
 
 `默认值: auto`
 
 >该参数用于设置节标题前的编号方式
+
+#### `heading-body-indent` <Badge type="warning" text="0.4.0" />
+
+`类型: length`
+
+`默认值: auto`
+
+>该参数用于设置节标题的标题部分的缩进
 
 #### `heading-hang-indent` <Badge type="warning" text="0.1.3" />
 
