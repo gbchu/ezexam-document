@@ -148,6 +148,8 @@
 
 `默认值: 1in`
 
+`默认值: 2cm` <Badge type="warning" text="0.4.0" />
+
 >该参数用于设置多列显示时，列之间的间距
 
 #### `show-gap-line`
