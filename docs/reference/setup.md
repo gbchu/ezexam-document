@@ -34,7 +34,7 @@
 >该参数用于设置模板的页面类型、边距、是否翻转、分页
 
 ```typst
-   // a3 和 a4 的默认值
+    // a3 和 a4 的默认值
     #let a3 = (
       paper: "a3",
       margin: 1in,
@@ -48,11 +48,14 @@
       columns: 1,
       flipped: false,
     )
+
+    // 0.4.0 新增，该值可用于快速覆盖 a3 或 a4 中 margin 的值
+    #let in-outside = (margin: (inside: 1.2in, outside: .8in, y: 1in))
+
 ```
-> `a3` 和 `a4` 是内部预定义的两个常量，若需要自定义页面类型，则需要使用字典覆盖默认值
 
 ::: tip
-若需要完全自定义，可以参考官方 [`page`](https://typst.app/docs/reference/layout/page/#parameters) 参数进行设置。
+`a3` 和 `a4` 是内部预定义的两个常量，若需要自定义页面类型，则需要使用字典覆盖默认值；可以参考官方 [`page`](https://typst.app/docs/reference/layout/page/#parameters) 参数进行设置。
 :::
 
 ::: warning
