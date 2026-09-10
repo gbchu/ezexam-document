@@ -18,9 +18,7 @@
 
 `类型: length`
 
-`默认值: 1.25cm`
-
-`默认值: 27.5pt` <Badge type="warning" text="0.2.9" />
+`默认值: 1cm`
 
 `可选值: 1fr` <Badge type="warning" text="0.4.0" />
 
