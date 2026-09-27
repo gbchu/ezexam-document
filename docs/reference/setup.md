@@ -190,36 +190,36 @@
 `默认值:` <Badge type="warning" text="0.4.0" />
 ```typst
  (
-    (name: "Times New Roman", covers: regex("[a-zA-Z0-9]")), // 正文中的数字，字母字体
-    (TeX Gyre Termes", covers: regex("[a-zA-Z0-9]")), // 西文字体（无 Times New Roman 时）
-    (name: "STIX Two Math", covers: regex("[∅𝜋𝑓𝑗𝑧±]")), // ∅𝜋𝑓𝑗𝑧± 符号的数学字体
-    "TeX Gyre Termes Math", // 数学字体
+    "Times New Roman", // 西文字体
+    "TeX Gyre Termes", // 西文字体（无 Times New Roman 时的 fallback）
     "Noto Serif CJK SC" // 中文字体
  )
 ```
 
->该参数用于设置页面的字体
+>该参数用于设置正文和西文字体
 
 ::: tip
 1. 初次使用本模板时，可能会报 `unknown font family` 字体警告，原因是当前系统中没有对应的字体。可将缺少的字体下载到本地并安装，安装后需重启操作系统!（`TypstApp` 在线用户将警告的字体上传到项目根目录即可去除）。
 [字体](https://wwbbc.lanzouv.com/b016kpznmj) （密码：666）
 
-2. 若想自定义字体，可在安装字体后需要自行修改 [font](#font) 参数的值！该值必须为数组，西文字体、数学字体在前，中文字体在后（若用到数学公式则必须指定数学字体）；可参考最新 [font](#font) 的值。
+2. 若想自定义字体，可在安装字体后需要自行修改 [font](#font) 参数的值！该值必须为数组，西文字体在前，中文字体在后；可参考最新 [font](#font) 的值。
 :::
 
-<!-- #### `font-math`
+#### `font-math` <Badge type="warning" text="0.4.0" />
 
 `类型: str | array`
 
-`默认值: ("New Computer Modern Math", "Source Han Serif", "SimSun")`
+`默认值:`
 
-`默认值: ("STIX Two Math", "New Computer Modern Math", "Source Han Serif")` <Badge type="warning" text="0.2.1" />
+```typst
+(
+  (name: "STIX Two Math", covers: regex("[∅𝜋𝑓𝑗𝑧±]")),
+  "TeX Gyre Termes Math",
+  "Noto Serif CJK SC",
+)
+```
 
->该参数用于设置数学公式下的字体
-
-::: warning
-该参数从 <Badge type="warning" text="0.2.2" /> 开始已弃用；使用 [font](#font) 参数即可完成数学字体的修改。
-::: -->
+>该参数用于设置数学字体
 
 #### `line-height`
 
@@ -281,7 +281,7 @@
 
 `类型: str | array`
 
-`默认值: ("New Computer Modern Math", "SimHei")`
+`默认值: ("SimHei", "Noto Sans CJK SC")`
 
 >该参数用于设置节标题的字体
 
@@ -408,7 +408,7 @@
 
 `类型: str | array`
 
-`默认值: ("New Computer Modern Math", "Source Han Serif")`
+`默认值: auto`
 
 >该参数用于设置水印的字体
 ::: warning
