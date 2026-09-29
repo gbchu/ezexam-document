@@ -209,15 +209,7 @@
 
 `类型: str | array`
 
-`默认值:`
-
-```typst
-(
-  (name: "STIX Two Math", covers: regex("[∅𝜋𝑓𝑗𝑧±]")),
-  "TeX Gyre Termes Math",
-  "Noto Serif CJK SC",
-)
-```
+`默认值: ("TeX Gyre Termes Math", "Noto Serif CJK SC")`
 
 >该参数用于设置数学字体
 
