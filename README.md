@@ -3,8 +3,8 @@
  ## 使用方法
 
 ```
- 1. 安装 node
+ 1. 安装 bun
  2. clone 项目
- 3. 执行 npm i
- 4. 执行 npm run docs:dev
+ 3. 执行 bun i
+ 4. 执行 bun run docs:dev
 ```
