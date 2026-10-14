@@ -259,27 +259,27 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 
 #set-per-pts(5,6,5,) // 设置每个小节每道题的分数
 
-= 选择题：本题共 sec-q-cnt 小题，每小题 per-pts 分，共 sec-pts 分。在每小题给出的四个选项中，只有一项是符合题目要求的。
+= 选择题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。在每小题给出的四个选项中，只有一项是符合题目要求的。
 
 #question[
   题干 #paren[]
   #choices([选项1], [选项2], [选项3], [选项4])
 ]
 
-= 多选题：本题共 sec-q-cnt 小题，每小题 per-pts 分，共 sec-pts 分。
+= 多选题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。
 
 #question[
   题干 #paren[]
   #choices([选项1], [选项2], [选项3], [选项4])
 ]
 
-= 填空题：本题共 sec-q-cnt 小题，每小题 per-pts 分，共 sec-pts 分。
+= 填空题：本题共 #sec-q-cnt 小题，每小题 #per-pts 分，共 #sec-pts 分。
 
 #question[
   题干 #fillin[]
 ]
 
-= 解答题：本题共 sec-q-cnt 小题，共 sec-pts 分。解答应写出文字说明、证明过程或演算步骤。
+= 解答题：本题共 #sec-q-cnt 小题，共 #sec-pts 分。解答应写出文字说明、证明过程或演算步骤。
 
 #question(points: 13)[
   题干……
