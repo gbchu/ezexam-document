@@ -84,10 +84,10 @@ export default defineConfig({
                 text: "font",
                 link: "/reference/setup.md#font",
               },
-               {
-                 text: "font-math",
-                 link: "/reference/setup.md#font-math",
-               },
+              {
+                text: "font-math",
+                link: "/reference/setup.md#font-math",
+              },
               {
                 text: "font-size",
                 link: "/reference/setup.md#font-size",
@@ -234,7 +234,8 @@ export default defineConfig({
             ],
           },
           {
-            text: "章节", link: "/reference/chapter.md",
+            text: "章节",
+            link: "/reference/chapter.md",
             collapsed: true,
             items: [
               { text: "body", link: "/reference/chapter.md#body" },
@@ -242,7 +243,7 @@ export default defineConfig({
               { text: "color", link: "/reference/chapter.md#color" },
               { text: "font", link: "/reference/chapter.md#font" },
               { text: "size", link: "/reference/chapter.md#size" },
-            ]
+            ],
           },
           {
             text: "标题",
@@ -305,7 +306,10 @@ export default defineConfig({
             items: [
               { text: "x", link: "/reference/score-box.md#x" },
               { text: "y", link: "/reference/score-box.md#y" },
-              { text: "show-rater", link: "/reference/score-box.md#show-rater" },
+              {
+                text: "show-rater",
+                link: "/reference/score-box.md#show-rater",
+              },
             ],
           },
           {
@@ -327,12 +331,21 @@ export default defineConfig({
             link: "/reference/q-count-pts.md",
             collapsed: true,
             items: [
-              { text: "set-per-pts", link: "/reference/q-count-pts.md#set-per-pts-方法" },
-              { text: "sec-q-cnt", link: "/reference/q-count-pts.md#sec-q-cnt" },
+              {
+                text: "set-per-pts",
+                link: "/reference/q-count-pts.md#set-per-pts-方法",
+              },
+              {
+                text: "sec-q-cnt",
+                link: "/reference/q-count-pts.md#sec-q-cnt",
+              },
               { text: "per-pts", link: "/reference/q-count-pts.md#per-pts" },
               { text: "sec-pts", link: "/reference/q-count-pts.md#sec-pts" },
               { text: "tot-pts", link: "/reference/q-count-pts.md#tot-pts" },
-              { text: "tot-q-cnt", link: "/reference/q-count-pts.md#tot-q-cnt" },
+              {
+                text: "tot-q-cnt",
+                link: "/reference/q-count-pts.md#tot-q-cnt",
+              },
             ],
           },
           {
@@ -361,6 +374,10 @@ export default defineConfig({
               {
                 text: "with-heading-label",
                 link: "/reference/question.md#with-heading-label",
+              },
+              {
+                text: "sub-label",
+                link: "/reference/question.md#sub-label",
               },
               { text: "points", link: "/reference/question.md#points" },
               {
@@ -405,7 +422,10 @@ export default defineConfig({
               { text: "top", link: "/reference/choices.md#top" },
               { text: "bottom", link: "/reference/choices.md#bottom" },
               { text: "label", link: "/reference/choices.md#label" },
-              { text: "label-position", link: "/reference/choices.md#label-position" },
+              {
+                text: "label-position",
+                link: "/reference/choices.md#label-position",
+              },
               { text: "options", link: "/reference/choices.md#options" },
             ],
           },
@@ -477,7 +497,10 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   { text: "title", link: "/reference/solution.md#title" },
-                  { text: "title-size", link: "/reference/solution.md#title-size" },
+                  {
+                    text: "title-size",
+                    link: "/reference/solution.md#title-size",
+                  },
                   {
                     text: "title-weight",
                     link: "/reference/solution.md#title-weight",
@@ -507,7 +530,10 @@ export default defineConfig({
                   { text: "color", link: "/reference/solution.md#color" },
                   { text: "radius", link: "/reference/solution.md#radius" },
                   { text: "inset", link: "/reference/solution.md#inset" },
-                  { text: "breakable", link: "/reference/solution.md#breakable" },
+                  {
+                    text: "breakable",
+                    link: "/reference/solution.md#breakable",
+                  },
                   { text: "top", link: "/reference/solution.md#top" },
                   { text: "bottom", link: "/reference/solution.md#bottom" },
                   { text: "body", link: "/reference/solution.md#body" },
@@ -538,7 +564,7 @@ export default defineConfig({
                   { text: "color", link: "/reference/answer.md#color" },
                   { text: "body", link: "/reference/answer.md#body" },
                 ],
-              }
+              },
             ],
           },
           {
@@ -568,9 +594,7 @@ export default defineConfig({
             text: "指定开始页码数",
             link: "/reference/page-restart.md",
             collapsed: true,
-            items: [
-              { text: "num", link: "/reference/page-restart.md#num" },
-            ],
+            items: [{ text: "num", link: "/reference/page-restart.md#num" }],
           },
           {
             text: "标记",
@@ -583,7 +607,7 @@ export default defineConfig({
               { text: "prefix", link: "/reference/tag.md#prefix" },
               { text: "suffix", link: "/reference/tag.md#suffix" },
               { text: "x", link: "/reference/tag.md#x" },
-              { text: "body", link: "/reference/tag.md#body" }
+              { text: "body", link: "/reference/tag.md#body" },
             ],
           },
           {
@@ -599,11 +623,16 @@ export default defineConfig({
             link: "/reference/chemistry/ezchem.md",
             collapsed: true,
             items: [
-              { text: "单、双线桥", link: "/reference/chemistry/ezchem/e-bridge.md" },
-              { text: "离子、原子结构式", link: "/reference/chemistry/ezchem/ai-struct.md" },
+              {
+                text: "单、双线桥",
+                link: "/reference/chemistry/ezchem/e-bridge.md",
+              },
+              {
+                text: "离子、原子结构式",
+                link: "/reference/chemistry/ezchem/ai-struct.md",
+              },
             ],
           },
-
         ],
       },
       {
@@ -612,7 +641,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: "方法的全局配置", link: "/tips.md#方法的全局配置" },
-          { text: "AI", link: "/tips.md#AI" }
+          { text: "AI", link: "/tips.md#AI" },
         ],
       },
     ],

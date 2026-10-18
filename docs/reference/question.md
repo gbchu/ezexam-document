@@ -98,6 +98,18 @@
 
 >该参数用于设置题号是否带有小节的编号
 
+#### `sub-label`  <Badge type="warning" text="0.4.0" />
+
+`类型: array | auto`
+
+`默认值: auto`
+
+>该参数用于设置解答题子问题的编号方式
+
+::: warning
+该参数的数组值必须为字符串！否则会报错。
+:::
+
 #### `points`
 
 `类型: none | int`
