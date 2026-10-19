@@ -100,7 +100,7 @@
 
 #### `sub-label`  <Badge type="warning" text="0.4.0" />
 
-`类型: array | auto`
+`类型: array`
 
 `默认值: auto`
 
