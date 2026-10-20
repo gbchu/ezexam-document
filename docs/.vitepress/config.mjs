@@ -93,8 +93,8 @@ export default defineConfig({
                 link: "/reference/setup.md#font-size",
               },
               {
-                text: "line-height",
-                link: "/reference/setup.md#line-height",
+                text: "line-spacing",
+                link: "/reference/setup.md#line-spacing",
               },
               {
                 text: "par-spacing",
@@ -362,6 +362,10 @@ export default defineConfig({
                 text: "hanging-indent",
                 link: "/reference/question.md#hanging-indent",
               },
+              {
+                text: "line-spacing",
+                link: "/reference/question.md#line-spacing",
+              },
               { text: "label", link: "/reference/question.md#label" },
               {
                 text: "label-color",
@@ -533,6 +537,10 @@ export default defineConfig({
                   {
                     text: "breakable",
                     link: "/reference/solution.md#breakable",
+                  },
+                  {
+                    text: "line-spacing",
+                    link: "/reference/solution.md#line-spacing",
                   },
                   { text: "top", link: "/reference/solution.md#top" },
                   { text: "bottom", link: "/reference/solution.md#bottom" },
