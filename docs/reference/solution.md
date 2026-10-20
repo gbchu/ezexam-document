@@ -144,13 +144,17 @@
 
 >该参数用于设置解析盒子是否可断行
 
-#### `line-height`  <Badge type="warning" text="0.2.3" />
+#### `line-spacing` <Badge type="warning" text="0.4.0" />
 
 `类型: length`
 
 `默认值: auto`
 
->该参数用于设置解析内容的行与行之间的距离
+>该参数用于设置解析内容的行距
+
+::: warning
+该参数在 <Badge type="warning" text="0.4.0" /> 之前名为 `line-height`
+:::
 
 #### `top` <Badge type="warning" text="0.1.7" />
 
