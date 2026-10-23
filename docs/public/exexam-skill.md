@@ -316,7 +316,43 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 ]
 ```
 
-## 八、检查清单
+### 八 答案排版规则（使用 `ezexam` 内置函数）：
+  1. 在最前面定义：`#let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)`
+  2. 用 `#solution-block[...]` 包裹整个答案区。
+  3. 答案区的标题直接用 `= 选择题`、`= 填空题`、`= 解答题`（不手写编号）。
+  4. 每题解析用 `#solution(title: "解析")[...]` 或 `#solution[...]`。
+  5. 答案用 `#answer[...]` 呈现。
+  6. 解析正文以 `#tag[解析]:` 开头。
+  7. 解答题需在步骤后给分时，使用 `#score(分值)`。
+
+**答案部分代码示例：**
+
+```typst
+#let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)
+
+#solution-block[
+  = 选择题
+  #solution(title: "解析")[
+    #answer[A]
+
+    #tag[解析]: #lorem(6)
+  ]
+
+  = 填空题
+  #solution[
+    #answer[6]
+
+    #tag[解析]: #lorem(6)
+  ]
+
+  = 解答题
+  #solution[
+    #tag[解析]: #lorem(6) #score(5)
+  ]
+]
+```
+
+## 九、检查清单
 
 生成前确认：
 
@@ -327,4 +363,6 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 - [ ] 解答题小题用 `+`
 - [ ] 解答题分值用 `points`
 - [ ] 长文档分段输出，最后整合
+- [ ] 答案区用 `#solution-block`，内含 `= 题型` 标题
+- [ ] 答案用 `#answer[...]`，解析用 `#tag[解析]:`，给分用 `#score(...)`
 - [ ] 原卷含答案时，正文不掺答案
