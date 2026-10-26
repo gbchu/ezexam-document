@@ -318,7 +318,7 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 
 ### 八 答案排版规则（使用 `ezexam` 内置函数）：
   1. 在最前面定义：`#let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)`
-  2. 用 `#solution-block[...]` 包裹整个答案区。
+  2. 用 `#solution-env[...]` 包裹整个答案区。
   3. 答案区的标题直接用 `= 选择题`、`= 填空题`、`= 解答题`（不手写编号）。
   4. 每题解析用 `#solution(title: "解析")[...]` 或 `#solution[...]`。
   5. 答案用 `#answer[...]` 呈现。
@@ -331,7 +331,7 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 ```typst
 #let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)
 
-#solution-block[
+#solution-env[
   = 选择题
   #solution(title: "解析")[
     #answer[A]

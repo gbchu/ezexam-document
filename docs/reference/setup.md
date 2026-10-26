@@ -29,9 +29,9 @@
 
 `默认值: a4`
 
-`可选值: a3`
+`可选值: a3 ｜ a3-3cols ｜ a3-binding ｜ a3-3cols-binding ｜ a4-2cols ｜ a4-2cols-binding ｜ a4-landscape ｜ a4-landscape-binding ｜ a4-landscape-2cols ｜ a4-landscape-2cols-binding`
 
->该参数用于设置模板的页面类型、边距、是否翻转、分页
+>该参数用于设置模板的页面类型、边距、是否翻转、分栏
 
 ```typst
     // a3 和 a4 的默认值
@@ -49,17 +49,26 @@
       flipped: false,
     )
 
-    // 0.4.0 新增，该值可用于快速覆盖 a3 或 a4 中 margin 的值
-    #let in-outside = (margin: (inside: 1.2in, outside: .8in, y: 1in))
+    // 0.4.0 新增
+    a3-3cols: 3列
+    a3-binding: 装订（左右 margin 不同）
+    a3-3cols-binding: 3列, 装订（左右 margin 不同）
+    a4-2cols: 2列
+    a4-2cols-binding: 2列, 装订（左右 margin 不同）
+    a4-landscape: a4横排
+    a4-landscape-binding: a4横排, 装订（左右 margin 不同）
+    a4-landscape-2cols: a4横排2列
+    a4-landscape-2cols-binding: a4横排2列装, 装订（左右 margin 不同）
 
 ```
 
 ::: tip
-`a3` 和 `a4` 是内部预定义的两个常量，若需要自定义页面类型，则需要使用字典覆盖默认值；可以参考官方 [`page`](https://typst.app/docs/reference/layout/page/#parameters) 参数进行设置。
+`a3*` 和 `a4*` 是内部预设的几种页面格式，若不满足自己要求，需要使用字典覆盖默认值进行自定义；可参考官方 [`page`](https://typst.app/docs/reference/layout/page/#parameters) 参数进行设置。
 :::
 
 ::: warning
-本模板仅在 `a3` 和 `a4` 尺寸下测试过；修改该参数可能会导致页面布局混乱。
+1.本模板仅在 `a3` 和 `a4` 尺寸下测试过；修改该参数可能会导致页面布局混乱。
+1. 若使用 `a4-landscape*` 配置页面时，出现弥封线错乱，将字体大小设置为默认字体大小的 $\frac{1}{1.414}$ 即可解决！
 :::
 
 #### `page-numbering`

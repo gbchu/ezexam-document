@@ -1,29 +1,34 @@
-# `solution-block` 方法 <Badge type="warning" text="0.2.9" />
+# `solution-env` 方法 <Badge type="warning" text="0.2.9" />
 
 解析块，该方法可以自动设置标题，页码格式（`XX参考答案第X页（共X页）`）。
 
+::: warning
+<Badge type="warning" text="0.2.9" /> ~ <Badge type="warning" text="0.3.1" /> 该参数名为 `solution-block`
+:::
+
 #### 示例
 ```typst
-#solution-block[
-  #let answer = tag.with(prefix: "答案：", suffix: [ \ ], color: maroon)
+#solution-env[
+  #let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)
 
   #solution(title: "解析")[
     #answer[A]
+
     解: #lorem(6)#score(6)
   ]
 
   #solution[
     #answer[B]
+
     解: #lorem(8)#score(8)
   ]
 
 ]
-
 ```
 
 效果：
 
-![效果图](/solution-block.jpg)
+![效果图](/solution-env.jpg)
 
 ::: warning
 请勿在该方法中使用 `title` 方法，否则可能会造成页码或弥封线错乱！若想修改标题使用下面的 `name` 参数！
@@ -49,7 +54,7 @@
 
 ::: tip
 在排版试卷时，经常试卷页需要 `a3` 显示，解析页 `a4` 显示，此时该参数就派上用场了。
-推荐使用本模版内置的常量 [`a3` 和 `a4`](/reference/setup.md#paper) 即可达成想要的效果。
+推荐使用本模版内置的常量 [`a3` 和 `a4` 等](/reference/setup.md#paper) 即可达成想要的效果。
 
 如果效果不满意，该参数字典的值可以参考官方 [`page`](https://typst.app/docs/reference/layout/page/#parameters) 的参数进行设置！
 :::

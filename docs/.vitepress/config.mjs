@@ -488,11 +488,12 @@ export default defineConfig({
             items: [
               {
                 text: "解析块",
-                link: "/reference/solution-block.md",
+                link: "/reference/solution-env.md",
                 collapsed: true,
                 items: [
-                  { text: "name", link: "/reference/solution-block.md#name" },
-                  { text: "body", link: "/reference/solution-block.md#body" },
+                  { text: "name", link: "/reference/solution-env.md#name" },
+                  { text: "name", link: "/reference/solution-env.md#paper" },
+                  { text: "body", link: "/reference/solution-env.md#body" },
                 ],
               },
               {
