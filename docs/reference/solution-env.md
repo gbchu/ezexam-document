@@ -1,6 +1,6 @@
 # `solution-env` 方法 <Badge type="warning" text="0.2.9" />
 
-解析块，该方法可以自动设置标题，页码格式（`XX参考答案第X页（共X页）`）。
+解析环境，该方法可以自动设置标题，页码格式（`XX参考答案第X页（共X页）`）。
 
 ::: warning
 <Badge type="warning" text="0.2.9" /> ~ <Badge type="warning" text="0.3.1" /> 该参数名为 `solution-block`
@@ -42,7 +42,7 @@
 
 `默认值: "参考答案"`
 
->该参数用于设置解析块的标题
+>该参数用于设置解析环境的标题
 
 #### `paper` <Badge type="warning" text="0.4.0" />
 
