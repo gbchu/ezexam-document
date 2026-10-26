@@ -1,4 +1,4 @@
-# `solution-env` 方法 <Badge type="warning" text="0.2.9" />
+# `solution-env` 方法 <Badge type="warning" text="0.4.0" />
 
 解析环境，该方法可以自动设置标题，页码格式（`XX参考答案第X页（共X页）`）。
 
