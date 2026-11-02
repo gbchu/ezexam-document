@@ -49,7 +49,7 @@
 
 >该参数用于设置标记的后缀
 
-#### `x` <Badge type="warning" text="0.2.8" />
+<!-- #### `x` <Badge type="warning" text="0.2.8" />
 
 `类型: length`
 
@@ -59,7 +59,7 @@
 该参数在 <Badge type="warning" text="0.2.9" /> 版本及以后已废弃。
 :::
 
->该参数用于设置标记的水平偏移
+>该参数用于设置标记的水平偏移 -->
 
 #### `body`
 
