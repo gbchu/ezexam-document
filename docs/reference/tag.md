@@ -13,7 +13,7 @@
 
 `类型: color`
 
-`默认值: blue`
+`默认值: blue` `fuchsia` <Badge type="warning" text="0.4.0" />
 
 >该参数用于设置标记的颜色
 
