@@ -26,31 +26,47 @@ if ! command -v git >/dev/null 2>&1; then
   exit 1
 fi
 
-# 2. 从仓库 typst.toml 读取版本号（可用 EZEXAM_VERSION 覆盖）
+# 2. 从仓库 typst.toml 读取版本号（带超时，可用 EZEXAM_VERSION 覆盖）
 VERSION="${EZEXAM_VERSION:-}"
 if [ -z "$VERSION" ]; then
-  VERSION=$(curl -fsSL "$REPO/raw/main/typst.toml" \
+  VERSION=$(curl -fsSL --max-time 15 "$REPO/raw/main/typst.toml" 2>/dev/null \
     | grep -E '^[[:space:]]*version[[:space:]]*=' \
     | head -1 \
-    | sed -E 's/.*"([^"]+)".*/\1/')
+    | sed -E 's/.*"([^"]+)".*/\1/') || true
 fi
-[ -n "$VERSION" ] || { echo "!! 无法从 typst.toml 解析版本号" >&2; exit 1; }
 
-# 3. Typst 本地包目录
+# 读取失败则回退到默认版本，防止网络卡死
+if [ -z "$VERSION" ]; then
+  VERSION="0.4.0"
+  echo "!! 无法从 GitHub 读取版本号，使用默认版本 $VERSION" >&2
+fi
+
+# 3. 确定 Typst 本地包目录（官方数据目录 Data Dir）
 case "$(uname -s)" in
-  Darwin) BASE="$HOME/Library/Caches/typst/packages" ;;
-  *)      BASE="${XDG_CACHE_HOME:-$HOME/.cache}/typst/packages" ;;
+  Darwin)
+    # macOS 使用 Application Support 目录
+    BASE="$HOME/Library/Application Support/typst/packages"
+    ;;
+  *)
+    # Linux / WSL 默认使用 .local/share
+    BASE="${XDG_DATA_HOME:-$HOME/.local/share}/typst/packages"
+    ;;
 esac
 DEST="$BASE/$NAMESPACE/$NAME/$VERSION"
 
-# 4. 清理并浅克隆（--depth 1，只拉最新快照）
+# 4. 清理旧版本并浅克隆
 echo "==> 安装 $NAME@$VERSION 到 $DEST"
 rm -rf "$DEST"
 mkdir -p "$(dirname "$DEST")"
-git clone --depth 1 --branch "v$VERSION" "$REPO" "$DEST" 2>/dev/null \
-  || git clone --depth 1 "$REPO" "$DEST"
+
+# 加入网络超时保护，防止 git clone 卡死
+GIT_HTTP_LOW_SPEED_LIMIT=1000 GIT_HTTP_LOW_SPEED_TIME=30 \
+  git clone --depth 1 --branch "v$VERSION" "$REPO" "$DEST" \
+  || GIT_HTTP_LOW_SPEED_LIMIT=1000 GIT_HTTP_LOW_SPEED_TIME=30 \
+     git clone --depth 1 "$REPO" "$DEST" \
+  || { echo "!! git clone 失败，请检查网络后重试" >&2; exit 1; }
 
 # 5. 校验
 [ -f "$DEST/typst.toml" ] || { echo "!! 仓库缺少 typst.toml" >&2; exit 1; }
 
-echo "✅ 导入模版完成！引用方式：#import \"@$NAMESPACE/$NAME:$VERSION\": *"
+echo "✅ 模版导入完成！引用方式： #import \"@$NAMESPACE/$NAME:$VERSION\": *"

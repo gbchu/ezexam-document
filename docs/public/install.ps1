@@ -17,16 +17,21 @@ if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
     throw "git 未安装"
 }
 
-# 2. 读取版本号
+# 2. 读取版本号（带超时和回退）
 $Version = $env:EZEXAM_VERSION
 if (-not $Version) {
-    $toml = (Invoke-WebRequest -UseBasicParsing "$Repo/raw/main/typst.toml").Content
-    $m = [regex]::Match($toml, '(?m)^\s*version\s*=\s*"([^"]+)"')
-    if (-not $m.Success) { throw "无法从 typst.toml 解析版本号" }
-    $Version = $m.Groups[1].Value
+    try {
+        $toml = (Invoke-WebRequest -UseBasicParsing -TimeoutSec 15 "$Repo/raw/main/typst.toml").Content
+        $m = [regex]::Match($toml, '(?m)^\s*version\s*=\s*"([^"]+)"')
+        if ($m.Success) { $Version = $m.Groups[1].Value }
+    } catch { }
+}
+if (-not $Version) {
+    $Version = "0.4.0"
+    Write-Host "!! 无法从 GitHub 读取版本号，使用默认版本 $Version" -ForegroundColor Yellow
 }
 
-# 3. Typst 本地包目录
+# 3. Typst 本地包目录（Windows 默认就是 APPDATA）
 $Base = Join-Path $env:APPDATA "typst\packages"
 $Dest = Join-Path $Base "$Namespace\$Name\$Version"
 
@@ -35,13 +40,20 @@ Write-Host "==> 安装 $Name@$Version 到 $Dest"
 if (Test-Path $Dest) { Remove-Item -Recurse -Force $Dest }
 New-Item -ItemType Directory -Force -Path (Split-Path $Dest) | Out-Null
 
+$env:GIT_HTTP_LOW_SPEED_LIMIT = "1000"
+$env:GIT_HTTP_LOW_SPEED_TIME = "30"
+
 try {
     git clone --depth 1 --branch "v$Version" $Repo $Dest
 } catch {
-    git clone --depth 1 $Repo $Dest
+    try {
+        git clone --depth 1 $Repo $Dest
+    } catch {
+        throw "git clone 失败，请检查网络后重试"
+    }
 }
 
 # 5. 校验
 if (-not (Test-Path (Join-Path $Dest "typst.toml"))) { throw "仓库缺少 typst.toml" }
 
-Write-Host "✅ 导入模版完成！引用方式：#import `"@$Namespace/$Name`:$Version`": *"
+Write-Host "✅ 完成！引用方式： #import `"@$Namespace/$Name`:$Version`": *"
