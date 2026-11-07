@@ -35,20 +35,20 @@ if [ -z "$VERSION" ]; then
     | sed -E 's/.*"([^"]+)".*/\1/') || true
 fi
 
-# 读取失败则回退到默认版本，防止网络卡死
+# 读取失败则直接报错退出
 if [ -z "$VERSION" ]; then
-  VERSION="0.4.0"
-  echo "!! 无法从 GitHub 读取版本号，使用默认版本 $VERSION" >&2
+  echo "!! 无法从 GitHub 获取版本号。" >&2
+  echo "   这通常是由于网络连接问题（如无法访问 raw.githubusercontent.com）。" >&2
+  echo "   请检查网络后重试。" >&2
+  exit 1
 fi
 
 # 3. 确定 Typst 本地包目录（官方数据目录 Data Dir）
 case "$(uname -s)" in
   Darwin)
-    # macOS 使用 Application Support 目录
     BASE="$HOME/Library/Application Support/typst/packages"
     ;;
   *)
-    # Linux / WSL 默认使用 .local/share
     BASE="${XDG_DATA_HOME:-$HOME/.local/share}/typst/packages"
     ;;
 esac

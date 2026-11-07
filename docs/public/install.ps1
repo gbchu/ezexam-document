@@ -17,7 +17,7 @@ if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
     throw "git 未安装"
 }
 
-# 2. 读取版本号（带超时和回退）
+# 2. 读取版本号（带超时）
 $Version = $env:EZEXAM_VERSION
 if (-not $Version) {
     try {
@@ -26,9 +26,13 @@ if (-not $Version) {
         if ($m.Success) { $Version = $m.Groups[1].Value }
     } catch { }
 }
+
+# 读取失败则直接报错退出
 if (-not $Version) {
-    $Version = "0.4.0"
-    Write-Host "!! 无法从 GitHub 读取版本号，使用默认版本 $Version" -ForegroundColor Yellow
+    Write-Host "!! 无法从 GitHub 获取版本号。" -ForegroundColor Red
+    Write-Host "   这通常是由于网络连接问题（如无法访问 raw.githubusercontent.com）。" -ForegroundColor Red
+    Write-Host "   请检查网络后重试。" -ForegroundColor Red
+    throw "获取版本号失败"
 }
 
 # 3. Typst 本地包目录（Windows 默认就是 APPDATA）
