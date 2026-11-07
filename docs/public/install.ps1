@@ -57,4 +57,10 @@ if ($LASTEXITCODE -ne 0) {
 # 5. 校验
 if (-not (Test-Path (Join-Path $Dest "typst.toml"))) { throw "仓库缺少 typst.toml" }
 
+# 6. 清理 .git 目录，减少本地占用
+$GitDir = Join-Path $Dest ".git"
+if (Test-Path $GitDir) {
+    Remove-Item -Recurse -Force $GitDir
+}
+
 Write-Host "✅ 模版导入成功！引用方式：#import `"@$Namespace/$Name`:$Version`": *"
