@@ -57,4 +57,4 @@ if ($LASTEXITCODE -ne 0) {
 # 5. 校验
 if (-not (Test-Path (Join-Path $Dest "typst.toml"))) { throw "仓库缺少 typst.toml" }
 
-Write-Host "✅ 完成！引用方式： #import `"@$Namespace/$Name`:$Version`": *"
+Write-Host "✅ 模版导入成功！引用方式：#import `"@$Namespace/$Name`:$Version`": *"

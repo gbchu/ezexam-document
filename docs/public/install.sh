@@ -67,4 +67,4 @@ GIT_HTTP_LOW_SPEED_LIMIT=1000 GIT_HTTP_LOW_SPEED_TIME=30 \
 # 5. 校验
 [ -f "$DEST/typst.toml" ] || { echo "!! 仓库缺少 typst.toml" >&2; exit 1; }
 
-echo "✅ 完成！引用方式：  #import \"@$NAMESPACE/$NAME:$VERSION\": *"
+echo "✅ 模版导入成功！引用方式：#import \"@$NAMESPACE/$NAME:$VERSION\": *"
