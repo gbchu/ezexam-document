@@ -34,8 +34,18 @@
 ```
 
 ::: tip
-模版早期版本存在一些 bug ，新版已经修复和优化；推荐使用最新版本。
+模版早期版本存在一些 bug ，新版已经修复和优化；推荐使用最新版本。由于官方审核模版较慢，若想尽早使用最新版，可使用以下命令将最新版导入本地使用。
 :::
+
+**macOS / Linux / WSL**
+```bash
+curl -fsSL https://ezexam.pages.dev/install.sh | bash
+```
+
+**Windows（PowerShell）**
+```powershell
+irm https://ezexam.pages.dev/install.ps1 | iex
+```
 
 如果对你有帮助，请作者喝杯奶茶！❤
 
