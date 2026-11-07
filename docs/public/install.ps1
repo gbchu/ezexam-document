@@ -47,14 +47,11 @@ New-Item -ItemType Directory -Force -Path (Split-Path $Dest) | Out-Null
 $env:GIT_HTTP_LOW_SPEED_LIMIT = "1000"
 $env:GIT_HTTP_LOW_SPEED_TIME = "30"
 
-try {
-    git clone --depth 1 --branch "v$Version" $Repo $Dest
-} catch {
-    try {
-        git clone --depth 1 $Repo $Dest
-    } catch {
-        throw "git clone 失败，请检查网络后重试"
-    }
+# 直接拉取默认分支（main），不再尝试 tag
+git clone --depth 1 $Repo $Dest
+
+if ($LASTEXITCODE -ne 0) {
+    throw "git clone 失败，请检查网络后重试"
 }
 
 # 5. 校验

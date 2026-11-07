@@ -26,7 +26,7 @@ if ! command -v git >/dev/null 2>&1; then
   exit 1
 fi
 
-# 2. 从仓库 typst.toml 读取版本号（带超时，可用 EZEXAM_VERSION 覆盖）
+# 2. 从仓库 typst.toml 读取版本号（带超时）
 VERSION="${EZEXAM_VERSION:-}"
 if [ -z "$VERSION" ]; then
   VERSION=$(curl -fsSL --max-time 15 "$REPO/raw/main/typst.toml" 2>/dev/null \
@@ -59,14 +59,12 @@ echo "==> 安装 $NAME@$VERSION 到 $DEST"
 rm -rf "$DEST"
 mkdir -p "$(dirname "$DEST")"
 
-# 加入网络超时保护，防止 git clone 卡死
+# 直接拉取默认分支（main），并加入网络超时保护
 GIT_HTTP_LOW_SPEED_LIMIT=1000 GIT_HTTP_LOW_SPEED_TIME=30 \
-  git clone --depth 1 --branch "v$VERSION" "$REPO" "$DEST" \
-  || GIT_HTTP_LOW_SPEED_LIMIT=1000 GIT_HTTP_LOW_SPEED_TIME=30 \
-     git clone --depth 1 "$REPO" "$DEST" \
+  git clone --depth 1 "$REPO" "$DEST" \
   || { echo "!! git clone 失败，请检查网络后重试" >&2; exit 1; }
 
 # 5. 校验
 [ -f "$DEST/typst.toml" ] || { echo "!! 仓库缺少 typst.toml" >&2; exit 1; }
 
-echo "✅ 模版导入完成！引用方式： #import \"@$NAMESPACE/$NAME:$VERSION\": *"
+echo "✅ 完成！引用方式：  #import \"@$NAMESPACE/$NAME:$VERSION\": *"
