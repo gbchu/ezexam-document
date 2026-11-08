@@ -6,13 +6,7 @@ $Namespace = "local"
 $Name      = "ezexam"
 # ====================
 
-# 1. 检测 git
-if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
-    Write-Host "!! 未检测到 git，请先安装 Git for Windows。" -ForegroundColor Red
-    throw "git 未安装"
-}
-
-# 2. 读取版本号
+# 1. 获取版本号
 $Version = $env:EZEXAM_VERSION
 if (-not $Version) {
     try {
@@ -26,29 +20,36 @@ if (-not $Version) {
     throw "获取版本号失败"
 }
 
-# 3. Typst 本地包目录
+# 2. Typst 本地包目录
 $Base = Join-Path $env:APPDATA "typst\packages"
 $Dest = Join-Path $Base "$Namespace\$Name\$Version"
 
-# 4. 浅克隆并清理 .git
+# 3. 下载并解压
 Write-Host "==> 安装 $Name@$Version 到 $Dest"
+$TmpZip = Join-Path $env:TEMP "ezexam-$Version.zip"
+$TmpDir = Join-Path $env:TEMP "ezexam-extract-$Version"
+
 if (Test-Path $Dest) { Remove-Item -Recurse -Force $Dest }
+if (Test-Path $TmpZip) { Remove-Item -Force $TmpZip }
+if (Test-Path $TmpDir) { Remove-Item -Recurse -Force $TmpDir }
+
 New-Item -ItemType Directory -Force -Path (Split-Path $Dest) | Out-Null
+New-Item -ItemType Directory -Force -Path $TmpDir | Out-Null
 
-$env:GIT_HTTP_LOW_SPEED_LIMIT = "1000"
-$env:GIT_HTTP_LOW_SPEED_TIME = "30"
+Write-Host "==> 正在从代理下载源码包..."
+Invoke-WebRequest -UseBasicParsing -TimeoutSec 30 -Uri $Proxy -OutFile $TmpZip
 
-try {
-    # 注意这里：直接 clone 代理地址
-    git clone --depth 1 $Proxy $Dest
-} catch {
-    throw "git clone 失败，请检查网络后重试"
-}
+Write-Host "==> 正在解压..."
+# PowerShell 原生解压，不需要装第三方工具
+Expand-Archive -Path $TmpZip -DestinationPath $TmpDir -Force
 
-# 5. 校验并清理 .git
-if (-not (Test-Path (Join-Path $Dest "typst.toml"))) { throw "仓库缺少 typst.toml" }
+# 移动到目标目录
+$ExtractedFolder = Get-ChildItem -Path $TmpDir | Select-Object -First 1
+Move-Item -Path $ExtractedFolder.FullName -Destination $Dest
 
-$GitDir = Join-Path $Dest ".git"
-if (Test-Path $GitDir) { Remove-Item -Recurse -Force $GitDir }
+# 清理
+Remove-Item -Force $TmpZip
+Remove-Item -Recurse -Force $TmpDir
 
-Write-Host "✅ 模版安装完成！引用方式：#import `"@$Namespace/$Name`:$Version`": *"
+Write-Host "✅ 完成！引用方式："
+Write-Host "   #import `"@$Namespace/$Name`:$Version`": *"

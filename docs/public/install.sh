@@ -7,13 +7,7 @@ NAMESPACE="local"
 NAME="ezexam"
 # ====================
 
-# 1. 检测 git
-if ! command -v git >/dev/null 2>&1; then
-  echo "!! 未检测到 git，请先安装。" >&2
-  exit 1
-fi
-
-# 2. 从代理读取版本号（带超时）
+# 1. 获取版本号
 VERSION="${EZEXAM_VERSION:-}"
 if [ -z "$VERSION" ]; then
   VERSION=$(curl -fsSL --max-time 15 "$PROXY/raw/main/typst.toml" 2>/dev/null \
@@ -22,31 +16,38 @@ if [ -z "$VERSION" ]; then
     | sed -E 's/.*"([^"]+)".*/\1/') || true
 fi
 
-# 读取失败则报错退出
 if [ -z "$VERSION" ]; then
   echo "!! 无法获取版本号，请检查网络后重试。" >&2
   exit 1
 fi
 
-# 3. 确定 Typst 本地包目录
+# 2. 确定 Typst 本地包目录
 case "$(uname -s)" in
   Darwin) BASE="$HOME/Library/Application Support/typst/packages" ;;
   *)      BASE="${XDG_DATA_HOME:-$HOME/.local/share}/typst/packages" ;;
 esac
 DEST="$BASE/$NAMESPACE/$NAME/$VERSION"
 
-# 4. 从代理浅克隆仓库
+# 3. 下载并解压
 echo "==> 安装 $NAME@$VERSION 到 $DEST"
-rm -rf "$DEST"
-mkdir -p "$(dirname "$DEST")"
+TMP_ZIP="/tmp/ezexam-${VERSION}.zip"
+TMP_DIR="/tmp/ezexam-extract-${VERSION}"
 
-# 注意这里：直接 clone 代理地址
-GIT_HTTP_LOW_SPEED_LIMIT=1000 GIT_HTTP_LOW_SPEED_TIME=30 \
-  git clone --depth 1 "$PROXY" "$DEST" \
-  || { echo "!! git clone 失败，请检查网络后重试" >&2; exit 1; }
+rm -rf "$DEST" "$TMP_ZIP" "$TMP_DIR"
+mkdir -p "$(dirname "$DEST")" "$TMP_DIR"
 
-# 5. 校验并清理 .git
-[ -f "$DEST/typst.toml" ] || { echo "!! 仓库缺少 typst.toml" >&2; exit 1; }
-rm -rf "$DEST/.git"
+echo "==> 正在从代理下载源码包..."
+curl -fsSL --max-time 30 "$PROXY" -o "$TMP_ZIP" || { echo "!! 下载失败" >&2; exit 1; }
 
-echo "✅ 模版安装完成！引用方式：#import \"@$NAMESPACE/$NAME:$VERSION\": *"
+echo "==> 正在解压..."
+# 系统自带 unzip (macOS/Linux)
+unzip -q "$TMP_ZIP" -d "$TMP_DIR" || { echo "!! 解压失败" >&2; exit 1; }
+
+# GitHub 压缩包解压后默认带一个 ezexam-main 的文件夹，把它移过去
+mv "$TMP_DIR"/* "$DEST"
+
+# 清理临时文件
+rm -rf "$TMP_ZIP" "$TMP_DIR"
+
+echo "✅ 完成！引用方式："
+echo "   #import \"@$NAMESPACE/$NAME:$VERSION\": *"
