@@ -47,18 +47,15 @@ if (-not $Version) {
 $Base = Join-Path $env:APPDATA "typst\packages"
 $Dest = Join-Path $Base "$Namespace\$Name\$Version"
 
-# 4. 下载并解压
-Write-Host "==> 导入模版 $Name@$Version 到 $Dest"
 $TmpZip = Join-Path $env:TEMP "ezexam-$Version.zip"
 $TmpDir = Join-Path $env:TEMP "ezexam-extract-$Version"
 
-if (Test-Path $Dest) { Remove-Item -Recurse -Force $Dest }
 if (Test-Path $TmpZip) { Remove-Item -Force $TmpZip }
 if (Test-Path $TmpDir) { Remove-Item -Recurse -Force $TmpDir }
 
-New-Item -ItemType Directory -Force -Path (Split-Path $Dest) | Out-Null
 New-Item -ItemType Directory -Force -Path $TmpDir | Out-Null
 
+# 4. 下载源码包
 Write-Host "==> 正在下载模版..."
 $DownloadSuccess = $false
 for ($i = 1; $i -le 3; $i++) {
@@ -75,17 +72,23 @@ if (-not $DownloadSuccess) {
     throw "下载失败，请检查网络后重试。"
 }
 
+# 5. 解压
 Write-Host "==> 正在解压..."
 Expand-Archive -Path $TmpZip -DestinationPath $TmpDir -Force
 
-# 5. 清理不需要的文件并移动
+# 6. 导入并清理
+Write-Host "==> 导入模版 $Name@$Version 到 $Dest"
+
 $SourceDir = Join-Path $TmpDir "ezexam-main"
 Remove-Item -Recurse -Force (Join-Path $SourceDir "template") -ErrorAction SilentlyContinue
 Remove-Item -Force (Join-Path $SourceDir "thumbnail.png") -ErrorAction SilentlyContinue
 Remove-Item -Force (Join-Path $SourceDir "README.md") -ErrorAction SilentlyContinue
 Remove-Item -Force (Join-Path $SourceDir "LICENSE") -ErrorAction SilentlyContinue
 
+if (Test-Path $Dest) { Remove-Item -Recurse -Force $Dest }
+New-Item -ItemType Directory -Force -Path (Split-Path $Dest) | Out-Null
 Move-Item -Path $SourceDir -Destination $Dest
+
 Remove-Item -Force $TmpZip
 Remove-Item -Recurse -Force $TmpDir
 

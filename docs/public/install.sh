@@ -42,14 +42,13 @@ case "$(uname -s)" in
 esac
 DEST="$BASE/$NAMESPACE/$NAME/$VERSION"
 
-# 4. 下载并解压
-echo "==> 导入模版 $NAME@$VERSION 到 $DEST"
 TMP_ZIP="/tmp/ezexam-${VERSION}.zip"
 TMP_DIR="/tmp/ezexam-extract-${VERSION}"
 
-rm -rf "$DEST" "$TMP_ZIP" "$TMP_DIR"
-mkdir -p "$(dirname "$DEST")" "$TMP_DIR"
+rm -rf "$TMP_ZIP" "$TMP_DIR"
+mkdir -p "$TMP_DIR"
 
+# 4. 下载源码包
 echo "==> 正在下载模版..."
 DOWNLOAD_SUCCESS=0
 for i in {1..3}; do
@@ -70,14 +69,23 @@ if ! file "$TMP_ZIP" | grep -q "Zip archive"; then
   exit 1
 fi
 
+# 5. 解压
 echo "==> 正在解压..."
 unzip -q "$TMP_ZIP" -d "$TMP_DIR" || { echo "!! 解压失败" >&2; exit 1; }
 
-# 5. 清理不需要的文件并移动
+# 6. 导入并清理
+echo "==> 导入模版 $NAME@$VERSION 到 $DEST"
+
+# 清理不需要的示例文件，保持本地包干净
 rm -rf "$TMP_DIR/ezexam-main/template"
 rm -f "$TMP_DIR/ezexam-main/thumbnail.png" "$TMP_DIR/ezexam-main/README.md" "$TMP_DIR/ezexam-main/LICENSE"
 
+# 移动到最终目录
+rm -rf "$DEST"
+mkdir -p "$(dirname "$DEST")"
 mv "$TMP_DIR/ezexam-main" "$DEST"
+
+# 清理临时文件
 rm -rf "$TMP_ZIP" "$TMP_DIR"
 
 echo "✅ 模版导入成功！引用方式："
