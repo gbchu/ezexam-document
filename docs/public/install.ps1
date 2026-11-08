@@ -51,5 +51,5 @@ Move-Item -Path $ExtractedFolder.FullName -Destination $Dest
 Remove-Item -Force $TmpZip
 Remove-Item -Recurse -Force $TmpDir
 
-Write-Host "✅ 导入模板成功！引用方式："
+Write-Host "✅ 模板导入成功！引用方式："
 Write-Host "   #import `"@$Namespace/$Name`:$Version`": *"
