@@ -29,7 +29,7 @@ esac
 DEST="$BASE/$NAMESPACE/$NAME/$VERSION"
 
 # 3. 下载并解压
-echo "==> 安装 $NAME@$VERSION 到 $DEST"
+echo "==> 导入 $NAME@$VERSION 到 $DEST"
 TMP_ZIP="/tmp/ezexam-${VERSION}.zip"
 TMP_DIR="/tmp/ezexam-extract-${VERSION}"
 
@@ -49,5 +49,5 @@ mv "$TMP_DIR"/* "$DEST"
 # 清理临时文件
 rm -rf "$TMP_ZIP" "$TMP_DIR"
 
-echo "✅ 完成！引用方式："
+echo "✅ 导入成功！引用方式："
 echo "   #import \"@$NAMESPACE/$NAME:$VERSION\": *"
