@@ -90,12 +90,10 @@ if (-not $DownloadSuccess) {
     throw "下载失败"
 }
 
-# 5. 解压
-Write-Host "==> 正在解压..."
-Expand-Archive -Path $TmpZip -DestinationPath $TmpDir -Force
-
-# 6. 导入并清理
+# 5. 解压并导入
 Write-Host "==> 导入模版 $Name@$Version 到 $Dest"
+
+Expand-Archive -Path $TmpZip -DestinationPath $TmpDir -Force
 
 $SourceDir = Join-Path $TmpDir "ezexam-main"
 Remove-Item -Recurse -Force (Join-Path $SourceDir "template") -ErrorAction SilentlyContinue

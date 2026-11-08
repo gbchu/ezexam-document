@@ -72,7 +72,6 @@ mkdir -p "$TMP_DIR"
 echo "==> 正在下载模版..."
 DOWNLOAD_SUCCESS=0
 for i in {1..3}; do
-  # 重试时强制切换通道
   if [ $i -eq 2 ]; then
     if [ "$MODE" -eq 1 ]; then ZIP_URL="$DIRECT_ZIP";
     elif [ "$MODE" -eq 2 ]; then ZIP_URL="$PROXY_URL";
@@ -101,12 +100,9 @@ if ! file "$TMP_ZIP" | grep -q "Zip archive"; then
   exit 1
 fi
 
-# 5. 解压
-echo "==> 正在解压..."
-unzip -q "$TMP_ZIP" -d "$TMP_DIR" || { echo "!! 解压失败" >&2; exit 1; }
-
-# 6. 导入并清理
+# 5. 解压并导入（合并提示）
 echo "==> 导入模版 $NAME@$VERSION 到 $DEST"
+unzip -q "$TMP_ZIP" -d "$TMP_DIR" || { echo "!! 解压失败" >&2; exit 1; }
 
 rm -rf "$TMP_DIR/ezexam-main/template"
 rm -f "$TMP_DIR/ezexam-main/thumbnail.png" "$TMP_DIR/ezexam-main/README.md" "$TMP_DIR/ezexam-main/LICENSE"
