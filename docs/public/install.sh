@@ -36,7 +36,7 @@ TMP_DIR="/tmp/ezexam-extract-${VERSION}"
 rm -rf "$DEST" "$TMP_ZIP" "$TMP_DIR"
 mkdir -p "$(dirname "$DEST")" "$TMP_DIR"
 
-echo "==> 正在从代理下载源码包..."
+echo "==> 正在下载模版..."
 curl -fsSL --max-time 30 "$PROXY" -o "$TMP_ZIP" || { echo "!! 下载失败" >&2; exit 1; }
 
 echo "==> 正在解压..."

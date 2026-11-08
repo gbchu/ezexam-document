@@ -36,7 +36,7 @@ if (Test-Path $TmpDir) { Remove-Item -Recurse -Force $TmpDir }
 New-Item -ItemType Directory -Force -Path (Split-Path $Dest) | Out-Null
 New-Item -ItemType Directory -Force -Path $TmpDir | Out-Null
 
-Write-Host "==> 正在从代理下载源码包..."
+Write-Host "==> 正在下载模版..."
 Invoke-WebRequest -UseBasicParsing -TimeoutSec 30 -Uri $Proxy -OutFile $TmpZip
 
 Write-Host "==> 正在解压..."
