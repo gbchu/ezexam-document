@@ -25,7 +25,7 @@ $Base = Join-Path $env:APPDATA "typst\packages"
 $Dest = Join-Path $Base "$Namespace\$Name\$Version"
 
 # 3. 下载并解压
-Write-Host "==> 安装 $Name@$Version 到 $Dest"
+Write-Host "==> 导入 $Name@$Version 到 $Dest"
 $TmpZip = Join-Path $env:TEMP "ezexam-$Version.zip"
 $TmpDir = Join-Path $env:TEMP "ezexam-extract-$Version"
 
@@ -51,5 +51,5 @@ Move-Item -Path $ExtractedFolder.FullName -Destination $Dest
 Remove-Item -Force $TmpZip
 Remove-Item -Recurse -Force $TmpDir
 
-Write-Host "✅ 完成！引用方式："
+Write-Host "✅ 导入成功！引用方式："
 Write-Host "   #import `"@$Namespace/$Name`:$Version`": *"
