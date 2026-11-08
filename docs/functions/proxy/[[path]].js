@@ -1,25 +1,33 @@
 export async function onRequest(context) {
   const url = new URL(context.request.url);
-  // 去掉 /proxy 前缀，拼接到 GitHub
   const targetPath = url.pathname.replace(/^\/proxy/, "");
-  const targetUrl = "https://github.com/gbchu/ezexam" + targetPath + url.search;
 
-  try {
-    const response = await fetch(targetUrl, {
-      method: context.request.method,
-      headers: { "User-Agent": "Mozilla/5.0", Accept: "*/*" },
-      redirect: "follow",
-    });
+  // 根路径直接代理 GitHub 的 main.zip
+  if (targetPath === "" || targetPath === "/") {
+    const zipUrl = "https://github.com/gbchu/ezexam/archive/refs/heads/main.zip";
+    const response = await fetch(zipUrl, { redirect: "follow" });
 
-    const newHeaders = new Headers(response.headers);
-    newHeaders.set("Access-Control-Allow-Origin", "*");
-
+    // 直接把 GitHub 的响应流传给用户，并覆盖 Header
     return new Response(response.body, {
       status: response.status,
-      statusText: response.statusText,
-      headers: newHeaders,
+      headers: {
+        "Content-Type": "application/zip",
+        "Content-Disposition": "attachment; filename=ezexam.zip",
+        "Access-Control-Allow-Origin": "*"
+      }
     });
-  } catch (error) {
-    return new Response("Proxy Error: " + error.message, { status: 502 });
   }
+
+  // 代理具体的文件（比如获取 typst.toml）
+  const targetUrl = "https://github.com/gbchu/ezexam" + targetPath + url.search;
+  const response = await fetch(targetUrl, {
+    headers: { "User-Agent": "Mozilla/5.0" },
+    redirect: "follow"
+  });
+
+  const newHeaders = new Headers(response.headers);
+  newHeaders.set("Access-Control-Allow-Origin", "*");
+
+  // 返回文件流
+  return new Response(response.body, { status: response.status, headers: newHeaders });
 }
