@@ -11,7 +11,7 @@
 
 ## 一、模式与设置
 
-- 讲义模式：默认模式，`#show: setup.with()`，不写 `mode`、不写 `paper`。
+- 讲义模式：默认模式，`#show: setup`，不写 `mode`、不写 `paper`。
 - 试卷模式：`#show: setup.with(mode: EXAM, paper: a3)`。
 - 仅试卷模式用 `#subject`；讲义模式不用。
 
@@ -50,14 +50,14 @@
 | 子集 | `subset.eq` |
 | 真子集 | `subset.nequiv` |
 | 母集 | `supset.eq` |
-| 真 | `supset.nequiv` |
+| 真母集 | `supset.nequiv` |
 | 任意 | `forall` |
 | 存在 | `exists` |
 | 且 | `and` |
 | 或 | `or` |
 | 非 | `not` |
-| 推出 | `arrow.r.double` 或 `=>` |
-| 等价 | `arrow.l.r.double` 或 `<=>` |
+| 推出 | `=>` |
+| 等价 | `<=>` |
 
 ### 3.3 常见数集
 
@@ -122,6 +122,7 @@
 | 角度 | `angle` |
 | 垂直 | `perp` |
 | 平行 | `parallel` |
+| 平行且相等 | `parallel.eq` |
 | 因为 | `because` |
 | 所以 | `therefore` |
 | 度 | `degree` |
@@ -135,7 +136,7 @@
 
 ### 3.9 注意事项
 
-1.  **数学环境**：所有符号必须放在 `$...$` 中，如 `$x <= 0$`、`$A inter B$`。如果遇到虚部单位 `i` 或自然常数 `e` 要保持正体显示
+1.  **数学环境**：所有符号必须放在 `$...$` 中，如 `$x <= 0$`、`$A inter B$`。如果遇到虚部单位 `i` 使用 `iu` ，自然常数 `e` 使用 `eu`
 3.  **希腊字母**：小写用 `alpha`，大写首字母大写 `Alpha`。
 4.  **符号变体**：支持点号选择，如 `arrow.r.double.long`、`triangle.stroked.t`。
 
@@ -217,7 +218,7 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 ```typst
 #import "@preview/ezexam:0.4.0": *
 
-#show: setup.with()
+#show: setup
 
 #title[讲义标题]
 
@@ -364,6 +365,6 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 - [ ] 解答题小题用 `+`
 - [ ] 解答题分值用 `points`
 - [ ] 长文档分段输出，最后整合
-- [ ] 答案区用 `#solution-block`，内含 `= 题型` 标题
+- [ ] 答案区用 `#solution-env`，内含 `= 题型` 标题
 - [ ] 答案用 `#answer[...]`，解析用 `#tag[解析]:`，给分用 `#score(...)`
 - [ ] 原卷含答案时，正文不掺答案
