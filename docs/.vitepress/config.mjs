@@ -628,6 +628,10 @@ export default defineConfig({
             link: "/reference/counter.md",
           },
           {
+            text: "符号",
+            link: "/reference/symbols.md",
+          },
+          {
             text: "化学相关",
             link: "/reference/chemistry/ezchem.md",
             collapsed: true,
