@@ -42,7 +42,7 @@
 curl -fsSL https://ezexam.pages.dev/install.sh | bash
 ```
 
-**Windows（PowerShell）**
+**Windows**
 ```powershell
 irm https://ezexam.pages.dev/install.ps1 | iex
 ```
