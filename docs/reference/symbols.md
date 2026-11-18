@@ -1,14 +1,14 @@
 # 符号
-## 本地化符号
+## 本地化
 
 为了符合使用习惯，修改了一些符号在数学模式下的显示方式
 
 | 符号 | 修改前 | 修改后 |
 |------|------|------|
-| `parallel`（平行） | \|\| | // |
-| `parallel.eq`（平行且相等） | ⋕ | <span style="display:inline-flex;flex-direction:column;line-height:1;font-size:0.9em;vertical-align:middle;text-align:center;margin:0 0.1em;"><span>//</span><span style="display: inline-block; width: 0.85em; height: 0.35em; border-top: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; margin-top: 2px;"></span></span> |
-| `gt.eq`（大于等于） | ≥ | ⩾ |
-| `lt.eq`（小于等于） | ≤ | ⩽ |
+| `parallel` | \|\| | // |
+| `parallel.eq` | ⋕ | <span style="display:inline-flex;flex-direction:column;line-height:1;font-size:0.9em;vertical-align:middle;text-align:center;margin:0 0.1em;"><span>//</span><span style="display: inline-block; width: 0.85em; height: 0.35em; border-top: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; margin-top: 2px;"></span></span> |
+| `gt.eq`| ≥ | ⩾ |
+| `lt.eq`| ≤ | ⩽ |
 
 
 ## 正体
