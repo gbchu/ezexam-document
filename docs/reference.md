@@ -24,5 +24,6 @@
   - [`tag`](/reference/tag) 标记
   - [`circ-num`](/reference/circled-number) 带圈数字
   - [`counter` ](/reference/counter) 计数器
+  - [`symbols` ](/reference/symbols) 符号
   - [`ezchem` ](/reference/chemistry/ezchem) 化学相关
   - [`tips` ](/tips) 使用技巧
