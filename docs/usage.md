@@ -12,24 +12,27 @@
 ```typst
 // demo.typ
 #import "@preview/ezexam:0.4.0": *  // 导入模版
-#show: setup.with(mode: EXAM, paper: a3) // 应用模版配置
+#show: setup.with(mode: EXAM, paper: a3) // 应用模版
 
 #title[ezexam]
 
-= 选择
+= 选择题
 #question[
-  $(1 + 5"i")"i"$ 的虚部为 #paren[]
-  #choices(-1, 0, 1, 6)
+  题干 #paren[]
+  #choices([选项1],[选项2],[选项3],[选项4])
 ]
 
-......
-
-= 填空
+= 填空题
 #question[
-  若直线 $y = 2x +5$ 是曲线 $y = e^x + x + a$ 的切线，则 $a$= #fillin[].
+  题干 #fillin[].
 ]
 
-......
+= 解答题
+#question[
+  题干.
+  + 问题 1
+  + 问题 2
+]
 
 ```
 
