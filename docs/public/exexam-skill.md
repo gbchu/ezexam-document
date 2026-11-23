@@ -134,7 +134,7 @@
 | 排列数 | `upright(A)_n^m` |
 | 平均数 | `overline(x)` |
 | 弧 | `overparen(A B)` |
-| 向量a,b夹角 | `chevron.l bold(a),bold(b) chevron.r` |
+| 向量a,b夹角 | `lr(chevron.l bold(a),bold(b) chevron.r)` |
 
 ### 3.9 注意事项
 
