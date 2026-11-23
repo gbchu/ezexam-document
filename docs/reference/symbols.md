@@ -23,3 +23,18 @@
 #### 虚部单位 `i` <Badge type="warning" text="0.4.0" />
 
 使用 `iu` 强制正体
+
+## 向量
+
+####  `vect` <Badge type="warning" text="0.4.0" />
+
+该方法根据输入的内容，显示不同的效果。单字母加粗，多字母加箭头
+
+#### 示例
+```typst
+$vect(a) vect(A B)$
+```
+
+::: warning
+该方法只在数学环境中生效！
+:::
