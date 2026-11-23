@@ -76,8 +76,9 @@
 
 | 类型 | Typst 写法 |
 |---|---|
-| 单字母向量 | `bold(a)`、`bold(b)` |
-| 双字母向量 | `arrow(A B)`、`arrow(C D)` |
+| 向量 | `vect(a)`、`vect(A B)` |
+| 列向量 | `vec(a,b,c,d)` |
+| 向量a,b夹角 | `lr(chevron.l vect(a),vect(b) chevron.r)` |
 
 ### 3.5 运算符号
 
@@ -134,7 +135,6 @@
 | 排列数 | `upright(A)_n^m` |
 | 平均数 | `overline(x)` |
 | 弧 | `overparen(A B)` |
-| 向量a,b夹角 | `lr(chevron.l bold(a),bold(b) chevron.r)` |
 
 ### 3.9 注意事项
 
