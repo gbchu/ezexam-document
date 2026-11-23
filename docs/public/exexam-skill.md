@@ -158,10 +158,10 @@ $a ~ b$                              // a ~ b
 $a approx b$                         // a ≈ b
 
 // 向量
-$bold(a) + bold(b)$                  // a + b
-$arrow(A B) = arrow(C D)$           // AB = CD
-$chevron.l bold(a),bold(b) chevron.r$ // ⟨𝒂,𝒃⟩
-$bold(a) dot bold(b)$                // 𝒂.𝒃
+$vect(a) + vect(b)$                  // a + b
+$vect(A B) = vect(C D)$           // AB = CD
+$lr(chevron.l vect(a),vect(b) chevron.r)$ // ⟨𝒂,𝒃⟩
+$vect(a) dot vect(b)$                // 𝒂.𝒃
 
 // 非向量点乘
 $a_n dot a_(n+1)$
