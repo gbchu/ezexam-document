@@ -211,10 +211,7 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 
 ## 五、图形
 
-- 需要图形时用 `cetz` 按数学关系重建，不做像素级描摹。
-- 导入方式：`#import "@preview/cetz:0.5.2"`，用 `#cetz.canvas(...)` 调用，内部 `import cetz.draw: *`。
-- 复杂图形先说明能画到什么程度，再动手。
-- 图形占位时用文字描述，不凭空编造。
+- 需要图形时用 `#image("题号.png",width:1in)`
 
 ## 六、输出方式
 
@@ -246,7 +243,7 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
   题干 #fillin[]
 ]
 
-#question(points: 13)[
+#question(points: 13, bottom: 1in)[
   题干……
 
   + 第一小问；
@@ -293,7 +290,7 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 
 = 解答题：本题共 #sec-q-cnt 小题，共 #sec-pts 分。解答应写出文字说明、证明过程或演算步骤。
 
-#question(points: 13)[
+#question(points: 13, bottom: 1in)[
   题干……
 
   + 第一小问；
@@ -301,45 +298,33 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 ]
 ```
 
-### 7.3 带图形的骨架
+### 八 答案排版规则（使用 `ezexam` 内置函数）：
 
-```typst
-#import "@preview/ezexam:0.4.0": *
-#import "@preview/cetz:0.5.2"
+1. 在 `show:setup` 后定义：`#let answer = tag.with(prefix: "答案：", suffix: none)`
+2. 用 `#solution-env[...]` 包裹整个答案区。
+3. 答案区的标题直接用 `= 选择题`、`= 填空题`、`= 解答题`（不手写编号）。
+4. 每题解析用 `#solution(title: "解析")[...]` 或 `#solution[...]`。
+5. 答案用 `#answer[...]` 呈现，然后换行。
+6. 解析正文以 `#tag[解析]` 开头。
+7. 解答题需在步骤后给分时，使用 `#score(分值)`。
+8. 题干前若有来源出处（如 `[2026 届XXXX试题]`），使用 `#tag[来源名称]` 包裹。
 
-#question[
-  如图……
-
-  #align(center)[
-    #cetz.canvas(length: 1cm, {
-      import cetz.draw: *
-      // 绘图代码
-    })
-  ]
-]
-```
-
-### 7.4 带答案的骨架
+#### 8.1 题目后直接带答案的骨架
 
 ```typst
 #question[
   题干 #paren[B]
   #choices([选项1], [选项2], [选项3], [选项4])
 ]
+
+#solution(title: "解析")[
+    #answer[A]
+
+    #tag[解析]: #lorem(6)
+  ]
 ```
 
-### 八 答案排版规则（使用 `ezexam` 内置函数）：
-
-1. 在最前面定义：`#let answer = tag.with(prefix: "答案：", suffix: none)`
-2. 用 `#solution-env[...]` 包裹整个答案区。
-3. 答案区的标题直接用 `= 选择题`、`= 填空题`、`= 解答题`（不手写编号）。
-4. 每题解析用 `#solution(title: "解析")[...]` 或 `#solution[...]`。
-5. 答案用 `#answer[...]` 呈现。
-6. 解析正文以 `#tag[解析]:` 开头。
-7. 解答题需在步骤后给分时，使用 `#score(分值)`。
-8. 题干前若有来源出处（如 `[2026 届XXXX试题]`），使用 `#tag[来源名称]` 包裹。
-
-**答案部分代码示例：**
+#### 8.2 独立答案的骨架
 
 ```typst
 #let answer = tag.with(prefix: "答案：", suffix: none)
@@ -349,19 +334,21 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
   #solution(title: "解析")[
     #answer[A]
 
-    #tag[解析]: #lorem(6)
+    #tag[解析] #lorem(6)
   ]
 
   = 填空题
   #solution[
     #answer[6]
 
-    #tag[解析]: #lorem(6)
+    #tag[解析] #lorem(6)
   ]
 
   = 解答题
   #solution[
-    #tag[解析]: #lorem(6) #score(5)
+    #tag[解析]
+
+    #lorem(6) #score(5)
   ]
 ]
 ```
