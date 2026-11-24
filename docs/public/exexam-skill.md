@@ -30,76 +30,76 @@
 
 ### 3.1 比较与关系
 
-| 含义 | Typst 写法 |
-|---|---|
-| 不等于 | `!=`|
-| 约等于 | `approx` |
-| 相似 | `~`|
-| 全等 | `tilde.equiv` |
+| 含义  | Typst 写法      |
+| --- | ------------- |
+| 不等于 | `!=`          |
+| 约等于 | `approx`      |
+| 相似  | `~`           |
+| 全等  | `tilde.equiv` |
 
 ### 3.2 集合与逻辑
 
-| 含义 | Typst 写法 |
-|---|---|
-| 交集 | `inter` |
-| 并集 | `union` |
-| 补集 | `complement` |
-| 空集 | `emptyset` |
-| 属于 | `in` |
-| 不属于 | `in.not` |
-| 子集 | `subset.eq` |
+| 含义  | Typst 写法        |
+| --- | --------------- |
+| 交集  | `inter`         |
+| 并集  | `union`         |
+| 补集  | `complement`    |
+| 空集  | `emptyset`      |
+| 属于  | `in`            |
+| 不属于 | `in.not`        |
+| 子集  | `subset.eq`     |
 | 真子集 | `subset.nequiv` |
-| 母集 | `supset.eq` |
+| 母集  | `supset.eq`     |
 | 真母集 | `supset.nequiv` |
-| 任意 | `forall` |
-| 存在 | `exists` |
-| 且 | `and` |
-| 或 | `or` |
-| 非 | `not` |
-| 推出 | `=>` |
-| 长推出 | `==>` |
-| 等价 | `<=>` |
-| 长等价 | `<==>` |
+| 任意  | `forall`        |
+| 存在  | `exists`        |
+| 且   | `and`           |
+| 或   | `or`            |
+| 非   | `not`           |
+| 推出  | `=>`            |
+| 长推出 | `==>`           |
+| 等价  | `<=>`           |
+| 长等价 | `<==>`          |
 
 ### 3.3 常见数集
 
-| 含义 | Typst 写法 |
-|---|---|
-| 实数集 | `bold(upright(R))` |
-| 自然数集 | `bold(upright(N))` |
-| 整数集 | `bold(upright(Z))` |
-| 有理数集 | `bold(upright(Q))` |
-| 复数集 | `bold(upright(C))` |
+| 含义   | Typst 写法             |
+| ---- | -------------------- |
+| 实数集  | `bold(upright(R))`   |
+| 自然数集 | `bold(upright(N))`   |
+| 整数集  | `bold(upright(Z))`   |
+| 有理数集 | `bold(upright(Q))`   |
+| 复数集  | `bold(upright(C))`   |
 | 正整数集 | `bold(upright(N))^*` |
 
 ### 3.4 向量
 
-| 类型 | Typst 写法 |
-|---|---|
-| 向量 | `vect(a)`、`vect(A B)` |
-| 列向量 | `vec(a,b,c,d)` |
+| 类型      | Typst 写法                                  |
+| ------- | ----------------------------------------- |
+| 向量      | `vect(a)`、`vect(A B)`                     |
+| 列向量     | `vec(a,b,c,d)`                            |
 | 向量a,b夹角 | `lr(chevron.l vect(a),vect(b) chevron.r)` |
 
 ### 3.5 运算符号
 
-| 含义 | Typst 写法 |
-|---|---|
-| 加减 | `plus.minus` |
-| 乘 | `times` |
-| 除 | `div` |
-| 点乘 | `dot` |
-| 圆 | `dot.o` |
-| 积分 | `integral` |
+| 含义   | Typst 写法          |
+| ---- | ----------------- |
+| 加减   | `plus.minus`      |
+| 乘    | `times`           |
+| 除    | `div`             |
+| 点乘   | `dot`             |
+| 圆    | `dot.o`           |
+| 积分   | `integral`        |
 | 二重积分 | `integral.double` |
 | 三重积分 | `integral.triple` |
-| 求和 | `sum` |
-| 求积 | `product` |
-| 2次方根 | `sqrt` |
-| n次根号 | `root` |
-| 分数 | `frac` |
-| 分段函数 | `cases` |
-| 极限 | `lim` |
-| 微分 | `dif` |
+| 求和   | `sum`             |
+| 求积   | `product`         |
+| 2次方根 | `sqrt`            |
+| n次根号 | `root`            |
+| 分数   | `frac`            |
+| 分段函数 | `cases`           |
+| 极限   | `lim`             |
+| 微分   | `dif`             |
 
 ### 3.6 希腊字母
 
@@ -107,42 +107,42 @@
 
 ### 3.7 箭头
 
-| 含义 | Typst 写法 |
-|---|---|
-| 右箭头 | `arrow.r` 或 `->` |
-| 左箭头 | `arrow.l` 或 `<-` |
+| 含义   | Typst 写法            |
+| ---- | ------------------- |
+| 右箭头  | `arrow.r` 或 `->`    |
+| 左箭头  | `arrow.l` 或 `<-`    |
 | 双向箭头 | `arrow.l.r` 或 `<->` |
-| 长箭头 | `arrow.r.long` |
-| 映射 | `arrow.r.bar` |
-| 推出 | `arrow.r.double` |
-| 等价 | `arrow.l.r.double` |
+| 长箭头  | `arrow.r.long`      |
+| 映射   | `arrow.r.bar`       |
+| 推出   | `arrow.r.double`    |
+| 等价   | `arrow.l.r.double`  |
 
 ### 3.8 其他常用符号
 
-| 含义 | Typst 写法 |
-|---|---|
-| 无穷 | `infinity` 或 `oo` |
-| 角度 | `angle` |
-| 垂直 | `perp` |
-| 平行 | `parallel` |
-| 平行且相等 | `parallel.eq` |
-| 因为 | `because` |
-| 所以 | `therefore` |
-| 度 | `degree` |
-| 点 | `dot` |
-| 三角形 | `triangle` |
-| 平行四边形 | `parallelogram` |
-| 省略号 | `dots.c`、`dots.h`、`dots.v` |
-| 组合数 | `upright(C)_n^m` |
-| 排列数 | `upright(A)_n^m` |
-| 平均数 | `overline(x)` |
-| 弧 | `overparen(A B)` |
+| 含义    | Typst 写法                   |
+| ----- | -------------------------- |
+| 无穷    | `infinity` 或 `oo`          |
+| 角度    | `angle`                    |
+| 垂直    | `perp`                     |
+| 平行    | `parallel`                 |
+| 平行且相等 | `parallel.eq`              |
+| 因为    | `because`                  |
+| 所以    | `therefore`                |
+| 度     | `degree`                   |
+| 点     | `dot`                      |
+| 三角形   | `triangle`                 |
+| 平行四边形 | `parallelogram`            |
+| 省略号   | `dots.c`、`dots.h`、`dots.v` |
+| 组合数   | `upright(C)_n^m`           |
+| 排列数   | `upright(A)_n^m`           |
+| 平均数   | `overline(x)`              |
+| 弧     | `overparen(A B)`           |
 
 ### 3.9 注意事项
 
-1.  **数学环境**：严格按照 `typst` 的语法，不要使用 `latex` 的 ，所有符号必须放在 `$...$` 中，如 `$x <= 0$`、`$A inter B$`。字母之间要有空格，如 `$A B C D$` ，不要 `$ABCD$` 。如果
-2.  **希腊字母**：小写用 `alpha`，大写首字母大写 `Alpha`。如果遇到虚部单位 `i` 使用 `iu` ，自然常数 `e` 使用 `eu` 。
-3.  **符号变体**：支持点号选择，如 `arrow.r.double.long`、`triangle.stroked.t`。
+1. **数学环境**：严格按照 `typst` 的语法，不要使用 `latex` 的 ，所有符号必须放在 `$...$` 中，如 `$x <= 0$`、`$A inter B$`。字母之间要有空格，如 `$A B C D$` ，不要 `$ABCD$` 。
+2. **希腊字母**：小写用 `alpha`，大写首字母大写 `Alpha`。如果遇到虚部单位 `i` 使用 `iu` ，自然常数 `e` 使用 `eu` 。
+3. **符号变体**：支持点号选择，如 `arrow.r.double.long`、`triangle.stroked.t`。
 
 ### 3.10 常用示例
 
@@ -322,14 +322,15 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 ```
 
 ### 八 答案排版规则（使用 `ezexam` 内置函数）：
-  1. 在最前面定义：`#let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)`
-  2. 用 `#solution-env[...]` 包裹整个答案区。
-  3. 答案区的标题直接用 `= 选择题`、`= 填空题`、`= 解答题`（不手写编号）。
-  4. 每题解析用 `#solution(title: "解析")[...]` 或 `#solution[...]`。
-  5. 答案用 `#answer[...]` 呈现。
-  6. 解析正文以 `#tag[解析]:` 开头。
-  7. 解答题需在步骤后给分时，使用 `#score(分值)`。
-  8. 题干前若有来源出处（如 `[2026 届XXXX试题]`），使用 `#tag[来源名称]` 包裹。
+
+1. 在最前面定义：`#let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)`
+2. 用 `#solution-env[...]` 包裹整个答案区。
+3. 答案区的标题直接用 `= 选择题`、`= 填空题`、`= 解答题`（不手写编号）。
+4. 每题解析用 `#solution(title: "解析")[...]` 或 `#solution[...]`。
+5. 答案用 `#answer[...]` 呈现。
+6. 解析正文以 `#tag[解析]:` 开头。
+7. 解答题需在步骤后给分时，使用 `#score(分值)`。
+8. 题干前若有来源出处（如 `[2026 届XXXX试题]`），使用 `#tag[来源名称]` 包裹。
 
 **答案部分代码示例：**
 
