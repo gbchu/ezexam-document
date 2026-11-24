@@ -140,7 +140,7 @@
 
 ### 3.9 注意事项
 
-1. **数学环境**：严格按照 `typst` 的语法，不要使用 `latex` 的 ，所有数学符号必须放在 `$...$` 中，如 `$x <= 0$`、`$A inter B$` 、`$frac(a,b)$` 等。字母之间要有空格，如 `$A B C D$` ，不要 `$ABCD$` 。
+1. **数学环境**：严格按照 `typst` 的语法，禁止使用 `latex` 的 ，所有数学符号必须放在 `$...$` 中，如 `$x <= 0$`、`$A inter B$` 、`$frac(a,b)$` 等。字母之间要有空格，如 `$A B C D$` ，不要 `$ABCD$` 。
 2. **希腊字母**：小写用 `alpha`，大写首字母大写 `Alpha`。如果遇到虚部单位 `i` 使用 `iu` ，自然常数 `e` 使用 `eu` 。
 3. **符号变体**：支持点号选择，如 `arrow.r.double.long`、`triangle.stroked.t`。
 
@@ -323,7 +323,7 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 
 ### 八 答案排版规则（使用 `ezexam` 内置函数）：
 
-1. 在最前面定义：`#let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)`
+1. 在最前面定义：`#let answer = tag.with(prefix: "答案：", suffix: none)`
 2. 用 `#solution-env[...]` 包裹整个答案区。
 3. 答案区的标题直接用 `= 选择题`、`= 填空题`、`= 解答题`（不手写编号）。
 4. 每题解析用 `#solution(title: "解析")[...]` 或 `#solution[...]`。
@@ -335,7 +335,7 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 **答案部分代码示例：**
 
 ```typst
-#let answer = tag.with(prefix: "答案：", suffix: none, color: maroon)
+#let answer = tag.with(prefix: "答案：", suffix: none)
 
 #solution-env[
   = 选择题
@@ -365,6 +365,7 @@ $cases(x+1 comma space  & x>2, x^2 comma space  & x<=2)$
 
 - [ ] 讲义模式未写 `mode`、未写 `paper`
 - [ ] 试卷模式写了 `mode: EXAM`
+- [ ] 数学符号严格按照 `typst` 的写法，禁止使用 `latex` 的任何语法
 - [ ] 标题未手写编号
 - [ ] `#question` 未手写题号
 - [ ] 解答题小题用 `+`
