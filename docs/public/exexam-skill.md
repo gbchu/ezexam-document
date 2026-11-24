@@ -26,7 +26,7 @@
 - 解答题小题用 `+` 自动编号，不手写“（1）（2）”。
 - 解答题分值用 `points` 参数，例如 `#question(points: 13)[...]`。
 
-## 三、数学符号 （严格按照 typst 的语法，不要使用 latex 的）
+## 三、数学符号
 
 ### 3.1 比较与关系
 
@@ -130,6 +130,8 @@
 | 所以 | `therefore` |
 | 度 | `degree` |
 | 点 | `dot` |
+| 三角形 | `triangle` |
+| 平行四边形 | `parallelogram` |
 | 省略号 | `dots.c`、`dots.h`、`dots.v` |
 | 组合数 | `upright(C)_n^m` |
 | 排列数 | `upright(A)_n^m` |
@@ -138,9 +140,9 @@
 
 ### 3.9 注意事项
 
-1.  **数学环境**：所有符号必须放在 `$...$` 中，如 `$x <= 0$`、`$A inter B$`。如果遇到虚部单位 `i` 使用 `iu` ，自然常数 `e` 使用 `eu`
-3.  **希腊字母**：小写用 `alpha`，大写首字母大写 `Alpha`。
-4.  **符号变体**：支持点号选择，如 `arrow.r.double.long`、`triangle.stroked.t`。
+1.  **数学环境**：严格按照 `typst` 的语法，不要使用 `latex` 的 ，所有符号必须放在 `$...$` 中，如 `$x <= 0$`、`$A inter B$`。字母之间要有空格，如 `$A B C D$` ，不要 `$ABCD$` 。如果
+2.  **希腊字母**：小写用 `alpha`，大写首字母大写 `Alpha`。如果遇到虚部单位 `i` 使用 `iu` ，自然常数 `e` 使用 `eu` 。
+3.  **符号变体**：支持点号选择，如 `arrow.r.double.long`、`triangle.stroked.t`。
 
 ### 3.10 常用示例
 
