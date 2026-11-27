@@ -566,6 +566,17 @@ export default defineConfig({
                 ],
               },
               {
+                text: "答案表格",
+                link: "/reference/answer-table.md",
+                collapsed: true,
+                items: [
+                  { text: "rows", link: "/reference/answer-table.md#rows" },
+                  { text: "cell-x", link: "/reference/answer-table.md#cell-x" },
+                  { text: "cell-y", link: "/reference/answer-table.md#cell-y" },
+                  { text: "answers", link: "/reference/answer-table.md#answers" },
+                ],
+              },
+              {
                 text: "答案",
                 link: "/reference/answer.md",
                 collapsed: true,

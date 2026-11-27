@@ -5,4 +5,5 @@
   - [`solution-env`](/reference/solution-env) 解析环境
   - [`solution`](/reference/solution) 解析
   - [`score`](/reference/score) 解析内的评分
+  - [`answer-table`](/reference/answer-table) 答案表格
   - ~~[`answer`](/reference/answer) 答案~~
